@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "dataVersion": "2026.05.31",
+  "chips": [
+    {
+      "id": "GD32F407",
+      "displayName": "GD32F407",
+      "vendor": "GigaDevice",
+      "family": "GD32F4",
+      "packages": [
+        "LQFP100",
+        "LQFP144"
+      ],
+      "status": "stable",
+      "chipUrl": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f4/gd32f407/chip.json",
+      "sourceFiles": [
+        {
+          "type": "gpio-af",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f4/gd32f407/source/GD32F407_GPIO_AF.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f4/gd32f407/source/GD32F407_LQFP100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP144",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f4/gd32f407/source/GD32F407_LQFP144_PINOUT.csv"
+        }
+      ]
+    },
+    {
+      "id": "GD32F470",
+      "displayName": "GD32F470",
+      "vendor": "GigaDevice",
+      "family": "GD32F4",
+      "packages": [
+        "BGA100",
+        "BGA176",
+        "LQFP100",
+        "LQFP144"
+      ],
+      "status": "draft",
+      "chipUrl": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f4/gd32f470/chip.json",
+      "sourceFiles": [
+        {
+          "type": "gpio-af",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f4/gd32f470/source/GD32F470_GPIO_AF.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "BGA100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f4/gd32f470/source/GD32F470_BGA100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "BGA176",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f4/gd32f470/source/GD32F470_BGA176_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f4/gd32f470/source/GD32F470_LQFP100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP144",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f4/gd32f470/source/GD32F470_LQFP144_PINOUT.csv"
+        }
+      ]
+    },
+    {
+      "id": "GD32H759",
+      "displayName": "GD32H759",
+      "vendor": "GigaDevice",
+      "family": "GD32H7",
+      "packages": [
+        "LQFP176"
+      ],
+      "status": "draft",
+      "chipUrl": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32h7/gd32h759/chip.json",
+      "sourceFiles": [
+        {
+          "type": "gpio-af",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32h7/gd32h759/source/GD32H759_GPIO_AF.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP176",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32h7/gd32h759/source/GD32H759_LQFP176_PINOUT.csv"
+        }
+      ]
+    }
+  ]
+}

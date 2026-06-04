@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "dataVersion": "2026.05.31",
+  "chips": [
+    {
+      "id": "GD32F407",
+      "vendor": "GigaDevice",
+      "family": "GD32F4",
+      "displayName": "GD32F407",
+      "gpioAfCsv": "chips/gigadevice/gd32f4/gd32f407/source/GD32F407_GPIO_AF.csv",
+      "packages": [
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "chips/gigadevice/gd32f4/gd32f407/source/GD32F407_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP144",
+          "pinoutCsv": "chips/gigadevice/gd32f4/gd32f407/source/GD32F407_LQFP144_PINOUT.csv"
+        }
+      ],
+      "source": "GD32F407 GPIO AF CSV curated in this repository",
+      "status": "stable"
+    },
+    {
+      "id": "GD32F470",
+      "vendor": "GigaDevice",
+      "family": "GD32F4",
+      "displayName": "GD32F470",
+      "gpioAfCsv": "chips/gigadevice/gd32f4/gd32f470/source/GD32F470_GPIO_AF.csv",
+      "packages": [
+        {
+          "name": "BGA100",
+          "pinoutCsv": "chips/gigadevice/gd32f4/gd32f470/source/GD32F470_BGA100_PINOUT.csv"
+        },
+        {
+          "name": "BGA176",
+          "pinoutCsv": "chips/gigadevice/gd32f4/gd32f470/source/GD32F470_BGA176_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "chips/gigadevice/gd32f4/gd32f470/source/GD32F470_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP144",
+          "pinoutCsv": "chips/gigadevice/gd32f4/gd32f470/source/GD32F470_LQFP144_PINOUT.csv"
+        }
+      ],
+      "source": "GD32F470 GPIO AF CSV scanned from data/chips/gigadevice/gd32f4/gd32f470",
+      "status": "draft"
+    },
+    {
+      "id": "GD32H759",
+      "vendor": "GigaDevice",
+      "family": "GD32H7",
+      "displayName": "GD32H759",
+      "gpioAfCsv": "chips/gigadevice/gd32h7/gd32h759/source/GD32H759_GPIO_AF.csv",
+      "packages": [
+        {
+          "name": "LQFP176",
+          "pinoutCsv": "chips/gigadevice/gd32h7/gd32h759/source/GD32H759_LQFP176_PINOUT.csv"
+        }
+      ],
+      "source": "GD32H759 GPIO AF CSV scanned from data/chips/gigadevice/gd32h7/gd32h759",
+      "status": "draft"
+    }
+  ]
+}
