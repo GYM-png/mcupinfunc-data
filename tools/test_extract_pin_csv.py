@@ -17,10 +17,10 @@ class ExtractPinCsvTest(unittest.TestCase):
         Pin Name Pins Functions description
         Type(1) Level(2)
         Default: PA4
-        Alternate: SPI0_NSS, USART1_CK, ADC01_IN4,
+        Alternate: SPI0_NSS(1), USART1_CK, ADC01_IN4,
         PA4 29 I/O
         DAC0_OUT0
-        Remap:SPI2_NSS, I2S2_WS
+        Remap:SPI2_NSS, I2S2_WS, TIMER8_CH0(3)
         Default: PA5
         PA5 30 I/O
         Alternate: SPI0_SCK, ADC01_IN5, DAC0_OUT1
@@ -33,7 +33,9 @@ class ExtractPinCsvTest(unittest.TestCase):
         csv_text = extractor.rows_to_csv_text(rows, "LQFP100", include_functions=True)
 
         self.assertIn("PadNumber,PinName,PinType,Alternate,Remap", csv_text.splitlines()[0])
-        self.assertIn("29,PA4,gpio,SPI0_NSS/USART1_CK/ADC01_IN4/DAC0_OUT0,SPI2_NSS/I2S2_WS", csv_text)
+        self.assertIn("29,PA4,gpio,SPI0_NSS/USART1_CK/ADC01_IN4/DAC0_OUT0,SPI2_NSS/I2S2_WS/TIMER8_CH0", csv_text)
+        self.assertNotIn("SPI0_NSS(1)", csv_text)
+        self.assertNotIn("TIMER8_CH0(3)", csv_text)
         self.assertIn("30,PA5,gpio,SPI0_SCK/ADC01_IN5/DAC0_OUT1,", csv_text)
 
     def test_default_csv_output_stays_three_columns(self) -> None:
