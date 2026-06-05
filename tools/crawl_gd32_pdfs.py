@@ -27,9 +27,12 @@ from extract_pin_csv import (
     available_packages,
     data_repo_root,
     download_pdf,
+    extract_gpio_af_rows,
+    gpio_af_output_name,
     infer_family_from_part,
     normalize_part,
     read_pdf_text,
+    rows_to_gpio_af_csv_text,
     source_output_dir,
     write_package_csvs,
 )
@@ -206,17 +209,50 @@ def relative_paths(paths: Iterable[Path], root: Path) -> list[str]:
     return result
 
 
-def infer_function_source(part: str, pdf_path: Path, pdf_text: str | None = None) -> str:
-    text = pdf_text if pdf_text is not None else read_pdf_text(pdf_path)
-    if re.search(r"\bAF0\b", text) and re.search(r"\bAF15\b", text):
-        return "gpio-af-csv"
-    return "pinout-csv"
+def infer_function_source(part: str, pdf_path: Path) -> tuple[str, list[list[str]]]:
+    af_rows = extract_gpio_af_rows(pdf_path)
+    if af_rows:
+        return "gpio-af-csv", af_rows
+    return "pinout-csv", []
 
 
-def select_function_source(requested_source: str, part: str, pdf_path: Path, pdf_text: str) -> str:
+def select_function_source(requested_source: str, part: str, pdf_path: Path) -> tuple[str, list[list[str]]]:
     if requested_source != "auto":
-        return requested_source
-    return infer_function_source(part, pdf_path, pdf_text)
+        return requested_source, []
+    return infer_function_source(part, pdf_path)
+
+
+def write_selected_csvs(
+    pdf_path: Path,
+    packages: list[str],
+    output_dir: Path,
+    part: str,
+    function_source: str,
+    af_rows: list[list[str]],
+) -> list[Path]:
+    if function_source == "gpio-af-csv" and af_rows:
+        written = write_package_csvs(
+            pdf_path,
+            packages,
+            output_dir,
+            part,
+            write_gpio_af=False,
+            include_functions=False,
+        )
+        output_dir.mkdir(parents=True, exist_ok=True)
+        af_path = output_dir / gpio_af_output_name(part)
+        af_path.write_text(rows_to_gpio_af_csv_text(af_rows), encoding="utf-8", newline="")
+        written.append(af_path)
+        return written
+
+    return write_package_csvs(
+        pdf_path,
+        packages,
+        output_dir,
+        part,
+        write_gpio_af=function_source == "gpio-af-csv",
+        include_functions=function_source == "pinout-csv",
+    )
 
 
 def extract_candidate(
@@ -233,14 +269,14 @@ def extract_candidate(
 
     family = infer_family_from_part(candidate.part)
     output_dir = source_output_dir(output_root, "gigadevice", family, candidate.part)
-    selected_function_source = select_function_source(function_source, candidate.part, pdf_path, text)
-    written = write_package_csvs(
+    selected_function_source, af_rows = select_function_source(function_source, candidate.part, pdf_path)
+    written = write_selected_csvs(
         pdf_path,
         packages,
         output_dir,
         candidate.part,
-        write_gpio_af=selected_function_source == "gpio-af-csv",
-        include_functions=selected_function_source == "pinout-csv",
+        selected_function_source,
+        af_rows,
     )
     return CrawlSuccess(
         part=candidate.part,

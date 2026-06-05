@@ -130,6 +130,7 @@ class CrawlGd32PdfsTest(unittest.TestCase):
                 patch.object(crawler, "download_pdf", return_value=pdf_path),
                 patch.object(crawler, "read_pdf_text", return_value="Table 2-6. LQFP100 pin definitions"),
                 patch.object(crawler, "available_packages", return_value=["LQFP100"]),
+                patch.object(crawler, "extract_gpio_af_rows", return_value=[]),
                 patch.object(crawler, "write_package_csvs", return_value=[written_path]) as write_package_csvs,
             ):
                 success = crawler.extract_candidate(candidate, root, root / "cache")
@@ -143,6 +144,98 @@ class CrawlGd32PdfsTest(unittest.TestCase):
             write_gpio_af=False,
             include_functions=True,
         )
+
+    def test_extract_candidate_uses_pinout_functions_when_af_tokens_have_no_extractable_rows(self) -> None:
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            pdf_path = root / "GD32F103.pdf"
+            written_path = root / "chips/gigadevice/gd32f1/gd32f103/source/GD32F103_LQFP100_PINOUT.csv"
+            candidate = crawler.DatasheetCandidate(
+                part="GD32F103",
+                url="https://download.gigadevice.com/Datasheet/GD32F103xx%20Datasheet_Rev3.3.pdf",
+                source_url="https://www.gigadevice.com/product/mcu/gd32f103",
+            )
+
+            with (
+                patch.object(crawler, "download_pdf", return_value=pdf_path),
+                patch.object(crawler, "read_pdf_text", return_value="AF0 AF15 Table 2-6. LQFP100 pin definitions"),
+                patch.object(crawler, "available_packages", return_value=["LQFP100"]),
+                patch.object(crawler, "extract_gpio_af_rows", return_value=[]),
+                patch.object(crawler, "write_package_csvs", return_value=[written_path]) as write_package_csvs,
+            ):
+                success = crawler.extract_candidate(candidate, root, root / "cache")
+
+        self.assertEqual(success.function_source, "pinout-csv")
+        write_package_csvs.assert_called_once_with(
+            pdf_path,
+            ["LQFP100"],
+            root / "chips/gigadevice/gd32f1/gd32f103/source",
+            "GD32F103",
+            write_gpio_af=False,
+            include_functions=True,
+        )
+
+    def test_extract_candidate_preserves_explicit_gpio_af_source(self) -> None:
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            pdf_path = root / "GD32F407.pdf"
+            written_path = root / "chips/gigadevice/gd32f4/gd32f407/source/GD32F407_GPIO_AF.csv"
+            candidate = crawler.DatasheetCandidate(
+                part="GD32F407",
+                url="https://download.gigadevice.com/Datasheet/GD32F407xx_Datasheet_Rev3.0.pdf",
+                source_url="https://www.gigadevice.com/product/mcu/gd32f407",
+            )
+
+            with (
+                patch.object(crawler, "download_pdf", return_value=pdf_path),
+                patch.object(crawler, "read_pdf_text", return_value="Table 2-6. LQFP100 pin definitions"),
+                patch.object(crawler, "available_packages", return_value=["LQFP100"]),
+                patch.object(crawler, "extract_gpio_af_rows", return_value=[]),
+                patch.object(crawler, "write_package_csvs", return_value=[written_path]) as write_package_csvs,
+            ):
+                success = crawler.extract_candidate(candidate, root, root / "cache", "gpio-af-csv")
+
+        self.assertEqual(success.function_source, "gpio-af-csv")
+        write_package_csvs.assert_called_once_with(
+            pdf_path,
+            ["LQFP100"],
+            root / "chips/gigadevice/gd32f4/gd32f407/source",
+            "GD32F407",
+            write_gpio_af=True,
+            include_functions=False,
+        )
+
+    def test_extract_candidate_reuses_auto_extracted_gpio_af_rows(self) -> None:
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            pdf_path = root / "GD32F407.pdf"
+            pinout_path = root / "chips/gigadevice/gd32f4/gd32f407/source/GD32F407_LQFP100_PINOUT.csv"
+            candidate = crawler.DatasheetCandidate(
+                part="GD32F407",
+                url="https://download.gigadevice.com/Datasheet/GD32F407xx_Datasheet_Rev3.0.pdf",
+                source_url="https://www.gigadevice.com/product/mcu/gd32f407",
+            )
+
+            with (
+                patch.object(crawler, "download_pdf", return_value=pdf_path),
+                patch.object(crawler, "read_pdf_text", return_value="Table 2-6. LQFP100 pin definitions"),
+                patch.object(crawler, "available_packages", return_value=["LQFP100"]),
+                patch.object(crawler, "extract_gpio_af_rows", return_value=[["PA0", *[""] * 16]]) as extract_gpio_af_rows,
+                patch.object(crawler, "write_package_csvs", return_value=[pinout_path]) as write_package_csvs,
+            ):
+                success = crawler.extract_candidate(candidate, root, root / "cache")
+
+            self.assertEqual(success.function_source, "gpio-af-csv")
+            extract_gpio_af_rows.assert_called_once_with(pdf_path)
+            write_package_csvs.assert_called_once_with(
+                pdf_path,
+                ["LQFP100"],
+                root / "chips/gigadevice/gd32f4/gd32f407/source",
+                "GD32F407",
+                write_gpio_af=False,
+                include_functions=False,
+            )
+            self.assertTrue(any(path.endswith("GD32F407_GPIO_AF.csv") for path in success.written_files))
 
 
 if __name__ == "__main__":
