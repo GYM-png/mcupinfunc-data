@@ -88,6 +88,26 @@ class ExtractPinCsvTest(unittest.TestCase):
         self.assertNotIn("SPI0_NSS", by_pin_name["PA5"].alternate)
         self.assertNotIn("SPI2_NSS", by_pin_name["PA5"].remap)
 
+    def test_different_default_after_active_row_starts_next_pre_row_block(self) -> None:
+        text = """
+        2.6.2. GD32F103Vx LQFP100 pin definitions
+        Table 2-6. GD32F103Vx LQFP100 pin definitions
+        Pin Name Pins Functions description
+        PA4 29 I/O
+        Default: PA4
+        Alternate: SPI0_NSS
+        Default: PA5
+        Alternate: SPI0_SCK
+        PA5 30 I/O
+        2.7. Memory map
+        """
+
+        rows = extractor.extract_package_rows(text, "LQFP100", include_functions=True)
+        by_pin_name = {row.pin_name: row for row in rows}
+
+        self.assertEqual(by_pin_name["PA4"].alternate, "SPI0_NSS")
+        self.assertEqual(by_pin_name["PA5"].alternate, "SPI0_SCK")
+
     def test_ignores_table_text_after_default_non_gpio_row(self) -> None:
         text = """
         2.6.2. GD32F103Vx LQFP100 pin definitions

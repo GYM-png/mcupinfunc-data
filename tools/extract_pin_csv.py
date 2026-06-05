@@ -324,6 +324,9 @@ def extract_package_rows(text: str, package: str, include_functions: bool = Fals
                 label = function_label.group(1).lower()
                 value = function_label.group(2)
                 if label == "default":
+                    default_pin_name = _clean_function_item(value)
+                    if active_row_index is not None and default_pin_name != raw_rows[active_row_index][1]:
+                        active_row_index = None
                     current_alternate_parts = []
                     current_remap_parts = []
                     current_function_target = None
