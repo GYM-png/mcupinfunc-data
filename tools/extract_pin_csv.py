@@ -2,8 +2,8 @@
 """Extract McuPinFunc CSV files from text datasheet PDFs.
 
 Examples:
-  python tools/extract_pin_csv.py --pdf "GD32F407xx_Datasheet.pdf" --vendor gigadevice --family gd32f4 --packages LQFP144,LQFP100
-  python tools/extract_pin_csv.py --pdf-url "https://example.com/GD32H759xx_Datasheet.pdf" --vendor gigadevice --family gd32h7 --part GD32H759 --packages LQFP176
+  python tools/extract_pin_csv.py --pdf "GD32F407xx_Datasheet.pdf" --packages LQFP144,LQFP100
+  python tools/extract_pin_csv.py --pdf-url "https://example.com/GD32H759xx_Datasheet.pdf" --part GD32H759 --packages LQFP176
 
 By default this script writes into the data repository layout:
   chips/<vendor>/<family>/<part>/source/<PART>_GPIO_AF.csv
@@ -67,7 +67,7 @@ def dependency_help_message(package: str = "pypdf") -> str:
         f"Missing Python dependency: {package}\n"
         f"Install it for your current Python: python -m pip install {package}\n"
         f"Or run this script with the bundled Codex Python:\n"
-        f'  "{bundled_python}" tools/extract_pin_csv.py --pdf-url "PDF_URL" --vendor gigadevice --family gd32f4 --packages LQFP144,LQFP100'
+        f'  "{bundled_python}" tools/extract_pin_csv.py --pdf-url "PDF_URL" --packages LQFP144,LQFP100'
     )
 
 
@@ -97,6 +97,9 @@ def infer_part_name(pdf_path_or_name: str | Path) -> str:
     """Infer output prefix, e.g. GD32H759 from GD32H759xx Datasheet_Rev2.2.pdf."""
     name = Path(str(pdf_path_or_name)).name
     stem = Path(name).stem
+    series_match = re.search(r"\b(GD32[A-Z]\d{3})", stem, re.I)
+    if series_match:
+        return normalize_part(series_match.group(1))
     match = PART_RE.search(stem)
     if match:
         return normalize_part(match.group(1))
@@ -105,6 +108,14 @@ def infer_part_name(pdf_path_or_name: str | Path) -> str:
     cleaned = re.sub(r"(?i)xx$", "", cleaned)
     cleaned = re.sub(r"[^A-Za-z0-9]+", "_", cleaned).strip("_") or "PINOUT"
     return normalize_part(cleaned)
+
+
+def infer_family_from_part(part: str) -> str:
+    normalized = normalize_part(part)
+    match = re.match(r"^GD32([A-Z])(\d)", normalized, re.I)
+    if not match:
+        raise ValueError(f"Cannot infer family from part {part}. Pass --family explicitly.")
+    return f"gd32{match.group(1).lower()}{match.group(2)}"
 
 
 def source_output_dir(repo_root: Path, vendor: str, family: str, part: str) -> Path:
@@ -404,8 +415,8 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
     source = parser.add_mutually_exclusive_group(required=True)
     source.add_argument("--pdf", type=Path, help="Local PDF path")
     source.add_argument("--pdf-url", help="PDF download URL")
-    parser.add_argument("--vendor", required=True, help="Vendor slug, e.g. gigadevice")
-    parser.add_argument("--family", required=True, help="Family slug, e.g. gd32f4")
+    parser.add_argument("--vendor", default="gigadevice", help="Vendor slug. Defaults to gigadevice.")
+    parser.add_argument("--family", help="Family slug, e.g. gd32f4. Defaults to inference from --part or PDF name.")
     parser.add_argument("--part", help="Part number, e.g. GD32F407. Defaults to PDF filename inference.")
     parser.add_argument("--packages", required=True, help="Comma-separated packages, e.g. LQFP144,LQFP100")
     parser.add_argument("--repo-root", type=Path, default=data_repo_root(), help="McuPinFunc data repository root")
@@ -426,7 +437,8 @@ def main(argv: list[str] | None = None) -> int:
     args = parse_args(argv or sys.argv[1:])
     pdf_path = args.pdf if args.pdf else download_pdf(args.pdf_url)
     part = normalize_part(args.part) if args.part else infer_part_name(pdf_path)
-    output_dir = args.output_dir or source_output_dir(args.repo_root.resolve(), args.vendor, args.family, part)
+    family = args.family or infer_family_from_part(part)
+    output_dir = args.output_dir or source_output_dir(args.repo_root.resolve(), args.vendor, family, part)
     packages = [p.strip() for p in args.packages.split(",") if p.strip()]
 
     try:
