@@ -275,6 +275,16 @@ def _is_candidate_name_fragment(line: str) -> bool:
     return bool(re.fullmatch(r"[A-Za-z0-9_+/\-]+", line))
 
 
+def _is_ignored_continuation_line(line: str) -> bool:
+    if not line or line.startswith(IGNORED_PREFIXES):
+        return True
+    if "Datasheet" in line or line.isdigit():
+        return True
+    if line in {"Pin", "Type", "I/O", "Level", "Pins"}:
+        return True
+    return bool(SECTION_HEADER_RE.search(line))
+
+
 def _join_pin_name(parts: Iterable[str]) -> str:
     name = "".join(parts).replace("--", "-")
     return name.rstrip("-") if name.endswith("--") else name
@@ -344,14 +354,30 @@ def extract_package_rows(text: str, package: str, include_functions: bool = Fals
             if pin_name and not _looks_like_package_pin_name(pin_name):
                 continue
             pending_name_parts.clear()
-            raw_rows.append((pad_number, pin_name, table_type, current_alternate_parts.copy(), current_remap_parts.copy()))
+            row_alternate_parts = current_alternate_parts.copy()
+            row_remap_parts = current_remap_parts.copy()
+            raw_rows.append((pad_number, pin_name, table_type, row_alternate_parts, row_remap_parts))
             if include_functions:
-                active_row_index = len(raw_rows) - 1
+                pin_type = classify_pin(pin_name, table_type)
+                active_row_index = len(raw_rows) - 1 if pin_type == "gpio" else None
+                has_pending_target_parts = (
+                    current_function_target == "alternate"
+                    and bool(row_alternate_parts)
+                    or current_function_target == "remap"
+                    and bool(row_remap_parts)
+                )
+                if not has_pending_target_parts:
+                    current_function_target = None
                 current_alternate_parts = []
                 current_remap_parts = []
             continue
 
         if include_functions and current_function_target in {"alternate", "remap"}:
+            if _is_ignored_continuation_line(line):
+                current_function_target = None
+                active_row_index = None
+                pending_name_parts.clear()
+                continue
             if active_row_index is not None:
                 target_parts = raw_rows[active_row_index][3 if current_function_target == "alternate" else 4]
             else:

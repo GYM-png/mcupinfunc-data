@@ -62,6 +62,27 @@ class ExtractPinCsvTest(unittest.TestCase):
 
         self.assertEqual(rows[0].alternate, "SPI0_NSS/USART1_CK/ADC01_IN4")
 
+    def test_ignores_table_text_after_default_non_gpio_row(self) -> None:
+        text = """
+        2.6.2. GD32F103Vx LQFP100 pin definitions
+        Table 2-6. GD32F103Vx LQFP100 pin definitions
+        Pin Name Pins Functions description
+        Default: PA4
+        Alternate: SPI0_NSS, USART1_CK,
+        PA4 29 I/O
+        DAC0_OUT0
+        VSS_4 30 P Default: VSS_4
+        Table 2-6. continued
+        2.7. Memory map
+        """
+
+        rows = extractor.extract_package_rows(text, "LQFP100", include_functions=True)
+        csv_text = extractor.rows_to_csv_text(rows, "LQFP100", include_functions=True)
+
+        self.assertIn("29,PA4,gpio,SPI0_NSS/USART1_CK/DAC0_OUT0,", csv_text)
+        self.assertIn("30,VSS_4,ground,,", csv_text)
+        self.assertNotIn("Table 2-6. continued", csv_text)
+
 
 if __name__ == "__main__":
     unittest.main()
