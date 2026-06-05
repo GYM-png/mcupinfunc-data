@@ -30,6 +30,8 @@ class PinRow:
     pad_number: int | str
     pin_name: str
     pin_type: str
+    alternate: str = ""
+    remap: str = ""
 
 
 ROW_RE = re.compile(
@@ -56,6 +58,8 @@ IGNORED_PREFIXES = (
     "Notes:",
     "(",
 )
+FUNCTION_LABEL_RE = re.compile(r"^(Default|Alternate|Remap):\s*(.*)$", re.I)
+FOOTNOTE_RE = re.compile(r"\(\d+\)")
 
 
 def dependency_help_message(package: str = "pypdf") -> str:
@@ -193,6 +197,26 @@ def _clean_line(line: str) -> str:
     return " ".join(line.strip().split())
 
 
+def _clean_function_item(value: str) -> str:
+    return FOOTNOTE_RE.sub("", value).strip()
+
+
+def _function_cell(parts: list[str]) -> str:
+    items: list[str] = []
+    for part in parts:
+        for item in part.split(","):
+            cleaned = _clean_function_item(item)
+            if cleaned:
+                items.append(cleaned)
+    return "/".join(dict.fromkeys(items))
+
+
+def _append_function_part(parts: list[str], value: str) -> None:
+    value = value.strip().rstrip(".;")
+    if value:
+        parts.append(value)
+
+
 def _looks_like_package_pin_name(pin_name: str) -> bool:
     return bool(PACKAGE_PIN_NAME_RE.fullmatch(pin_name.strip()))
 
@@ -270,15 +294,40 @@ def _position_sort_key(position: int | str) -> tuple[int, str, int]:
     return (2, value.upper(), 0)
 
 
-def extract_package_rows(text: str, package: str) -> list[PinRow]:
+def extract_package_rows(text: str, package: str, include_functions: bool = False) -> list[PinRow]:
     section = find_section(text, package)
     pending_name_parts: list[str] = []
-    raw_rows: list[tuple[int | str, str, str]] = []
+    raw_rows: list[tuple[int | str, str, str, list[str], list[str]]] = []
+    current_alternate_parts: list[str] = []
+    current_remap_parts: list[str] = []
+    current_function_target: str | None = None
+    active_row_index: int | None = None
 
     for raw_line in section.splitlines():
         line = _clean_line(raw_line)
         if not line:
             continue
+
+        if include_functions:
+            function_label = FUNCTION_LABEL_RE.match(line)
+            if function_label:
+                label = function_label.group(1).lower()
+                value = function_label.group(2)
+                if label == "default":
+                    current_alternate_parts = []
+                    current_remap_parts = []
+                    current_function_target = None
+                    active_row_index = None
+                    pending_name_parts.clear()
+                    continue
+                current_function_target = "alternate" if label == "alternate" else "remap"
+                if active_row_index is not None:
+                    target_parts = raw_rows[active_row_index][3 if current_function_target == "alternate" else 4]
+                else:
+                    target_parts = current_alternate_parts if current_function_target == "alternate" else current_remap_parts
+                _append_function_part(target_parts, value)
+                pending_name_parts.clear()
+                continue
 
         match = ROW_RE.match(line)
         if match:
@@ -295,36 +344,57 @@ def extract_package_rows(text: str, package: str) -> list[PinRow]:
             if pin_name and not _looks_like_package_pin_name(pin_name):
                 continue
             pending_name_parts.clear()
-            raw_rows.append((pad_number, pin_name, table_type))
+            raw_rows.append((pad_number, pin_name, table_type, current_alternate_parts.copy(), current_remap_parts.copy()))
+            if include_functions:
+                active_row_index = len(raw_rows) - 1
+                current_alternate_parts = []
+                current_remap_parts = []
+            continue
+
+        if include_functions and active_row_index is not None and current_function_target in {"alternate", "remap"}:
+            target_parts = raw_rows[active_row_index][3 if current_function_target == "alternate" else 4]
+            _append_function_part(target_parts, line)
+            pending_name_parts.clear()
             continue
 
         if _is_candidate_name_fragment(line):
             if raw_rows and raw_rows[-1][1].endswith("-") and not pending_name_parts:
-                pad, old_name, old_type = raw_rows[-1]
-                raw_rows[-1] = (pad, _join_pin_name([old_name, line]), old_type)
+                pad, old_name, old_type, alternate_parts, remap_parts = raw_rows[-1]
+                raw_rows[-1] = (pad, _join_pin_name([old_name, line]), old_type, alternate_parts, remap_parts)
             else:
                 pending_name_parts.append(line)
         else:
             pending_name_parts.clear()
+            if include_functions:
+                current_function_target = None
+                active_row_index = None
 
-    deduped: dict[int | str, tuple[str, str]] = {}
-    for pad_number, pin_name, table_type in raw_rows:
+    deduped: dict[int | str, tuple[str, str, list[str], list[str]]] = {}
+    for pad_number, pin_name, table_type, alternate_parts, remap_parts in raw_rows:
         if pin_name and pad_number not in deduped:
-            deduped[pad_number] = (pin_name, table_type)
+            deduped[pad_number] = (pin_name, table_type, alternate_parts, remap_parts)
 
     return [
-        PinRow(pad_number, pin_name, classify_pin(pin_name, table_type))
-        for pad_number, (pin_name, table_type) in sorted(deduped.items(), key=lambda item: _position_sort_key(item[0]))
+        PinRow(pad_number, pin_name, classify_pin(pin_name, table_type), _function_cell(alternate_parts), _function_cell(remap_parts))
+        for pad_number, (pin_name, table_type, alternate_parts, remap_parts) in sorted(
+            deduped.items(), key=lambda item: _position_sort_key(item[0])
+        )
     ]
 
 
-def rows_to_csv_text(rows: Iterable[PinRow], package: str = "") -> str:
+def rows_to_csv_text(rows: Iterable[PinRow], package: str = "", include_functions: bool = False) -> str:
     output = io.StringIO()
     writer = csv.writer(output, lineterminator="\n")
     first_header = "BallName" if is_bga_package(package) else "PadNumber"
-    writer.writerow([first_header, "PinName", "PinType"])
+    header = [first_header, "PinName", "PinType"]
+    if include_functions:
+        header.extend(["Alternate", "Remap"])
+    writer.writerow(header)
     for row in rows:
-        writer.writerow([row.pad_number, row.pin_name, row.pin_type])
+        values = [row.pad_number, row.pin_name, row.pin_type]
+        if include_functions:
+            values.extend([row.alternate, row.remap])
+        writer.writerow(values)
     return output.getvalue()
 
 
@@ -386,6 +456,7 @@ def write_package_csvs(
     output_dir: Path,
     part: str,
     write_gpio_af: bool = True,
+    include_functions: bool = False,
 ) -> list[Path]:
     text = read_pdf_text(pdf_path)
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -393,11 +464,11 @@ def write_package_csvs(
 
     for package in packages:
         package = normalize_package(package)
-        rows = extract_package_rows(text, package)
+        rows = extract_package_rows(text, package, include_functions=include_functions)
         if not rows:
             raise ValueError(f"No pin rows extracted for {package}.")
         out_path = output_dir / package_output_name(part, package)
-        out_path.write_text(rows_to_csv_text(rows, package), encoding="utf-8", newline="")
+        out_path.write_text(rows_to_csv_text(rows, package, include_functions=include_functions), encoding="utf-8", newline="")
         written.append(out_path)
 
     if write_gpio_af:
@@ -430,6 +501,11 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
         action="store_true",
         help="Do not write the extra GPIO alternate-function CSV",
     )
+    parser.add_argument(
+        "--pinout-functions",
+        action="store_true",
+        help="Write Alternate and Remap columns into package pinout CSVs when present in pin definition tables.",
+    )
     return parser.parse_args(argv)
 
 
@@ -442,7 +518,14 @@ def main(argv: list[str] | None = None) -> int:
     packages = [p.strip() for p in args.packages.split(",") if p.strip()]
 
     try:
-        written = write_package_csvs(pdf_path, packages, output_dir, part, write_gpio_af=not args.no_gpio_af)
+        written = write_package_csvs(
+            pdf_path,
+            packages,
+            output_dir,
+            part,
+            write_gpio_af=not args.no_gpio_af,
+            include_functions=args.pinout_functions,
+        )
     except Exception as exc:
         print(f"ERROR: {exc}", file=sys.stderr)
         return 1
