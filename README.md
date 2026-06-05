@@ -27,6 +27,22 @@ From the main McuPinFunc repository, add or update CSV files under:
 
 `external-data/mcupinfunc-data/chips/<vendor>/<family>/<part>/source/`
 
+You can extract CSV files from an official text PDF with:
+
+```powershell
+python tools/extract_pin_csv.py --pdf "GD32F407xx_Datasheet.pdf" --vendor gigadevice --family gd32f4 --packages LQFP144,LQFP100
+```
+
+For a PDF URL:
+
+```powershell
+python tools/extract_pin_csv.py --pdf-url "https://example.com/GD32H759xx_Datasheet.pdf" --vendor gigadevice --family gd32h7 --part GD32H759 --packages LQFP176
+```
+
+The tool writes directly to:
+
+`chips/<vendor>/<family>/<part>/source/`
+
 Then run:
 
 ```powershell
