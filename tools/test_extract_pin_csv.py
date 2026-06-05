@@ -43,6 +43,23 @@ class ExtractPinCsvTest(unittest.TestCase):
 
         self.assertEqual(csv_text, "PadNumber,PinName,PinType\n29,PA4,gpio\n")
 
+    def test_keeps_wrapped_function_text_before_pin_row(self) -> None:
+        text = """
+        2.6.2. GD32F103Vx LQFP100 pin definitions
+        Table 2-6. GD32F103Vx LQFP100 pin definitions
+        Pin Name Pins Functions description
+        Default: PA4
+        Alternate: SPI0_NSS, USART1_CK,
+        ADC01_IN4
+        PA4 29 I/O
+        VSS_4 30 P Default: VSS_4
+        2.7. Memory map
+        """
+
+        rows = extractor.extract_package_rows(text, "LQFP100", include_functions=True)
+
+        self.assertEqual(rows[0].alternate, "SPI0_NSS/USART1_CK/ADC01_IN4")
+
 
 if __name__ == "__main__":
     unittest.main()

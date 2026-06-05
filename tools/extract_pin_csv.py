@@ -351,8 +351,11 @@ def extract_package_rows(text: str, package: str, include_functions: bool = Fals
                 current_remap_parts = []
             continue
 
-        if include_functions and active_row_index is not None and current_function_target in {"alternate", "remap"}:
-            target_parts = raw_rows[active_row_index][3 if current_function_target == "alternate" else 4]
+        if include_functions and current_function_target in {"alternate", "remap"}:
+            if active_row_index is not None:
+                target_parts = raw_rows[active_row_index][3 if current_function_target == "alternate" else 4]
+            else:
+                target_parts = current_alternate_parts if current_function_target == "alternate" else current_remap_parts
             _append_function_part(target_parts, line)
             pending_name_parts.clear()
             continue
