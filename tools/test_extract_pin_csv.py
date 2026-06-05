@@ -62,6 +62,32 @@ class ExtractPinCsvTest(unittest.TestCase):
 
         self.assertEqual(rows[0].alternate, "SPI0_NSS/USART1_CK/ADC01_IN4")
 
+    def test_attaches_row_first_functions_to_active_pin_row(self) -> None:
+        text = """
+        2.6.2. GD32F103Vx LQFP100 pin definitions
+        Table 2-6. GD32F103Vx LQFP100 pin definitions
+        Pin Name Pins Functions description
+        PA4 29 I/O
+        Default: PA4
+        Alternate: SPI0_NSS, USART1_CK, ADC01_IN4,
+        DAC0_OUT0(4)
+        Remap:SPI2_NSS(4), I2S2_WS(4)
+        PA5 30 I/O
+        Default: PA5
+        Alternate: SPI0_SCK, ADC01_IN5, DAC0_OUT1
+        2.7. Memory map
+        """
+
+        rows = extractor.extract_package_rows(text, "LQFP100", include_functions=True)
+        by_pin_name = {row.pin_name: row for row in rows}
+
+        self.assertEqual(by_pin_name["PA4"].alternate, "SPI0_NSS/USART1_CK/ADC01_IN4/DAC0_OUT0")
+        self.assertEqual(by_pin_name["PA4"].remap, "SPI2_NSS/I2S2_WS")
+        self.assertEqual(by_pin_name["PA5"].alternate, "SPI0_SCK/ADC01_IN5/DAC0_OUT1")
+        self.assertEqual(by_pin_name["PA5"].remap, "")
+        self.assertNotIn("SPI0_NSS", by_pin_name["PA5"].alternate)
+        self.assertNotIn("SPI2_NSS", by_pin_name["PA5"].remap)
+
     def test_ignores_table_text_after_default_non_gpio_row(self) -> None:
         text = """
         2.6.2. GD32F103Vx LQFP100 pin definitions

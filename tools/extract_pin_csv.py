@@ -327,7 +327,6 @@ def extract_package_rows(text: str, package: str, include_functions: bool = Fals
                     current_alternate_parts = []
                     current_remap_parts = []
                     current_function_target = None
-                    active_row_index = None
                     pending_name_parts.clear()
                     continue
                 current_function_target = "alternate" if label == "alternate" else "remap"
