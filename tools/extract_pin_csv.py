@@ -60,6 +60,10 @@ IGNORED_PREFIXES = (
 )
 FUNCTION_LABEL_RE = re.compile(r"^(Default|Alternate|Remap):\s*(.*)$", re.I)
 FOOTNOTE_RE = re.compile(r"\(\d+\)")
+PRODUCT_PACKAGE_TITLE_RE = re.compile(r"\bGD32[A-Z0-9]+(?:xx|x)?\s+(?:[A-Z]+FP|BGA)\d+\b", re.I)
+FUNCTION_FRAGMENT_RE = re.compile(
+    r"^[A-Z][A-Z0-9_+\-/]*(?:\(\d+\))?,?(?:\s+[A-Z][A-Z0-9_+\-/]*(?:\(\d+\))?,?)*$"
+)
 
 
 def dependency_help_message(package: str = "pypdf") -> str:
@@ -282,7 +286,13 @@ def _is_ignored_continuation_line(line: str) -> bool:
         return True
     if line in {"Pin", "Type", "I/O", "Level", "Pins"}:
         return True
-    return bool(SECTION_HEADER_RE.search(line))
+    return bool(SECTION_HEADER_RE.search(line) or PRODUCT_PACKAGE_TITLE_RE.search(line))
+
+
+def _looks_like_function_fragment(line: str) -> bool:
+    if _is_ignored_continuation_line(line):
+        return False
+    return bool(FUNCTION_FRAGMENT_RE.fullmatch(line.strip()))
 
 
 def _join_pin_name(parts: Iterable[str]) -> str:
@@ -308,10 +318,11 @@ def extract_package_rows(text: str, package: str, include_functions: bool = Fals
     section = find_section(text, package)
     pending_name_parts: list[str] = []
     raw_rows: list[tuple[int | str, str, str, list[str], list[str]]] = []
-    current_alternate_parts: list[str] = []
-    current_remap_parts: list[str] = []
+    pending_alternate_parts: list[str] = []
+    pending_remap_parts: list[str] = []
     current_function_target: str | None = None
-    active_row_index: int | None = None
+    active_gpio_row_index: int | None = None
+    pending_default_pin_name: str | None = None
 
     for raw_line in section.splitlines():
         line = _clean_line(raw_line)
@@ -325,18 +336,21 @@ def extract_package_rows(text: str, package: str, include_functions: bool = Fals
                 value = function_label.group(2)
                 if label == "default":
                     default_pin_name = _clean_function_item(value)
-                    if active_row_index is not None and default_pin_name != raw_rows[active_row_index][1]:
-                        active_row_index = None
-                    current_alternate_parts = []
-                    current_remap_parts = []
+                    pending_alternate_parts = []
+                    pending_remap_parts = []
                     current_function_target = None
+                    if active_gpio_row_index is not None and default_pin_name == raw_rows[active_gpio_row_index][1]:
+                        pending_default_pin_name = None
+                    else:
+                        active_gpio_row_index = None
+                        pending_default_pin_name = default_pin_name or None
                     pending_name_parts.clear()
                     continue
                 current_function_target = "alternate" if label == "alternate" else "remap"
-                if active_row_index is not None:
-                    target_parts = raw_rows[active_row_index][3 if current_function_target == "alternate" else 4]
+                if active_gpio_row_index is not None:
+                    target_parts = raw_rows[active_gpio_row_index][3 if current_function_target == "alternate" else 4]
                 else:
-                    target_parts = current_alternate_parts if current_function_target == "alternate" else current_remap_parts
+                    target_parts = pending_alternate_parts if current_function_target == "alternate" else pending_remap_parts
                 _append_function_part(target_parts, value)
                 pending_name_parts.clear()
                 continue
@@ -356,34 +370,46 @@ def extract_package_rows(text: str, package: str, include_functions: bool = Fals
             if pin_name and not _looks_like_package_pin_name(pin_name):
                 continue
             pending_name_parts.clear()
-            row_alternate_parts = current_alternate_parts.copy()
-            row_remap_parts = current_remap_parts.copy()
+            pin_type = classify_pin(pin_name, table_type)
+            row_alternate_parts: list[str] = []
+            row_remap_parts: list[str] = []
+            if include_functions and pin_type == "gpio":
+                pending_matches_row = pending_default_pin_name is None or pending_default_pin_name == pin_name
+                if pending_matches_row:
+                    row_alternate_parts = pending_alternate_parts.copy()
+                    row_remap_parts = pending_remap_parts.copy()
+            copied_pending_target = (
+                pin_type == "gpio"
+                and (
+                    (current_function_target == "alternate" and bool(row_alternate_parts))
+                    or (current_function_target == "remap" and bool(row_remap_parts))
+                )
+            )
             raw_rows.append((pad_number, pin_name, table_type, row_alternate_parts, row_remap_parts))
             if include_functions:
-                pin_type = classify_pin(pin_name, table_type)
-                active_row_index = len(raw_rows) - 1 if pin_type == "gpio" else None
-                has_pending_target_parts = (
-                    current_function_target == "alternate"
-                    and bool(row_alternate_parts)
-                    or current_function_target == "remap"
-                    and bool(row_remap_parts)
-                )
-                if not has_pending_target_parts:
+                active_gpio_row_index = len(raw_rows) - 1 if pin_type == "gpio" else None
+                if not copied_pending_target:
                     current_function_target = None
-                current_alternate_parts = []
-                current_remap_parts = []
+                pending_default_pin_name = None
+                pending_alternate_parts = []
+                pending_remap_parts = []
             continue
 
         if include_functions and current_function_target in {"alternate", "remap"}:
             if _is_ignored_continuation_line(line):
                 current_function_target = None
-                active_row_index = None
+                pending_name_parts.clear()
+                if active_gpio_row_index is not None:
+                    active_gpio_row_index = None
+                continue
+            if not _looks_like_function_fragment(line):
+                current_function_target = None
                 pending_name_parts.clear()
                 continue
-            if active_row_index is not None:
-                target_parts = raw_rows[active_row_index][3 if current_function_target == "alternate" else 4]
+            if active_gpio_row_index is not None:
+                target_parts = raw_rows[active_gpio_row_index][3 if current_function_target == "alternate" else 4]
             else:
-                target_parts = current_alternate_parts if current_function_target == "alternate" else current_remap_parts
+                target_parts = pending_alternate_parts if current_function_target == "alternate" else pending_remap_parts
             _append_function_part(target_parts, line)
             pending_name_parts.clear()
             continue
@@ -398,7 +424,7 @@ def extract_package_rows(text: str, package: str, include_functions: bool = Fals
             pending_name_parts.clear()
             if include_functions:
                 current_function_target = None
-                active_row_index = None
+                active_gpio_row_index = None
 
     deduped: dict[int | str, tuple[str, str, list[str], list[str]]] = {}
     for pad_number, pin_name, table_type, alternate_parts, remap_parts in raw_rows:

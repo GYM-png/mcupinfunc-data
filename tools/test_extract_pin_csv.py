@@ -129,6 +129,48 @@ class ExtractPinCsvTest(unittest.TestCase):
         self.assertIn("30,VSS_4,ground,,", csv_text)
         self.assertNotIn("Table 2-6. continued", csv_text)
 
+    def test_discards_pre_row_functions_for_non_gpio_pin(self) -> None:
+        text = """
+        2.6.2. GD32F103Vx LQFP100 pin definitions
+        Table 2-6. GD32F103Vx LQFP100 pin definitions
+        Pin Name Pins Functions description
+        Default: VSS_4
+        Alternate: SHOULD_NOT_ATTACH
+        VSS_4 30 P
+        PA5 31 I/O
+        2.7. Memory map
+        """
+
+        rows = extractor.extract_package_rows(text, "LQFP100", include_functions=True)
+        csv_text = extractor.rows_to_csv_text(rows, "LQFP100", include_functions=True)
+        by_pin_name = {row.pin_name: row for row in rows}
+
+        self.assertEqual(by_pin_name["VSS_4"].alternate, "")
+        self.assertEqual(by_pin_name["VSS_4"].remap, "")
+        self.assertEqual(by_pin_name["PA5"].alternate, "")
+        self.assertNotIn("SHOULD_NOT_ATTACH", csv_text)
+
+    def test_product_title_stops_function_continuation(self) -> None:
+        text = """
+        2.6.2. GD32F103Vx LQFP100 pin definitions
+        Table 2-6. GD32F103Vx LQFP100 pin definitions
+        Pin Name Pins Functions description
+        Default: PA4
+        Alternate: SPI0_NSS,
+        GD32F103Vx LQFP100
+        USART1_CK
+        PA4 29 I/O
+        2.7. Memory map
+        """
+
+        rows = extractor.extract_package_rows(text, "LQFP100", include_functions=True)
+        by_pin_name = {row.pin_name: row for row in rows}
+        csv_text = extractor.rows_to_csv_text(rows, "LQFP100", include_functions=True)
+
+        self.assertEqual(by_pin_name["PA4"].alternate, "SPI0_NSS")
+        self.assertNotIn("GD32F103Vx LQFP100", csv_text)
+        self.assertNotIn("USART1_CK", csv_text)
+
 
 if __name__ == "__main__":
     unittest.main()
