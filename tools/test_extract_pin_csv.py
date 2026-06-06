@@ -1,4 +1,5 @@
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 
@@ -44,6 +45,32 @@ class ExtractPinCsvTest(unittest.TestCase):
         csv_text = extractor.rows_to_csv_text(rows, "LQFP100")
 
         self.assertEqual(csv_text, "PadNumber,PinName,PinType\n29,PA4,gpio\n")
+
+    def test_download_pdf_reuses_readable_cached_file(self) -> None:
+        with tempfile.TemporaryDirectory() as temp_dir:
+            cache_dir = Path(temp_dir)
+            cached_pdf = cache_dir / "GD32A513xx_Datasheet_Rev1.4.pdf"
+            cached_pdf.write_bytes(b"%PDF cached")
+            original_urlretrieve = extractor.urllib.request.urlretrieve
+
+            def fail_if_called(url: str, filename: Path) -> None:
+                raise AssertionError("download should not be attempted when cached PDF is readable")
+
+            extractor.urllib.request.urlretrieve = fail_if_called
+            try:
+                result = extractor.download_pdf(
+                    "https://download.gigadevice.com/Datasheet/GD32A513xx_Datasheet_Rev1.4.pdf",
+                    cache_dir=cache_dir,
+                )
+            finally:
+                extractor.urllib.request.urlretrieve = original_urlretrieve
+
+        self.assertEqual(result, cached_pdf)
+
+    def test_classifies_gpio_named_input_and_output_rows_as_gpio(self) -> None:
+        self.assertEqual(extractor.classify_pin("PA0", "I"), "gpio")
+        self.assertEqual(extractor.classify_pin("PB1", "O"), "gpio")
+        self.assertEqual(extractor.classify_pin("PC13-OSC32IN", "I"), "gpio")
 
     def test_keeps_wrapped_function_text_before_pin_row(self) -> None:
         text = """
@@ -188,6 +215,44 @@ class ExtractPinCsvTest(unittest.TestCase):
         self.assertEqual(by_pin_name["PA4"].alternate, "SPI0_NSS")
         self.assertNotIn("GD32F103Vx LQFP100", csv_text)
         self.assertNotIn("USART1_CK", csv_text)
+
+    def test_orphan_function_word_does_not_pollute_wrapped_pin_name(self) -> None:
+        text = """
+        2.6.2. GD32A513Vx LQFP100 pin definitions
+        Table 2-6. GD32A513Vx LQFP100 pin definitions
+        Pin Name Pins Functions description
+        PE6 5 I/O
+        Default: PE6
+        Alternate: TIMER1_CH0, TIMER1_ETI, TIMER19_MCH
+        2, I2S1_MCK, MFCOM_D5, TRIGSEL_OUT5, EVENT
+        OUT
+        PC13-
+        OSC32IN
+        6 I/O
+        Default: PC13
+        Alternate: CK_OUT, TIMER19_CH2, MFCOM_D4,
+        TRIGSEL_OUT4, EVENTOUT
+        Additional: WKUP1, OSC32IN
+        PC14-
+        OSC32IN
+        7 I/O
+        2.7. Memory map
+        """
+
+        rows = extractor.extract_package_rows(text, "LQFP100", include_functions=True)
+        by_pad = {row.pad_number: row for row in rows}
+
+        self.assertEqual(
+            by_pad[5].alternate,
+            "TIMER1_CH0/TIMER1_ETI/TIMER19_MCH2/I2S1_MCK/MFCOM_D5/TRIGSEL_OUT5/EVENTOUT",
+        )
+        self.assertEqual(by_pad[6].pin_name, "PC13-OSC32IN")
+        self.assertEqual(by_pad[6].pin_type, "gpio")
+        self.assertEqual(
+            by_pad[6].alternate,
+            "CK_OUT/TIMER19_CH2/MFCOM_D4/TRIGSEL_OUT4/EVENTOUT/WKUP1/OSC32IN",
+        )
+        self.assertEqual(by_pad[7].pin_name, "PC14-OSC32IN")
 
 
 if __name__ == "__main__":

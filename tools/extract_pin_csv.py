@@ -58,11 +58,11 @@ IGNORED_PREFIXES = (
     "Notes:",
     "(",
 )
-FUNCTION_LABEL_RE = re.compile(r"^(Default|Alternate|Remap):\s*(.*)$", re.I)
+FUNCTION_LABEL_RE = re.compile(r"^(Default|Alternate|Additional|Remap):\s*(.*)$", re.I)
 FOOTNOTE_RE = re.compile(r"\(\d+\)")
 PRODUCT_PACKAGE_TITLE_RE = re.compile(r"\bGD32[A-Z0-9]+(?:xx|x)?\s+(?:[A-Z]+FP|BGA)\d+\b", re.I)
 FUNCTION_FRAGMENT_RE = re.compile(
-    r"^[A-Z][A-Z0-9_+\-/]*(?:\(\d+\))?,?(?:\s+[A-Z][A-Z0-9_+\-/]*(?:\(\d+\))?,?)*$"
+    r"^[A-Z0-9][A-Z0-9_+\-/]*(?:\(\d+\))?,?(?:\s+[A-Z0-9][A-Z0-9_+\-/]*(?:\(\d+\))?,?)*$"
 )
 
 
@@ -161,14 +161,16 @@ def classify_pin(pin_name: str, table_type: str) -> str:
         return "ground"
     if name == "NRST":
         return "reset"
+    if name == "BOOT0":
+        return "boot"
     if table_type == "P" or name in power_names:
         return "power"
+    if re.match(r"^P[A-Z]\d{1,2}(?:[-/]|$)", name):
+        return "gpio"
     if table_type == "I/O":
         return "gpio"
-    if table_type == "I":
-        return "input"
-    if table_type == "O":
-        return "output"
+    if "OSC" in name or "XTAL" in name:
+        return "clock"
     return "other"
 
 
@@ -193,6 +195,10 @@ def download_pdf(url: str, cache_dir: Path | None = None) -> Path:
     if not filename.lower().endswith(".pdf"):
         filename += ".pdf"
     out_path = cache_dir / filename
+    if out_path.is_file() and out_path.stat().st_size > 0:
+        with out_path.open("rb") as existing_pdf:
+            existing_pdf.read(1)
+        return out_path
     urllib.request.urlretrieve(url, out_path)
     return out_path
 
@@ -217,12 +223,38 @@ def _function_cell(parts: list[str]) -> str:
 
 def _append_function_part(parts: list[str], value: str) -> None:
     value = value.strip().rstrip(".;")
-    if value:
-        parts.append(value)
+    if not value:
+        return
+    if parts:
+        numeric_suffix = re.match(r"^(?P<suffix>\d+),\s*(?P<rest>.*)$", value)
+        if numeric_suffix:
+            parts[-1] = parts[-1].rstrip() + numeric_suffix.group("suffix")
+            value = numeric_suffix.group("rest").strip().rstrip(".;")
+            if not value:
+                return
+        elif value == "OUT":
+            previous = parts[-1].rstrip()
+            if previous.rsplit(",", 1)[-1].strip() == "EVENT":
+                parts[-1] = previous + value
+                return
+    parts.append(value)
 
 
 def _looks_like_package_pin_name(pin_name: str) -> bool:
     return bool(PACKAGE_PIN_NAME_RE.fullmatch(pin_name.strip()))
+
+
+def _can_start_package_pin_name_fragment(line: str) -> bool:
+    value = line.strip()
+    if _looks_like_package_pin_name(value):
+        return True
+    return bool(re.fullmatch(r"P[A-Z]\d{1,2}[-/]?", value, re.I))
+
+
+def _default_matches_pin_name(default_pin_name: str, pin_name: str) -> bool:
+    default = default_pin_name.upper()
+    name = pin_name.upper()
+    return name == default or name.startswith(f"{default}-") or name.startswith(f"{default}/")
 
 
 def _valid_package_row_match(match: re.Match[str]) -> bool:
@@ -340,7 +372,9 @@ def extract_package_rows(text: str, package: str, include_functions: bool = Fals
                     pending_alternate_parts = []
                     pending_remap_parts = []
                     current_function_target = None
-                    if active_gpio_row_index is not None and default_pin_name == raw_rows[active_gpio_row_index][1]:
+                    if active_gpio_row_index is not None and _default_matches_pin_name(
+                        default_pin_name, raw_rows[active_gpio_row_index][1]
+                    ):
                         pending_default_pin_name = None
                     else:
                         active_gpio_row_index = None
@@ -348,7 +382,7 @@ def extract_package_rows(text: str, package: str, include_functions: bool = Fals
                     allow_bare_pre_row_functions = True
                     pending_name_parts.clear()
                     continue
-                current_function_target = "alternate" if label == "alternate" else "remap"
+                current_function_target = "remap" if label == "remap" else "alternate"
                 if active_gpio_row_index is not None:
                     target_parts = raw_rows[active_gpio_row_index][3 if current_function_target == "alternate" else 4]
                 else:
@@ -380,7 +414,9 @@ def extract_package_rows(text: str, package: str, include_functions: bool = Fals
             row_alternate_parts: list[str] = []
             row_remap_parts: list[str] = []
             if include_functions and pin_type == "gpio":
-                pending_matches_row = pending_default_pin_name is None or pending_default_pin_name == pin_name
+                pending_matches_row = pending_default_pin_name is None or _default_matches_pin_name(
+                    pending_default_pin_name, pin_name
+                )
                 if pending_matches_row:
                     row_alternate_parts = pending_alternate_parts.copy()
                     row_remap_parts = pending_remap_parts.copy()
@@ -402,7 +438,8 @@ def extract_package_rows(text: str, package: str, include_functions: bool = Fals
                 pending_remap_parts = []
             continue
 
-        if include_functions and current_function_target in {"alternate", "remap"}:
+        starts_pin_name = _is_candidate_name_fragment(line) and _can_start_package_pin_name_fragment(line)
+        if include_functions and current_function_target in {"alternate", "remap"} and not starts_pin_name:
             if _is_ignored_continuation_line(line):
                 current_function_target = None
                 pending_name_parts.clear()
@@ -422,9 +459,14 @@ def extract_package_rows(text: str, package: str, include_functions: bool = Fals
             continue
 
         if _is_candidate_name_fragment(line):
+            if include_functions and _can_start_package_pin_name_fragment(line):
+                current_function_target = None
+                active_gpio_row_index = None
             if raw_rows and raw_rows[-1][1].endswith("-") and not pending_name_parts:
                 pad, old_name, old_type, alternate_parts, remap_parts = raw_rows[-1]
                 raw_rows[-1] = (pad, _join_pin_name([old_name, line]), old_type, alternate_parts, remap_parts)
+            elif not pending_name_parts and not _can_start_package_pin_name_fragment(line):
+                pending_name_parts.clear()
             else:
                 pending_name_parts.append(line)
         else:
