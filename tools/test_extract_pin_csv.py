@@ -150,6 +150,24 @@ class ExtractPinCsvTest(unittest.TestCase):
         self.assertEqual(by_pin_name["PA5"].alternate, "")
         self.assertNotIn("SHOULD_NOT_ATTACH", csv_text)
 
+    def test_bare_function_after_non_gpio_row_does_not_attach_to_next_gpio(self) -> None:
+        text = """
+        2.6.2. GD32F103Vx LQFP100 pin definitions
+        Table 2-6. GD32F103Vx LQFP100 pin definitions
+        Pin Name Pins Functions description
+        VSS_4 30 P
+        Alternate: SHOULD_NOT_ATTACH
+        PA5 31 I/O
+        2.7. Memory map
+        """
+
+        rows = extractor.extract_package_rows(text, "LQFP100", include_functions=True)
+        csv_text = extractor.rows_to_csv_text(rows, "LQFP100", include_functions=True)
+        by_pin_name = {row.pin_name: row for row in rows}
+
+        self.assertEqual(by_pin_name["PA5"].alternate, "")
+        self.assertNotIn("SHOULD_NOT_ATTACH", csv_text)
+
     def test_product_title_stops_function_continuation(self) -> None:
         text = """
         2.6.2. GD32F103Vx LQFP100 pin definitions

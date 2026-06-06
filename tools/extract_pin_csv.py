@@ -323,6 +323,7 @@ def extract_package_rows(text: str, package: str, include_functions: bool = Fals
     current_function_target: str | None = None
     active_gpio_row_index: int | None = None
     pending_default_pin_name: str | None = None
+    allow_bare_pre_row_functions = True
 
     for raw_line in section.splitlines():
         line = _clean_line(raw_line)
@@ -344,12 +345,17 @@ def extract_package_rows(text: str, package: str, include_functions: bool = Fals
                     else:
                         active_gpio_row_index = None
                         pending_default_pin_name = default_pin_name or None
+                    allow_bare_pre_row_functions = True
                     pending_name_parts.clear()
                     continue
                 current_function_target = "alternate" if label == "alternate" else "remap"
                 if active_gpio_row_index is not None:
                     target_parts = raw_rows[active_gpio_row_index][3 if current_function_target == "alternate" else 4]
                 else:
+                    if not allow_bare_pre_row_functions:
+                        current_function_target = None
+                        pending_name_parts.clear()
+                        continue
                     target_parts = pending_alternate_parts if current_function_target == "alternate" else pending_remap_parts
                 _append_function_part(target_parts, value)
                 pending_name_parts.clear()
@@ -388,6 +394,7 @@ def extract_package_rows(text: str, package: str, include_functions: bool = Fals
             raw_rows.append((pad_number, pin_name, table_type, row_alternate_parts, row_remap_parts))
             if include_functions:
                 active_gpio_row_index = len(raw_rows) - 1 if pin_type == "gpio" else None
+                allow_bare_pre_row_functions = pin_type == "gpio"
                 if not copied_pending_target:
                     current_function_target = None
                 pending_default_pin_name = None
