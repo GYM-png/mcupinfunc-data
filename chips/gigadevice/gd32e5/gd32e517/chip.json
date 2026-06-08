@@ -1,0 +1,6712 @@
+{
+  "id": "GD32E517",
+  "displayName": "GD32E517",
+  "vendor": "GigaDevice",
+  "family": "GD32E5",
+  "functionSource": "pinout-csv",
+  "pins": [
+    {
+      "name": "PA1",
+      "port": "A",
+      "number": 1,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PA1_IN",
+            "PA1_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PA1_OUT",
+            "PA1_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PA2",
+      "port": "A",
+      "number": 2,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PA2_IN",
+            "PA2_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PA2_OUT",
+            "PA2_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PA3",
+      "port": "A",
+      "number": 3,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PA3_IN",
+            "PA3_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PA3_OUT",
+            "PA3_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PA4",
+      "port": "A",
+      "number": 4,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PA4_IN",
+            "PA4_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PA4_OUT",
+            "PA4_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PA5",
+      "port": "A",
+      "number": 5,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PA5_IN",
+            "PA5_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PA5_OUT",
+            "PA5_GPIO_OUT"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "SPI2_NSS",
+          "peripheral": "SPI2",
+          "signal": "NSS",
+          "aliases": [
+            "SPI2_NSS"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "I2S2_WS",
+          "peripheral": "I2S2",
+          "signal": "WS",
+          "aliases": [
+            "I2S2_WS"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PA6",
+      "port": "A",
+      "number": 6,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PA6_IN",
+            "PA6_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PA6_OUT",
+            "PA6_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PA7",
+      "port": "A",
+      "number": 7,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PA7_IN",
+            "PA7_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PA7_OUT",
+            "PA7_GPIO_OUT"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "TIMER0_BRKIN",
+          "peripheral": "TIMER0",
+          "signal": "BRKIN",
+          "aliases": [
+            "TIMER0_BRKIN"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PA8",
+      "port": "A",
+      "number": 8,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PA8_IN",
+            "PA8_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PA8_OUT",
+            "PA8_GPIO_OUT"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "TIMER2_CH3",
+          "peripheral": "TIMER2",
+          "signal": "CH3",
+          "aliases": [
+            "TIMER2_CH3"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PA9",
+      "port": "A",
+      "number": 9,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PA9_IN",
+            "PA9_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PA9_OUT",
+            "PA9_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PA10",
+      "port": "A",
+      "number": 10,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PA10_IN",
+            "PA10_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PA10_OUT",
+            "PA10_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PA11",
+      "port": "A",
+      "number": 11,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PA11_IN",
+            "PA11_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PA11_OUT",
+            "PA11_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PA12",
+      "port": "A",
+      "number": 12,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PA12_IN",
+            "PA12_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PA12_OUT",
+            "PA12_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PA13",
+      "port": "A",
+      "number": 13,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PA13_IN",
+            "PA13_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PA13_OUT",
+            "PA13_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PA14",
+      "port": "A",
+      "number": 14,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PA14_IN",
+            "PA14_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PA14_OUT",
+            "PA14_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PA15",
+      "port": "A",
+      "number": 15,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PA15_IN",
+            "PA15_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PA15_OUT",
+            "PA15_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PB0",
+      "port": "B",
+      "number": 0,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PB0_IN",
+            "PB0_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PB0_OUT",
+            "PB0_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PB1",
+      "port": "B",
+      "number": 1,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PB1_IN",
+            "PB1_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PB1_OUT",
+            "PB1_GPIO_OUT"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "TIMER0_CH1_ON",
+          "peripheral": "TIMER0",
+          "signal": "CH1_ON",
+          "aliases": [
+            "TIMER0_CH1_ON"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PB2",
+      "port": "B",
+      "number": 2,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PB2_IN",
+            "PB2_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PB2_OUT",
+            "PB2_GPIO_OUT"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "TIMER0_CH2_ON",
+          "peripheral": "TIMER0",
+          "signal": "CH2_ON",
+          "aliases": [
+            "TIMER0_CH2_ON"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PB3",
+      "port": "B",
+      "number": 3,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PB3_IN",
+            "PB3_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PB3_OUT",
+            "PB3_GPIO_OUT"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "USART1_CK",
+          "peripheral": "USART1",
+          "signal": "CK",
+          "aliases": [
+            "USART1_CK"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PB4",
+      "port": "B",
+      "number": 4,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PB4_IN",
+            "PB4_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PB4_OUT",
+            "PB4_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PB5",
+      "port": "B",
+      "number": 5,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PB5_IN",
+            "PB5_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PB5_OUT",
+            "PB5_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PB6",
+      "port": "B",
+      "number": 6,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PB6_IN",
+            "PB6_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PB6_OUT",
+            "PB6_GPIO_OUT"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "TIMER2_CH1",
+          "peripheral": "TIMER2",
+          "signal": "CH1",
+          "aliases": [
+            "TIMER2_CH1"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "SPI0_MOSI",
+          "peripheral": "SPI0",
+          "signal": "MOSI",
+          "aliases": [
+            "SPI0_MOSI"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "CAN1_RX",
+          "peripheral": "CAN1",
+          "signal": "RX",
+          "aliases": [
+            "CAN1_RX"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PB7",
+      "port": "B",
+      "number": 7,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PB7_IN",
+            "PB7_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PB7_OUT",
+            "PB7_GPIO_OUT"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "USART0_TX",
+          "peripheral": "USART0",
+          "signal": "TX",
+          "aliases": [
+            "USART0_TX"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "CAN1_TX",
+          "peripheral": "CAN1",
+          "signal": "TX",
+          "aliases": [
+            "CAN1_TX"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "SPI0_IO2",
+          "peripheral": "SPI0",
+          "signal": "IO2",
+          "aliases": [
+            "SPI0_IO2"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PB8",
+      "port": "B",
+      "number": 8,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PB8_IN",
+            "PB8_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PB8_OUT",
+            "PB8_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PB9",
+      "port": "B",
+      "number": 9,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PB9_IN",
+            "PB9_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PB9_OUT",
+            "PB9_GPIO_OUT"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "I2C0_SCL",
+          "peripheral": "I2C0",
+          "signal": "SCL",
+          "aliases": [
+            "I2C0_SCL"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "CAN0_RX",
+          "peripheral": "CAN0",
+          "signal": "RX",
+          "aliases": [
+            "CAN0_RX"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PB10",
+      "port": "B",
+      "number": 10,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PB10_IN",
+            "PB10_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PB10_OUT",
+            "PB10_GPIO_OUT"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "TIMER0_BRKIN",
+          "peripheral": "TIMER0",
+          "signal": "BRKIN",
+          "aliases": [
+            "TIMER0_BRKIN"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PB11",
+      "port": "B",
+      "number": 11,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PB11_IN",
+            "PB11_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PB11_OUT",
+            "PB11_GPIO_OUT"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "TIMER1_CH2",
+          "peripheral": "TIMER1",
+          "signal": "CH2",
+          "aliases": [
+            "TIMER1_CH2"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PB12",
+      "port": "B",
+      "number": 12,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PB12_IN",
+            "PB12_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PB12_OUT",
+            "PB12_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PB13",
+      "port": "B",
+      "number": 13,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PB13_IN",
+            "PB13_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PB13_OUT",
+            "PB13_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PB14",
+      "port": "B",
+      "number": 14,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PB14_IN",
+            "PB14_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PB14_OUT",
+            "PB14_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PB15",
+      "port": "B",
+      "number": 15,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PB15_IN",
+            "PB15_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PB15_OUT",
+            "PB15_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PC0",
+      "port": "C",
+      "number": 0,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PC0_IN",
+            "PC0_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PC0_OUT",
+            "PC0_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PC1",
+      "port": "C",
+      "number": 1,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PC1_IN",
+            "PC1_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PC1_OUT",
+            "PC1_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PC2",
+      "port": "C",
+      "number": 2,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PC2_IN",
+            "PC2_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PC2_OUT",
+            "PC2_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PC3",
+      "port": "C",
+      "number": 3,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PC3_IN",
+            "PC3_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PC3_OUT",
+            "PC3_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PC4",
+      "port": "C",
+      "number": 4,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PC4_IN",
+            "PC4_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PC4_OUT",
+            "PC4_GPIO_OUT"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "TIMER0_CH0_ON",
+          "peripheral": "TIMER0",
+          "signal": "CH0_ON",
+          "aliases": [
+            "TIMER0_CH0_ON"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PC5",
+      "port": "C",
+      "number": 5,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PC5_IN",
+            "PC5_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PC5_OUT",
+            "PC5_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PC6",
+      "port": "C",
+      "number": 6,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PC6_IN",
+            "PC6_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PC6_OUT",
+            "PC6_GPIO_OUT"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "TIMER3_CH3",
+          "peripheral": "TIMER3",
+          "signal": "CH3",
+          "aliases": [
+            "TIMER3_CH3"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "CTC_SYNC",
+          "peripheral": "CTC",
+          "signal": "SYNC",
+          "aliases": [
+            "CTC_SYNC"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PC7",
+      "port": "C",
+      "number": 7,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PC7_IN",
+            "PC7_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PC7_OUT",
+            "PC7_GPIO_OUT"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "TIMER2_CH0",
+          "peripheral": "TIMER2",
+          "signal": "CH0",
+          "aliases": [
+            "TIMER2_CH0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PC8",
+      "port": "C",
+      "number": 8,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PC8_IN",
+            "PC8_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PC8_OUT",
+            "PC8_GPIO_OUT"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "TIMER2_CH1",
+          "peripheral": "TIMER2",
+          "signal": "CH1",
+          "aliases": [
+            "TIMER2_CH1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PC9",
+      "port": "C",
+      "number": 9,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PC9_IN",
+            "PC9_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PC9_OUT",
+            "PC9_GPIO_OUT"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "TIMER2_CH2",
+          "peripheral": "TIMER2",
+          "signal": "CH2",
+          "aliases": [
+            "TIMER2_CH2"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PC10",
+      "port": "C",
+      "number": 10,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PC10_IN",
+            "PC10_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PC10_OUT",
+            "PC10_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PC11",
+      "port": "C",
+      "number": 11,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PC11_IN",
+            "PC11_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PC11_OUT",
+            "PC11_GPIO_OUT"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "USART2_TX",
+          "peripheral": "USART2",
+          "signal": "TX",
+          "aliases": [
+            "USART2_TX"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "SPI2_SCK",
+          "peripheral": "SPI2",
+          "signal": "SCK",
+          "aliases": [
+            "SPI2_SCK"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "I2S2_CK",
+          "peripheral": "I2S2",
+          "signal": "CK",
+          "aliases": [
+            "I2S2_CK"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PC12",
+      "port": "C",
+      "number": 12,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PC12_IN",
+            "PC12_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PC12_OUT",
+            "PC12_GPIO_OUT"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "USART2_RX",
+          "peripheral": "USART2",
+          "signal": "RX",
+          "aliases": [
+            "USART2_RX"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "SPI2_MISO",
+          "peripheral": "SPI2",
+          "signal": "MISO",
+          "aliases": [
+            "SPI2_MISO"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PD0",
+      "port": "D",
+      "number": 0,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PD0_IN",
+            "PD0_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PD0_OUT",
+            "PD0_GPIO_OUT"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "USART2_CK",
+          "peripheral": "USART2",
+          "signal": "CK",
+          "aliases": [
+            "USART2_CK"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "SPI2_MOSI",
+          "peripheral": "SPI2",
+          "signal": "MOSI",
+          "aliases": [
+            "SPI2_MOSI"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "I2S2_SD",
+          "peripheral": "I2S2",
+          "signal": "SD",
+          "aliases": [
+            "I2S2_SD"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PD1",
+      "port": "D",
+      "number": 1,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PD1_IN",
+            "PD1_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PD1_OUT",
+            "PD1_GPIO_OUT"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "CAN0_RX",
+          "peripheral": "CAN0",
+          "signal": "RX",
+          "aliases": [
+            "CAN0_RX"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PD2",
+      "port": "D",
+      "number": 2,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PD2_IN",
+            "PD2_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PD2_OUT",
+            "PD2_GPIO_OUT"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "USART2_CK",
+          "peripheral": "USART2",
+          "signal": "CK",
+          "aliases": [
+            "USART2_CK"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "SPI2_MOSI",
+          "peripheral": "SPI2",
+          "signal": "MOSI",
+          "aliases": [
+            "SPI2_MOSI"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "I2S2_SD",
+          "peripheral": "I2S2",
+          "signal": "SD",
+          "aliases": [
+            "I2S2_SD"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "CAN0_TX",
+          "peripheral": "CAN0",
+          "signal": "TX",
+          "aliases": [
+            "CAN0_TX"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PD3",
+      "port": "D",
+      "number": 3,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PD3_IN",
+            "PD3_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PD3_OUT",
+            "PD3_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PD4",
+      "port": "D",
+      "number": 4,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PD4_IN",
+            "PD4_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PD4_OUT",
+            "PD4_GPIO_OUT"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "USART1_CTS",
+          "peripheral": "USART1",
+          "signal": "CTS",
+          "aliases": [
+            "USART1_CTS"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PD5",
+      "port": "D",
+      "number": 5,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PD5_IN",
+            "PD5_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PD5_OUT",
+            "PD5_GPIO_OUT"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "USART1_RTS",
+          "peripheral": "USART1",
+          "signal": "RTS",
+          "aliases": [
+            "USART1_RTS"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PD6",
+      "port": "D",
+      "number": 6,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PD6_IN",
+            "PD6_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PD6_OUT",
+            "PD6_GPIO_OUT"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "USART1_TX",
+          "peripheral": "USART1",
+          "signal": "TX",
+          "aliases": [
+            "USART1_TX"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PD7",
+      "port": "D",
+      "number": 7,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PD7_IN",
+            "PD7_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PD7_OUT",
+            "PD7_GPIO_OUT"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "USART1_RX",
+          "peripheral": "USART1",
+          "signal": "RX",
+          "aliases": [
+            "USART1_RX"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PD8",
+      "port": "D",
+      "number": 8,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PD8_IN",
+            "PD8_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PD8_OUT",
+            "PD8_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PD9",
+      "port": "D",
+      "number": 9,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PD9_IN",
+            "PD9_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PD9_OUT",
+            "PD9_GPIO_OUT"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "USART2_TX",
+          "peripheral": "USART2",
+          "signal": "TX",
+          "aliases": [
+            "USART2_TX"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "ETH_MII_RX_DV",
+          "peripheral": "ETH",
+          "signal": "MII_RX_DV",
+          "aliases": [
+            "ETH_MII_RX_DV"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "ETH_RMII_CRS_DV",
+          "peripheral": "ETH",
+          "signal": "RMII_CRS_DV",
+          "aliases": [
+            "ETH_RMII_CRS_DV"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PD10",
+      "port": "D",
+      "number": 10,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PD10_IN",
+            "PD10_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PD10_OUT",
+            "PD10_GPIO_OUT"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "USART2_RX",
+          "peripheral": "USART2",
+          "signal": "RX",
+          "aliases": [
+            "USART2_RX"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "ETH_MII_RXD0",
+          "peripheral": "ETH",
+          "signal": "MII_RXD0",
+          "aliases": [
+            "ETH_MII_RXD0"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "ETH_RMII_RXD0",
+          "peripheral": "ETH",
+          "signal": "RMII_RXD0",
+          "aliases": [
+            "ETH_RMII_RXD0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PD11",
+      "port": "D",
+      "number": 11,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PD11_IN",
+            "PD11_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PD11_OUT",
+            "PD11_GPIO_OUT"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "USART2_CK",
+          "peripheral": "USART2",
+          "signal": "CK",
+          "aliases": [
+            "USART2_CK"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "ETH_MII_RXD1",
+          "peripheral": "ETH",
+          "signal": "MII_RXD1",
+          "aliases": [
+            "ETH_MII_RXD1"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "ETH_RMII_RXD1",
+          "peripheral": "ETH",
+          "signal": "RMII_RXD1",
+          "aliases": [
+            "ETH_RMII_RXD1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PD12",
+      "port": "D",
+      "number": 12,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PD12_IN",
+            "PD12_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PD12_OUT",
+            "PD12_GPIO_OUT"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "USART2_CTS",
+          "peripheral": "USART2",
+          "signal": "CTS",
+          "aliases": [
+            "USART2_CTS"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "ETH_MII_RXD2",
+          "peripheral": "ETH",
+          "signal": "MII_RXD2",
+          "aliases": [
+            "ETH_MII_RXD2"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PD13",
+      "port": "D",
+      "number": 13,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PD13_IN",
+            "PD13_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PD13_OUT",
+            "PD13_GPIO_OUT"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "TIMER3_CH0",
+          "peripheral": "TIMER3",
+          "signal": "CH0",
+          "aliases": [
+            "TIMER3_CH0"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "USART2_RTS",
+          "peripheral": "USART2",
+          "signal": "RTS",
+          "aliases": [
+            "USART2_RTS"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "ETH_MII_RXD3",
+          "peripheral": "ETH",
+          "signal": "MII_RXD3",
+          "aliases": [
+            "ETH_MII_RXD3"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PD14",
+      "port": "D",
+      "number": 14,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PD14_IN",
+            "PD14_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PD14_OUT",
+            "PD14_GPIO_OUT"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "TIMER3_CH1",
+          "peripheral": "TIMER3",
+          "signal": "CH1",
+          "aliases": [
+            "TIMER3_CH1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PD15",
+      "port": "D",
+      "number": 15,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PD15_IN",
+            "PD15_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PD15_OUT",
+            "PD15_GPIO_OUT"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "TIMER3_CH2",
+          "peripheral": "TIMER3",
+          "signal": "CH2",
+          "aliases": [
+            "TIMER3_CH2"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PE0",
+      "port": "E",
+      "number": 0,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PE0_IN",
+            "PE0_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PE0_OUT",
+            "PE0_GPIO_OUT"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "I2C0_SDA",
+          "peripheral": "I2C0",
+          "signal": "SDA",
+          "aliases": [
+            "I2C0_SDA"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "CAN0_TX",
+          "peripheral": "CAN0",
+          "signal": "TX",
+          "aliases": [
+            "CAN0_TX"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PE1",
+      "port": "E",
+      "number": 1,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PE1_IN",
+            "PE1_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PE1_OUT",
+            "PE1_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PE2",
+      "port": "E",
+      "number": 2,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PE2_IN",
+            "PE2_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PE2_OUT",
+            "PE2_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PE3",
+      "port": "E",
+      "number": 3,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PE3_IN",
+            "PE3_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PE3_OUT",
+            "PE3_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PE4",
+      "port": "E",
+      "number": 4,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PE4_IN",
+            "PE4_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PE4_OUT",
+            "PE4_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PE5",
+      "port": "E",
+      "number": 5,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PE5_IN",
+            "PE5_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PE5_OUT",
+            "PE5_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PE6",
+      "port": "E",
+      "number": 6,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PE6_IN",
+            "PE6_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PE6_OUT",
+            "PE6_GPIO_OUT"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "TIMER8_CH0",
+          "peripheral": "TIMER8",
+          "signal": "CH0",
+          "aliases": [
+            "TIMER8_CH0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PE7",
+      "port": "E",
+      "number": 7,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PE7_IN",
+            "PE7_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PE7_OUT",
+            "PE7_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PE8",
+      "port": "E",
+      "number": 8,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PE8_IN",
+            "PE8_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PE8_OUT",
+            "PE8_GPIO_OUT"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "TIMER0_ETI",
+          "peripheral": "TIMER0",
+          "signal": "ETI",
+          "aliases": [
+            "TIMER0_ETI"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PE9",
+      "port": "E",
+      "number": 9,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PE9_IN",
+            "PE9_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PE9_OUT",
+            "PE9_GPIO_OUT"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "TIMER0_CH0_ON",
+          "peripheral": "TIMER0",
+          "signal": "CH0_ON",
+          "aliases": [
+            "TIMER0_CH0_ON"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PE10",
+      "port": "E",
+      "number": 10,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PE10_IN",
+            "PE10_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PE10_OUT",
+            "PE10_GPIO_OUT"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "TIMER0_CH0",
+          "peripheral": "TIMER0",
+          "signal": "CH0",
+          "aliases": [
+            "TIMER0_CH0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PE11",
+      "port": "E",
+      "number": 11,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PE11_IN",
+            "PE11_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PE11_OUT",
+            "PE11_GPIO_OUT"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "TIMER0_CH1_ON",
+          "peripheral": "TIMER0",
+          "signal": "CH1_ON",
+          "aliases": [
+            "TIMER0_CH1_ON"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PE12",
+      "port": "E",
+      "number": 12,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PE12_IN",
+            "PE12_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PE12_OUT",
+            "PE12_GPIO_OUT"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "TIMER0_CH1",
+          "peripheral": "TIMER0",
+          "signal": "CH1",
+          "aliases": [
+            "TIMER0_CH1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PE13",
+      "port": "E",
+      "number": 13,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PE13_IN",
+            "PE13_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PE13_OUT",
+            "PE13_GPIO_OUT"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "TIMER0_CH2_ON",
+          "peripheral": "TIMER0",
+          "signal": "CH2_ON",
+          "aliases": [
+            "TIMER0_CH2_ON"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PE14",
+      "port": "E",
+      "number": 14,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PE14_IN",
+            "PE14_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PE14_OUT",
+            "PE14_GPIO_OUT"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "TIMER0_CH2",
+          "peripheral": "TIMER0",
+          "signal": "CH2",
+          "aliases": [
+            "TIMER0_CH2"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PE15",
+      "port": "E",
+      "number": 15,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PE15_IN",
+            "PE15_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PE15_OUT",
+            "PE15_GPIO_OUT"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "TIMER0_CH3",
+          "peripheral": "TIMER0",
+          "signal": "CH3",
+          "aliases": [
+            "TIMER0_CH3"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PF0",
+      "port": "F",
+      "number": 0,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PF0_IN",
+            "PF0_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PF0_OUT",
+            "PF0_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PF1",
+      "port": "F",
+      "number": 1,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PF1_IN",
+            "PF1_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PF1_OUT",
+            "PF1_GPIO_OUT"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "CTC_SYNC",
+          "peripheral": "CTC",
+          "signal": "SYNC",
+          "aliases": [
+            "CTC_SYNC"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PF2",
+      "port": "F",
+      "number": 2,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PF2_IN",
+            "PF2_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PF2_OUT",
+            "PF2_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PF3",
+      "port": "F",
+      "number": 3,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PF3_IN",
+            "PF3_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PF3_OUT",
+            "PF3_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PF4",
+      "port": "F",
+      "number": 4,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PF4_IN",
+            "PF4_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PF4_OUT",
+            "PF4_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PF5",
+      "port": "F",
+      "number": 5,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PF5_IN",
+            "PF5_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PF5_OUT",
+            "PF5_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PF6",
+      "port": "F",
+      "number": 6,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PF6_IN",
+            "PF6_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PF6_OUT",
+            "PF6_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PF7",
+      "port": "F",
+      "number": 7,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PF7_IN",
+            "PF7_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PF7_OUT",
+            "PF7_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PF8",
+      "port": "F",
+      "number": 8,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PF8_IN",
+            "PF8_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PF8_OUT",
+            "PF8_GPIO_OUT"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "TIMER10_CH0",
+          "peripheral": "TIMER10",
+          "signal": "CH0",
+          "aliases": [
+            "TIMER10_CH0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PF9",
+      "port": "F",
+      "number": 9,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PF9_IN",
+            "PF9_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PF9_OUT",
+            "PF9_GPIO_OUT"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "TIMER12_CH0",
+          "peripheral": "TIMER12",
+          "signal": "CH0",
+          "aliases": [
+            "TIMER12_CH0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PF10",
+      "port": "F",
+      "number": 10,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PF10_IN",
+            "PF10_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PF10_OUT",
+            "PF10_GPIO_OUT"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "TIMER13_CH0",
+          "peripheral": "TIMER13",
+          "signal": "CH0",
+          "aliases": [
+            "TIMER13_CH0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PF11",
+      "port": "F",
+      "number": 11,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PF11_IN",
+            "PF11_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PF11_OUT",
+            "PF11_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PF12",
+      "port": "F",
+      "number": 12,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PF12_IN",
+            "PF12_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PF12_OUT",
+            "PF12_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PF13",
+      "port": "F",
+      "number": 13,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PF13_IN",
+            "PF13_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PF13_OUT",
+            "PF13_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PF14",
+      "port": "F",
+      "number": 14,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PF14_IN",
+            "PF14_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PF14_OUT",
+            "PF14_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PF15",
+      "port": "F",
+      "number": 15,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PF15_IN",
+            "PF15_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PF15_OUT",
+            "PF15_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PG0",
+      "port": "G",
+      "number": 0,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PG0_IN",
+            "PG0_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PG0_OUT",
+            "PG0_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PG1",
+      "port": "G",
+      "number": 1,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PG1_IN",
+            "PG1_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PG1_OUT",
+            "PG1_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PG2",
+      "port": "G",
+      "number": 2,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PG2_IN",
+            "PG2_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PG2_OUT",
+            "PG2_GPIO_OUT"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "TIMER3_CH3",
+          "peripheral": "TIMER3",
+          "signal": "CH3",
+          "aliases": [
+            "TIMER3_CH3"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "CTC_SYNC",
+          "peripheral": "CTC",
+          "signal": "SYNC",
+          "aliases": [
+            "CTC_SYNC"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PG3",
+      "port": "G",
+      "number": 3,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PG3_IN",
+            "PG3_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PG3_OUT",
+            "PG3_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PG4",
+      "port": "G",
+      "number": 4,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PG4_IN",
+            "PG4_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PG4_OUT",
+            "PG4_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PG5",
+      "port": "G",
+      "number": 5,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PG5_IN",
+            "PG5_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PG5_OUT",
+            "PG5_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PG6",
+      "port": "G",
+      "number": 6,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PG6_IN",
+            "PG6_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PG6_OUT",
+            "PG6_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PG7",
+      "port": "G",
+      "number": 7,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PG7_IN",
+            "PG7_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PG7_OUT",
+            "PG7_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PG8",
+      "port": "G",
+      "number": 8,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PG8_IN",
+            "PG8_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PG8_OUT",
+            "PG8_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PG9",
+      "port": "G",
+      "number": 9,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PG9_IN",
+            "PG9_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PG9_OUT",
+            "PG9_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PG10",
+      "port": "G",
+      "number": 10,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PG10_IN",
+            "PG10_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PG10_OUT",
+            "PG10_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PG11",
+      "port": "G",
+      "number": 11,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PG11_IN",
+            "PG11_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PG11_OUT",
+            "PG11_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PG12",
+      "port": "G",
+      "number": 12,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PG12_IN",
+            "PG12_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PG12_OUT",
+            "PG12_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PG13",
+      "port": "G",
+      "number": 13,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PG13_IN",
+            "PG13_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PG13_OUT",
+            "PG13_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PG14",
+      "port": "G",
+      "number": 14,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PG14_IN",
+            "PG14_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PG14_OUT",
+            "PG14_GPIO_OUT"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PG15",
+      "port": "G",
+      "number": 15,
+      "functions": [
+        {
+          "af": "GPIO",
+          "raw": "GPIO_IN",
+          "peripheral": "GPIO",
+          "signal": "IN",
+          "aliases": [
+            "PG15_IN",
+            "PG15_GPIO_IN"
+          ]
+        },
+        {
+          "af": "GPIO",
+          "raw": "GPIO_OUT",
+          "peripheral": "GPIO",
+          "signal": "OUT",
+          "aliases": [
+            "PG15_OUT",
+            "PG15_GPIO_OUT"
+          ]
+        }
+      ]
+    }
+  ],
+  "packages": [
+    {
+      "packageName": "LQFP64",
+      "packageType": "LQFP",
+      "totalPads": 64,
+      "orientation": "pin1-top-left",
+      "pins": [
+        {
+          "padNumber": 1,
+          "pinName": "VBAT",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 2,
+          "pinName": "PC13-TAMPER-RTC",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 3,
+          "pinName": "PC14-OSC32IN",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 4,
+          "pinName": "PC15-OSC32OUT",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 5,
+          "pinName": "OSCIN-PD0",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 6,
+          "pinName": "OSCOUT-PD1",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 7,
+          "pinName": "NRST",
+          "pinType": "reset"
+        },
+        {
+          "padNumber": 8,
+          "pinName": "PC0",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 9,
+          "pinName": "PC1",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 10,
+          "pinName": "PC2",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 11,
+          "pinName": "PC3",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 12,
+          "pinName": "VSSA",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 13,
+          "pinName": "VDDA",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 14,
+          "pinName": "PA0-WKUP",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 15,
+          "pinName": "PA1",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 16,
+          "pinName": "PA2",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 17,
+          "pinName": "PA3",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 18,
+          "pinName": "VSS_4",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 19,
+          "pinName": "VDD_4",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 20,
+          "pinName": "PA4",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 21,
+          "pinName": "PA5",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 22,
+          "pinName": "PA6",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 23,
+          "pinName": "PA7",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 24,
+          "pinName": "PC4",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 25,
+          "pinName": "PC5",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 26,
+          "pinName": "PB0",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 27,
+          "pinName": "PB1",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 28,
+          "pinName": "PB2",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 29,
+          "pinName": "PB10",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 30,
+          "pinName": "PB11",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 31,
+          "pinName": "VSS_1",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 32,
+          "pinName": "VDD_1",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 33,
+          "pinName": "PB12",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 34,
+          "pinName": "PB13",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 35,
+          "pinName": "PB14",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 36,
+          "pinName": "PB15",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 37,
+          "pinName": "PC6",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 38,
+          "pinName": "PC7",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 39,
+          "pinName": "PC8",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 40,
+          "pinName": "PC9",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 41,
+          "pinName": "PA8",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 42,
+          "pinName": "PA9",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 43,
+          "pinName": "PA10",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 44,
+          "pinName": "PA11",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 45,
+          "pinName": "PA12",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 46,
+          "pinName": "PA13",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 47,
+          "pinName": "VSS_2",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 48,
+          "pinName": "VDD_2",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 49,
+          "pinName": "PA14",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 50,
+          "pinName": "PA15",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 51,
+          "pinName": "PC10",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 52,
+          "pinName": "PC11",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 53,
+          "pinName": "PC12",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 54,
+          "pinName": "PD2",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 55,
+          "pinName": "PB3",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 56,
+          "pinName": "PB4",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 57,
+          "pinName": "PB5",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 58,
+          "pinName": "PB6",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 59,
+          "pinName": "PB7",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 60,
+          "pinName": "BOOT0",
+          "pinType": "boot"
+        },
+        {
+          "padNumber": 61,
+          "pinName": "PB8",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 62,
+          "pinName": "PB9",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 63,
+          "pinName": "VSS_3",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 64,
+          "pinName": "VDD_3",
+          "pinType": "power"
+        }
+      ]
+    },
+    {
+      "packageName": "LQFP64",
+      "packageType": "LQFP",
+      "totalPads": 64,
+      "orientation": "pin1-top-left",
+      "pins": [
+        {
+          "padNumber": 1,
+          "pinName": "VBAT",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 2,
+          "pinName": "PC13-TAMPER-RTC",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 3,
+          "pinName": "PC14-OSC32IN",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 4,
+          "pinName": "PC15-OSC32OUT",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 5,
+          "pinName": "OSCIN-PD0",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 6,
+          "pinName": "OSCOUT-PD1",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 7,
+          "pinName": "NRST",
+          "pinType": "reset"
+        },
+        {
+          "padNumber": 8,
+          "pinName": "PC0",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 9,
+          "pinName": "PC1",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 10,
+          "pinName": "PC2",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 11,
+          "pinName": "PC3",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 12,
+          "pinName": "VSSA",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 13,
+          "pinName": "VDDA",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 14,
+          "pinName": "PA0-WKUP",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 15,
+          "pinName": "PA1",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 16,
+          "pinName": "PA2",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 17,
+          "pinName": "PA3",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 18,
+          "pinName": "VSS_4",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 19,
+          "pinName": "VDD_4",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 20,
+          "pinName": "PA4",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 21,
+          "pinName": "PA5",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 22,
+          "pinName": "PA6",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 23,
+          "pinName": "PA7",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 24,
+          "pinName": "PC4",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 25,
+          "pinName": "PC5",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 26,
+          "pinName": "PB0",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 27,
+          "pinName": "PB1",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 28,
+          "pinName": "PB2",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 29,
+          "pinName": "PB10",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 30,
+          "pinName": "PB11",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 31,
+          "pinName": "VSS_1",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 32,
+          "pinName": "VDD_1",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 33,
+          "pinName": "PB12",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 34,
+          "pinName": "PB13",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 35,
+          "pinName": "PB14",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 36,
+          "pinName": "PB15",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 37,
+          "pinName": "PC6",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 38,
+          "pinName": "PC7",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 39,
+          "pinName": "PC8",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 40,
+          "pinName": "PC9",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 41,
+          "pinName": "PA8",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 42,
+          "pinName": "PA9",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 43,
+          "pinName": "PA10",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 44,
+          "pinName": "PA11",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 45,
+          "pinName": "PA12",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 46,
+          "pinName": "PA13",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 47,
+          "pinName": "VSS_2",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 48,
+          "pinName": "VDD_2",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 49,
+          "pinName": "PA14",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 50,
+          "pinName": "PA15",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 51,
+          "pinName": "PC10",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 52,
+          "pinName": "PC11",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 53,
+          "pinName": "PC12",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 54,
+          "pinName": "PD2",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 55,
+          "pinName": "PB3",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 56,
+          "pinName": "PB4",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 57,
+          "pinName": "PB5",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 58,
+          "pinName": "PB6",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 59,
+          "pinName": "PB7",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 60,
+          "pinName": "BOOT0",
+          "pinType": "boot"
+        },
+        {
+          "padNumber": 61,
+          "pinName": "PB8",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 62,
+          "pinName": "PB9",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 63,
+          "pinName": "VSS_3",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 64,
+          "pinName": "VDD_3",
+          "pinType": "power"
+        }
+      ]
+    },
+    {
+      "packageName": "LQFP100",
+      "packageType": "LQFP",
+      "totalPads": 100,
+      "orientation": "pin1-top-left",
+      "pins": [
+        {
+          "padNumber": 1,
+          "pinName": "PE2",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 2,
+          "pinName": "PE3",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 3,
+          "pinName": "PE4",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 4,
+          "pinName": "PE5",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 5,
+          "pinName": "PE6",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 6,
+          "pinName": "VBAT",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 7,
+          "pinName": "PC13-TAMPER-RTC",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 8,
+          "pinName": "PC14-OSC32IN",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 9,
+          "pinName": "PC15-OSC32OUT",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 10,
+          "pinName": "VSS_5",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 11,
+          "pinName": "VDD_5",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 12,
+          "pinName": "OSCIN-PD0",
+          "pinType": "clock"
+        },
+        {
+          "padNumber": 13,
+          "pinName": "OSCOUT-PD1",
+          "pinType": "clock"
+        },
+        {
+          "padNumber": 14,
+          "pinName": "NRST",
+          "pinType": "reset"
+        },
+        {
+          "padNumber": 15,
+          "pinName": "PC0",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 16,
+          "pinName": "PC1",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 17,
+          "pinName": "PC2",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 18,
+          "pinName": "PC3",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 19,
+          "pinName": "VSSA",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 20,
+          "pinName": "VREFN",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 21,
+          "pinName": "VREFP",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 22,
+          "pinName": "VDDA",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 23,
+          "pinName": "PA0-WKUP",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 24,
+          "pinName": "PA1",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 25,
+          "pinName": "PA2",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 26,
+          "pinName": "PA3",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 27,
+          "pinName": "VSS_4",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 28,
+          "pinName": "VDD_4",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 29,
+          "pinName": "PA4",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 30,
+          "pinName": "PA5",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 31,
+          "pinName": "PA6",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 32,
+          "pinName": "PA7",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 33,
+          "pinName": "PC4",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 34,
+          "pinName": "PC5",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 35,
+          "pinName": "PB0",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 36,
+          "pinName": "PB1",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 37,
+          "pinName": "PB2",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 38,
+          "pinName": "PE7",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 39,
+          "pinName": "PE8",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 40,
+          "pinName": "PE9",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 41,
+          "pinName": "PE10",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 42,
+          "pinName": "PE11",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 43,
+          "pinName": "PE12",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 44,
+          "pinName": "PE13",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 45,
+          "pinName": "PE14",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 46,
+          "pinName": "PE15",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 47,
+          "pinName": "PB10",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 48,
+          "pinName": "PB11",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 49,
+          "pinName": "VSS_1",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 50,
+          "pinName": "VDD_1",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 51,
+          "pinName": "PB12",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 52,
+          "pinName": "PB13",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 53,
+          "pinName": "PB14",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 54,
+          "pinName": "PB15",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 55,
+          "pinName": "PD8",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 56,
+          "pinName": "PD9",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 57,
+          "pinName": "PD10",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 58,
+          "pinName": "PD11",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 59,
+          "pinName": "PD12",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 60,
+          "pinName": "PD13",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 61,
+          "pinName": "PD14",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 62,
+          "pinName": "PD15",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 63,
+          "pinName": "PC6",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 64,
+          "pinName": "PC7",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 65,
+          "pinName": "PC8",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 66,
+          "pinName": "PC9",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 67,
+          "pinName": "PA8",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 68,
+          "pinName": "PA9",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 69,
+          "pinName": "PA10",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 70,
+          "pinName": "PA11",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 71,
+          "pinName": "PA12",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 72,
+          "pinName": "PA13",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 73,
+          "pinName": "NC",
+          "pinType": "nc"
+        },
+        {
+          "padNumber": 74,
+          "pinName": "VSS_2",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 75,
+          "pinName": "VDD_2",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 76,
+          "pinName": "PA14",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 77,
+          "pinName": "PA15",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 78,
+          "pinName": "PC10",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 79,
+          "pinName": "PC11",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 80,
+          "pinName": "PC12",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 81,
+          "pinName": "PD0",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 82,
+          "pinName": "PD1",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 83,
+          "pinName": "PD2",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 84,
+          "pinName": "PD3",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 85,
+          "pinName": "PD4",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 86,
+          "pinName": "PD5",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 87,
+          "pinName": "PD6",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 88,
+          "pinName": "PD7",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 89,
+          "pinName": "PB3",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 90,
+          "pinName": "PB4",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 91,
+          "pinName": "PB5",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 92,
+          "pinName": "PB6",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 93,
+          "pinName": "PB7",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 94,
+          "pinName": "BOOT0",
+          "pinType": "boot"
+        },
+        {
+          "padNumber": 95,
+          "pinName": "PB8",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 96,
+          "pinName": "PB9",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 97,
+          "pinName": "PE0",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 98,
+          "pinName": "PE1",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 99,
+          "pinName": "VSS_3",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 100,
+          "pinName": "VDD_3",
+          "pinType": "power"
+        }
+      ]
+    },
+    {
+      "packageName": "LQFP100",
+      "packageType": "LQFP",
+      "totalPads": 100,
+      "orientation": "pin1-top-left",
+      "pins": [
+        {
+          "padNumber": 1,
+          "pinName": "PE2",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 2,
+          "pinName": "PE3",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 3,
+          "pinName": "PE4",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 4,
+          "pinName": "PE5",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 5,
+          "pinName": "PE6",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 6,
+          "pinName": "VBAT",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 7,
+          "pinName": "PC13-TAMPER-RTC",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 8,
+          "pinName": "PC14-OSC32IN",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 9,
+          "pinName": "PC15-OSC32OUT",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 10,
+          "pinName": "VSS_5",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 11,
+          "pinName": "VDD_5",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 12,
+          "pinName": "OSCIN-PD0",
+          "pinType": "clock"
+        },
+        {
+          "padNumber": 13,
+          "pinName": "OSCOUT-PD1",
+          "pinType": "clock"
+        },
+        {
+          "padNumber": 14,
+          "pinName": "NRST",
+          "pinType": "reset"
+        },
+        {
+          "padNumber": 15,
+          "pinName": "PC0",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 16,
+          "pinName": "PC1",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 17,
+          "pinName": "PC2",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 18,
+          "pinName": "PC3",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 19,
+          "pinName": "VSSA",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 20,
+          "pinName": "VREFN",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 21,
+          "pinName": "VREFP",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 22,
+          "pinName": "VDDA",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 23,
+          "pinName": "PA0-WKUP",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 24,
+          "pinName": "PA1",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 25,
+          "pinName": "PA2",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 26,
+          "pinName": "PA3",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 27,
+          "pinName": "VSS_4",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 28,
+          "pinName": "VDD_4",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 29,
+          "pinName": "PA4",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 30,
+          "pinName": "PA5",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 31,
+          "pinName": "PA6",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 32,
+          "pinName": "PA7",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 33,
+          "pinName": "PC4",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 34,
+          "pinName": "PC5",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 35,
+          "pinName": "PB0",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 36,
+          "pinName": "PB1",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 37,
+          "pinName": "PB2",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 38,
+          "pinName": "PE7",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 39,
+          "pinName": "PE8",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 40,
+          "pinName": "PE9",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 41,
+          "pinName": "PE10",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 42,
+          "pinName": "PE11",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 43,
+          "pinName": "PE12",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 44,
+          "pinName": "PE13",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 45,
+          "pinName": "PE14",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 46,
+          "pinName": "PE15",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 47,
+          "pinName": "PB10",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 48,
+          "pinName": "PB11",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 49,
+          "pinName": "VSS_1",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 50,
+          "pinName": "VDD_1",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 51,
+          "pinName": "PB12",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 52,
+          "pinName": "PB13",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 53,
+          "pinName": "PB14",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 54,
+          "pinName": "PB15",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 55,
+          "pinName": "PD8",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 56,
+          "pinName": "PD9",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 57,
+          "pinName": "PD10",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 58,
+          "pinName": "PD11",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 59,
+          "pinName": "PD12",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 60,
+          "pinName": "PD13",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 61,
+          "pinName": "PD14",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 62,
+          "pinName": "PD15",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 63,
+          "pinName": "PC6",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 64,
+          "pinName": "PC7",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 65,
+          "pinName": "PC8",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 66,
+          "pinName": "PC9",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 67,
+          "pinName": "PA8",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 68,
+          "pinName": "PA9",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 69,
+          "pinName": "PA10",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 70,
+          "pinName": "PA11",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 71,
+          "pinName": "PA12",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 72,
+          "pinName": "PA13",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 73,
+          "pinName": "NC",
+          "pinType": "nc"
+        },
+        {
+          "padNumber": 74,
+          "pinName": "VSS_2",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 75,
+          "pinName": "VDD_2",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 76,
+          "pinName": "PA14",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 77,
+          "pinName": "PA15",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 78,
+          "pinName": "PC10",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 79,
+          "pinName": "PC11",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 80,
+          "pinName": "PC12",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 81,
+          "pinName": "PD0",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 82,
+          "pinName": "PD1",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 83,
+          "pinName": "PD2",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 84,
+          "pinName": "PD3",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 85,
+          "pinName": "PD4",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 86,
+          "pinName": "PD5",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 87,
+          "pinName": "PD6",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 88,
+          "pinName": "PD7",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 89,
+          "pinName": "PB3",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 90,
+          "pinName": "PB4",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 91,
+          "pinName": "PB5",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 92,
+          "pinName": "PB6",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 93,
+          "pinName": "PB7",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 94,
+          "pinName": "BOOT0",
+          "pinType": "boot"
+        },
+        {
+          "padNumber": 95,
+          "pinName": "PB8",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 96,
+          "pinName": "PB9",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 97,
+          "pinName": "PE0",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 98,
+          "pinName": "PE1",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 99,
+          "pinName": "VSS_3",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 100,
+          "pinName": "VDD_3",
+          "pinType": "power"
+        }
+      ]
+    },
+    {
+      "packageName": "LQFP144",
+      "packageType": "LQFP",
+      "totalPads": 144,
+      "orientation": "pin1-top-left",
+      "pins": [
+        {
+          "padNumber": 1,
+          "pinName": "PE2",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 2,
+          "pinName": "PE3",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 3,
+          "pinName": "PE4",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 4,
+          "pinName": "PE5",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 5,
+          "pinName": "PE6",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 6,
+          "pinName": "VBAT",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 7,
+          "pinName": "PC13-TAMPER-RTC",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 8,
+          "pinName": "PC14-OSC32IN",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 9,
+          "pinName": "PC15-OSC32OUT",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 10,
+          "pinName": "PF0",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 11,
+          "pinName": "PF1",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 12,
+          "pinName": "PF2",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 13,
+          "pinName": "PF3",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 14,
+          "pinName": "PF4",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 15,
+          "pinName": "PF5",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 16,
+          "pinName": "VSS_5",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 17,
+          "pinName": "VDD_5",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 18,
+          "pinName": "PF6",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 19,
+          "pinName": "PF7",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 20,
+          "pinName": "PF8",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 21,
+          "pinName": "PF9",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 22,
+          "pinName": "PF10",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 23,
+          "pinName": "OSCIN-PD0",
+          "pinType": "clock"
+        },
+        {
+          "padNumber": 24,
+          "pinName": "OSCOUT-PD1",
+          "pinType": "clock"
+        },
+        {
+          "padNumber": 25,
+          "pinName": "NRST",
+          "pinType": "reset"
+        },
+        {
+          "padNumber": 26,
+          "pinName": "PC0",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 27,
+          "pinName": "PC1",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 28,
+          "pinName": "PC2",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 29,
+          "pinName": "PC3",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 30,
+          "pinName": "VSSA",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 31,
+          "pinName": "VREFN",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 32,
+          "pinName": "VREFP",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 33,
+          "pinName": "VDDA",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 34,
+          "pinName": "PA0-WKUP",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 35,
+          "pinName": "PA1",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 36,
+          "pinName": "PA2",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 37,
+          "pinName": "PA3",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 38,
+          "pinName": "VSS_4",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 39,
+          "pinName": "VDD_4",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 40,
+          "pinName": "PA4",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 41,
+          "pinName": "PA5",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 42,
+          "pinName": "PA6",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 43,
+          "pinName": "PA7",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 44,
+          "pinName": "PC4",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 45,
+          "pinName": "PC5",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 46,
+          "pinName": "PB0",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 47,
+          "pinName": "PB1",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 48,
+          "pinName": "PB2",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 49,
+          "pinName": "PF11",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 50,
+          "pinName": "PF12",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 51,
+          "pinName": "VSS_6",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 52,
+          "pinName": "VDD_6",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 53,
+          "pinName": "PF13",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 54,
+          "pinName": "PF14",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 55,
+          "pinName": "PF15",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 56,
+          "pinName": "PG0",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 57,
+          "pinName": "PG1",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 58,
+          "pinName": "PE7",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 59,
+          "pinName": "PE8",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 60,
+          "pinName": "PE9",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 61,
+          "pinName": "VSS_7",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 62,
+          "pinName": "VDD_7",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 63,
+          "pinName": "PE10",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 64,
+          "pinName": "PE11",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 65,
+          "pinName": "PE12",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 66,
+          "pinName": "PE13",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 67,
+          "pinName": "PE14",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 68,
+          "pinName": "PE15",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 69,
+          "pinName": "PB10",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 70,
+          "pinName": "PB11",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 71,
+          "pinName": "VSS_1",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 72,
+          "pinName": "VDD_1",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 73,
+          "pinName": "PB12",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 74,
+          "pinName": "PB13",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 75,
+          "pinName": "PB14",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 76,
+          "pinName": "PB15",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 77,
+          "pinName": "PD8",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 78,
+          "pinName": "PD9",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 79,
+          "pinName": "PD10",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 80,
+          "pinName": "PD11",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 81,
+          "pinName": "PD12",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 82,
+          "pinName": "PD13",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 83,
+          "pinName": "VSS_8",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 84,
+          "pinName": "VDD_8",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 85,
+          "pinName": "PD14",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 86,
+          "pinName": "PD15",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 87,
+          "pinName": "PG2",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 88,
+          "pinName": "PG3",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 89,
+          "pinName": "PG4",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 90,
+          "pinName": "PG5",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 91,
+          "pinName": "PG6",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 92,
+          "pinName": "PG7",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 93,
+          "pinName": "PG8",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 94,
+          "pinName": "VSS_9",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 95,
+          "pinName": "VDD_9",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 96,
+          "pinName": "PC6",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 97,
+          "pinName": "PC7",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 98,
+          "pinName": "PC8",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 99,
+          "pinName": "PC9",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 100,
+          "pinName": "PA8",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 101,
+          "pinName": "PA9",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 102,
+          "pinName": "PA10",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 103,
+          "pinName": "PA11",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 104,
+          "pinName": "PA12",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 105,
+          "pinName": "PA13",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 106,
+          "pinName": "NC",
+          "pinType": "nc"
+        },
+        {
+          "padNumber": 107,
+          "pinName": "VSS_2",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 108,
+          "pinName": "VDD_2",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 109,
+          "pinName": "PA14",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 110,
+          "pinName": "PA15",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 111,
+          "pinName": "PC10",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 112,
+          "pinName": "PC11",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 113,
+          "pinName": "PC12",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 114,
+          "pinName": "PD0",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 115,
+          "pinName": "PD1",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 116,
+          "pinName": "PD2",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 117,
+          "pinName": "PD3",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 118,
+          "pinName": "PD4",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 119,
+          "pinName": "PD5",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 120,
+          "pinName": "VSS_10",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 121,
+          "pinName": "VDD_10",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 122,
+          "pinName": "PD6",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 123,
+          "pinName": "PD7",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 124,
+          "pinName": "PG9",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 125,
+          "pinName": "PG10",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 126,
+          "pinName": "PG11",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 127,
+          "pinName": "PG12",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 128,
+          "pinName": "PG13",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 129,
+          "pinName": "PG14",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 130,
+          "pinName": "VSS_11",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 131,
+          "pinName": "VDD_11",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 132,
+          "pinName": "PG15",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 133,
+          "pinName": "PB3",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 134,
+          "pinName": "PB4",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 135,
+          "pinName": "PB5",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 136,
+          "pinName": "PB6",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 137,
+          "pinName": "PB7",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 138,
+          "pinName": "BOOT0",
+          "pinType": "boot"
+        },
+        {
+          "padNumber": 139,
+          "pinName": "PB8",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 140,
+          "pinName": "PB9",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 141,
+          "pinName": "PE0",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 142,
+          "pinName": "PE1",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 143,
+          "pinName": "VSS_3",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 144,
+          "pinName": "VDD_3",
+          "pinType": "power"
+        }
+      ]
+    },
+    {
+      "packageName": "LQFP144",
+      "packageType": "LQFP",
+      "totalPads": 144,
+      "orientation": "pin1-top-left",
+      "pins": [
+        {
+          "padNumber": 1,
+          "pinName": "PE2",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 2,
+          "pinName": "PE3",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 3,
+          "pinName": "PE4",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 4,
+          "pinName": "PE5",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 5,
+          "pinName": "PE6",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 6,
+          "pinName": "VBAT",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 7,
+          "pinName": "PC13-TAMPER-RTC",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 8,
+          "pinName": "PC14-OSC32IN",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 9,
+          "pinName": "PC15-OSC32OUT",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 10,
+          "pinName": "PF0",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 11,
+          "pinName": "PF1",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 12,
+          "pinName": "PF2",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 13,
+          "pinName": "PF3",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 14,
+          "pinName": "PF4",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 15,
+          "pinName": "PF5",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 16,
+          "pinName": "VSS_5",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 17,
+          "pinName": "VDD_5",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 18,
+          "pinName": "PF6",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 19,
+          "pinName": "PF7",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 20,
+          "pinName": "PF8",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 21,
+          "pinName": "PF9",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 22,
+          "pinName": "PF10",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 23,
+          "pinName": "OSCIN-PD0",
+          "pinType": "clock"
+        },
+        {
+          "padNumber": 24,
+          "pinName": "OSCOUT-PD1",
+          "pinType": "clock"
+        },
+        {
+          "padNumber": 25,
+          "pinName": "NRST",
+          "pinType": "reset"
+        },
+        {
+          "padNumber": 26,
+          "pinName": "PC0",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 27,
+          "pinName": "PC1",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 28,
+          "pinName": "PC2",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 29,
+          "pinName": "PC3",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 30,
+          "pinName": "VSSA",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 31,
+          "pinName": "VREFN",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 32,
+          "pinName": "VREFP",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 33,
+          "pinName": "VDDA",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 34,
+          "pinName": "PA0-WKUP",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 35,
+          "pinName": "PA1",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 36,
+          "pinName": "PA2",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 37,
+          "pinName": "PA3",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 38,
+          "pinName": "VSS_4",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 39,
+          "pinName": "VDD_4",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 40,
+          "pinName": "PA4",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 41,
+          "pinName": "PA5",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 42,
+          "pinName": "PA6",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 43,
+          "pinName": "PA7",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 44,
+          "pinName": "PC4",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 45,
+          "pinName": "PC5",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 46,
+          "pinName": "PB0",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 47,
+          "pinName": "PB1",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 48,
+          "pinName": "PB2",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 49,
+          "pinName": "PF11",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 50,
+          "pinName": "PF12",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 51,
+          "pinName": "VSS_6",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 52,
+          "pinName": "VDD_6",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 53,
+          "pinName": "PF13",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 54,
+          "pinName": "PF14",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 55,
+          "pinName": "PF15",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 56,
+          "pinName": "PG0",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 57,
+          "pinName": "PG1",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 58,
+          "pinName": "PE7",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 59,
+          "pinName": "PE8",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 60,
+          "pinName": "PE9",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 61,
+          "pinName": "VSS_7",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 62,
+          "pinName": "VDD_7",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 63,
+          "pinName": "PE10",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 64,
+          "pinName": "PE11",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 65,
+          "pinName": "PE12",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 66,
+          "pinName": "PE13",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 67,
+          "pinName": "PE14",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 68,
+          "pinName": "PE15",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 69,
+          "pinName": "PB10",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 70,
+          "pinName": "PB11",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 71,
+          "pinName": "VSS_1",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 72,
+          "pinName": "VDD_1",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 73,
+          "pinName": "PB12",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 74,
+          "pinName": "PB13",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 75,
+          "pinName": "PB14",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 76,
+          "pinName": "PB15",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 77,
+          "pinName": "PD8",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 78,
+          "pinName": "PD9",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 79,
+          "pinName": "PD10",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 80,
+          "pinName": "PD11",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 81,
+          "pinName": "PD12",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 82,
+          "pinName": "PD13",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 83,
+          "pinName": "VSS_8",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 84,
+          "pinName": "VDD_8",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 85,
+          "pinName": "PD14",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 86,
+          "pinName": "PD15",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 87,
+          "pinName": "PG2",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 88,
+          "pinName": "PG3",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 89,
+          "pinName": "PG4",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 90,
+          "pinName": "PG5",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 91,
+          "pinName": "PG6",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 92,
+          "pinName": "PG7",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 93,
+          "pinName": "PG8",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 94,
+          "pinName": "VSS_9",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 95,
+          "pinName": "VDD_9",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 96,
+          "pinName": "PC6",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 97,
+          "pinName": "PC7",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 98,
+          "pinName": "PC8",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 99,
+          "pinName": "PC9",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 100,
+          "pinName": "PA8",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 101,
+          "pinName": "PA9",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 102,
+          "pinName": "PA10",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 103,
+          "pinName": "PA11",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 104,
+          "pinName": "PA12",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 105,
+          "pinName": "PA13",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 106,
+          "pinName": "NC",
+          "pinType": "nc"
+        },
+        {
+          "padNumber": 107,
+          "pinName": "VSS_2",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 108,
+          "pinName": "VDD_2",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 109,
+          "pinName": "PA14",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 110,
+          "pinName": "PA15",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 111,
+          "pinName": "PC10",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 112,
+          "pinName": "PC11",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 113,
+          "pinName": "PC12",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 114,
+          "pinName": "PD0",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 115,
+          "pinName": "PD1",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 116,
+          "pinName": "PD2",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 117,
+          "pinName": "PD3",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 118,
+          "pinName": "PD4",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 119,
+          "pinName": "PD5",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 120,
+          "pinName": "VSS_10",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 121,
+          "pinName": "VDD_10",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 122,
+          "pinName": "PD6",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 123,
+          "pinName": "PD7",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 124,
+          "pinName": "PG9",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 125,
+          "pinName": "PG10",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 126,
+          "pinName": "PG11",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 127,
+          "pinName": "PG12",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 128,
+          "pinName": "PG13",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 129,
+          "pinName": "PG14",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 130,
+          "pinName": "VSS_11",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 131,
+          "pinName": "VDD_11",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 132,
+          "pinName": "PG15",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 133,
+          "pinName": "PB3",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 134,
+          "pinName": "PB4",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 135,
+          "pinName": "PB5",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 136,
+          "pinName": "PB6",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 137,
+          "pinName": "PB7",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 138,
+          "pinName": "BOOT0",
+          "pinType": "boot"
+        },
+        {
+          "padNumber": 139,
+          "pinName": "PB8",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 140,
+          "pinName": "PB9",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 141,
+          "pinName": "PE0",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 142,
+          "pinName": "PE1",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 143,
+          "pinName": "VSS_3",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 144,
+          "pinName": "VDD_3",
+          "pinType": "power"
+        }
+      ]
+    }
+  ]
+}

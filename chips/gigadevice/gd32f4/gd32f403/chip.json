@@ -1,100 +1,10 @@
 {
-  "id": "GD32F405",
-  "displayName": "GD32F405",
-  "vendor": "Staging",
-  "family": "GD32-CRAWL",
-  "functionSource": "gpio-af-csv",
+  "id": "GD32F403",
+  "displayName": "GD32F403",
+  "vendor": "GigaDevice",
+  "family": "GD32F4",
+  "functionSource": "pinout-csv",
   "pins": [
-    {
-      "name": "PA0",
-      "port": "A",
-      "number": 0,
-      "functions": [
-        {
-          "af": "GPIO",
-          "raw": "GPIO_IN",
-          "peripheral": "GPIO",
-          "signal": "IN",
-          "aliases": [
-            "PA0_IN",
-            "PA0_GPIO_IN"
-          ]
-        },
-        {
-          "af": "GPIO",
-          "raw": "GPIO_OUT",
-          "peripheral": "GPIO",
-          "signal": "OUT",
-          "aliases": [
-            "PA0_OUT",
-            "PA0_GPIO_OUT"
-          ]
-        },
-        {
-          "af": "AF1",
-          "raw": "TIMER1_CH0",
-          "peripheral": "TIMER1",
-          "signal": "CH0",
-          "aliases": [
-            "TIMER1_CH0"
-          ]
-        },
-        {
-          "af": "AF1",
-          "raw": "TIMER1_ETI",
-          "peripheral": "TIMER1",
-          "signal": "ETI",
-          "aliases": [
-            "TIMER1_ETI"
-          ]
-        },
-        {
-          "af": "AF2",
-          "raw": "TIMER4_CH0",
-          "peripheral": "TIMER4",
-          "signal": "CH0",
-          "aliases": [
-            "TIMER4_CH0"
-          ]
-        },
-        {
-          "af": "AF3",
-          "raw": "TIMER7_ETI",
-          "peripheral": "TIMER7",
-          "signal": "ETI",
-          "aliases": [
-            "TIMER7_ETI"
-          ]
-        },
-        {
-          "af": "AF7",
-          "raw": "USART1_CTS",
-          "peripheral": "USART1",
-          "signal": "CTS",
-          "aliases": [
-            "USART1_CTS"
-          ]
-        },
-        {
-          "af": "AF8",
-          "raw": "UART3_TX",
-          "peripheral": "UART3",
-          "signal": "TX",
-          "aliases": [
-            "UART3_TX"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
-          ]
-        }
-      ]
-    },
     {
       "name": "PA1",
       "port": "A",
@@ -121,25 +31,7 @@
           ]
         },
         {
-          "af": "AF1",
-          "raw": "TIMER1_CH1",
-          "peripheral": "TIMER1",
-          "signal": "CH1",
-          "aliases": [
-            "TIMER1_CH1"
-          ]
-        },
-        {
-          "af": "AF2",
-          "raw": "TIMER4_CH1",
-          "peripheral": "TIMER4",
-          "signal": "CH1",
-          "aliases": [
-            "TIMER4_CH1"
-          ]
-        },
-        {
-          "af": "AF7",
+          "af": "ALT",
           "raw": "USART1_RTS",
           "peripheral": "USART1",
           "signal": "RTS",
@@ -148,21 +40,30 @@
           ]
         },
         {
-          "af": "AF8",
-          "raw": "UART3_RX",
-          "peripheral": "UART3",
-          "signal": "RX",
+          "af": "ALT",
+          "raw": "ADC012_IN1",
+          "peripheral": "ADC012",
+          "signal": "IN1",
           "aliases": [
-            "UART3_RX"
+            "ADC012_IN1"
           ]
         },
         {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
+          "af": "ALT",
+          "raw": "TIMER1_CH1",
+          "peripheral": "TIMER1",
+          "signal": "CH1",
           "aliases": [
-            "EVENTOUT"
+            "TIMER1_CH1"
+          ]
+        },
+        {
+          "af": "ALT",
+          "raw": "TIMER4_CH1",
+          "peripheral": "TIMER4",
+          "signal": "CH1",
+          "aliases": [
+            "TIMER4_CH1"
           ]
         }
       ]
@@ -193,43 +94,7 @@
           ]
         },
         {
-          "af": "AF1",
-          "raw": "TIMER1_CH2",
-          "peripheral": "TIMER1",
-          "signal": "CH2",
-          "aliases": [
-            "TIMER1_CH2"
-          ]
-        },
-        {
-          "af": "AF2",
-          "raw": "TIMER4_CH2",
-          "peripheral": "TIMER4",
-          "signal": "CH2",
-          "aliases": [
-            "TIMER4_CH2"
-          ]
-        },
-        {
-          "af": "AF3",
-          "raw": "TIMER8_CH0",
-          "peripheral": "TIMER8",
-          "signal": "CH0",
-          "aliases": [
-            "TIMER8_CH0"
-          ]
-        },
-        {
-          "af": "AF5",
-          "raw": "I2S_CKIN",
-          "peripheral": "I2S",
-          "signal": "CKIN",
-          "aliases": [
-            "I2S_CKIN"
-          ]
-        },
-        {
-          "af": "AF7",
+          "af": "ALT",
           "raw": "USART1_TX",
           "peripheral": "USART1",
           "signal": "TX",
@@ -238,12 +103,48 @@
           ]
         },
         {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
+          "af": "ALT",
+          "raw": "ADC012_IN2",
+          "peripheral": "ADC012",
+          "signal": "IN2",
           "aliases": [
-            "EVENTOUT"
+            "ADC012_IN2"
+          ]
+        },
+        {
+          "af": "ALT",
+          "raw": "TIMER1_CH2",
+          "peripheral": "TIMER1",
+          "signal": "CH2",
+          "aliases": [
+            "TIMER1_CH2"
+          ]
+        },
+        {
+          "af": "ALT",
+          "raw": "TIMER4_CH2",
+          "peripheral": "TIMER4",
+          "signal": "CH2",
+          "aliases": [
+            "TIMER4_CH2"
+          ]
+        },
+        {
+          "af": "ALT",
+          "raw": "TIMER8_CH0",
+          "peripheral": "TIMER8",
+          "signal": "CH0",
+          "aliases": [
+            "TIMER8_CH0"
+          ]
+        },
+        {
+          "af": "ALT",
+          "raw": "SPI0_IO2",
+          "peripheral": "SPI0",
+          "signal": "IO2",
+          "aliases": [
+            "SPI0_IO2"
           ]
         }
       ]
@@ -274,43 +175,7 @@
           ]
         },
         {
-          "af": "AF1",
-          "raw": "TIMER1_CH3",
-          "peripheral": "TIMER1",
-          "signal": "CH3",
-          "aliases": [
-            "TIMER1_CH3"
-          ]
-        },
-        {
-          "af": "AF2",
-          "raw": "TIMER4_CH3",
-          "peripheral": "TIMER4",
-          "signal": "CH3",
-          "aliases": [
-            "TIMER4_CH3"
-          ]
-        },
-        {
-          "af": "AF3",
-          "raw": "TIMER8_CH1",
-          "peripheral": "TIMER8",
-          "signal": "CH1",
-          "aliases": [
-            "TIMER8_CH1"
-          ]
-        },
-        {
-          "af": "AF5",
-          "raw": "I2S1_MCK",
-          "peripheral": "I2S1",
-          "signal": "MCK",
-          "aliases": [
-            "I2S1_MCK"
-          ]
-        },
-        {
-          "af": "AF7",
+          "af": "ALT",
           "raw": "USART1_RX",
           "peripheral": "USART1",
           "signal": "RX",
@@ -319,21 +184,48 @@
           ]
         },
         {
-          "af": "AF10",
-          "raw": "USBHS_ULPI_D0",
-          "peripheral": "USBHS",
-          "signal": "ULPI_D0",
+          "af": "ALT",
+          "raw": "ADC012_IN3",
+          "peripheral": "ADC012",
+          "signal": "IN3",
           "aliases": [
-            "USBHS_ULPI_D0"
+            "ADC012_IN3"
           ]
         },
         {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
+          "af": "ALT",
+          "raw": "TIMER1_CH3",
+          "peripheral": "TIMER1",
+          "signal": "CH3",
           "aliases": [
-            "EVENTOUT"
+            "TIMER1_CH3"
+          ]
+        },
+        {
+          "af": "ALT",
+          "raw": "TIMER4_CH3",
+          "peripheral": "TIMER4",
+          "signal": "CH3",
+          "aliases": [
+            "TIMER4_CH3"
+          ]
+        },
+        {
+          "af": "ALT",
+          "raw": "TIMER8_CH1",
+          "peripheral": "TIMER8",
+          "signal": "CH1",
+          "aliases": [
+            "TIMER8_CH1"
+          ]
+        },
+        {
+          "af": "ALT",
+          "raw": "SPI0_IO3",
+          "peripheral": "SPI0",
+          "signal": "IO3",
+          "aliases": [
+            "SPI0_IO3"
           ]
         }
       ]
@@ -364,7 +256,7 @@
           ]
         },
         {
-          "af": "AF5",
+          "af": "ALT",
           "raw": "SPI0_NSS",
           "peripheral": "SPI0",
           "signal": "NSS",
@@ -373,25 +265,7 @@
           ]
         },
         {
-          "af": "AF6",
-          "raw": "SPI2_NSS",
-          "peripheral": "SPI2",
-          "signal": "NSS",
-          "aliases": [
-            "SPI2_NSS"
-          ]
-        },
-        {
-          "af": "AF6",
-          "raw": "I2S2_WS",
-          "peripheral": "I2S2",
-          "signal": "WS",
-          "aliases": [
-            "I2S2_WS"
-          ]
-        },
-        {
-          "af": "AF7",
+          "af": "ALT",
           "raw": "USART1_CK",
           "peripheral": "USART1",
           "signal": "CK",
@@ -400,30 +274,39 @@
           ]
         },
         {
-          "af": "AF12",
-          "raw": "USBHS_SOF",
-          "peripheral": "USBHS",
-          "signal": "SOF",
+          "af": "ALT",
+          "raw": "ADC01_IN4",
+          "peripheral": "ADC01",
+          "signal": "IN4",
           "aliases": [
-            "USBHS_SOF"
+            "ADC01_IN4"
           ]
         },
         {
-          "af": "AF13",
-          "raw": "DCI_HSYNC",
-          "peripheral": "DCI",
-          "signal": "HSYNC",
+          "af": "ALT",
+          "raw": "DAC_OUT0",
+          "peripheral": "DAC",
+          "signal": "OUT0",
           "aliases": [
-            "DCI_HSYNC"
+            "DAC_OUT0"
           ]
         },
         {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
+          "af": "REMAP",
+          "raw": "SPI2_NSS",
+          "peripheral": "SPI2",
+          "signal": "NSS",
           "aliases": [
-            "EVENTOUT"
+            "SPI2_NSS"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "I2S2_WS",
+          "peripheral": "I2S2",
+          "signal": "WS",
+          "aliases": [
+            "I2S2_WS"
           ]
         }
       ]
@@ -454,34 +337,7 @@
           ]
         },
         {
-          "af": "AF1",
-          "raw": "TIMER1_CH0",
-          "peripheral": "TIMER1",
-          "signal": "CH0",
-          "aliases": [
-            "TIMER1_CH0"
-          ]
-        },
-        {
-          "af": "AF1",
-          "raw": "TIMER1_ETI",
-          "peripheral": "TIMER1",
-          "signal": "ETI",
-          "aliases": [
-            "TIMER1_ETI"
-          ]
-        },
-        {
-          "af": "AF3",
-          "raw": "TIMER7_CH0_ON",
-          "peripheral": "TIMER7",
-          "signal": "CH0_ON",
-          "aliases": [
-            "TIMER7_CH0_ON"
-          ]
-        },
-        {
-          "af": "AF5",
+          "af": "ALT",
           "raw": "SPI0_SCK",
           "peripheral": "SPI0",
           "signal": "SCK",
@@ -490,21 +346,21 @@
           ]
         },
         {
-          "af": "AF10",
-          "raw": "USBHS_ULPI_CK",
-          "peripheral": "USBHS",
-          "signal": "ULPI_CK",
+          "af": "ALT",
+          "raw": "ADC01_IN5",
+          "peripheral": "ADC01",
+          "signal": "IN5",
           "aliases": [
-            "USBHS_ULPI_CK"
+            "ADC01_IN5"
           ]
         },
         {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
+          "af": "ALT",
+          "raw": "DAC_OUT1",
+          "peripheral": "DAC",
+          "signal": "OUT1",
           "aliases": [
-            "EVENTOUT"
+            "DAC_OUT1"
           ]
         }
       ]
@@ -535,34 +391,7 @@
           ]
         },
         {
-          "af": "AF1",
-          "raw": "TIMER0_BRKIN",
-          "peripheral": "TIMER0",
-          "signal": "BRKIN",
-          "aliases": [
-            "TIMER0_BRKIN"
-          ]
-        },
-        {
-          "af": "AF2",
-          "raw": "TIMER2_CH0",
-          "peripheral": "TIMER2",
-          "signal": "CH0",
-          "aliases": [
-            "TIMER2_CH0"
-          ]
-        },
-        {
-          "af": "AF3",
-          "raw": "TIMER7_BRKIN",
-          "peripheral": "TIMER7",
-          "signal": "BRKIN",
-          "aliases": [
-            "TIMER7_BRKIN"
-          ]
-        },
-        {
-          "af": "AF5",
+          "af": "ALT",
           "raw": "SPI0_MISO",
           "peripheral": "SPI0",
           "signal": "MISO",
@@ -571,16 +400,34 @@
           ]
         },
         {
-          "af": "AF6",
-          "raw": "I2S1_MCK",
-          "peripheral": "I2S1",
-          "signal": "MCK",
+          "af": "ALT",
+          "raw": "ADC01_IN6",
+          "peripheral": "ADC01",
+          "signal": "IN6",
           "aliases": [
-            "I2S1_MCK"
+            "ADC01_IN6"
           ]
         },
         {
-          "af": "AF9",
+          "af": "ALT",
+          "raw": "TIMER2_CH0",
+          "peripheral": "TIMER2",
+          "signal": "CH0",
+          "aliases": [
+            "TIMER2_CH0"
+          ]
+        },
+        {
+          "af": "ALT",
+          "raw": "TIMER7_BRKIN",
+          "peripheral": "TIMER7",
+          "signal": "BRKIN",
+          "aliases": [
+            "TIMER7_BRKIN"
+          ]
+        },
+        {
+          "af": "ALT",
           "raw": "TIMER12_CH0",
           "peripheral": "TIMER12",
           "signal": "CH0",
@@ -589,30 +436,12 @@
           ]
         },
         {
-          "af": "AF12",
-          "raw": "SDIO_CMD",
-          "peripheral": "SDIO",
-          "signal": "CMD",
+          "af": "REMAP",
+          "raw": "TIMER0_BRKIN",
+          "peripheral": "TIMER0",
+          "signal": "BRKIN",
           "aliases": [
-            "SDIO_CMD"
-          ]
-        },
-        {
-          "af": "AF13",
-          "raw": "DCI_PIXCLK",
-          "peripheral": "DCI",
-          "signal": "PIXCLK",
-          "aliases": [
-            "DCI_PIXCLK"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
+            "TIMER0_BRKIN"
           ]
         }
       ]
@@ -643,34 +472,7 @@
           ]
         },
         {
-          "af": "AF1",
-          "raw": "TIMER0_CH0_ON",
-          "peripheral": "TIMER0",
-          "signal": "CH0_ON",
-          "aliases": [
-            "TIMER0_CH0_ON"
-          ]
-        },
-        {
-          "af": "AF2",
-          "raw": "TIMER2_CH1",
-          "peripheral": "TIMER2",
-          "signal": "CH1",
-          "aliases": [
-            "TIMER2_CH1"
-          ]
-        },
-        {
-          "af": "AF3",
-          "raw": "TIMER7_CH0_ON",
-          "peripheral": "TIMER7",
-          "signal": "CH0_ON",
-          "aliases": [
-            "TIMER7_CH0_ON"
-          ]
-        },
-        {
-          "af": "AF5",
+          "af": "ALT",
           "raw": "SPI0_MOSI",
           "peripheral": "SPI0",
           "signal": "MOSI",
@@ -679,7 +481,34 @@
           ]
         },
         {
-          "af": "AF9",
+          "af": "ALT",
+          "raw": "ADC01_IN7",
+          "peripheral": "ADC01",
+          "signal": "IN7",
+          "aliases": [
+            "ADC01_IN7"
+          ]
+        },
+        {
+          "af": "ALT",
+          "raw": "TIMER2_CH1",
+          "peripheral": "TIMER2",
+          "signal": "CH1",
+          "aliases": [
+            "TIMER2_CH1"
+          ]
+        },
+        {
+          "af": "ALT",
+          "raw": "TIMER7_CH0_ON",
+          "peripheral": "TIMER7",
+          "signal": "CH0_ON",
+          "aliases": [
+            "TIMER7_CH0_ON"
+          ]
+        },
+        {
+          "af": "ALT",
           "raw": "TIMER13_CH0",
           "peripheral": "TIMER13",
           "signal": "CH0",
@@ -688,12 +517,21 @@
           ]
         },
         {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
+          "af": "REMAP",
+          "raw": "TIMER0_CH0_ON",
+          "peripheral": "TIMER0",
+          "signal": "CH0_ON",
           "aliases": [
-            "EVENTOUT"
+            "TIMER0_CH0_ON"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "TIMER0_BRKIN",
+          "peripheral": "TIMER0",
+          "signal": "BRKIN",
+          "aliases": [
+            "TIMER0_BRKIN"
           ]
         }
       ]
@@ -724,34 +562,7 @@
           ]
         },
         {
-          "af": "AF0",
-          "raw": "CK_OUT0",
-          "peripheral": "CK",
-          "signal": "OUT0",
-          "aliases": [
-            "CK_OUT0"
-          ]
-        },
-        {
-          "af": "AF1",
-          "raw": "TIMER0_CH0",
-          "peripheral": "TIMER0",
-          "signal": "CH0",
-          "aliases": [
-            "TIMER0_CH0"
-          ]
-        },
-        {
-          "af": "AF4",
-          "raw": "I2C2_SCL",
-          "peripheral": "I2C2",
-          "signal": "SCL",
-          "aliases": [
-            "I2C2_SCL"
-          ]
-        },
-        {
-          "af": "AF7",
+          "af": "ALT",
           "raw": "USART0_CK",
           "peripheral": "USART0",
           "signal": "CK",
@@ -760,16 +571,25 @@
           ]
         },
         {
-          "af": "AF9",
-          "raw": "CTC_SYNC",
-          "peripheral": "CTC",
-          "signal": "SYNC",
+          "af": "ALT",
+          "raw": "TIMER0_CH0",
+          "peripheral": "TIMER0",
+          "signal": "CH0",
           "aliases": [
-            "CTC_SYNC"
+            "TIMER0_CH0"
           ]
         },
         {
-          "af": "AF10",
+          "af": "ALT",
+          "raw": "CK_OUT0",
+          "peripheral": "CK",
+          "signal": "OUT0",
+          "aliases": [
+            "CK_OUT0"
+          ]
+        },
+        {
+          "af": "ALT",
           "raw": "USBFS_SOF",
           "peripheral": "USBFS",
           "signal": "SOF",
@@ -778,21 +598,12 @@
           ]
         },
         {
-          "af": "AF12",
-          "raw": "SDIO_D1",
-          "peripheral": "SDIO",
-          "signal": "D1",
+          "af": "ALT",
+          "raw": "CTC_SYNC",
+          "peripheral": "CTC",
+          "signal": "SYNC",
           "aliases": [
-            "SDIO_D1"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
+            "CTC_SYNC"
           ]
         }
       ]
@@ -823,43 +634,7 @@
           ]
         },
         {
-          "af": "AF1",
-          "raw": "TIMER0_CH1",
-          "peripheral": "TIMER0",
-          "signal": "CH1",
-          "aliases": [
-            "TIMER0_CH1"
-          ]
-        },
-        {
-          "af": "AF4",
-          "raw": "I2C2_SMBA",
-          "peripheral": "I2C2",
-          "signal": "SMBA",
-          "aliases": [
-            "I2C2_SMBA"
-          ]
-        },
-        {
-          "af": "AF5",
-          "raw": "SPI1_SCK",
-          "peripheral": "SPI1",
-          "signal": "SCK",
-          "aliases": [
-            "SPI1_SCK"
-          ]
-        },
-        {
-          "af": "AF5",
-          "raw": "I2S1_CK",
-          "peripheral": "I2S1",
-          "signal": "CK",
-          "aliases": [
-            "I2S1_CK"
-          ]
-        },
-        {
-          "af": "AF7",
+          "af": "ALT",
           "raw": "USART0_TX",
           "peripheral": "USART0",
           "signal": "TX",
@@ -868,30 +643,21 @@
           ]
         },
         {
-          "af": "AF12",
-          "raw": "SDIO_D2",
-          "peripheral": "SDIO",
-          "signal": "D2",
+          "af": "ALT",
+          "raw": "TIMER0_CH1",
+          "peripheral": "TIMER0",
+          "signal": "CH1",
           "aliases": [
-            "SDIO_D2"
+            "TIMER0_CH1"
           ]
         },
         {
-          "af": "AF13",
-          "raw": "DCI_D0",
-          "peripheral": "DCI",
-          "signal": "D0",
+          "af": "ALT",
+          "raw": "USBFS_VBUS",
+          "peripheral": "USBFS",
+          "signal": "VBUS",
           "aliases": [
-            "DCI_D0"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
+            "USBFS_VBUS"
           ]
         }
       ]
@@ -922,25 +688,7 @@
           ]
         },
         {
-          "af": "AF1",
-          "raw": "TIMER0_CH2",
-          "peripheral": "TIMER0",
-          "signal": "CH2",
-          "aliases": [
-            "TIMER0_CH2"
-          ]
-        },
-        {
-          "af": "AF4",
-          "raw": "I2C2_TXFRAME",
-          "peripheral": "I2C2",
-          "signal": "TXFRAME",
-          "aliases": [
-            "I2C2_TXFRAME"
-          ]
-        },
-        {
-          "af": "AF7",
+          "af": "ALT",
           "raw": "USART0_RX",
           "peripheral": "USART0",
           "signal": "RX",
@@ -949,30 +697,21 @@
           ]
         },
         {
-          "af": "AF10",
+          "af": "ALT",
+          "raw": "TIMER0_CH2",
+          "peripheral": "TIMER0",
+          "signal": "CH2",
+          "aliases": [
+            "TIMER0_CH2"
+          ]
+        },
+        {
+          "af": "ALT",
           "raw": "USBFS_ID",
           "peripheral": "USBFS",
           "signal": "ID",
           "aliases": [
             "USBFS_ID"
-          ]
-        },
-        {
-          "af": "AF13",
-          "raw": "DCI_D1",
-          "peripheral": "DCI",
-          "signal": "D1",
-          "aliases": [
-            "DCI_D1"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
           ]
         }
       ]
@@ -1003,16 +742,7 @@
           ]
         },
         {
-          "af": "AF1",
-          "raw": "TIMER0_CH3",
-          "peripheral": "TIMER0",
-          "signal": "CH3",
-          "aliases": [
-            "TIMER0_CH3"
-          ]
-        },
-        {
-          "af": "AF7",
+          "af": "ALT",
           "raw": "USART0_CTS",
           "peripheral": "USART0",
           "signal": "CTS",
@@ -1021,16 +751,7 @@
           ]
         },
         {
-          "af": "AF8",
-          "raw": "USART5_TX",
-          "peripheral": "USART5",
-          "signal": "TX",
-          "aliases": [
-            "USART5_TX"
-          ]
-        },
-        {
-          "af": "AF9",
+          "af": "ALT",
           "raw": "CAN0_RX",
           "peripheral": "CAN0",
           "signal": "RX",
@@ -1039,7 +760,7 @@
           ]
         },
         {
-          "af": "AF10",
+          "af": "ALT",
           "raw": "USBFS_DM",
           "peripheral": "USBFS",
           "signal": "DM",
@@ -1048,12 +769,12 @@
           ]
         },
         {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
+          "af": "ALT",
+          "raw": "TIMER0_CH3",
+          "peripheral": "TIMER0",
+          "signal": "CH3",
           "aliases": [
-            "EVENTOUT"
+            "TIMER0_CH3"
           ]
         }
       ]
@@ -1084,16 +805,7 @@
           ]
         },
         {
-          "af": "AF1",
-          "raw": "TIMER0_ETI",
-          "peripheral": "TIMER0",
-          "signal": "ETI",
-          "aliases": [
-            "TIMER0_ETI"
-          ]
-        },
-        {
-          "af": "AF7",
+          "af": "ALT",
           "raw": "USART0_RTS",
           "peripheral": "USART0",
           "signal": "RTS",
@@ -1102,16 +814,7 @@
           ]
         },
         {
-          "af": "AF8",
-          "raw": "USART5_RX",
-          "peripheral": "USART5",
-          "signal": "RX",
-          "aliases": [
-            "USART5_RX"
-          ]
-        },
-        {
-          "af": "AF9",
+          "af": "ALT",
           "raw": "CAN0_TX",
           "peripheral": "CAN0",
           "signal": "TX",
@@ -1120,21 +823,21 @@
           ]
         },
         {
-          "af": "AF10",
+          "af": "ALT",
+          "raw": "TIMER0_ETI",
+          "peripheral": "TIMER0",
+          "signal": "ETI",
+          "aliases": [
+            "TIMER0_ETI"
+          ]
+        },
+        {
+          "af": "ALT",
           "raw": "USBFS_DP",
           "peripheral": "USBFS",
           "signal": "DP",
           "aliases": [
             "USBFS_DP"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
           ]
         }
       ]
@@ -1165,30 +868,12 @@
           ]
         },
         {
-          "af": "AF0",
-          "raw": "JTMS",
-          "peripheral": "JTMS",
-          "signal": "JTMS",
+          "af": "REMAP",
+          "raw": "PA13",
+          "peripheral": "PA13",
+          "signal": "PA13",
           "aliases": [
-            "JTMS"
-          ]
-        },
-        {
-          "af": "AF0",
-          "raw": "SWDIO",
-          "peripheral": "SWDIO",
-          "signal": "SWDIO",
-          "aliases": [
-            "SWDIO"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
+            "PA13"
           ]
         }
       ]
@@ -1219,30 +904,12 @@
           ]
         },
         {
-          "af": "AF0",
-          "raw": "JTCK",
-          "peripheral": "JTCK",
-          "signal": "JTCK",
+          "af": "REMAP",
+          "raw": "PA14",
+          "peripheral": "PA14",
+          "signal": "PA14",
           "aliases": [
-            "JTCK"
-          ]
-        },
-        {
-          "af": "AF0",
-          "raw": "SWCLK",
-          "peripheral": "SWCLK",
-          "signal": "SWCLK",
-          "aliases": [
-            "SWCLK"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
+            "PA14"
           ]
         }
       ]
@@ -1273,75 +940,12 @@
           ]
         },
         {
-          "af": "AF0",
-          "raw": "JTDI",
-          "peripheral": "JTDI",
-          "signal": "JTDI",
+          "af": "REMAP",
+          "raw": "PA14",
+          "peripheral": "PA14",
+          "signal": "PA14",
           "aliases": [
-            "JTDI"
-          ]
-        },
-        {
-          "af": "AF1",
-          "raw": "TIMER1_CH0",
-          "peripheral": "TIMER1",
-          "signal": "CH0",
-          "aliases": [
-            "TIMER1_CH0"
-          ]
-        },
-        {
-          "af": "AF1",
-          "raw": "TIMER1_ETI",
-          "peripheral": "TIMER1",
-          "signal": "ETI",
-          "aliases": [
-            "TIMER1_ETI"
-          ]
-        },
-        {
-          "af": "AF5",
-          "raw": "SPI0_NSS",
-          "peripheral": "SPI0",
-          "signal": "NSS",
-          "aliases": [
-            "SPI0_NSS"
-          ]
-        },
-        {
-          "af": "AF6",
-          "raw": "SPI2_NSS",
-          "peripheral": "SPI2",
-          "signal": "NSS",
-          "aliases": [
-            "SPI2_NSS"
-          ]
-        },
-        {
-          "af": "AF6",
-          "raw": "I2S2_WS",
-          "peripheral": "I2S2",
-          "signal": "WS",
-          "aliases": [
-            "I2S2_WS"
-          ]
-        },
-        {
-          "af": "AF7",
-          "raw": "USART0_TX",
-          "peripheral": "USART0",
-          "signal": "TX",
-          "aliases": [
-            "USART0_TX"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
+            "PA14"
           ]
         }
       ]
@@ -1372,16 +976,16 @@
           ]
         },
         {
-          "af": "AF1",
-          "raw": "TIMER0_CH1_ON",
-          "peripheral": "TIMER0",
-          "signal": "CH1_ON",
+          "af": "ALT",
+          "raw": "ADC01_IN8",
+          "peripheral": "ADC01",
+          "signal": "IN8",
           "aliases": [
-            "TIMER0_CH1_ON"
+            "ADC01_IN8"
           ]
         },
         {
-          "af": "AF2",
+          "af": "ALT",
           "raw": "TIMER2_CH2",
           "peripheral": "TIMER2",
           "signal": "CH2",
@@ -1390,7 +994,7 @@
           ]
         },
         {
-          "af": "AF3",
+          "af": "ALT",
           "raw": "TIMER7_CH1_ON",
           "peripheral": "TIMER7",
           "signal": "CH1_ON",
@@ -1399,48 +1003,12 @@
           ]
         },
         {
-          "af": "AF7",
-          "raw": "SPI2_MOSI",
-          "peripheral": "SPI2",
-          "signal": "MOSI",
+          "af": "REMAP",
+          "raw": "TIMER0_CH1_ON",
+          "peripheral": "TIMER0",
+          "signal": "CH1_ON",
           "aliases": [
-            "SPI2_MOSI"
-          ]
-        },
-        {
-          "af": "AF7",
-          "raw": "I2S2_SD",
-          "peripheral": "I2S2",
-          "signal": "SD",
-          "aliases": [
-            "I2S2_SD"
-          ]
-        },
-        {
-          "af": "AF10",
-          "raw": "USBHS_ULPI_D1",
-          "peripheral": "USBHS",
-          "signal": "ULPI_D1",
-          "aliases": [
-            "USBHS_ULPI_D1"
-          ]
-        },
-        {
-          "af": "AF12",
-          "raw": "SDIO_D1",
-          "peripheral": "SDIO",
-          "signal": "D1",
-          "aliases": [
-            "SDIO_D1"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
+            "TIMER0_CH1_ON"
           ]
         }
       ]
@@ -1471,16 +1039,16 @@
           ]
         },
         {
-          "af": "AF1",
-          "raw": "TIMER0_CH2_ON",
-          "peripheral": "TIMER0",
-          "signal": "CH2_ON",
+          "af": "ALT",
+          "raw": "ADC01_IN9",
+          "peripheral": "ADC01",
+          "signal": "IN9",
           "aliases": [
-            "TIMER0_CH2_ON"
+            "ADC01_IN9"
           ]
         },
         {
-          "af": "AF2",
+          "af": "ALT",
           "raw": "TIMER2_CH3",
           "peripheral": "TIMER2",
           "signal": "CH3",
@@ -1489,7 +1057,7 @@
           ]
         },
         {
-          "af": "AF3",
+          "af": "ALT",
           "raw": "TIMER7_CH2_ON",
           "peripheral": "TIMER7",
           "signal": "CH2_ON",
@@ -1498,30 +1066,12 @@
           ]
         },
         {
-          "af": "AF10",
-          "raw": "USBHS_ULPI_D2",
-          "peripheral": "USBHS",
-          "signal": "ULPI_D2",
+          "af": "REMAP",
+          "raw": "TIMER0_CH2_ON",
+          "peripheral": "TIMER0",
+          "signal": "CH2_ON",
           "aliases": [
-            "USBHS_ULPI_D2"
-          ]
-        },
-        {
-          "af": "AF12",
-          "raw": "SDIO_D2",
-          "peripheral": "SDIO",
-          "signal": "D2",
-          "aliases": [
-            "SDIO_D2"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
+            "TIMER0_CH2_ON"
           ]
         }
       ]
@@ -1550,60 +1100,6 @@
             "PB2_OUT",
             "PB2_GPIO_OUT"
           ]
-        },
-        {
-          "af": "AF1",
-          "raw": "TIMER1_CH3",
-          "peripheral": "TIMER1",
-          "signal": "CH3",
-          "aliases": [
-            "TIMER1_CH3"
-          ]
-        },
-        {
-          "af": "AF7",
-          "raw": "SPI2_MOSI",
-          "peripheral": "SPI2",
-          "signal": "MOSI",
-          "aliases": [
-            "SPI2_MOSI"
-          ]
-        },
-        {
-          "af": "AF7",
-          "raw": "I2S2_SD",
-          "peripheral": "I2S2",
-          "signal": "SD",
-          "aliases": [
-            "I2S2_SD"
-          ]
-        },
-        {
-          "af": "AF10",
-          "raw": "USBHS_ULPI_D4",
-          "peripheral": "USBHS",
-          "signal": "ULPI_D4",
-          "aliases": [
-            "USBHS_ULPI_D4"
-          ]
-        },
-        {
-          "af": "AF12",
-          "raw": "SDIO_CK",
-          "peripheral": "SDIO",
-          "signal": "CK",
-          "aliases": [
-            "SDIO_CK"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
-          ]
         }
       ]
     },
@@ -1631,87 +1127,6 @@
             "PB3_OUT",
             "PB3_GPIO_OUT"
           ]
-        },
-        {
-          "af": "AF0",
-          "raw": "JTDO",
-          "peripheral": "JTDO",
-          "signal": "JTDO",
-          "aliases": [
-            "JTDO"
-          ]
-        },
-        {
-          "af": "AF0",
-          "raw": "TRACESWO",
-          "peripheral": "TRACESWO",
-          "signal": "TRACESWO",
-          "aliases": [
-            "TRACESWO"
-          ]
-        },
-        {
-          "af": "AF1",
-          "raw": "TIMER1_CH1",
-          "peripheral": "TIMER1",
-          "signal": "CH1",
-          "aliases": [
-            "TIMER1_CH1"
-          ]
-        },
-        {
-          "af": "AF5",
-          "raw": "SPI0_SCK",
-          "peripheral": "SPI0",
-          "signal": "SCK",
-          "aliases": [
-            "SPI0_SCK"
-          ]
-        },
-        {
-          "af": "AF6",
-          "raw": "SPI2_SCK",
-          "peripheral": "SPI2",
-          "signal": "SCK",
-          "aliases": [
-            "SPI2_SCK"
-          ]
-        },
-        {
-          "af": "AF6",
-          "raw": "I2S2_CK",
-          "peripheral": "I2S2",
-          "signal": "CK",
-          "aliases": [
-            "I2S2_CK"
-          ]
-        },
-        {
-          "af": "AF7",
-          "raw": "USART0_RX",
-          "peripheral": "USART0",
-          "signal": "RX",
-          "aliases": [
-            "USART0_RX"
-          ]
-        },
-        {
-          "af": "AF9",
-          "raw": "I2C1_SDA",
-          "peripheral": "I2C1",
-          "signal": "SDA",
-          "aliases": [
-            "I2C1_SDA"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
-          ]
         }
       ]
     },
@@ -1738,87 +1153,6 @@
           "aliases": [
             "PB4_OUT",
             "PB4_GPIO_OUT"
-          ]
-        },
-        {
-          "af": "AF0",
-          "raw": "NJTRST",
-          "peripheral": "NJTRST",
-          "signal": "NJTRST",
-          "aliases": [
-            "NJTRST"
-          ]
-        },
-        {
-          "af": "AF2",
-          "raw": "TIMER2_CH0",
-          "peripheral": "TIMER2",
-          "signal": "CH0",
-          "aliases": [
-            "TIMER2_CH0"
-          ]
-        },
-        {
-          "af": "AF4",
-          "raw": "I2C0_TXFRAME",
-          "peripheral": "I2C0",
-          "signal": "TXFRAME",
-          "aliases": [
-            "I2C0_TXFRAME"
-          ]
-        },
-        {
-          "af": "AF5",
-          "raw": "SPI0_MISO",
-          "peripheral": "SPI0",
-          "signal": "MISO",
-          "aliases": [
-            "SPI0_MISO"
-          ]
-        },
-        {
-          "af": "AF6",
-          "raw": "SPI2_MISO",
-          "peripheral": "SPI2",
-          "signal": "MISO",
-          "aliases": [
-            "SPI2_MISO"
-          ]
-        },
-        {
-          "af": "AF7",
-          "raw": "I2S2_ADD_SD",
-          "peripheral": "I2S2",
-          "signal": "ADD_SD",
-          "aliases": [
-            "I2S2_ADD_SD"
-          ]
-        },
-        {
-          "af": "AF9",
-          "raw": "I2C2_SDA",
-          "peripheral": "I2C2",
-          "signal": "SDA",
-          "aliases": [
-            "I2C2_SDA"
-          ]
-        },
-        {
-          "af": "AF12",
-          "raw": "SDIO_D0",
-          "peripheral": "SDIO",
-          "signal": "D0",
-          "aliases": [
-            "SDIO_D0"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
           ]
         }
       ]
@@ -1849,16 +1183,7 @@
           ]
         },
         {
-          "af": "AF2",
-          "raw": "TIMER2_CH1",
-          "peripheral": "TIMER2",
-          "signal": "CH1",
-          "aliases": [
-            "TIMER2_CH1"
-          ]
-        },
-        {
-          "af": "AF4",
+          "af": "ALT",
           "raw": "I2C0_SMBA",
           "peripheral": "I2C0",
           "signal": "SMBA",
@@ -1867,16 +1192,7 @@
           ]
         },
         {
-          "af": "AF5",
-          "raw": "SPI0_MOSI",
-          "peripheral": "SPI0",
-          "signal": "MOSI",
-          "aliases": [
-            "SPI0_MOSI"
-          ]
-        },
-        {
-          "af": "AF6",
+          "af": "ALT",
           "raw": "SPI2_MOSI",
           "peripheral": "SPI2",
           "signal": "MOSI",
@@ -1885,7 +1201,7 @@
           ]
         },
         {
-          "af": "AF6",
+          "af": "ALT",
           "raw": "I2S2_SD",
           "peripheral": "I2S2",
           "signal": "SD",
@@ -1894,39 +1210,30 @@
           ]
         },
         {
-          "af": "AF9",
+          "af": "REMAP",
+          "raw": "TIMER2_CH1",
+          "peripheral": "TIMER2",
+          "signal": "CH1",
+          "aliases": [
+            "TIMER2_CH1"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "SPI0_MOSI",
+          "peripheral": "SPI0",
+          "signal": "MOSI",
+          "aliases": [
+            "SPI0_MOSI"
+          ]
+        },
+        {
+          "af": "REMAP",
           "raw": "CAN1_RX",
           "peripheral": "CAN1",
           "signal": "RX",
           "aliases": [
             "CAN1_RX"
-          ]
-        },
-        {
-          "af": "AF10",
-          "raw": "USBHS_ULPI_D7",
-          "peripheral": "USBHS",
-          "signal": "ULPI_D7",
-          "aliases": [
-            "USBHS_ULPI_D7"
-          ]
-        },
-        {
-          "af": "AF13",
-          "raw": "DCI_D10",
-          "peripheral": "DCI",
-          "signal": "D10",
-          "aliases": [
-            "DCI_D10"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
           ]
         }
       ]
@@ -1957,16 +1264,7 @@
           ]
         },
         {
-          "af": "AF2",
-          "raw": "TIMER3_CH0",
-          "peripheral": "TIMER3",
-          "signal": "CH0",
-          "aliases": [
-            "TIMER3_CH0"
-          ]
-        },
-        {
-          "af": "AF4",
+          "af": "ALT",
           "raw": "I2C0_SCL",
           "peripheral": "I2C0",
           "signal": "SCL",
@@ -1975,7 +1273,16 @@
           ]
         },
         {
-          "af": "AF7",
+          "af": "ALT",
+          "raw": "TIMER3_CH0",
+          "peripheral": "TIMER3",
+          "signal": "CH0",
+          "aliases": [
+            "TIMER3_CH0"
+          ]
+        },
+        {
+          "af": "REMAP",
           "raw": "USART0_TX",
           "peripheral": "USART0",
           "signal": "TX",
@@ -1984,7 +1291,16 @@
           ]
         },
         {
-          "af": "AF9",
+          "af": "REMAP",
+          "raw": "SPI0_IO2",
+          "peripheral": "SPI0",
+          "signal": "IO2",
+          "aliases": [
+            "SPI0_IO2"
+          ]
+        },
+        {
+          "af": "REMAP",
           "raw": "CAN1_TX",
           "peripheral": "CAN1",
           "signal": "TX",
@@ -1993,21 +1309,12 @@
           ]
         },
         {
-          "af": "AF13",
-          "raw": "DCI_D5",
-          "peripheral": "DCI",
-          "signal": "D5",
+          "af": "REMAP",
+          "raw": "CNA1_TX",
+          "peripheral": "CNA1",
+          "signal": "TX",
           "aliases": [
-            "DCI_D5"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
+            "CNA1_TX"
           ]
         }
       ]
@@ -2038,16 +1345,7 @@
           ]
         },
         {
-          "af": "AF2",
-          "raw": "TIMER3_CH1",
-          "peripheral": "TIMER3",
-          "signal": "CH1",
-          "aliases": [
-            "TIMER3_CH1"
-          ]
-        },
-        {
-          "af": "AF4",
+          "af": "ALT",
           "raw": "I2C0_SDA",
           "peripheral": "I2C0",
           "signal": "SDA",
@@ -2056,7 +1354,25 @@
           ]
         },
         {
-          "af": "AF7",
+          "af": "ALT",
+          "raw": "TIMER3_CH1",
+          "peripheral": "TIMER3",
+          "signal": "CH1",
+          "aliases": [
+            "TIMER3_CH1"
+          ]
+        },
+        {
+          "af": "ALT",
+          "raw": "EXMC_NADV",
+          "peripheral": "EXMC",
+          "signal": "NADV",
+          "aliases": [
+            "EXMC_NADV"
+          ]
+        },
+        {
+          "af": "REMAP",
           "raw": "USART0_RX",
           "peripheral": "USART0",
           "signal": "RX",
@@ -2065,21 +1381,12 @@
           ]
         },
         {
-          "af": "AF13",
-          "raw": "DCI_VSYNC",
-          "peripheral": "DCI",
-          "signal": "VSYNC",
+          "af": "REMAP",
+          "raw": "SPI0_IO3",
+          "peripheral": "SPI0",
+          "signal": "IO3",
           "aliases": [
-            "DCI_VSYNC"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
+            "SPI0_IO3"
           ]
         }
       ]
@@ -2110,25 +1417,7 @@
           ]
         },
         {
-          "af": "AF1",
-          "raw": "TIMER1_CH0",
-          "peripheral": "TIMER1",
-          "signal": "CH0",
-          "aliases": [
-            "TIMER1_CH0"
-          ]
-        },
-        {
-          "af": "AF1",
-          "raw": "TIMER1_ETI",
-          "peripheral": "TIMER1",
-          "signal": "ETI",
-          "aliases": [
-            "TIMER1_ETI"
-          ]
-        },
-        {
-          "af": "AF2",
+          "af": "ALT",
           "raw": "TIMER3_CH2",
           "peripheral": "TIMER3",
           "signal": "CH2",
@@ -2137,34 +1426,7 @@
           ]
         },
         {
-          "af": "AF3",
-          "raw": "TIMER9_CH0",
-          "peripheral": "TIMER9",
-          "signal": "CH0",
-          "aliases": [
-            "TIMER9_CH0"
-          ]
-        },
-        {
-          "af": "AF4",
-          "raw": "I2C0_SCL",
-          "peripheral": "I2C0",
-          "signal": "SCL",
-          "aliases": [
-            "I2C0_SCL"
-          ]
-        },
-        {
-          "af": "AF9",
-          "raw": "CAN0_RX",
-          "peripheral": "CAN0",
-          "signal": "RX",
-          "aliases": [
-            "CAN0_RX"
-          ]
-        },
-        {
-          "af": "AF12",
+          "af": "ALT",
           "raw": "SDIO_D4",
           "peripheral": "SDIO",
           "signal": "D4",
@@ -2173,21 +1435,30 @@
           ]
         },
         {
-          "af": "AF13",
-          "raw": "DCI_D6",
-          "peripheral": "DCI",
-          "signal": "D6",
+          "af": "ALT",
+          "raw": "TIMER9_CH0",
+          "peripheral": "TIMER9",
+          "signal": "CH0",
           "aliases": [
-            "DCI_D6"
+            "TIMER9_CH0"
           ]
         },
         {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
+          "af": "REMAP",
+          "raw": "I2C0_SCL",
+          "peripheral": "I2C0",
+          "signal": "SCL",
           "aliases": [
-            "EVENTOUT"
+            "I2C0_SCL"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "CAN0_RX",
+          "peripheral": "CAN0",
+          "signal": "RX",
+          "aliases": [
+            "CAN0_RX"
           ]
         }
       ]
@@ -2218,16 +1489,7 @@
           ]
         },
         {
-          "af": "AF1",
-          "raw": "TIMER1_CH1",
-          "peripheral": "TIMER1",
-          "signal": "CH1",
-          "aliases": [
-            "TIMER1_CH1"
-          ]
-        },
-        {
-          "af": "AF2",
+          "af": "ALT",
           "raw": "TIMER3_CH3",
           "peripheral": "TIMER3",
           "signal": "CH3",
@@ -2236,52 +1498,7 @@
           ]
         },
         {
-          "af": "AF3",
-          "raw": "TIMER10_CH0",
-          "peripheral": "TIMER10",
-          "signal": "CH0",
-          "aliases": [
-            "TIMER10_CH0"
-          ]
-        },
-        {
-          "af": "AF4",
-          "raw": "I2C0_SDA",
-          "peripheral": "I2C0",
-          "signal": "SDA",
-          "aliases": [
-            "I2C0_SDA"
-          ]
-        },
-        {
-          "af": "AF5",
-          "raw": "SPI1_NSS",
-          "peripheral": "SPI1",
-          "signal": "NSS",
-          "aliases": [
-            "SPI1_NSS"
-          ]
-        },
-        {
-          "af": "AF5",
-          "raw": "I2S1_WS",
-          "peripheral": "I2S1",
-          "signal": "WS",
-          "aliases": [
-            "I2S1_WS"
-          ]
-        },
-        {
-          "af": "AF9",
-          "raw": "CAN0_TX",
-          "peripheral": "CAN0",
-          "signal": "TX",
-          "aliases": [
-            "CAN0_TX"
-          ]
-        },
-        {
-          "af": "AF12",
+          "af": "ALT",
           "raw": "SDIO_D5",
           "peripheral": "SDIO",
           "signal": "D5",
@@ -2290,21 +1507,30 @@
           ]
         },
         {
-          "af": "AF13",
-          "raw": "DCI_D7",
-          "peripheral": "DCI",
-          "signal": "D7",
+          "af": "ALT",
+          "raw": "TIMER10_CH0",
+          "peripheral": "TIMER10",
+          "signal": "CH0",
           "aliases": [
-            "DCI_D7"
+            "TIMER10_CH0"
           ]
         },
         {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
+          "af": "REMAP",
+          "raw": "I2C0_SDA",
+          "peripheral": "I2C0",
+          "signal": "SDA",
           "aliases": [
-            "EVENTOUT"
+            "I2C0_SDA"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "CAN0_TX",
+          "peripheral": "CAN0",
+          "signal": "TX",
+          "aliases": [
+            "CAN0_TX"
           ]
         }
       ]
@@ -2335,16 +1561,7 @@
           ]
         },
         {
-          "af": "AF1",
-          "raw": "TIMER1_CH2",
-          "peripheral": "TIMER1",
-          "signal": "CH2",
-          "aliases": [
-            "TIMER1_CH2"
-          ]
-        },
-        {
-          "af": "AF4",
+          "af": "ALT",
           "raw": "I2C1_SCL",
           "peripheral": "I2C1",
           "signal": "SCL",
@@ -2353,34 +1570,7 @@
           ]
         },
         {
-          "af": "AF5",
-          "raw": "SPI1_SCK",
-          "peripheral": "SPI1",
-          "signal": "SCK",
-          "aliases": [
-            "SPI1_SCK"
-          ]
-        },
-        {
-          "af": "AF5",
-          "raw": "I2S1_CK",
-          "peripheral": "I2S1",
-          "signal": "CK",
-          "aliases": [
-            "I2S1_CK"
-          ]
-        },
-        {
-          "af": "AF6",
-          "raw": "I2S2_MCK",
-          "peripheral": "I2S2",
-          "signal": "MCK",
-          "aliases": [
-            "I2S2_MCK"
-          ]
-        },
-        {
-          "af": "AF7",
+          "af": "ALT",
           "raw": "USART2_TX",
           "peripheral": "USART2",
           "signal": "TX",
@@ -2389,30 +1579,12 @@
           ]
         },
         {
-          "af": "AF10",
-          "raw": "USBHS_ULPI_D3",
-          "peripheral": "USBHS",
-          "signal": "ULPI_D3",
+          "af": "REMAP",
+          "raw": "TIMER1_CH2",
+          "peripheral": "TIMER1",
+          "signal": "CH2",
           "aliases": [
-            "USBHS_ULPI_D3"
-          ]
-        },
-        {
-          "af": "AF12",
-          "raw": "SDIO_D7",
-          "peripheral": "SDIO",
-          "signal": "D7",
-          "aliases": [
-            "SDIO_D7"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
+            "TIMER1_CH2"
           ]
         }
       ]
@@ -2443,16 +1615,7 @@
           ]
         },
         {
-          "af": "AF1",
-          "raw": "TIMER1_CH3",
-          "peripheral": "TIMER1",
-          "signal": "CH3",
-          "aliases": [
-            "TIMER1_CH3"
-          ]
-        },
-        {
-          "af": "AF4",
+          "af": "ALT",
           "raw": "I2C1_SDA",
           "peripheral": "I2C1",
           "signal": "SDA",
@@ -2461,16 +1624,7 @@
           ]
         },
         {
-          "af": "AF5",
-          "raw": "I2S_CKIN",
-          "peripheral": "I2S",
-          "signal": "CKIN",
-          "aliases": [
-            "I2S_CKIN"
-          ]
-        },
-        {
-          "af": "AF7",
+          "af": "ALT",
           "raw": "USART2_RX",
           "peripheral": "USART2",
           "signal": "RX",
@@ -2479,21 +1633,12 @@
           ]
         },
         {
-          "af": "AF10",
-          "raw": "USBHS_ULPI_D4",
-          "peripheral": "USBHS",
-          "signal": "ULPI_D4",
+          "af": "REMAP",
+          "raw": "TIMER1_CH3",
+          "peripheral": "TIMER1",
+          "signal": "CH3",
           "aliases": [
-            "USBHS_ULPI_D4"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
+            "TIMER1_CH3"
           ]
         }
       ]
@@ -2524,25 +1669,7 @@
           ]
         },
         {
-          "af": "AF1",
-          "raw": "TIMER0_BRKIN",
-          "peripheral": "TIMER0",
-          "signal": "BRKIN",
-          "aliases": [
-            "TIMER0_BRKIN"
-          ]
-        },
-        {
-          "af": "AF4",
-          "raw": "I2C1_SMBA",
-          "peripheral": "I2C1",
-          "signal": "SMBA",
-          "aliases": [
-            "I2C1_SMBA"
-          ]
-        },
-        {
-          "af": "AF5",
+          "af": "ALT",
           "raw": "SPI1_NSS",
           "peripheral": "SPI1",
           "signal": "NSS",
@@ -2551,16 +1678,16 @@
           ]
         },
         {
-          "af": "AF5",
-          "raw": "I2S1_WS",
-          "peripheral": "I2S1",
-          "signal": "WS",
+          "af": "ALT",
+          "raw": "I2C1_SMBA",
+          "peripheral": "I2C1",
+          "signal": "SMBA",
           "aliases": [
-            "I2S1_WS"
+            "I2C1_SMBA"
           ]
         },
         {
-          "af": "AF7",
+          "af": "ALT",
           "raw": "USART2_CK",
           "peripheral": "USART2",
           "signal": "CK",
@@ -2569,39 +1696,30 @@
           ]
         },
         {
-          "af": "AF9",
+          "af": "ALT",
+          "raw": "TIMER0_BRKIN",
+          "peripheral": "TIMER0",
+          "signal": "BRKIN",
+          "aliases": [
+            "TIMER0_BRKIN"
+          ]
+        },
+        {
+          "af": "ALT",
+          "raw": "I2S1_WS",
+          "peripheral": "I2S1",
+          "signal": "WS",
+          "aliases": [
+            "I2S1_WS"
+          ]
+        },
+        {
+          "af": "ALT",
           "raw": "CAN1_RX",
           "peripheral": "CAN1",
           "signal": "RX",
           "aliases": [
             "CAN1_RX"
-          ]
-        },
-        {
-          "af": "AF10",
-          "raw": "USBHS_ULPI_D5",
-          "peripheral": "USBHS",
-          "signal": "ULPI_D5",
-          "aliases": [
-            "USBHS_ULPI_D5"
-          ]
-        },
-        {
-          "af": "AF12",
-          "raw": "USBHS_ID",
-          "peripheral": "USBHS",
-          "signal": "ID",
-          "aliases": [
-            "USBHS_ID"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
           ]
         }
       ]
@@ -2632,25 +1750,7 @@
           ]
         },
         {
-          "af": "AF1",
-          "raw": "TIMER0_CH0_ON",
-          "peripheral": "TIMER0",
-          "signal": "CH0_ON",
-          "aliases": [
-            "TIMER0_CH0_ON"
-          ]
-        },
-        {
-          "af": "AF4",
-          "raw": "I2C1_TXFRAME",
-          "peripheral": "I2C1",
-          "signal": "TXFRAME",
-          "aliases": [
-            "I2C1_TXFRAME"
-          ]
-        },
-        {
-          "af": "AF5",
+          "af": "ALT",
           "raw": "SPI1_SCK",
           "peripheral": "SPI1",
           "signal": "SCK",
@@ -2659,16 +1759,7 @@
           ]
         },
         {
-          "af": "AF5",
-          "raw": "I2S1_CK",
-          "peripheral": "I2S1",
-          "signal": "CK",
-          "aliases": [
-            "I2S1_CK"
-          ]
-        },
-        {
-          "af": "AF7",
+          "af": "ALT",
           "raw": "USART2_CTS",
           "peripheral": "USART2",
           "signal": "CTS",
@@ -2677,30 +1768,30 @@
           ]
         },
         {
-          "af": "AF9",
+          "af": "ALT",
+          "raw": "TIMER0_CH0_ON",
+          "peripheral": "TIMER0",
+          "signal": "CH0_ON",
+          "aliases": [
+            "TIMER0_CH0_ON"
+          ]
+        },
+        {
+          "af": "ALT",
+          "raw": "I2S1_CK",
+          "peripheral": "I2S1",
+          "signal": "CK",
+          "aliases": [
+            "I2S1_CK"
+          ]
+        },
+        {
+          "af": "ALT",
           "raw": "CAN1_TX",
           "peripheral": "CAN1",
           "signal": "TX",
           "aliases": [
             "CAN1_TX"
-          ]
-        },
-        {
-          "af": "AF10",
-          "raw": "USBHS_ULPI_D6",
-          "peripheral": "USBHS",
-          "signal": "ULPI_D6",
-          "aliases": [
-            "USBHS_ULPI_D6"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
           ]
         }
       ]
@@ -2731,25 +1822,7 @@
           ]
         },
         {
-          "af": "AF1",
-          "raw": "TIMER0_CH1_ON",
-          "peripheral": "TIMER0",
-          "signal": "CH1_ON",
-          "aliases": [
-            "TIMER0_CH1_ON"
-          ]
-        },
-        {
-          "af": "AF3",
-          "raw": "TIMER7_CH1_ON",
-          "peripheral": "TIMER7",
-          "signal": "CH1_ON",
-          "aliases": [
-            "TIMER7_CH1_ON"
-          ]
-        },
-        {
-          "af": "AF5",
+          "af": "ALT",
           "raw": "SPI1_MISO",
           "peripheral": "SPI1",
           "signal": "MISO",
@@ -2758,16 +1831,7 @@
           ]
         },
         {
-          "af": "AF6",
-          "raw": "I2S1_ADD_SD",
-          "peripheral": "I2S1",
-          "signal": "ADD_SD",
-          "aliases": [
-            "I2S1_ADD_SD"
-          ]
-        },
-        {
-          "af": "AF7",
+          "af": "ALT",
           "raw": "USART2_RTS",
           "peripheral": "USART2",
           "signal": "RTS",
@@ -2776,30 +1840,21 @@
           ]
         },
         {
-          "af": "AF9",
+          "af": "ALT",
+          "raw": "TIMER0_CH1_ON",
+          "peripheral": "TIMER0",
+          "signal": "CH1_ON",
+          "aliases": [
+            "TIMER0_CH1_ON"
+          ]
+        },
+        {
+          "af": "ALT",
           "raw": "TIMER11_CH0",
           "peripheral": "TIMER11",
           "signal": "CH0",
           "aliases": [
             "TIMER11_CH0"
-          ]
-        },
-        {
-          "af": "AF12",
-          "raw": "USBHS_DM",
-          "peripheral": "USBHS",
-          "signal": "DM",
-          "aliases": [
-            "USBHS_DM"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
           ]
         }
       ]
@@ -2830,34 +1885,43 @@
           ]
         },
         {
-          "af": "AF0",
-          "raw": "RTC_REFIN",
-          "peripheral": "RTC",
-          "signal": "REFIN",
+          "af": "ALT",
+          "raw": "SPI1_MISO",
+          "peripheral": "SPI1",
+          "signal": "MISO",
           "aliases": [
-            "RTC_REFIN"
+            "SPI1_MISO"
           ]
         },
         {
-          "af": "AF1",
-          "raw": "TIMER0_CH2_ON",
+          "af": "ALT",
+          "raw": "USART2_RTS",
+          "peripheral": "USART2",
+          "signal": "RTS",
+          "aliases": [
+            "USART2_RTS"
+          ]
+        },
+        {
+          "af": "ALT",
+          "raw": "TIMER0_CH1_ON",
           "peripheral": "TIMER0",
-          "signal": "CH2_ON",
+          "signal": "CH1_ON",
           "aliases": [
-            "TIMER0_CH2_ON"
+            "TIMER0_CH1_ON"
           ]
         },
         {
-          "af": "AF3",
-          "raw": "TIMER7_CH2_ON",
-          "peripheral": "TIMER7",
-          "signal": "CH2_ON",
+          "af": "ALT",
+          "raw": "TIMER11_CH0",
+          "peripheral": "TIMER11",
+          "signal": "CH0",
           "aliases": [
-            "TIMER7_CH2_ON"
+            "TIMER11_CH0"
           ]
         },
         {
-          "af": "AF5",
+          "af": "ALT",
           "raw": "SPI1_MOSI",
           "peripheral": "SPI1",
           "signal": "MOSI",
@@ -2866,7 +1930,16 @@
           ]
         },
         {
-          "af": "AF5",
+          "af": "ALT",
+          "raw": "TIMER0_CH2_ON",
+          "peripheral": "TIMER0",
+          "signal": "CH2_ON",
+          "aliases": [
+            "TIMER0_CH2_ON"
+          ]
+        },
+        {
+          "af": "ALT",
           "raw": "I2S1_SD",
           "peripheral": "I2S1",
           "signal": "SD",
@@ -2875,30 +1948,12 @@
           ]
         },
         {
-          "af": "AF9",
+          "af": "ALT",
           "raw": "TIMER11_CH1",
           "peripheral": "TIMER11",
           "signal": "CH1",
           "aliases": [
             "TIMER11_CH1"
-          ]
-        },
-        {
-          "af": "AF12",
-          "raw": "USBHS_DP",
-          "peripheral": "USBHS",
-          "signal": "DP",
-          "aliases": [
-            "USBHS_DP"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
           ]
         }
       ]
@@ -2929,21 +1984,12 @@
           ]
         },
         {
-          "af": "AF10",
-          "raw": "USBHS_ULPI_STP",
-          "peripheral": "USBHS",
-          "signal": "ULPI_STP",
+          "af": "ALT",
+          "raw": "ADC012_IN10",
+          "peripheral": "ADC012",
+          "signal": "IN10",
           "aliases": [
-            "USBHS_ULPI_STP"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
+            "ADC012_IN10"
           ]
         }
       ]
@@ -2974,48 +2020,12 @@
           ]
         },
         {
-          "af": "AF5",
-          "raw": "SPI2_MOSI",
-          "peripheral": "SPI2",
-          "signal": "MOSI",
+          "af": "ALT",
+          "raw": "ADC012_IN11",
+          "peripheral": "ADC012",
+          "signal": "IN11",
           "aliases": [
-            "SPI2_MOSI"
-          ]
-        },
-        {
-          "af": "AF5",
-          "raw": "I2S2_SD",
-          "peripheral": "I2S2",
-          "signal": "SD",
-          "aliases": [
-            "I2S2_SD"
-          ]
-        },
-        {
-          "af": "AF7",
-          "raw": "SPI1_MOSI",
-          "peripheral": "SPI1",
-          "signal": "MOSI",
-          "aliases": [
-            "SPI1_MOSI"
-          ]
-        },
-        {
-          "af": "AF7",
-          "raw": "I2S1_SD",
-          "peripheral": "I2S1",
-          "signal": "SD",
-          "aliases": [
-            "I2S1_SD"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
+            "ADC012_IN11"
           ]
         }
       ]
@@ -3046,39 +2056,12 @@
           ]
         },
         {
-          "af": "AF5",
-          "raw": "SPI1_MISO",
-          "peripheral": "SPI1",
-          "signal": "MISO",
+          "af": "ALT",
+          "raw": "ADC012_IN12",
+          "peripheral": "ADC012",
+          "signal": "IN12",
           "aliases": [
-            "SPI1_MISO"
-          ]
-        },
-        {
-          "af": "AF6",
-          "raw": "I2S1_ADD_SD",
-          "peripheral": "I2S1",
-          "signal": "ADD_SD",
-          "aliases": [
-            "I2S1_ADD_SD"
-          ]
-        },
-        {
-          "af": "AF10",
-          "raw": "USBHS_ULPI_DIR",
-          "peripheral": "USBHS",
-          "signal": "ULPI_DIR",
-          "aliases": [
-            "USBHS_ULPI_DIR"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
+            "ADC012_IN12"
           ]
         }
       ]
@@ -3109,39 +2092,12 @@
           ]
         },
         {
-          "af": "AF5",
-          "raw": "SPI1_MOSI",
-          "peripheral": "SPI1",
-          "signal": "MOSI",
+          "af": "ALT",
+          "raw": "ADC012_IN13",
+          "peripheral": "ADC012",
+          "signal": "IN13",
           "aliases": [
-            "SPI1_MOSI"
-          ]
-        },
-        {
-          "af": "AF5",
-          "raw": "I2S1_SD",
-          "peripheral": "I2S1",
-          "signal": "SD",
-          "aliases": [
-            "I2S1_SD"
-          ]
-        },
-        {
-          "af": "AF10",
-          "raw": "USBHS_ULPI_NXT",
-          "peripheral": "USBHS",
-          "signal": "ULPI_NXT",
-          "aliases": [
-            "USBHS_ULPI_NXT"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
+            "ADC012_IN13"
           ]
         }
       ]
@@ -3172,12 +2128,12 @@
           ]
         },
         {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
+          "af": "ALT",
+          "raw": "ADC01_IN14",
+          "peripheral": "ADC01",
+          "signal": "IN14",
           "aliases": [
-            "EVENTOUT"
+            "ADC01_IN14"
           ]
         }
       ]
@@ -3208,21 +2164,12 @@
           ]
         },
         {
-          "af": "AF7",
-          "raw": "USART2_RX",
-          "peripheral": "USART2",
-          "signal": "RX",
+          "af": "ALT",
+          "raw": "ADC01_IN15",
+          "peripheral": "ADC01",
+          "signal": "IN15",
           "aliases": [
-            "USART2_RX"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
+            "ADC01_IN15"
           ]
         }
       ]
@@ -3253,25 +2200,7 @@
           ]
         },
         {
-          "af": "AF2",
-          "raw": "TIMER2_CH0",
-          "peripheral": "TIMER2",
-          "signal": "CH0",
-          "aliases": [
-            "TIMER2_CH0"
-          ]
-        },
-        {
-          "af": "AF3",
-          "raw": "TIMER7_CH0",
-          "peripheral": "TIMER7",
-          "signal": "CH0",
-          "aliases": [
-            "TIMER7_CH0"
-          ]
-        },
-        {
-          "af": "AF5",
+          "af": "ALT",
           "raw": "I2S1_MCK",
           "peripheral": "I2S1",
           "signal": "MCK",
@@ -3280,16 +2209,16 @@
           ]
         },
         {
-          "af": "AF8",
-          "raw": "USART5_TX",
-          "peripheral": "USART5",
-          "signal": "TX",
+          "af": "ALT",
+          "raw": "TIMER7_CH0",
+          "peripheral": "TIMER7",
+          "signal": "CH0",
           "aliases": [
-            "USART5_TX"
+            "TIMER7_CH0"
           ]
         },
         {
-          "af": "AF12",
+          "af": "ALT",
           "raw": "SDIO_D6",
           "peripheral": "SDIO",
           "signal": "D6",
@@ -3298,21 +2227,12 @@
           ]
         },
         {
-          "af": "AF13",
-          "raw": "DCI_D0",
-          "peripheral": "DCI",
-          "signal": "D0",
+          "af": "REMAP",
+          "raw": "TIMER2_CH0",
+          "peripheral": "TIMER2",
+          "signal": "CH0",
           "aliases": [
-            "DCI_D0"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
+            "TIMER2_CH0"
           ]
         }
       ]
@@ -3343,43 +2263,7 @@
           ]
         },
         {
-          "af": "AF2",
-          "raw": "TIMER2_CH1",
-          "peripheral": "TIMER2",
-          "signal": "CH1",
-          "aliases": [
-            "TIMER2_CH1"
-          ]
-        },
-        {
-          "af": "AF3",
-          "raw": "TIMER7_CH1",
-          "peripheral": "TIMER7",
-          "signal": "CH1",
-          "aliases": [
-            "TIMER7_CH1"
-          ]
-        },
-        {
-          "af": "AF5",
-          "raw": "SPI1_SCK",
-          "peripheral": "SPI1",
-          "signal": "SCK",
-          "aliases": [
-            "SPI1_SCK"
-          ]
-        },
-        {
-          "af": "AF5",
-          "raw": "I2S1_CK",
-          "peripheral": "I2S1",
-          "signal": "CK",
-          "aliases": [
-            "I2S1_CK"
-          ]
-        },
-        {
-          "af": "AF6",
+          "af": "ALT",
           "raw": "I2S2_MCK",
           "peripheral": "I2S2",
           "signal": "MCK",
@@ -3388,16 +2272,16 @@
           ]
         },
         {
-          "af": "AF8",
-          "raw": "USART5_RX",
-          "peripheral": "USART5",
-          "signal": "RX",
+          "af": "ALT",
+          "raw": "TIMER7_CH1",
+          "peripheral": "TIMER7",
+          "signal": "CH1",
           "aliases": [
-            "USART5_RX"
+            "TIMER7_CH1"
           ]
         },
         {
-          "af": "AF12",
+          "af": "ALT",
           "raw": "SDIO_D7",
           "peripheral": "SDIO",
           "signal": "D7",
@@ -3406,21 +2290,12 @@
           ]
         },
         {
-          "af": "AF13",
-          "raw": "DCI_D1",
-          "peripheral": "DCI",
-          "signal": "D1",
+          "af": "REMAP",
+          "raw": "TIMER2_CH1",
+          "peripheral": "TIMER2",
+          "signal": "CH1",
           "aliases": [
-            "DCI_D1"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
+            "TIMER2_CH1"
           ]
         }
       ]
@@ -3451,16 +2326,7 @@
           ]
         },
         {
-          "af": "AF2",
-          "raw": "TIMER2_CH2",
-          "peripheral": "TIMER2",
-          "signal": "CH2",
-          "aliases": [
-            "TIMER2_CH2"
-          ]
-        },
-        {
-          "af": "AF3",
+          "af": "ALT",
           "raw": "TIMER7_CH2",
           "peripheral": "TIMER7",
           "signal": "CH2",
@@ -3469,16 +2335,7 @@
           ]
         },
         {
-          "af": "AF8",
-          "raw": "USART5_CK",
-          "peripheral": "USART5",
-          "signal": "CK",
-          "aliases": [
-            "USART5_CK"
-          ]
-        },
-        {
-          "af": "AF12",
+          "af": "ALT",
           "raw": "SDIO_D0",
           "peripheral": "SDIO",
           "signal": "D0",
@@ -3487,21 +2344,12 @@
           ]
         },
         {
-          "af": "AF13",
-          "raw": "DCI_D2",
-          "peripheral": "DCI",
-          "signal": "D2",
+          "af": "REMAP",
+          "raw": "TIMER2_CH2",
+          "peripheral": "TIMER2",
+          "signal": "CH2",
           "aliases": [
-            "DCI_D2"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
+            "TIMER2_CH2"
           ]
         }
       ]
@@ -3532,25 +2380,7 @@
           ]
         },
         {
-          "af": "AF0",
-          "raw": "CK_OUT1",
-          "peripheral": "CK",
-          "signal": "OUT1",
-          "aliases": [
-            "CK_OUT1"
-          ]
-        },
-        {
-          "af": "AF2",
-          "raw": "TIMER2_CH3",
-          "peripheral": "TIMER2",
-          "signal": "CH3",
-          "aliases": [
-            "TIMER2_CH3"
-          ]
-        },
-        {
-          "af": "AF3",
+          "af": "ALT",
           "raw": "TIMER7_CH3",
           "peripheral": "TIMER7",
           "signal": "CH3",
@@ -3559,25 +2389,7 @@
           ]
         },
         {
-          "af": "AF4",
-          "raw": "I2C2_SDA",
-          "peripheral": "I2C2",
-          "signal": "SDA",
-          "aliases": [
-            "I2C2_SDA"
-          ]
-        },
-        {
-          "af": "AF5",
-          "raw": "I2S_CKIN",
-          "peripheral": "I2S",
-          "signal": "CKIN",
-          "aliases": [
-            "I2S_CKIN"
-          ]
-        },
-        {
-          "af": "AF12",
+          "af": "ALT",
           "raw": "SDIO_D1",
           "peripheral": "SDIO",
           "signal": "D1",
@@ -3586,21 +2398,12 @@
           ]
         },
         {
-          "af": "AF13",
-          "raw": "DCI_D3",
-          "peripheral": "DCI",
-          "signal": "D3",
+          "af": "REMAP",
+          "raw": "TIMER2_CH3",
+          "peripheral": "TIMER2",
+          "signal": "CH3",
           "aliases": [
-            "DCI_D3"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
+            "TIMER2_CH3"
           ]
         }
       ]
@@ -3631,34 +2434,7 @@
           ]
         },
         {
-          "af": "AF6",
-          "raw": "SPI2_SCK",
-          "peripheral": "SPI2",
-          "signal": "SCK",
-          "aliases": [
-            "SPI2_SCK"
-          ]
-        },
-        {
-          "af": "AF6",
-          "raw": "I2S2_CK",
-          "peripheral": "I2S2",
-          "signal": "CK",
-          "aliases": [
-            "I2S2_CK"
-          ]
-        },
-        {
-          "af": "AF7",
-          "raw": "USART2_TX",
-          "peripheral": "USART2",
-          "signal": "TX",
-          "aliases": [
-            "USART2_TX"
-          ]
-        },
-        {
-          "af": "AF8",
+          "af": "ALT",
           "raw": "UART3_TX",
           "peripheral": "UART3",
           "signal": "TX",
@@ -3667,7 +2443,7 @@
           ]
         },
         {
-          "af": "AF12",
+          "af": "ALT",
           "raw": "SDIO_D2",
           "peripheral": "SDIO",
           "signal": "D2",
@@ -3676,21 +2452,30 @@
           ]
         },
         {
-          "af": "AF13",
-          "raw": "DCI_D8",
-          "peripheral": "DCI",
-          "signal": "D8",
+          "af": "REMAP",
+          "raw": "USART2_TX",
+          "peripheral": "USART2",
+          "signal": "TX",
           "aliases": [
-            "DCI_D8"
+            "USART2_TX"
           ]
         },
         {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
+          "af": "REMAP",
+          "raw": "SPI2_SCK",
+          "peripheral": "SPI2",
+          "signal": "SCK",
           "aliases": [
-            "EVENTOUT"
+            "SPI2_SCK"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "I2S2_CK",
+          "peripheral": "I2S2",
+          "signal": "CK",
+          "aliases": [
+            "I2S2_CK"
           ]
         }
       ]
@@ -3721,34 +2506,7 @@
           ]
         },
         {
-          "af": "AF5",
-          "raw": "I2S2_ADD_SD",
-          "peripheral": "I2S2",
-          "signal": "ADD_SD",
-          "aliases": [
-            "I2S2_ADD_SD"
-          ]
-        },
-        {
-          "af": "AF6",
-          "raw": "SPI2_MISO",
-          "peripheral": "SPI2",
-          "signal": "MISO",
-          "aliases": [
-            "SPI2_MISO"
-          ]
-        },
-        {
-          "af": "AF7",
-          "raw": "USART2_RX",
-          "peripheral": "USART2",
-          "signal": "RX",
-          "aliases": [
-            "USART2_RX"
-          ]
-        },
-        {
-          "af": "AF8",
+          "af": "ALT",
           "raw": "UART3_RX",
           "peripheral": "UART3",
           "signal": "RX",
@@ -3757,7 +2515,7 @@
           ]
         },
         {
-          "af": "AF12",
+          "af": "ALT",
           "raw": "SDIO_D3",
           "peripheral": "SDIO",
           "signal": "D3",
@@ -3766,21 +2524,66 @@
           ]
         },
         {
-          "af": "AF13",
-          "raw": "DCI_D4",
-          "peripheral": "DCI",
-          "signal": "D4",
+          "af": "REMAP",
+          "raw": "USART2_RX",
+          "peripheral": "USART2",
+          "signal": "RX",
           "aliases": [
-            "DCI_D4"
+            "USART2_RX"
           ]
         },
         {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
+          "af": "REMAP",
+          "raw": "SPI2_MISO",
+          "peripheral": "SPI2",
+          "signal": "MISO",
           "aliases": [
-            "EVENTOUT"
+            "SPI2_MISO"
+          ]
+        },
+        {
+          "af": "ALT",
+          "raw": "UART3_TX",
+          "peripheral": "UART3",
+          "signal": "TX",
+          "aliases": [
+            "UART3_TX"
+          ]
+        },
+        {
+          "af": "ALT",
+          "raw": "SDIO_D2",
+          "peripheral": "SDIO",
+          "signal": "D2",
+          "aliases": [
+            "SDIO_D2"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "USART2_TX",
+          "peripheral": "USART2",
+          "signal": "TX",
+          "aliases": [
+            "USART2_TX"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "SPI2_SCK",
+          "peripheral": "SPI2",
+          "signal": "SCK",
+          "aliases": [
+            "SPI2_SCK"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "I2S2_CK",
+          "peripheral": "I2S2",
+          "signal": "CK",
+          "aliases": [
+            "I2S2_CK"
           ]
         }
       ]
@@ -3811,43 +2614,7 @@
           ]
         },
         {
-          "af": "AF4",
-          "raw": "I2C1_SDA",
-          "peripheral": "I2C1",
-          "signal": "SDA",
-          "aliases": [
-            "I2C1_SDA"
-          ]
-        },
-        {
-          "af": "AF6",
-          "raw": "SPI2_MOSI",
-          "peripheral": "SPI2",
-          "signal": "MOSI",
-          "aliases": [
-            "SPI2_MOSI"
-          ]
-        },
-        {
-          "af": "AF6",
-          "raw": "I2S2_SD",
-          "peripheral": "I2S2",
-          "signal": "SD",
-          "aliases": [
-            "I2S2_SD"
-          ]
-        },
-        {
-          "af": "AF7",
-          "raw": "USART2_CK",
-          "peripheral": "USART2",
-          "signal": "CK",
-          "aliases": [
-            "USART2_CK"
-          ]
-        },
-        {
-          "af": "AF8",
+          "af": "ALT",
           "raw": "UART4_TX",
           "peripheral": "UART4",
           "signal": "TX",
@@ -3856,7 +2623,7 @@
           ]
         },
         {
-          "af": "AF12",
+          "af": "ALT",
           "raw": "SDIO_CK",
           "peripheral": "SDIO",
           "signal": "CK",
@@ -3865,129 +2632,30 @@
           ]
         },
         {
-          "af": "AF13",
-          "raw": "DCI_D9",
-          "peripheral": "DCI",
-          "signal": "D9",
+          "af": "REMAP",
+          "raw": "USART2_CK",
+          "peripheral": "USART2",
+          "signal": "CK",
           "aliases": [
-            "DCI_D9"
+            "USART2_CK"
           ]
         },
         {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
+          "af": "REMAP",
+          "raw": "SPI2_MOSI",
+          "peripheral": "SPI2",
+          "signal": "MOSI",
           "aliases": [
-            "EVENTOUT"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "PC13",
-      "port": "C",
-      "number": 13,
-      "functions": [
-        {
-          "af": "GPIO",
-          "raw": "GPIO_IN",
-          "peripheral": "GPIO",
-          "signal": "IN",
-          "aliases": [
-            "PC13_IN",
-            "PC13_GPIO_IN"
+            "SPI2_MOSI"
           ]
         },
         {
-          "af": "GPIO",
-          "raw": "GPIO_OUT",
-          "peripheral": "GPIO",
-          "signal": "OUT",
+          "af": "REMAP",
+          "raw": "I2S2_SD",
+          "peripheral": "I2S2",
+          "signal": "SD",
           "aliases": [
-            "PC13_OUT",
-            "PC13_GPIO_OUT"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "PC14",
-      "port": "C",
-      "number": 14,
-      "functions": [
-        {
-          "af": "GPIO",
-          "raw": "GPIO_IN",
-          "peripheral": "GPIO",
-          "signal": "IN",
-          "aliases": [
-            "PC14_IN",
-            "PC14_GPIO_IN"
-          ]
-        },
-        {
-          "af": "GPIO",
-          "raw": "GPIO_OUT",
-          "peripheral": "GPIO",
-          "signal": "OUT",
-          "aliases": [
-            "PC14_OUT",
-            "PC14_GPIO_OUT"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "PC15",
-      "port": "C",
-      "number": 15,
-      "functions": [
-        {
-          "af": "GPIO",
-          "raw": "GPIO_IN",
-          "peripheral": "GPIO",
-          "signal": "IN",
-          "aliases": [
-            "PC15_IN",
-            "PC15_GPIO_IN"
-          ]
-        },
-        {
-          "af": "GPIO",
-          "raw": "GPIO_OUT",
-          "peripheral": "GPIO",
-          "signal": "OUT",
-          "aliases": [
-            "PC15_OUT",
-            "PC15_GPIO_OUT"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
+            "I2S2_SD"
           ]
         }
       ]
@@ -4018,25 +2686,16 @@
           ]
         },
         {
-          "af": "AF6",
-          "raw": "SPI2_MOSI",
-          "peripheral": "SPI2",
-          "signal": "MOSI",
+          "af": "ALT",
+          "raw": "EXMC_D2",
+          "peripheral": "EXMC",
+          "signal": "D2",
           "aliases": [
-            "SPI2_MOSI"
+            "EXMC_D2"
           ]
         },
         {
-          "af": "AF6",
-          "raw": "I2S2_SD",
-          "peripheral": "I2S2",
-          "signal": "SD",
-          "aliases": [
-            "I2S2_SD"
-          ]
-        },
-        {
-          "af": "AF9",
+          "af": "REMAP",
           "raw": "CAN0_RX",
           "peripheral": "CAN0",
           "signal": "RX",
@@ -4045,12 +2704,12 @@
           ]
         },
         {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
+          "af": "REMAP",
+          "raw": "OSCIN",
+          "peripheral": "OSCIN",
+          "signal": "OSCIN",
           "aliases": [
-            "EVENTOUT"
+            "OSCIN"
           ]
         }
       ]
@@ -4081,25 +2740,16 @@
           ]
         },
         {
-          "af": "AF7",
-          "raw": "SPI1_NSS",
-          "peripheral": "SPI1",
-          "signal": "NSS",
+          "af": "ALT",
+          "raw": "EXMC_D3",
+          "peripheral": "EXMC",
+          "signal": "D3",
           "aliases": [
-            "SPI1_NSS"
+            "EXMC_D3"
           ]
         },
         {
-          "af": "AF7",
-          "raw": "I2S1_WS",
-          "peripheral": "I2S1",
-          "signal": "WS",
-          "aliases": [
-            "I2S1_WS"
-          ]
-        },
-        {
-          "af": "AF9",
+          "af": "REMAP",
           "raw": "CAN0_TX",
           "peripheral": "CAN0",
           "signal": "TX",
@@ -4108,12 +2758,12 @@
           ]
         },
         {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
+          "af": "REMAP",
+          "raw": "OSCOUT",
+          "peripheral": "OSCOUT",
+          "signal": "OSCOUT",
           "aliases": [
-            "EVENTOUT"
+            "OSCOUT"
           ]
         }
       ]
@@ -4144,7 +2794,7 @@
           ]
         },
         {
-          "af": "AF2",
+          "af": "ALT",
           "raw": "TIMER2_ETI",
           "peripheral": "TIMER2",
           "signal": "ETI",
@@ -4153,16 +2803,7 @@
           ]
         },
         {
-          "af": "AF8",
-          "raw": "UART4_RX",
-          "peripheral": "UART4",
-          "signal": "RX",
-          "aliases": [
-            "UART4_RX"
-          ]
-        },
-        {
-          "af": "AF12",
+          "af": "ALT",
           "raw": "SDIO_CMD",
           "peripheral": "SDIO",
           "signal": "CMD",
@@ -4171,21 +2812,12 @@
           ]
         },
         {
-          "af": "AF13",
-          "raw": "DCI_D11",
-          "peripheral": "DCI",
-          "signal": "D11",
+          "af": "ALT",
+          "raw": "UART4_RX",
+          "peripheral": "UART4",
+          "signal": "RX",
           "aliases": [
-            "DCI_D11"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
+            "UART4_RX"
           ]
         }
       ]
@@ -4216,48 +2848,21 @@
           ]
         },
         {
-          "af": "AF5",
-          "raw": "SPI1_SCK",
-          "peripheral": "SPI1",
-          "signal": "SCK",
+          "af": "ALT",
+          "raw": "EXMC_CLK",
+          "peripheral": "EXMC",
+          "signal": "CLK",
           "aliases": [
-            "SPI1_SCK"
+            "EXMC_CLK"
           ]
         },
         {
-          "af": "AF5",
-          "raw": "I2S1_CK",
-          "peripheral": "I2S1",
-          "signal": "CK",
-          "aliases": [
-            "I2S1_CK"
-          ]
-        },
-        {
-          "af": "AF7",
+          "af": "REMAP",
           "raw": "USART1_CTS",
           "peripheral": "USART1",
           "signal": "CTS",
           "aliases": [
             "USART1_CTS"
-          ]
-        },
-        {
-          "af": "AF13",
-          "raw": "DCI_D5",
-          "peripheral": "DCI",
-          "signal": "D5",
-          "aliases": [
-            "DCI_D5"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
           ]
         }
       ]
@@ -4288,21 +2893,21 @@
           ]
         },
         {
-          "af": "AF7",
+          "af": "ALT",
+          "raw": "EXMC_NOE",
+          "peripheral": "EXMC",
+          "signal": "NOE",
+          "aliases": [
+            "EXMC_NOE"
+          ]
+        },
+        {
+          "af": "REMAP",
           "raw": "USART1_RTS",
           "peripheral": "USART1",
           "signal": "RTS",
           "aliases": [
             "USART1_RTS"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
           ]
         }
       ]
@@ -4333,21 +2938,30 @@
           ]
         },
         {
-          "af": "AF7",
+          "af": "ALT",
+          "raw": "EXMC_NWE",
+          "peripheral": "EXMC",
+          "signal": "NWE",
+          "aliases": [
+            "EXMC_NWE"
+          ]
+        },
+        {
+          "af": "REMAP",
+          "raw": "USART1_RTS",
+          "peripheral": "USART1",
+          "signal": "RTS",
+          "aliases": [
+            "USART1_RTS"
+          ]
+        },
+        {
+          "af": "REMAP",
           "raw": "USART1_TX",
           "peripheral": "USART1",
           "signal": "TX",
           "aliases": [
             "USART1_TX"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
           ]
         }
       ]
@@ -4378,48 +2992,21 @@
           ]
         },
         {
-          "af": "AF5",
-          "raw": "SPI2_MOSI",
-          "peripheral": "SPI2",
-          "signal": "MOSI",
+          "af": "ALT",
+          "raw": "EXMC_NWAIT",
+          "peripheral": "EXMC",
+          "signal": "NWAIT",
           "aliases": [
-            "SPI2_MOSI"
+            "EXMC_NWAIT"
           ]
         },
         {
-          "af": "AF5",
-          "raw": "I2S2_SD",
-          "peripheral": "I2S2",
-          "signal": "SD",
-          "aliases": [
-            "I2S2_SD"
-          ]
-        },
-        {
-          "af": "AF7",
+          "af": "REMAP",
           "raw": "USART1_RX",
           "peripheral": "USART1",
           "signal": "RX",
           "aliases": [
             "USART1_RX"
-          ]
-        },
-        {
-          "af": "AF13",
-          "raw": "DCI_D10",
-          "peripheral": "DCI",
-          "signal": "D10",
-          "aliases": [
-            "DCI_D10"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
           ]
         }
       ]
@@ -4450,21 +3037,30 @@
           ]
         },
         {
-          "af": "AF7",
+          "af": "ALT",
+          "raw": "EXMC_NE0",
+          "peripheral": "EXMC",
+          "signal": "NE0",
+          "aliases": [
+            "EXMC_NE0"
+          ]
+        },
+        {
+          "af": "ALT",
+          "raw": "EXMC_NCE1",
+          "peripheral": "EXMC",
+          "signal": "NCE1",
+          "aliases": [
+            "EXMC_NCE1"
+          ]
+        },
+        {
+          "af": "REMAP",
           "raw": "USART1_CK",
           "peripheral": "USART1",
           "signal": "CK",
           "aliases": [
             "USART1_CK"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
           ]
         }
       ]
@@ -4495,21 +3091,21 @@
           ]
         },
         {
-          "af": "AF7",
+          "af": "ALT",
+          "raw": "EXMC_D13",
+          "peripheral": "EXMC",
+          "signal": "D13",
+          "aliases": [
+            "EXMC_D13"
+          ]
+        },
+        {
+          "af": "REMAP",
           "raw": "USART2_TX",
           "peripheral": "USART2",
           "signal": "TX",
           "aliases": [
             "USART2_TX"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
           ]
         }
       ]
@@ -4540,21 +3136,21 @@
           ]
         },
         {
-          "af": "AF7",
+          "af": "ALT",
+          "raw": "EXMC_D14",
+          "peripheral": "EXMC",
+          "signal": "D14",
+          "aliases": [
+            "EXMC_D14"
+          ]
+        },
+        {
+          "af": "REMAP",
           "raw": "USART2_RX",
           "peripheral": "USART2",
           "signal": "RX",
           "aliases": [
             "USART2_RX"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
           ]
         }
       ]
@@ -4585,21 +3181,21 @@
           ]
         },
         {
-          "af": "AF7",
+          "af": "ALT",
+          "raw": "EXMC_D15",
+          "peripheral": "EXMC",
+          "signal": "D15",
+          "aliases": [
+            "EXMC_D15"
+          ]
+        },
+        {
+          "af": "REMAP",
           "raw": "USART2_CK",
           "peripheral": "USART2",
           "signal": "CK",
           "aliases": [
             "USART2_CK"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
           ]
         }
       ]
@@ -4630,21 +3226,21 @@
           ]
         },
         {
-          "af": "AF7",
+          "af": "ALT",
+          "raw": "EXMC_A16",
+          "peripheral": "EXMC",
+          "signal": "A16",
+          "aliases": [
+            "EXMC_A16"
+          ]
+        },
+        {
+          "af": "REMAP",
           "raw": "USART2_CTS",
           "peripheral": "USART2",
           "signal": "CTS",
           "aliases": [
             "USART2_CTS"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
           ]
         }
       ]
@@ -4675,7 +3271,16 @@
           ]
         },
         {
-          "af": "AF2",
+          "af": "ALT",
+          "raw": "EXMC_A17",
+          "peripheral": "EXMC",
+          "signal": "A17",
+          "aliases": [
+            "EXMC_A17"
+          ]
+        },
+        {
+          "af": "REMAP",
           "raw": "TIMER3_CH0",
           "peripheral": "TIMER3",
           "signal": "CH0",
@@ -4684,21 +3289,12 @@
           ]
         },
         {
-          "af": "AF7",
+          "af": "REMAP",
           "raw": "USART2_RTS",
           "peripheral": "USART2",
           "signal": "RTS",
           "aliases": [
             "USART2_RTS"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
           ]
         }
       ]
@@ -4729,21 +3325,21 @@
           ]
         },
         {
-          "af": "AF2",
+          "af": "ALT",
+          "raw": "EXMC_A18",
+          "peripheral": "EXMC",
+          "signal": "A18",
+          "aliases": [
+            "EXMC_A18"
+          ]
+        },
+        {
+          "af": "REMAP",
           "raw": "TIMER3_CH1",
           "peripheral": "TIMER3",
           "signal": "CH1",
           "aliases": [
             "TIMER3_CH1"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
           ]
         }
       ]
@@ -4774,21 +3370,21 @@
           ]
         },
         {
-          "af": "AF2",
+          "af": "ALT",
+          "raw": "EXMC_D0",
+          "peripheral": "EXMC",
+          "signal": "D0",
+          "aliases": [
+            "EXMC_D0"
+          ]
+        },
+        {
+          "af": "REMAP",
           "raw": "TIMER3_CH2",
           "peripheral": "TIMER3",
           "signal": "CH2",
           "aliases": [
             "TIMER3_CH2"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
           ]
         }
       ]
@@ -4819,16 +3415,16 @@
           ]
         },
         {
-          "af": "AF0",
-          "raw": "CTC_SYNC",
-          "peripheral": "CTC",
-          "signal": "SYNC",
+          "af": "ALT",
+          "raw": "EXMC_D1",
+          "peripheral": "EXMC",
+          "signal": "D1",
           "aliases": [
-            "CTC_SYNC"
+            "EXMC_D1"
           ]
         },
         {
-          "af": "AF2",
+          "af": "REMAP",
           "raw": "TIMER3_CH3",
           "peripheral": "TIMER3",
           "signal": "CH3",
@@ -4837,12 +3433,12 @@
           ]
         },
         {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
+          "af": "REMAP",
+          "raw": "CTC_SYNC",
+          "peripheral": "CTC",
+          "signal": "SYNC",
           "aliases": [
-            "EVENTOUT"
+            "CTC_SYNC"
           ]
         }
       ]
@@ -4873,7 +3469,7 @@
           ]
         },
         {
-          "af": "AF2",
+          "af": "ALT",
           "raw": "TIMER3_ETI",
           "peripheral": "TIMER3",
           "signal": "ETI",
@@ -4882,21 +3478,12 @@
           ]
         },
         {
-          "af": "AF13",
-          "raw": "DCI_D2",
-          "peripheral": "DCI",
-          "signal": "D2",
+          "af": "ALT",
+          "raw": "EXMC_NBL0",
+          "peripheral": "EXMC",
+          "signal": "NBL0",
           "aliases": [
-            "DCI_D2"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
+            "EXMC_NBL0"
           ]
         }
       ]
@@ -4927,30 +3514,12 @@
           ]
         },
         {
-          "af": "AF1",
-          "raw": "TIMER0_CH1_ON",
-          "peripheral": "TIMER0",
-          "signal": "CH1_ON",
+          "af": "ALT",
+          "raw": "EXMC_NBL1",
+          "peripheral": "EXMC",
+          "signal": "NBL1",
           "aliases": [
-            "TIMER0_CH1_ON"
-          ]
-        },
-        {
-          "af": "AF13",
-          "raw": "DCI_D3",
-          "peripheral": "DCI",
-          "signal": "D3",
-          "aliases": [
-            "DCI_D3"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
+            "EXMC_NBL1"
           ]
         }
       ]
@@ -4981,12 +3550,21 @@
           ]
         },
         {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
+          "af": "ALT",
+          "raw": "TRACECK",
+          "peripheral": "TRACECK",
+          "signal": "TRACECK",
           "aliases": [
-            "EVENTOUT"
+            "TRACECK"
+          ]
+        },
+        {
+          "af": "ALT",
+          "raw": "EXMC_A23",
+          "peripheral": "EXMC",
+          "signal": "A23",
+          "aliases": [
+            "EXMC_A23"
           ]
         }
       ]
@@ -5017,12 +3595,21 @@
           ]
         },
         {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
+          "af": "ALT",
+          "raw": "TRACED0",
+          "peripheral": "TRACED0",
+          "signal": "TRACED0",
           "aliases": [
-            "EVENTOUT"
+            "TRACED0"
+          ]
+        },
+        {
+          "af": "ALT",
+          "raw": "EXMC_A19",
+          "peripheral": "EXMC",
+          "signal": "A19",
+          "aliases": [
+            "EXMC_A19"
           ]
         }
       ]
@@ -5053,21 +3640,21 @@
           ]
         },
         {
-          "af": "AF13",
-          "raw": "DCI_D4",
-          "peripheral": "DCI",
-          "signal": "D4",
+          "af": "ALT",
+          "raw": "TRACED1",
+          "peripheral": "TRACED1",
+          "signal": "TRACED1",
           "aliases": [
-            "DCI_D4"
+            "TRACED1"
           ]
         },
         {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
+          "af": "ALT",
+          "raw": "EXMC_A20",
+          "peripheral": "EXMC",
+          "signal": "A20",
           "aliases": [
-            "EVENTOUT"
+            "EXMC_A20"
           ]
         }
       ]
@@ -5098,30 +3685,30 @@
           ]
         },
         {
-          "af": "AF3",
+          "af": "ALT",
+          "raw": "TRACED2",
+          "peripheral": "TRACED2",
+          "signal": "TRACED2",
+          "aliases": [
+            "TRACED2"
+          ]
+        },
+        {
+          "af": "ALT",
+          "raw": "EXMC_A21",
+          "peripheral": "EXMC",
+          "signal": "A21",
+          "aliases": [
+            "EXMC_A21"
+          ]
+        },
+        {
+          "af": "REMAP",
           "raw": "TIMER8_CH0",
           "peripheral": "TIMER8",
           "signal": "CH0",
           "aliases": [
             "TIMER8_CH0"
-          ]
-        },
-        {
-          "af": "AF13",
-          "raw": "DCI_D6",
-          "peripheral": "DCI",
-          "signal": "D6",
-          "aliases": [
-            "DCI_D6"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
           ]
         }
       ]
@@ -5152,30 +3739,30 @@
           ]
         },
         {
-          "af": "AF3",
+          "af": "ALT",
+          "raw": "TRACED3",
+          "peripheral": "TRACED3",
+          "signal": "TRACED3",
+          "aliases": [
+            "TRACED3"
+          ]
+        },
+        {
+          "af": "ALT",
+          "raw": "EXMC_A22",
+          "peripheral": "EXMC",
+          "signal": "A22",
+          "aliases": [
+            "EXMC_A22"
+          ]
+        },
+        {
+          "af": "REMAP",
           "raw": "TIMER8_CH1",
           "peripheral": "TIMER8",
           "signal": "CH1",
           "aliases": [
             "TIMER8_CH1"
-          ]
-        },
-        {
-          "af": "AF13",
-          "raw": "DCI_D7",
-          "peripheral": "DCI",
-          "signal": "D7",
-          "aliases": [
-            "DCI_D7"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
           ]
         }
       ]
@@ -5206,21 +3793,21 @@
           ]
         },
         {
-          "af": "AF1",
+          "af": "ALT",
+          "raw": "EXMC_D4",
+          "peripheral": "EXMC",
+          "signal": "D4",
+          "aliases": [
+            "EXMC_D4"
+          ]
+        },
+        {
+          "af": "REMAP",
           "raw": "TIMER0_ETI",
           "peripheral": "TIMER0",
           "signal": "ETI",
           "aliases": [
             "TIMER0_ETI"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
           ]
         }
       ]
@@ -5251,21 +3838,21 @@
           ]
         },
         {
-          "af": "AF1",
+          "af": "ALT",
+          "raw": "EXMC_D5",
+          "peripheral": "EXMC",
+          "signal": "D5",
+          "aliases": [
+            "EXMC_D5"
+          ]
+        },
+        {
+          "af": "REMAP",
           "raw": "TIMER0_CH0_ON",
           "peripheral": "TIMER0",
           "signal": "CH0_ON",
           "aliases": [
             "TIMER0_CH0_ON"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
           ]
         }
       ]
@@ -5296,21 +3883,21 @@
           ]
         },
         {
-          "af": "AF1",
+          "af": "ALT",
+          "raw": "EXMC_D6",
+          "peripheral": "EXMC",
+          "signal": "D6",
+          "aliases": [
+            "EXMC_D6"
+          ]
+        },
+        {
+          "af": "REMAP",
           "raw": "TIMER0_CH0",
           "peripheral": "TIMER0",
           "signal": "CH0",
           "aliases": [
             "TIMER0_CH0"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
           ]
         }
       ]
@@ -5341,21 +3928,21 @@
           ]
         },
         {
-          "af": "AF1",
+          "af": "ALT",
+          "raw": "EXMC_D7",
+          "peripheral": "EXMC",
+          "signal": "D7",
+          "aliases": [
+            "EXMC_D7"
+          ]
+        },
+        {
+          "af": "REMAP",
           "raw": "TIMER0_CH1_ON",
           "peripheral": "TIMER0",
           "signal": "CH1_ON",
           "aliases": [
             "TIMER0_CH1_ON"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
           ]
         }
       ]
@@ -5386,21 +3973,21 @@
           ]
         },
         {
-          "af": "AF1",
+          "af": "ALT",
+          "raw": "EXMC_D8",
+          "peripheral": "EXMC",
+          "signal": "D8",
+          "aliases": [
+            "EXMC_D8"
+          ]
+        },
+        {
+          "af": "REMAP",
           "raw": "TIMER0_CH1",
           "peripheral": "TIMER0",
           "signal": "CH1",
           "aliases": [
             "TIMER0_CH1"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
           ]
         }
       ]
@@ -5431,21 +4018,21 @@
           ]
         },
         {
-          "af": "AF1",
+          "af": "ALT",
+          "raw": "EXMC_D9",
+          "peripheral": "EXMC",
+          "signal": "D9",
+          "aliases": [
+            "EXMC_D9"
+          ]
+        },
+        {
+          "af": "REMAP",
           "raw": "TIMER0_CH2_ON",
           "peripheral": "TIMER0",
           "signal": "CH2_ON",
           "aliases": [
             "TIMER0_CH2_ON"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
           ]
         }
       ]
@@ -5476,21 +4063,21 @@
           ]
         },
         {
-          "af": "AF1",
+          "af": "ALT",
+          "raw": "EXMC_D10",
+          "peripheral": "EXMC",
+          "signal": "D10",
+          "aliases": [
+            "EXMC_D10"
+          ]
+        },
+        {
+          "af": "REMAP",
           "raw": "TIMER0_CH2",
           "peripheral": "TIMER0",
           "signal": "CH2",
           "aliases": [
             "TIMER0_CH2"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
           ]
         }
       ]
@@ -5521,21 +4108,21 @@
           ]
         },
         {
-          "af": "AF1",
+          "af": "ALT",
+          "raw": "EXMC_D11",
+          "peripheral": "EXMC",
+          "signal": "D11",
+          "aliases": [
+            "EXMC_D11"
+          ]
+        },
+        {
+          "af": "REMAP",
           "raw": "TIMER0_CH3",
           "peripheral": "TIMER0",
           "signal": "CH3",
           "aliases": [
             "TIMER0_CH3"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
           ]
         }
       ]
@@ -5566,21 +4153,21 @@
           ]
         },
         {
-          "af": "AF1",
+          "af": "ALT",
+          "raw": "EXMC_D12",
+          "peripheral": "EXMC",
+          "signal": "D12",
+          "aliases": [
+            "EXMC_D12"
+          ]
+        },
+        {
+          "af": "REMAP",
           "raw": "TIMER0_BRKIN",
           "peripheral": "TIMER0",
           "signal": "BRKIN",
           "aliases": [
             "TIMER0_BRKIN"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
           ]
         }
       ]
@@ -5611,30 +4198,21 @@
           ]
         },
         {
-          "af": "AF0",
+          "af": "ALT",
+          "raw": "EXMC_A0",
+          "peripheral": "EXMC",
+          "signal": "A0",
+          "aliases": [
+            "EXMC_A0"
+          ]
+        },
+        {
+          "af": "REMAP",
           "raw": "CTC_SYNC",
           "peripheral": "CTC",
           "signal": "SYNC",
           "aliases": [
             "CTC_SYNC"
-          ]
-        },
-        {
-          "af": "AF4",
-          "raw": "I2C1_SDA",
-          "peripheral": "I2C1",
-          "signal": "SDA",
-          "aliases": [
-            "I2C1_SDA"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
           ]
         }
       ]
@@ -5665,21 +4243,12 @@
           ]
         },
         {
-          "af": "AF4",
-          "raw": "I2C1_SCL",
-          "peripheral": "I2C1",
-          "signal": "SCL",
+          "af": "ALT",
+          "raw": "EXMC_A1",
+          "peripheral": "EXMC",
+          "signal": "A1",
           "aliases": [
-            "I2C1_SCL"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
+            "EXMC_A1"
           ]
         }
       ]
@@ -5710,21 +4279,12 @@
           ]
         },
         {
-          "af": "AF4",
-          "raw": "I2C1_SMBA",
-          "peripheral": "I2C1",
-          "signal": "SMBA",
+          "af": "ALT",
+          "raw": "EXMC_A2",
+          "peripheral": "EXMC",
+          "signal": "A2",
           "aliases": [
-            "I2C1_SMBA"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
+            "EXMC_A2"
           ]
         }
       ]
@@ -5755,21 +4315,12 @@
           ]
         },
         {
-          "af": "AF4",
-          "raw": "I2C1_TXFRAME",
-          "peripheral": "I2C1",
-          "signal": "TXFRAME",
+          "af": "ALT",
+          "raw": "EXMC_A3",
+          "peripheral": "EXMC",
+          "signal": "A3",
           "aliases": [
-            "I2C1_TXFRAME"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
+            "EXMC_A3"
           ]
         }
       ]
@@ -5800,12 +4351,12 @@
           ]
         },
         {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
+          "af": "ALT",
+          "raw": "EXMC_A4",
+          "peripheral": "EXMC",
+          "signal": "A4",
           "aliases": [
-            "EVENTOUT"
+            "EXMC_A4"
           ]
         }
       ]
@@ -5836,12 +4387,12 @@
           ]
         },
         {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
+          "af": "ALT",
+          "raw": "EXMC_A5",
+          "peripheral": "EXMC",
+          "signal": "A5",
           "aliases": [
-            "EVENTOUT"
+            "EXMC_A5"
           ]
         }
       ]
@@ -5872,21 +4423,30 @@
           ]
         },
         {
-          "af": "AF3",
+          "af": "ALT",
+          "raw": "ADC2_IN4",
+          "peripheral": "ADC2",
+          "signal": "IN4",
+          "aliases": [
+            "ADC2_IN4"
+          ]
+        },
+        {
+          "af": "ALT",
+          "raw": "EXMC_NIORD",
+          "peripheral": "EXMC",
+          "signal": "NIORD",
+          "aliases": [
+            "EXMC_NIORD"
+          ]
+        },
+        {
+          "af": "REMAP",
           "raw": "TIMER9_CH0",
           "peripheral": "TIMER9",
           "signal": "CH0",
           "aliases": [
             "TIMER9_CH0"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
           ]
         }
       ]
@@ -5917,21 +4477,30 @@
           ]
         },
         {
-          "af": "AF3",
+          "af": "ALT",
+          "raw": "ADC2_IN5",
+          "peripheral": "ADC2",
+          "signal": "IN5",
+          "aliases": [
+            "ADC2_IN5"
+          ]
+        },
+        {
+          "af": "ALT",
+          "raw": "EXMC_NREG",
+          "peripheral": "EXMC",
+          "signal": "NREG",
+          "aliases": [
+            "EXMC_NREG"
+          ]
+        },
+        {
+          "af": "REMAP",
           "raw": "TIMER10_CH0",
           "peripheral": "TIMER10",
           "signal": "CH0",
           "aliases": [
             "TIMER10_CH0"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
           ]
         }
       ]
@@ -5962,21 +4531,30 @@
           ]
         },
         {
-          "af": "AF9",
+          "af": "ALT",
+          "raw": "ADC2_IN6",
+          "peripheral": "ADC2",
+          "signal": "IN6",
+          "aliases": [
+            "ADC2_IN6"
+          ]
+        },
+        {
+          "af": "ALT",
+          "raw": "EXMC_NIOWR",
+          "peripheral": "EXMC",
+          "signal": "NIOWR",
+          "aliases": [
+            "EXMC_NIOWR"
+          ]
+        },
+        {
+          "af": "REMAP",
           "raw": "TIMER12_CH0",
           "peripheral": "TIMER12",
           "signal": "CH0",
           "aliases": [
             "TIMER12_CH0"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
           ]
         }
       ]
@@ -6007,21 +4585,30 @@
           ]
         },
         {
-          "af": "AF9",
+          "af": "ALT",
+          "raw": "ADC2_IN7",
+          "peripheral": "ADC2",
+          "signal": "IN7",
+          "aliases": [
+            "ADC2_IN7"
+          ]
+        },
+        {
+          "af": "ALT",
+          "raw": "EXMC_CD",
+          "peripheral": "EXMC",
+          "signal": "CD",
+          "aliases": [
+            "EXMC_CD"
+          ]
+        },
+        {
+          "af": "REMAP",
           "raw": "TIMER13_CH0",
           "peripheral": "TIMER13",
           "signal": "CH0",
           "aliases": [
             "TIMER13_CH0"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
           ]
         }
       ]
@@ -6052,21 +4639,21 @@
           ]
         },
         {
-          "af": "AF13",
-          "raw": "DCI_D11",
-          "peripheral": "DCI",
-          "signal": "D11",
+          "af": "ALT",
+          "raw": "ADC2_IN8",
+          "peripheral": "ADC2",
+          "signal": "IN8",
           "aliases": [
-            "DCI_D11"
+            "ADC2_IN8"
           ]
         },
         {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
+          "af": "ALT",
+          "raw": "EXMC_INTR",
+          "peripheral": "EXMC",
+          "signal": "INTR",
           "aliases": [
-            "EVENTOUT"
+            "EXMC_INTR"
           ]
         }
       ]
@@ -6097,21 +4684,12 @@
           ]
         },
         {
-          "af": "AF13",
-          "raw": "DCI_D12",
-          "peripheral": "DCI",
-          "signal": "D12",
+          "af": "ALT",
+          "raw": "EXMC_NIOS16",
+          "peripheral": "EXMC",
+          "signal": "NIOS16",
           "aliases": [
-            "DCI_D12"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
+            "EXMC_NIOS16"
           ]
         }
       ]
@@ -6142,12 +4720,12 @@
           ]
         },
         {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
+          "af": "ALT",
+          "raw": "EXMC_A6",
+          "peripheral": "EXMC",
+          "signal": "A6",
           "aliases": [
-            "EVENTOUT"
+            "EXMC_A6"
           ]
         }
       ]
@@ -6178,12 +4756,12 @@
           ]
         },
         {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
+          "af": "ALT",
+          "raw": "EXMC_A7",
+          "peripheral": "EXMC",
+          "signal": "A7",
           "aliases": [
-            "EVENTOUT"
+            "EXMC_A7"
           ]
         }
       ]
@@ -6214,12 +4792,12 @@
           ]
         },
         {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
+          "af": "ALT",
+          "raw": "EXMC_A8",
+          "peripheral": "EXMC",
+          "signal": "A8",
           "aliases": [
-            "EVENTOUT"
+            "EXMC_A8"
           ]
         }
       ]
@@ -6250,12 +4828,12 @@
           ]
         },
         {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
+          "af": "ALT",
+          "raw": "EXMC_A9",
+          "peripheral": "EXMC",
+          "signal": "A9",
           "aliases": [
-            "EVENTOUT"
+            "EXMC_A9"
           ]
         }
       ]
@@ -6286,12 +4864,12 @@
           ]
         },
         {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
+          "af": "ALT",
+          "raw": "EXMC_A10",
+          "peripheral": "EXMC",
+          "signal": "A10",
           "aliases": [
-            "EVENTOUT"
+            "EXMC_A10"
           ]
         }
       ]
@@ -6322,12 +4900,12 @@
           ]
         },
         {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
+          "af": "ALT",
+          "raw": "EXMC_A11",
+          "peripheral": "EXMC",
+          "signal": "A11",
           "aliases": [
-            "EVENTOUT"
+            "EXMC_A11"
           ]
         }
       ]
@@ -6358,12 +4936,12 @@
           ]
         },
         {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
+          "af": "ALT",
+          "raw": "EXMC_A12",
+          "peripheral": "EXMC",
+          "signal": "A12",
           "aliases": [
-            "EVENTOUT"
+            "EXMC_A12"
           ]
         }
       ]
@@ -6394,12 +4972,12 @@
           ]
         },
         {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
+          "af": "ALT",
+          "raw": "EXMC_A13",
+          "peripheral": "EXMC",
+          "signal": "A13",
           "aliases": [
-            "EVENTOUT"
+            "EXMC_A13"
           ]
         }
       ]
@@ -6427,15 +5005,6 @@
           "aliases": [
             "PG4_OUT",
             "PG4_GPIO_OUT"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
           ]
         }
       ]
@@ -6466,12 +5035,21 @@
           ]
         },
         {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
+          "af": "ALT",
+          "raw": "EXMC_A14",
+          "peripheral": "EXMC",
+          "signal": "A14",
           "aliases": [
-            "EVENTOUT"
+            "EXMC_A14"
+          ]
+        },
+        {
+          "af": "ALT",
+          "raw": "EXMC_A15",
+          "peripheral": "EXMC",
+          "signal": "A15",
+          "aliases": [
+            "EXMC_A15"
           ]
         }
       ]
@@ -6502,21 +5080,12 @@
           ]
         },
         {
-          "af": "AF13",
-          "raw": "DCI_D12",
-          "peripheral": "DCI",
-          "signal": "D12",
+          "af": "ALT",
+          "raw": "EXMC_INT1",
+          "peripheral": "EXMC",
+          "signal": "INT1",
           "aliases": [
-            "DCI_D12"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
+            "EXMC_INT1"
           ]
         }
       ]
@@ -6547,30 +5116,12 @@
           ]
         },
         {
-          "af": "AF8",
-          "raw": "USART5_CK",
-          "peripheral": "USART5",
-          "signal": "CK",
+          "af": "ALT",
+          "raw": "EXMC_INT2",
+          "peripheral": "EXMC",
+          "signal": "INT2",
           "aliases": [
-            "USART5_CK"
-          ]
-        },
-        {
-          "af": "AF13",
-          "raw": "DCI_D13",
-          "peripheral": "DCI",
-          "signal": "D13",
-          "aliases": [
-            "DCI_D13"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
+            "EXMC_INT2"
           ]
         }
       ]
@@ -6598,24 +5149,6 @@
           "aliases": [
             "PG8_OUT",
             "PG8_GPIO_OUT"
-          ]
-        },
-        {
-          "af": "AF8",
-          "raw": "USART5_RTS",
-          "peripheral": "USART5",
-          "signal": "RTS",
-          "aliases": [
-            "USART5_RTS"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
           ]
         }
       ]
@@ -6646,30 +5179,21 @@
           ]
         },
         {
-          "af": "AF8",
-          "raw": "USART5_RX",
-          "peripheral": "USART5",
-          "signal": "RX",
+          "af": "ALT",
+          "raw": "EXMC_NE1",
+          "peripheral": "EXMC",
+          "signal": "NE1",
           "aliases": [
-            "USART5_RX"
+            "EXMC_NE1"
           ]
         },
         {
-          "af": "AF13",
-          "raw": "DCI_VSYNC",
-          "peripheral": "DCI",
-          "signal": "VSYNC",
+          "af": "ALT",
+          "raw": "EXMC_NCE2",
+          "peripheral": "EXMC",
+          "signal": "NCE2",
           "aliases": [
-            "DCI_VSYNC"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
+            "EXMC_NCE2"
           ]
         }
       ]
@@ -6700,21 +5224,21 @@
           ]
         },
         {
-          "af": "AF13",
-          "raw": "DCI_D2",
-          "peripheral": "DCI",
-          "signal": "D2",
+          "af": "ALT",
+          "raw": "EXMC_NCE3_0",
+          "peripheral": "EXMC",
+          "signal": "NCE3_0",
           "aliases": [
-            "DCI_D2"
+            "EXMC_NCE3_0"
           ]
         },
         {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
+          "af": "ALT",
+          "raw": "EXMC_NE2",
+          "peripheral": "EXMC",
+          "signal": "NE2",
           "aliases": [
-            "EVENTOUT"
+            "EXMC_NE2"
           ]
         }
       ]
@@ -6745,21 +5269,12 @@
           ]
         },
         {
-          "af": "AF13",
-          "raw": "DCI_D3",
-          "peripheral": "DCI",
-          "signal": "D3",
+          "af": "ALT",
+          "raw": "EXMC_NCE3_1",
+          "peripheral": "EXMC",
+          "signal": "NCE3_1",
           "aliases": [
-            "DCI_D3"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
+            "EXMC_NCE3_1"
           ]
         }
       ]
@@ -6790,21 +5305,12 @@
           ]
         },
         {
-          "af": "AF8",
-          "raw": "USART5_RTS",
-          "peripheral": "USART5",
-          "signal": "RTS",
+          "af": "ALT",
+          "raw": "EXMC_NE3",
+          "peripheral": "EXMC",
+          "signal": "NE3",
           "aliases": [
-            "USART5_RTS"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
+            "EXMC_NE3"
           ]
         }
       ]
@@ -6835,21 +5341,12 @@
           ]
         },
         {
-          "af": "AF8",
-          "raw": "USART5_CTS",
-          "peripheral": "USART5",
-          "signal": "CTS",
+          "af": "ALT",
+          "raw": "EXMC_A24",
+          "peripheral": "EXMC",
+          "signal": "A24",
           "aliases": [
-            "USART5_CTS"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
+            "EXMC_A24"
           ]
         }
       ]
@@ -6880,21 +5377,12 @@
           ]
         },
         {
-          "af": "AF8",
-          "raw": "USART5_TX",
-          "peripheral": "USART5",
-          "signal": "TX",
+          "af": "ALT",
+          "raw": "EXMC_A25",
+          "peripheral": "EXMC",
+          "signal": "A25",
           "aliases": [
-            "USART5_TX"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
+            "EXMC_A25"
           ]
         }
       ]
@@ -6922,105 +5410,6 @@
           "aliases": [
             "PG15_OUT",
             "PG15_GPIO_OUT"
-          ]
-        },
-        {
-          "af": "AF8",
-          "raw": "USART5_CTS",
-          "peripheral": "USART5",
-          "signal": "CTS",
-          "aliases": [
-            "USART5_CTS"
-          ]
-        },
-        {
-          "af": "AF13",
-          "raw": "DCI_D13",
-          "peripheral": "DCI",
-          "signal": "D13",
-          "aliases": [
-            "DCI_D13"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "PH0",
-      "port": "H",
-      "number": 0,
-      "functions": [
-        {
-          "af": "GPIO",
-          "raw": "GPIO_IN",
-          "peripheral": "GPIO",
-          "signal": "IN",
-          "aliases": [
-            "PH0_IN",
-            "PH0_GPIO_IN"
-          ]
-        },
-        {
-          "af": "GPIO",
-          "raw": "GPIO_OUT",
-          "peripheral": "GPIO",
-          "signal": "OUT",
-          "aliases": [
-            "PH0_OUT",
-            "PH0_GPIO_OUT"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "PH1",
-      "port": "H",
-      "number": 1,
-      "functions": [
-        {
-          "af": "GPIO",
-          "raw": "GPIO_IN",
-          "peripheral": "GPIO",
-          "signal": "IN",
-          "aliases": [
-            "PH1_IN",
-            "PH1_GPIO_IN"
-          ]
-        },
-        {
-          "af": "GPIO",
-          "raw": "GPIO_OUT",
-          "peripheral": "GPIO",
-          "signal": "OUT",
-          "aliases": [
-            "PH1_OUT",
-            "PH1_GPIO_OUT"
-          ]
-        },
-        {
-          "af": "AF15",
-          "raw": "EVENTOUT",
-          "peripheral": "EVENTOUT",
-          "signal": "EVENTOUT",
-          "aliases": [
-            "EVENTOUT"
           ]
         }
       ]
@@ -7226,7 +5615,7 @@
           "ballName": "C4",
           "row": "C",
           "column": 4,
-          "pinName": "VDD",
+          "pinName": "VDD_3",
           "pinType": "power"
         },
         {
@@ -7289,7 +5678,7 @@
           "ballName": "D3",
           "row": "D",
           "column": 3,
-          "pinName": "VSS",
+          "pinName": "VSS_3",
           "pinType": "ground"
         },
         {
@@ -7331,8 +5720,8 @@
           "ballName": "E3",
           "row": "E",
           "column": 3,
-          "pinName": "NC",
-          "pinType": "nc"
+          "pinName": "VSS_4",
+          "pinType": "ground"
         },
         {
           "ballName": "E10",
@@ -7359,56 +5748,56 @@
           "ballName": "F1",
           "row": "F",
           "column": 1,
-          "pinName": "PH0/OSCIN",
-          "pinType": "gpio"
+          "pinName": "OSCIN",
+          "pinType": "clock"
         },
         {
           "ballName": "F2",
           "row": "F",
           "column": 2,
-          "pinName": "VSS",
+          "pinName": "VSS_5",
           "pinType": "ground"
         },
         {
           "ballName": "F11",
           "row": "F",
           "column": 11,
-          "pinName": "VSS",
+          "pinName": "VSS_2",
           "pinType": "ground"
         },
         {
           "ballName": "F12",
           "row": "F",
           "column": 12,
-          "pinName": "VSS",
+          "pinName": "VSS_1",
           "pinType": "ground"
         },
         {
           "ballName": "G1",
           "row": "G",
           "column": 1,
-          "pinName": "PH1/OSCOUT",
-          "pinType": "gpio"
+          "pinName": "OSCOUT",
+          "pinType": "clock"
         },
         {
           "ballName": "G2",
           "row": "G",
           "column": 2,
-          "pinName": "VDD",
+          "pinName": "VDD_5",
           "pinType": "power"
         },
         {
           "ballName": "G11",
           "row": "G",
           "column": 11,
-          "pinName": "VDD",
+          "pinName": "VDD_2",
           "pinType": "power"
         },
         {
           "ballName": "G12",
           "row": "G",
           "column": 12,
-          "pinName": "VDD",
+          "pinName": "VDD_1",
           "pinType": "power"
         },
         {
@@ -7429,7 +5818,7 @@
           "ballName": "H3",
           "row": "H",
           "column": 3,
-          "pinName": "PDR_ON",
+          "pinName": "VDD_4",
           "pinType": "power"
         },
         {
@@ -7499,7 +5888,7 @@
           "ballName": "K1",
           "row": "K",
           "column": 1,
-          "pinName": "VREFN",
+          "pinName": "VREF-",
           "pinType": "power"
         },
         {
@@ -7569,7 +5958,7 @@
           "ballName": "L1",
           "row": "L",
           "column": 1,
-          "pinName": "VREFP",
+          "pinName": "VREF+",
           "pinType": "power"
         },
         {
@@ -7639,8 +6028,8 @@
           "ballName": "L11",
           "row": "L",
           "column": 11,
-          "pinName": "NC",
-          "pinType": "nc"
+          "pinName": "PD8",
+          "pinType": "gpio"
         },
         {
           "ballName": "L12",
@@ -7934,7 +6323,7 @@
           "ballName": "C4",
           "row": "C",
           "column": 4,
-          "pinName": "VDD",
+          "pinName": "VDD_3",
           "pinType": "power"
         },
         {
@@ -7997,7 +6386,7 @@
           "ballName": "D3",
           "row": "D",
           "column": 3,
-          "pinName": "VSS",
+          "pinName": "VSS_3",
           "pinType": "ground"
         },
         {
@@ -8039,8 +6428,8 @@
           "ballName": "E3",
           "row": "E",
           "column": 3,
-          "pinName": "NC",
-          "pinType": "nc"
+          "pinName": "VSS_4",
+          "pinType": "ground"
         },
         {
           "ballName": "E10",
@@ -8067,56 +6456,56 @@
           "ballName": "F1",
           "row": "F",
           "column": 1,
-          "pinName": "PH0/OSCIN",
-          "pinType": "gpio"
+          "pinName": "OSCIN",
+          "pinType": "clock"
         },
         {
           "ballName": "F2",
           "row": "F",
           "column": 2,
-          "pinName": "VSS",
+          "pinName": "VSS_5",
           "pinType": "ground"
         },
         {
           "ballName": "F11",
           "row": "F",
           "column": 11,
-          "pinName": "VSS",
+          "pinName": "VSS_2",
           "pinType": "ground"
         },
         {
           "ballName": "F12",
           "row": "F",
           "column": 12,
-          "pinName": "VSS",
+          "pinName": "VSS_1",
           "pinType": "ground"
         },
         {
           "ballName": "G1",
           "row": "G",
           "column": 1,
-          "pinName": "PH1/OSCOUT",
-          "pinType": "gpio"
+          "pinName": "OSCOUT",
+          "pinType": "clock"
         },
         {
           "ballName": "G2",
           "row": "G",
           "column": 2,
-          "pinName": "VDD",
+          "pinName": "VDD_5",
           "pinType": "power"
         },
         {
           "ballName": "G11",
           "row": "G",
           "column": 11,
-          "pinName": "VDD",
+          "pinName": "VDD_2",
           "pinType": "power"
         },
         {
           "ballName": "G12",
           "row": "G",
           "column": 12,
-          "pinName": "VDD",
+          "pinName": "VDD_1",
           "pinType": "power"
         },
         {
@@ -8137,7 +6526,7 @@
           "ballName": "H3",
           "row": "H",
           "column": 3,
-          "pinName": "PDR_ON",
+          "pinName": "VDD_4",
           "pinType": "power"
         },
         {
@@ -8207,7 +6596,7 @@
           "ballName": "K1",
           "row": "K",
           "column": 1,
-          "pinName": "VREFN",
+          "pinName": "VREF-",
           "pinType": "power"
         },
         {
@@ -8277,7 +6666,7 @@
           "ballName": "L1",
           "row": "L",
           "column": 1,
-          "pinName": "VREFP",
+          "pinName": "VREF+",
           "pinType": "power"
         },
         {
@@ -8347,8 +6736,8 @@
           "ballName": "L11",
           "row": "L",
           "column": 11,
-          "pinName": "NC",
-          "pinType": "nc"
+          "pinName": "PD8",
+          "pinType": "gpio"
         },
         {
           "ballName": "L12",
@@ -8444,9 +6833,9 @@
       ]
     },
     {
-      "packageName": "LQFP64",
+      "packageName": "LQFP48",
       "packageType": "LQFP",
-      "totalPads": 64,
+      "totalPads": 48,
       "orientation": "pin1-top-left",
       "pins": [
         {
@@ -8471,13 +6860,13 @@
         },
         {
           "padNumber": 5,
-          "pinName": "PH0/OSCIN",
-          "pinType": "gpio"
+          "pinName": "OSCIN",
+          "pinType": "clock"
         },
         {
           "padNumber": 6,
-          "pinName": "PH1/OSCOUT",
-          "pinType": "gpio"
+          "pinName": "OSCOUT",
+          "pinType": "clock"
         },
         {
           "padNumber": 7,
@@ -8486,287 +6875,455 @@
         },
         {
           "padNumber": 8,
-          "pinName": "PC0",
-          "pinType": "gpio"
-        },
-        {
-          "padNumber": 9,
-          "pinName": "PC1",
-          "pinType": "gpio"
-        },
-        {
-          "padNumber": 10,
-          "pinName": "PC2",
-          "pinType": "gpio"
-        },
-        {
-          "padNumber": 11,
-          "pinName": "PC3",
-          "pinType": "gpio"
-        },
-        {
-          "padNumber": 12,
           "pinName": "VSSA",
           "pinType": "ground"
         },
         {
-          "padNumber": 13,
+          "padNumber": 9,
           "pinName": "VDDA",
           "pinType": "power"
         },
         {
-          "padNumber": 14,
+          "padNumber": 10,
           "pinName": "PA0-WKUP",
           "pinType": "gpio"
         },
         {
-          "padNumber": 15,
+          "padNumber": 11,
           "pinName": "PA1",
           "pinType": "gpio"
         },
         {
-          "padNumber": 16,
+          "padNumber": 12,
           "pinName": "PA2",
           "pinType": "gpio"
         },
         {
-          "padNumber": 17,
+          "padNumber": 13,
           "pinName": "PA3",
           "pinType": "gpio"
         },
         {
-          "padNumber": 18,
-          "pinName": "VSS",
-          "pinType": "ground"
-        },
-        {
-          "padNumber": 19,
-          "pinName": "VDD",
-          "pinType": "power"
-        },
-        {
-          "padNumber": 20,
+          "padNumber": 14,
           "pinName": "PA4",
           "pinType": "gpio"
         },
         {
-          "padNumber": 21,
+          "padNumber": 15,
           "pinName": "PA5",
           "pinType": "gpio"
         },
         {
-          "padNumber": 22,
+          "padNumber": 16,
           "pinName": "PA6",
           "pinType": "gpio"
         },
         {
-          "padNumber": 23,
+          "padNumber": 17,
           "pinName": "PA7",
           "pinType": "gpio"
         },
         {
-          "padNumber": 24,
-          "pinName": "PC4",
-          "pinType": "gpio"
-        },
-        {
-          "padNumber": 25,
-          "pinName": "PC5",
-          "pinType": "gpio"
-        },
-        {
-          "padNumber": 26,
+          "padNumber": 18,
           "pinName": "PB0",
           "pinType": "gpio"
         },
         {
-          "padNumber": 27,
+          "padNumber": 19,
           "pinName": "PB1",
           "pinType": "gpio"
         },
         {
-          "padNumber": 28,
+          "padNumber": 20,
           "pinName": "PB2",
           "pinType": "gpio"
         },
         {
-          "padNumber": 29,
+          "padNumber": 21,
           "pinName": "PB10",
           "pinType": "gpio"
         },
         {
-          "padNumber": 30,
+          "padNumber": 22,
           "pinName": "PB11",
           "pinType": "gpio"
         },
         {
-          "padNumber": 31,
-          "pinName": "NC",
-          "pinType": "nc"
+          "padNumber": 23,
+          "pinName": "VSS_1",
+          "pinType": "ground"
         },
         {
-          "padNumber": 32,
-          "pinName": "VDD",
+          "padNumber": 24,
+          "pinName": "VDD_1",
           "pinType": "power"
         },
         {
-          "padNumber": 33,
+          "padNumber": 25,
           "pinName": "PB12",
           "pinType": "gpio"
         },
         {
-          "padNumber": 34,
+          "padNumber": 26,
           "pinName": "PB13",
           "pinType": "gpio"
         },
         {
-          "padNumber": 35,
+          "padNumber": 27,
           "pinName": "PB14",
           "pinType": "gpio"
         },
         {
-          "padNumber": 36,
+          "padNumber": 28,
           "pinName": "PB15",
           "pinType": "gpio"
         },
         {
-          "padNumber": 37,
-          "pinName": "PC6",
-          "pinType": "gpio"
-        },
-        {
-          "padNumber": 38,
-          "pinName": "PC7",
-          "pinType": "gpio"
-        },
-        {
-          "padNumber": 39,
-          "pinName": "PC8",
-          "pinType": "gpio"
-        },
-        {
-          "padNumber": 40,
-          "pinName": "PC9",
-          "pinType": "gpio"
-        },
-        {
-          "padNumber": 41,
+          "padNumber": 29,
           "pinName": "PA8",
           "pinType": "gpio"
         },
         {
-          "padNumber": 42,
+          "padNumber": 30,
           "pinName": "PA9",
           "pinType": "gpio"
         },
         {
-          "padNumber": 43,
+          "padNumber": 31,
           "pinName": "PA10",
           "pinType": "gpio"
         },
         {
-          "padNumber": 44,
+          "padNumber": 32,
           "pinName": "PA11",
           "pinType": "gpio"
         },
         {
-          "padNumber": 45,
+          "padNumber": 33,
           "pinName": "PA12",
           "pinType": "gpio"
         },
         {
-          "padNumber": 46,
+          "padNumber": 34,
           "pinName": "PA13",
           "pinType": "gpio"
         },
         {
-          "padNumber": 47,
-          "pinName": "NC",
-          "pinType": "nc"
+          "padNumber": 35,
+          "pinName": "VSS_2",
+          "pinType": "ground"
         },
         {
-          "padNumber": 48,
-          "pinName": "VDD",
+          "padNumber": 36,
+          "pinName": "VDD_2",
           "pinType": "power"
         },
         {
-          "padNumber": 49,
+          "padNumber": 37,
           "pinName": "PA14",
           "pinType": "gpio"
         },
         {
-          "padNumber": 50,
+          "padNumber": 38,
           "pinName": "PA15",
           "pinType": "gpio"
         },
         {
-          "padNumber": 51,
-          "pinName": "PC10",
-          "pinType": "gpio"
-        },
-        {
-          "padNumber": 52,
-          "pinName": "PC11",
-          "pinType": "gpio"
-        },
-        {
-          "padNumber": 53,
-          "pinName": "PC12",
-          "pinType": "gpio"
-        },
-        {
-          "padNumber": 54,
-          "pinName": "PD2",
-          "pinType": "gpio"
-        },
-        {
-          "padNumber": 55,
+          "padNumber": 39,
           "pinName": "PB3",
           "pinType": "gpio"
         },
         {
-          "padNumber": 56,
+          "padNumber": 40,
           "pinName": "PB4",
           "pinType": "gpio"
         },
         {
-          "padNumber": 57,
+          "padNumber": 41,
           "pinName": "PB5",
           "pinType": "gpio"
         },
         {
-          "padNumber": 58,
+          "padNumber": 42,
           "pinName": "PB6",
           "pinType": "gpio"
         },
         {
-          "padNumber": 59,
+          "padNumber": 43,
           "pinName": "PB7",
           "pinType": "gpio"
         },
         {
-          "padNumber": 60,
+          "padNumber": 44,
           "pinName": "BOOT0",
           "pinType": "boot"
         },
         {
-          "padNumber": 61,
+          "padNumber": 45,
           "pinName": "PB8",
           "pinType": "gpio"
         },
         {
-          "padNumber": 62,
+          "padNumber": 46,
           "pinName": "PB9",
           "pinType": "gpio"
         },
         {
-          "padNumber": 63,
-          "pinName": "VSS",
+          "padNumber": 47,
+          "pinName": "VSS_3",
           "pinType": "ground"
         },
         {
-          "padNumber": 64,
-          "pinName": "VDD",
+          "padNumber": 48,
+          "pinName": "VDD_3",
+          "pinType": "power"
+        }
+      ]
+    },
+    {
+      "packageName": "LQFP48",
+      "packageType": "LQFP",
+      "totalPads": 48,
+      "orientation": "pin1-top-left",
+      "pins": [
+        {
+          "padNumber": 1,
+          "pinName": "VBAT",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 2,
+          "pinName": "PC13-TAMPER-RTC",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 3,
+          "pinName": "PC14-OSC32IN",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 4,
+          "pinName": "PC15-OSC32OUT",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 5,
+          "pinName": "OSCIN",
+          "pinType": "clock"
+        },
+        {
+          "padNumber": 6,
+          "pinName": "OSCOUT",
+          "pinType": "clock"
+        },
+        {
+          "padNumber": 7,
+          "pinName": "NRST",
+          "pinType": "reset"
+        },
+        {
+          "padNumber": 8,
+          "pinName": "VSSA",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 9,
+          "pinName": "VDDA",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 10,
+          "pinName": "PA0-WKUP",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 11,
+          "pinName": "PA1",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 12,
+          "pinName": "PA2",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 13,
+          "pinName": "PA3",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 14,
+          "pinName": "PA4",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 15,
+          "pinName": "PA5",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 16,
+          "pinName": "PA6",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 17,
+          "pinName": "PA7",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 18,
+          "pinName": "PB0",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 19,
+          "pinName": "PB1",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 20,
+          "pinName": "PB2",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 21,
+          "pinName": "PB10",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 22,
+          "pinName": "PB11",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 23,
+          "pinName": "VSS_1",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 24,
+          "pinName": "VDD_1",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 25,
+          "pinName": "PB12",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 26,
+          "pinName": "PB13",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 27,
+          "pinName": "PB14",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 28,
+          "pinName": "PB15",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 29,
+          "pinName": "PA8",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 30,
+          "pinName": "PA9",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 31,
+          "pinName": "PA10",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 32,
+          "pinName": "PA11",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 33,
+          "pinName": "PA12",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 34,
+          "pinName": "PA13",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 35,
+          "pinName": "VSS_2",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 36,
+          "pinName": "VDD_2",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 37,
+          "pinName": "PA14",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 38,
+          "pinName": "PA15",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 39,
+          "pinName": "PB3",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 40,
+          "pinName": "PB4",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 41,
+          "pinName": "PB5",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 42,
+          "pinName": "PB6",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 43,
+          "pinName": "PB7",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 44,
+          "pinName": "BOOT0",
+          "pinType": "boot"
+        },
+        {
+          "padNumber": 45,
+          "pinName": "PB8",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 46,
+          "pinName": "PB9",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 47,
+          "pinName": "VSS_3",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 48,
+          "pinName": "VDD_3",
           "pinType": "power"
         }
       ]
@@ -8799,13 +7356,13 @@
         },
         {
           "padNumber": 5,
-          "pinName": "PH0/OSCIN",
-          "pinType": "gpio"
+          "pinName": "OSCIN",
+          "pinType": "clock"
         },
         {
           "padNumber": 6,
-          "pinName": "PH1/OSCOUT",
-          "pinType": "gpio"
+          "pinName": "OSCOUT",
+          "pinType": "clock"
         },
         {
           "padNumber": 7,
@@ -8864,12 +7421,12 @@
         },
         {
           "padNumber": 18,
-          "pinName": "VSS",
+          "pinName": "VSS_4",
           "pinType": "ground"
         },
         {
           "padNumber": 19,
-          "pinName": "VDD",
+          "pinName": "VDD_4",
           "pinType": "power"
         },
         {
@@ -8929,12 +7486,12 @@
         },
         {
           "padNumber": 31,
-          "pinName": "NC",
-          "pinType": "nc"
+          "pinName": "VSS_1",
+          "pinType": "ground"
         },
         {
           "padNumber": 32,
-          "pinName": "VDD",
+          "pinName": "VDD_1",
           "pinType": "power"
         },
         {
@@ -9009,12 +7566,12 @@
         },
         {
           "padNumber": 47,
-          "pinName": "NC",
-          "pinType": "nc"
+          "pinName": "VSS_2",
+          "pinType": "ground"
         },
         {
           "padNumber": 48,
-          "pinName": "VDD",
+          "pinName": "VDD_2",
           "pinType": "power"
         },
         {
@@ -9089,12 +7646,340 @@
         },
         {
           "padNumber": 63,
-          "pinName": "VSS",
+          "pinName": "VSS_3",
           "pinType": "ground"
         },
         {
           "padNumber": 64,
-          "pinName": "VDD",
+          "pinName": "VDD_3",
+          "pinType": "power"
+        }
+      ]
+    },
+    {
+      "packageName": "LQFP64",
+      "packageType": "LQFP",
+      "totalPads": 64,
+      "orientation": "pin1-top-left",
+      "pins": [
+        {
+          "padNumber": 1,
+          "pinName": "VBAT",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 2,
+          "pinName": "PC13-TAMPER-RTC",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 3,
+          "pinName": "PC14-OSC32IN",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 4,
+          "pinName": "PC15-OSC32OUT",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 5,
+          "pinName": "OSCIN",
+          "pinType": "clock"
+        },
+        {
+          "padNumber": 6,
+          "pinName": "OSCOUT",
+          "pinType": "clock"
+        },
+        {
+          "padNumber": 7,
+          "pinName": "NRST",
+          "pinType": "reset"
+        },
+        {
+          "padNumber": 8,
+          "pinName": "PC0",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 9,
+          "pinName": "PC1",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 10,
+          "pinName": "PC2",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 11,
+          "pinName": "PC3",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 12,
+          "pinName": "VSSA",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 13,
+          "pinName": "VDDA",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 14,
+          "pinName": "PA0-WKUP",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 15,
+          "pinName": "PA1",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 16,
+          "pinName": "PA2",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 17,
+          "pinName": "PA3",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 18,
+          "pinName": "VSS_4",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 19,
+          "pinName": "VDD_4",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 20,
+          "pinName": "PA4",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 21,
+          "pinName": "PA5",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 22,
+          "pinName": "PA6",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 23,
+          "pinName": "PA7",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 24,
+          "pinName": "PC4",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 25,
+          "pinName": "PC5",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 26,
+          "pinName": "PB0",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 27,
+          "pinName": "PB1",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 28,
+          "pinName": "PB2",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 29,
+          "pinName": "PB10",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 30,
+          "pinName": "PB11",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 31,
+          "pinName": "VSS_1",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 32,
+          "pinName": "VDD_1",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 33,
+          "pinName": "PB12",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 34,
+          "pinName": "PB13",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 35,
+          "pinName": "PB14",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 36,
+          "pinName": "PB15",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 37,
+          "pinName": "PC6",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 38,
+          "pinName": "PC7",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 39,
+          "pinName": "PC8",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 40,
+          "pinName": "PC9",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 41,
+          "pinName": "PA8",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 42,
+          "pinName": "PA9",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 43,
+          "pinName": "PA10",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 44,
+          "pinName": "PA11",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 45,
+          "pinName": "PA12",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 46,
+          "pinName": "PA13",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 47,
+          "pinName": "VSS_2",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 48,
+          "pinName": "VDD_2",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 49,
+          "pinName": "PA14",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 50,
+          "pinName": "PA15",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 51,
+          "pinName": "PC10",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 52,
+          "pinName": "PC11",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 53,
+          "pinName": "PC12",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 54,
+          "pinName": "PD2",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 55,
+          "pinName": "PB3",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 56,
+          "pinName": "PB4",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 57,
+          "pinName": "PB5",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 58,
+          "pinName": "PB6",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 59,
+          "pinName": "PB7",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 60,
+          "pinName": "BOOT0",
+          "pinType": "boot"
+        },
+        {
+          "padNumber": 61,
+          "pinName": "PB8",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 62,
+          "pinName": "PB9",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 63,
+          "pinName": "VSS_3",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 64,
+          "pinName": "VDD_3",
           "pinType": "power"
         }
       ]
@@ -9152,23 +8037,23 @@
         },
         {
           "padNumber": 10,
-          "pinName": "VSS",
+          "pinName": "VSS_5",
           "pinType": "ground"
         },
         {
           "padNumber": 11,
-          "pinName": "VDD",
+          "pinName": "VDD_5",
           "pinType": "power"
         },
         {
           "padNumber": 12,
-          "pinName": "PH0/OSCIN",
-          "pinType": "gpio"
+          "pinName": "OSCIN",
+          "pinType": "clock"
         },
         {
           "padNumber": 13,
-          "pinName": "PH1/OSCOUT",
-          "pinType": "gpio"
+          "pinName": "OSCOUT",
+          "pinType": "clock"
         },
         {
           "padNumber": 14,
@@ -9197,17 +8082,17 @@
         },
         {
           "padNumber": 19,
-          "pinName": "VDD",
-          "pinType": "power"
-        },
-        {
-          "padNumber": 20,
           "pinName": "VSSA",
           "pinType": "ground"
         },
         {
+          "padNumber": 20,
+          "pinName": "VREF-",
+          "pinType": "power"
+        },
+        {
           "padNumber": 21,
-          "pinName": "VREFP",
+          "pinName": "VREF+",
           "pinType": "power"
         },
         {
@@ -9237,12 +8122,12 @@
         },
         {
           "padNumber": 27,
-          "pinName": "VSS",
+          "pinName": "VSS_4",
           "pinType": "ground"
         },
         {
           "padNumber": 28,
-          "pinName": "VDD",
+          "pinName": "VDD_4",
           "pinType": "power"
         },
         {
@@ -9347,12 +8232,12 @@
         },
         {
           "padNumber": 49,
-          "pinName": "NC",
-          "pinType": "nc"
+          "pinName": "VSS_1",
+          "pinType": "ground"
         },
         {
           "padNumber": 50,
-          "pinName": "VDD",
+          "pinName": "VDD_1",
           "pinType": "power"
         },
         {
@@ -9472,12 +8357,12 @@
         },
         {
           "padNumber": 74,
-          "pinName": "VSS",
+          "pinName": "VSS_2",
           "pinType": "ground"
         },
         {
           "padNumber": 75,
-          "pinName": "VDD",
+          "pinName": "VDD_2",
           "pinType": "power"
         },
         {
@@ -9597,12 +8482,12 @@
         },
         {
           "padNumber": 99,
-          "pinName": "VSS",
+          "pinName": "VSS_3",
           "pinType": "ground"
         },
         {
           "padNumber": 100,
-          "pinName": "VDD",
+          "pinName": "VDD_3",
           "pinType": "power"
         }
       ]
@@ -9660,23 +8545,23 @@
         },
         {
           "padNumber": 10,
-          "pinName": "VSS",
+          "pinName": "VSS_5",
           "pinType": "ground"
         },
         {
           "padNumber": 11,
-          "pinName": "VDD",
+          "pinName": "VDD_5",
           "pinType": "power"
         },
         {
           "padNumber": 12,
-          "pinName": "PH0/OSCIN",
-          "pinType": "gpio"
+          "pinName": "OSCIN",
+          "pinType": "clock"
         },
         {
           "padNumber": 13,
-          "pinName": "PH1/OSCOUT",
-          "pinType": "gpio"
+          "pinName": "OSCOUT",
+          "pinType": "clock"
         },
         {
           "padNumber": 14,
@@ -9705,17 +8590,17 @@
         },
         {
           "padNumber": 19,
-          "pinName": "VDD",
-          "pinType": "power"
-        },
-        {
-          "padNumber": 20,
           "pinName": "VSSA",
           "pinType": "ground"
         },
         {
+          "padNumber": 20,
+          "pinName": "VREF-",
+          "pinType": "power"
+        },
+        {
           "padNumber": 21,
-          "pinName": "VREFP",
+          "pinName": "VREF+",
           "pinType": "power"
         },
         {
@@ -9745,12 +8630,12 @@
         },
         {
           "padNumber": 27,
-          "pinName": "VSS",
+          "pinName": "VSS_4",
           "pinType": "ground"
         },
         {
           "padNumber": 28,
-          "pinName": "VDD",
+          "pinName": "VDD_4",
           "pinType": "power"
         },
         {
@@ -9855,12 +8740,12 @@
         },
         {
           "padNumber": 49,
-          "pinName": "NC",
-          "pinType": "nc"
+          "pinName": "VSS_1",
+          "pinType": "ground"
         },
         {
           "padNumber": 50,
-          "pinName": "VDD",
+          "pinName": "VDD_1",
           "pinType": "power"
         },
         {
@@ -9980,12 +8865,12 @@
         },
         {
           "padNumber": 74,
-          "pinName": "VSS",
+          "pinName": "VSS_2",
           "pinType": "ground"
         },
         {
           "padNumber": 75,
-          "pinName": "VDD",
+          "pinName": "VDD_2",
           "pinType": "power"
         },
         {
@@ -10105,12 +8990,12 @@
         },
         {
           "padNumber": 99,
-          "pinName": "VSS",
+          "pinName": "VSS_3",
           "pinType": "ground"
         },
         {
           "padNumber": 100,
-          "pinName": "VDD",
+          "pinName": "VDD_3",
           "pinType": "power"
         }
       ]
@@ -10198,12 +9083,12 @@
         },
         {
           "padNumber": 16,
-          "pinName": "VSS",
+          "pinName": "VSS_5",
           "pinType": "ground"
         },
         {
           "padNumber": 17,
-          "pinName": "VDD",
+          "pinName": "VDD_5",
           "pinType": "power"
         },
         {
@@ -10233,13 +9118,13 @@
         },
         {
           "padNumber": 23,
-          "pinName": "PH0/OSCIN",
-          "pinType": "gpio"
+          "pinName": "OSCIN",
+          "pinType": "clock"
         },
         {
           "padNumber": 24,
-          "pinName": "PH1/OSCOUT",
-          "pinType": "gpio"
+          "pinName": "OSCOUT",
+          "pinType": "clock"
         },
         {
           "padNumber": 25,
@@ -10268,17 +9153,17 @@
         },
         {
           "padNumber": 30,
-          "pinName": "VDD",
-          "pinType": "power"
-        },
-        {
-          "padNumber": 31,
           "pinName": "VSSA",
           "pinType": "ground"
         },
         {
+          "padNumber": 31,
+          "pinName": "VREF-",
+          "pinType": "power"
+        },
+        {
           "padNumber": 32,
-          "pinName": "VREFP",
+          "pinName": "VREF+",
           "pinType": "power"
         },
         {
@@ -10308,12 +9193,12 @@
         },
         {
           "padNumber": 38,
-          "pinName": "VSS",
+          "pinName": "VSS_4",
           "pinType": "ground"
         },
         {
           "padNumber": 39,
-          "pinName": "VDD",
+          "pinName": "VDD_4",
           "pinType": "power"
         },
         {
@@ -10373,12 +9258,12 @@
         },
         {
           "padNumber": 51,
-          "pinName": "VSS",
+          "pinName": "VSS_6",
           "pinType": "ground"
         },
         {
           "padNumber": 52,
-          "pinName": "VDD",
+          "pinName": "VDD_6",
           "pinType": "power"
         },
         {
@@ -10423,12 +9308,12 @@
         },
         {
           "padNumber": 61,
-          "pinName": "VSS",
+          "pinName": "VSS_7",
           "pinType": "ground"
         },
         {
           "padNumber": 62,
-          "pinName": "VDD",
+          "pinName": "VDD_7",
           "pinType": "power"
         },
         {
@@ -10473,12 +9358,12 @@
         },
         {
           "padNumber": 71,
-          "pinName": "NC",
-          "pinType": "nc"
+          "pinName": "VSS_1",
+          "pinType": "ground"
         },
         {
           "padNumber": 72,
-          "pinName": "VDD",
+          "pinName": "VDD_1",
           "pinType": "power"
         },
         {
@@ -10533,12 +9418,12 @@
         },
         {
           "padNumber": 83,
-          "pinName": "VSS",
+          "pinName": "VSS_8",
           "pinType": "ground"
         },
         {
           "padNumber": 84,
-          "pinName": "VDD",
+          "pinName": "VDD_8",
           "pinType": "power"
         },
         {
@@ -10588,12 +9473,12 @@
         },
         {
           "padNumber": 94,
-          "pinName": "VSS",
+          "pinName": "VSS_9",
           "pinType": "ground"
         },
         {
           "padNumber": 95,
-          "pinName": "VDD",
+          "pinName": "VDD_9",
           "pinType": "power"
         },
         {
@@ -10653,12 +9538,12 @@
         },
         {
           "padNumber": 107,
-          "pinName": "VSS",
+          "pinName": "VSS_2",
           "pinType": "ground"
         },
         {
           "padNumber": 108,
-          "pinName": "VDD",
+          "pinName": "VDD_2",
           "pinType": "power"
         },
         {
@@ -10718,12 +9603,12 @@
         },
         {
           "padNumber": 120,
-          "pinName": "VSS",
+          "pinName": "VSS_10",
           "pinType": "ground"
         },
         {
           "padNumber": 121,
-          "pinName": "VDD",
+          "pinName": "VDD_10",
           "pinType": "power"
         },
         {
@@ -10768,12 +9653,12 @@
         },
         {
           "padNumber": 130,
-          "pinName": "VSS",
+          "pinName": "VSS_11",
           "pinType": "ground"
         },
         {
           "padNumber": 131,
-          "pinName": "VDD",
+          "pinName": "VDD_11",
           "pinType": "power"
         },
         {
@@ -10833,12 +9718,12 @@
         },
         {
           "padNumber": 143,
-          "pinName": "PDR_ON",
-          "pinType": "power"
+          "pinName": "VSS_3",
+          "pinType": "ground"
         },
         {
           "padNumber": 144,
-          "pinName": "VDD",
+          "pinName": "VDD_3",
           "pinType": "power"
         }
       ]
@@ -10926,12 +9811,12 @@
         },
         {
           "padNumber": 16,
-          "pinName": "VSS",
+          "pinName": "VSS_5",
           "pinType": "ground"
         },
         {
           "padNumber": 17,
-          "pinName": "VDD",
+          "pinName": "VDD_5",
           "pinType": "power"
         },
         {
@@ -10961,13 +9846,13 @@
         },
         {
           "padNumber": 23,
-          "pinName": "PH0/OSCIN",
-          "pinType": "gpio"
+          "pinName": "OSCIN",
+          "pinType": "clock"
         },
         {
           "padNumber": 24,
-          "pinName": "PH1/OSCOUT",
-          "pinType": "gpio"
+          "pinName": "OSCOUT",
+          "pinType": "clock"
         },
         {
           "padNumber": 25,
@@ -10996,17 +9881,17 @@
         },
         {
           "padNumber": 30,
-          "pinName": "VDD",
-          "pinType": "power"
-        },
-        {
-          "padNumber": 31,
           "pinName": "VSSA",
           "pinType": "ground"
         },
         {
+          "padNumber": 31,
+          "pinName": "VREF-",
+          "pinType": "power"
+        },
+        {
           "padNumber": 32,
-          "pinName": "VREFP",
+          "pinName": "VREF+",
           "pinType": "power"
         },
         {
@@ -11036,12 +9921,12 @@
         },
         {
           "padNumber": 38,
-          "pinName": "VSS",
+          "pinName": "VSS_4",
           "pinType": "ground"
         },
         {
           "padNumber": 39,
-          "pinName": "VDD",
+          "pinName": "VDD_4",
           "pinType": "power"
         },
         {
@@ -11101,12 +9986,12 @@
         },
         {
           "padNumber": 51,
-          "pinName": "VSS",
+          "pinName": "VSS_6",
           "pinType": "ground"
         },
         {
           "padNumber": 52,
-          "pinName": "VDD",
+          "pinName": "VDD_6",
           "pinType": "power"
         },
         {
@@ -11151,12 +10036,12 @@
         },
         {
           "padNumber": 61,
-          "pinName": "VSS",
+          "pinName": "VSS_7",
           "pinType": "ground"
         },
         {
           "padNumber": 62,
-          "pinName": "VDD",
+          "pinName": "VDD_7",
           "pinType": "power"
         },
         {
@@ -11201,12 +10086,12 @@
         },
         {
           "padNumber": 71,
-          "pinName": "NC",
-          "pinType": "nc"
+          "pinName": "VSS_1",
+          "pinType": "ground"
         },
         {
           "padNumber": 72,
-          "pinName": "VDD",
+          "pinName": "VDD_1",
           "pinType": "power"
         },
         {
@@ -11261,12 +10146,12 @@
         },
         {
           "padNumber": 83,
-          "pinName": "VSS",
+          "pinName": "VSS_8",
           "pinType": "ground"
         },
         {
           "padNumber": 84,
-          "pinName": "VDD",
+          "pinName": "VDD_8",
           "pinType": "power"
         },
         {
@@ -11316,12 +10201,12 @@
         },
         {
           "padNumber": 94,
-          "pinName": "VSS",
+          "pinName": "VSS_9",
           "pinType": "ground"
         },
         {
           "padNumber": 95,
-          "pinName": "VDD",
+          "pinName": "VDD_9",
           "pinType": "power"
         },
         {
@@ -11381,12 +10266,12 @@
         },
         {
           "padNumber": 107,
-          "pinName": "VSS",
+          "pinName": "VSS_2",
           "pinType": "ground"
         },
         {
           "padNumber": 108,
-          "pinName": "VDD",
+          "pinName": "VDD_2",
           "pinType": "power"
         },
         {
@@ -11446,12 +10331,12 @@
         },
         {
           "padNumber": 120,
-          "pinName": "VSS",
+          "pinName": "VSS_10",
           "pinType": "ground"
         },
         {
           "padNumber": 121,
-          "pinName": "VDD",
+          "pinName": "VDD_10",
           "pinType": "power"
         },
         {
@@ -11496,12 +10381,12 @@
         },
         {
           "padNumber": 130,
-          "pinName": "VSS",
+          "pinName": "VSS_11",
           "pinType": "ground"
         },
         {
           "padNumber": 131,
-          "pinName": "VDD",
+          "pinName": "VDD_11",
           "pinType": "power"
         },
         {
@@ -11561,12 +10446,12 @@
         },
         {
           "padNumber": 143,
-          "pinName": "PDR_ON",
-          "pinType": "power"
+          "pinName": "VSS_3",
+          "pinType": "ground"
         },
         {
           "padNumber": 144,
-          "pinName": "VDD",
+          "pinName": "VDD_3",
           "pinType": "power"
         }
       ]

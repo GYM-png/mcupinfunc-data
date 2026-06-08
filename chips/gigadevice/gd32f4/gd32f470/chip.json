@@ -3,6 +3,7 @@
   "displayName": "GD32F470",
   "vendor": "GigaDevice",
   "family": "GD32F4",
+  "functionSource": "gpio-af-csv",
   "pins": [
     {
       "name": "PA0",
@@ -10604,7 +10605,715 @@
           "row": "A",
           "column": 4,
           "pinName": "BOOT0",
+          "pinType": "boot"
+        },
+        {
+          "ballName": "A5",
+          "row": "A",
+          "column": 5,
+          "pinName": "PD7",
           "pinType": "gpio"
+        },
+        {
+          "ballName": "A6",
+          "row": "A",
+          "column": 6,
+          "pinName": "PD5",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "A7",
+          "row": "A",
+          "column": 7,
+          "pinName": "PB4",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "A8",
+          "row": "A",
+          "column": 8,
+          "pinName": "PB3",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "A9",
+          "row": "A",
+          "column": 9,
+          "pinName": "PA15",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "A10",
+          "row": "A",
+          "column": 10,
+          "pinName": "PA14",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "A11",
+          "row": "A",
+          "column": 11,
+          "pinName": "PA13",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "A12",
+          "row": "A",
+          "column": 12,
+          "pinName": "PA12",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "B1",
+          "row": "B",
+          "column": 1,
+          "pinName": "PE4",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "B2",
+          "row": "B",
+          "column": 2,
+          "pinName": "PE2",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "B3",
+          "row": "B",
+          "column": 3,
+          "pinName": "PB9",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "B4",
+          "row": "B",
+          "column": 4,
+          "pinName": "PB7",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "B5",
+          "row": "B",
+          "column": 5,
+          "pinName": "PB6",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "B6",
+          "row": "B",
+          "column": 6,
+          "pinName": "PD6",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "B7",
+          "row": "B",
+          "column": 7,
+          "pinName": "PD4",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "B8",
+          "row": "B",
+          "column": 8,
+          "pinName": "PD3",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "B9",
+          "row": "B",
+          "column": 9,
+          "pinName": "PD1",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "B10",
+          "row": "B",
+          "column": 10,
+          "pinName": "PC12",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "B11",
+          "row": "B",
+          "column": 11,
+          "pinName": "PC10",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "B12",
+          "row": "B",
+          "column": 12,
+          "pinName": "PA11",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "C1",
+          "row": "C",
+          "column": 1,
+          "pinName": "PC13-TAMPER-RTC",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "C2",
+          "row": "C",
+          "column": 2,
+          "pinName": "PE5",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "C3",
+          "row": "C",
+          "column": 3,
+          "pinName": "PE0",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "C4",
+          "row": "C",
+          "column": 4,
+          "pinName": "VDD",
+          "pinType": "power"
+        },
+        {
+          "ballName": "C5",
+          "row": "C",
+          "column": 5,
+          "pinName": "PB5",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "C8",
+          "row": "C",
+          "column": 8,
+          "pinName": "PD2",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "C9",
+          "row": "C",
+          "column": 9,
+          "pinName": "PD0",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "C10",
+          "row": "C",
+          "column": 10,
+          "pinName": "PC11",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "C11",
+          "row": "C",
+          "column": 11,
+          "pinName": "NC",
+          "pinType": "nc"
+        },
+        {
+          "ballName": "C12",
+          "row": "C",
+          "column": 12,
+          "pinName": "PA10",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "D1",
+          "row": "D",
+          "column": 1,
+          "pinName": "PC14-OSC32IN",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "D2",
+          "row": "D",
+          "column": 2,
+          "pinName": "PE6",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "D3",
+          "row": "D",
+          "column": 3,
+          "pinName": "VSS",
+          "pinType": "ground"
+        },
+        {
+          "ballName": "D10",
+          "row": "D",
+          "column": 10,
+          "pinName": "PA9",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "D11",
+          "row": "D",
+          "column": 11,
+          "pinName": "PA8",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "D12",
+          "row": "D",
+          "column": 12,
+          "pinName": "PC9",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "E1",
+          "row": "E",
+          "column": 1,
+          "pinName": "PC15-OSC32OUT",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "E2",
+          "row": "E",
+          "column": 2,
+          "pinName": "VBAT",
+          "pinType": "power"
+        },
+        {
+          "ballName": "E3",
+          "row": "E",
+          "column": 3,
+          "pinName": "NC",
+          "pinType": "nc"
+        },
+        {
+          "ballName": "E10",
+          "row": "E",
+          "column": 10,
+          "pinName": "PC8",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "E11",
+          "row": "E",
+          "column": 11,
+          "pinName": "PC7",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "E12",
+          "row": "E",
+          "column": 12,
+          "pinName": "PC6",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "F1",
+          "row": "F",
+          "column": 1,
+          "pinName": "PH0/OSCIN",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "F2",
+          "row": "F",
+          "column": 2,
+          "pinName": "VSS",
+          "pinType": "ground"
+        },
+        {
+          "ballName": "F11",
+          "row": "F",
+          "column": 11,
+          "pinName": "VSS",
+          "pinType": "ground"
+        },
+        {
+          "ballName": "F12",
+          "row": "F",
+          "column": 12,
+          "pinName": "VSS",
+          "pinType": "ground"
+        },
+        {
+          "ballName": "G1",
+          "row": "G",
+          "column": 1,
+          "pinName": "PH1/OSCOUT",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "G2",
+          "row": "G",
+          "column": 2,
+          "pinName": "VDD",
+          "pinType": "power"
+        },
+        {
+          "ballName": "G11",
+          "row": "G",
+          "column": 11,
+          "pinName": "VDD",
+          "pinType": "power"
+        },
+        {
+          "ballName": "G12",
+          "row": "G",
+          "column": 12,
+          "pinName": "VDD",
+          "pinType": "power"
+        },
+        {
+          "ballName": "H1",
+          "row": "H",
+          "column": 1,
+          "pinName": "PC0",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "H2",
+          "row": "H",
+          "column": 2,
+          "pinName": "NRST",
+          "pinType": "reset"
+        },
+        {
+          "ballName": "H3",
+          "row": "H",
+          "column": 3,
+          "pinName": "PDR_ON",
+          "pinType": "power"
+        },
+        {
+          "ballName": "H10",
+          "row": "H",
+          "column": 10,
+          "pinName": "PD15",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "H11",
+          "row": "H",
+          "column": 11,
+          "pinName": "PD14",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "H12",
+          "row": "H",
+          "column": 12,
+          "pinName": "PD13",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "J1",
+          "row": "J",
+          "column": 1,
+          "pinName": "VSSA",
+          "pinType": "ground"
+        },
+        {
+          "ballName": "J2",
+          "row": "J",
+          "column": 2,
+          "pinName": "PC1",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "J3",
+          "row": "J",
+          "column": 3,
+          "pinName": "PC2",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "J10",
+          "row": "J",
+          "column": 10,
+          "pinName": "PD12",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "J11",
+          "row": "J",
+          "column": 11,
+          "pinName": "PD11",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "J12",
+          "row": "J",
+          "column": 12,
+          "pinName": "PD10",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "K1",
+          "row": "K",
+          "column": 1,
+          "pinName": "VREFN",
+          "pinType": "power"
+        },
+        {
+          "ballName": "K2",
+          "row": "K",
+          "column": 2,
+          "pinName": "PC3",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "K3",
+          "row": "K",
+          "column": 3,
+          "pinName": "PA2",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "K4",
+          "row": "K",
+          "column": 4,
+          "pinName": "PA5",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "K5",
+          "row": "K",
+          "column": 5,
+          "pinName": "PC4",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "K8",
+          "row": "K",
+          "column": 8,
+          "pinName": "PD9",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "K9",
+          "row": "K",
+          "column": 9,
+          "pinName": "PB11",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "K10",
+          "row": "K",
+          "column": 10,
+          "pinName": "PB15",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "K11",
+          "row": "K",
+          "column": 11,
+          "pinName": "PB14",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "K12",
+          "row": "K",
+          "column": 12,
+          "pinName": "PB13",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "L1",
+          "row": "L",
+          "column": 1,
+          "pinName": "VREFP",
+          "pinType": "power"
+        },
+        {
+          "ballName": "L2",
+          "row": "L",
+          "column": 2,
+          "pinName": "PA0-WKUP",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "L3",
+          "row": "L",
+          "column": 3,
+          "pinName": "PA3",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "L4",
+          "row": "L",
+          "column": 4,
+          "pinName": "PA6",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "L5",
+          "row": "L",
+          "column": 5,
+          "pinName": "PC5",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "L6",
+          "row": "L",
+          "column": 6,
+          "pinName": "PB2",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "L7",
+          "row": "L",
+          "column": 7,
+          "pinName": "PE8",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "L8",
+          "row": "L",
+          "column": 8,
+          "pinName": "PE10",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "L9",
+          "row": "L",
+          "column": 9,
+          "pinName": "PE12",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "L10",
+          "row": "L",
+          "column": 10,
+          "pinName": "PB10",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "L11",
+          "row": "L",
+          "column": 11,
+          "pinName": "NC",
+          "pinType": "nc"
+        },
+        {
+          "ballName": "L12",
+          "row": "L",
+          "column": 12,
+          "pinName": "PB12",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "M1",
+          "row": "M",
+          "column": 1,
+          "pinName": "VDDA",
+          "pinType": "power"
+        },
+        {
+          "ballName": "M2",
+          "row": "M",
+          "column": 2,
+          "pinName": "PA1",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "M3",
+          "row": "M",
+          "column": 3,
+          "pinName": "PA4",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "M4",
+          "row": "M",
+          "column": 4,
+          "pinName": "PA7",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "M5",
+          "row": "M",
+          "column": 5,
+          "pinName": "PB0",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "M6",
+          "row": "M",
+          "column": 6,
+          "pinName": "PB1",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "M7",
+          "row": "M",
+          "column": 7,
+          "pinName": "PE7",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "M8",
+          "row": "M",
+          "column": 8,
+          "pinName": "PE9",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "M9",
+          "row": "M",
+          "column": 9,
+          "pinName": "PE11",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "M10",
+          "row": "M",
+          "column": 10,
+          "pinName": "PE13",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "M11",
+          "row": "M",
+          "column": 11,
+          "pinName": "PE14",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "M12",
+          "row": "M",
+          "column": 12,
+          "pinName": "PE15",
+          "pinType": "gpio"
+        }
+      ]
+    },
+    {
+      "packageName": "BGA100",
+      "packageType": "BGA",
+      "totalPads": 100,
+      "orientation": "a1-top-left",
+      "pins": [
+        {
+          "ballName": "A1",
+          "row": "A",
+          "column": 1,
+          "pinName": "PE3",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "A2",
+          "row": "A",
+          "column": 2,
+          "pinName": "PE1",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "A3",
+          "row": "A",
+          "column": 3,
+          "pinName": "PB8",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "A4",
+          "row": "A",
+          "column": 4,
+          "pinName": "BOOT0",
+          "pinType": "boot"
         },
         {
           "ballName": "A5",
@@ -11641,7 +12350,1247 @@
           "row": "D",
           "column": 6,
           "pinName": "BOOT0",
+          "pinType": "boot"
+        },
+        {
+          "ballName": "D7",
+          "row": "D",
+          "column": 7,
+          "pinName": "VSS",
+          "pinType": "ground"
+        },
+        {
+          "ballName": "D8",
+          "row": "D",
+          "column": 8,
+          "pinName": "VSS",
+          "pinType": "ground"
+        },
+        {
+          "ballName": "D9",
+          "row": "D",
+          "column": 9,
+          "pinName": "VSS",
+          "pinType": "ground"
+        },
+        {
+          "ballName": "D10",
+          "row": "D",
+          "column": 10,
+          "pinName": "PD4",
           "pinType": "gpio"
+        },
+        {
+          "ballName": "D11",
+          "row": "D",
+          "column": 11,
+          "pinName": "PD3",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "D12",
+          "row": "D",
+          "column": 12,
+          "pinName": "PD2",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "D13",
+          "row": "D",
+          "column": 13,
+          "pinName": "PH15",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "D14",
+          "row": "D",
+          "column": 14,
+          "pinName": "PI1",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "D15",
+          "row": "D",
+          "column": 15,
+          "pinName": "PA10",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "E1",
+          "row": "E",
+          "column": 1,
+          "pinName": "PC14-OSC32IN",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "E2",
+          "row": "E",
+          "column": 2,
+          "pinName": "PF0",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "E3",
+          "row": "E",
+          "column": 3,
+          "pinName": "PI10",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "E4",
+          "row": "E",
+          "column": 4,
+          "pinName": "PI11",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "E12",
+          "row": "E",
+          "column": 12,
+          "pinName": "PH13",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "E13",
+          "row": "E",
+          "column": 13,
+          "pinName": "PH14",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "E14",
+          "row": "E",
+          "column": 14,
+          "pinName": "PI0",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "E15",
+          "row": "E",
+          "column": 15,
+          "pinName": "PA9",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "F1",
+          "row": "F",
+          "column": 1,
+          "pinName": "PC15-OSC32OUT",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "F2",
+          "row": "F",
+          "column": 2,
+          "pinName": "VSS",
+          "pinType": "ground"
+        },
+        {
+          "ballName": "F3",
+          "row": "F",
+          "column": 3,
+          "pinName": "VDD",
+          "pinType": "power"
+        },
+        {
+          "ballName": "F4",
+          "row": "F",
+          "column": 4,
+          "pinName": "PH2",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "F12",
+          "row": "F",
+          "column": 12,
+          "pinName": "VSS",
+          "pinType": "ground"
+        },
+        {
+          "ballName": "F13",
+          "row": "F",
+          "column": 13,
+          "pinName": "NC",
+          "pinType": "nc"
+        },
+        {
+          "ballName": "F14",
+          "row": "F",
+          "column": 14,
+          "pinName": "PC9",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "F15",
+          "row": "F",
+          "column": 15,
+          "pinName": "PA8",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "G1",
+          "row": "G",
+          "column": 1,
+          "pinName": "PH0/OSCIN",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "G2",
+          "row": "G",
+          "column": 2,
+          "pinName": "VSS",
+          "pinType": "ground"
+        },
+        {
+          "ballName": "G3",
+          "row": "G",
+          "column": 3,
+          "pinName": "VDD",
+          "pinType": "power"
+        },
+        {
+          "ballName": "G4",
+          "row": "G",
+          "column": 4,
+          "pinName": "PH3",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "G12",
+          "row": "G",
+          "column": 12,
+          "pinName": "VSS",
+          "pinType": "ground"
+        },
+        {
+          "ballName": "G13",
+          "row": "G",
+          "column": 13,
+          "pinName": "VDD",
+          "pinType": "power"
+        },
+        {
+          "ballName": "G14",
+          "row": "G",
+          "column": 14,
+          "pinName": "PC8",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "G15",
+          "row": "G",
+          "column": 15,
+          "pinName": "PC7",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "H1",
+          "row": "H",
+          "column": 1,
+          "pinName": "PH1/OSCOUT",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "H2",
+          "row": "H",
+          "column": 2,
+          "pinName": "PF2",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "H3",
+          "row": "H",
+          "column": 3,
+          "pinName": "PF1",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "H4",
+          "row": "H",
+          "column": 4,
+          "pinName": "PH4",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "H12",
+          "row": "H",
+          "column": 12,
+          "pinName": "VSS",
+          "pinType": "ground"
+        },
+        {
+          "ballName": "H13",
+          "row": "H",
+          "column": 13,
+          "pinName": "VDD",
+          "pinType": "power"
+        },
+        {
+          "ballName": "H14",
+          "row": "H",
+          "column": 14,
+          "pinName": "PG8",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "H15",
+          "row": "H",
+          "column": 15,
+          "pinName": "PC6",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "J1",
+          "row": "J",
+          "column": 1,
+          "pinName": "NRST",
+          "pinType": "reset"
+        },
+        {
+          "ballName": "J2",
+          "row": "J",
+          "column": 2,
+          "pinName": "PF3",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "J3",
+          "row": "J",
+          "column": 3,
+          "pinName": "PF4",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "J4",
+          "row": "J",
+          "column": 4,
+          "pinName": "PH5",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "J12",
+          "row": "J",
+          "column": 12,
+          "pinName": "VDD",
+          "pinType": "power"
+        },
+        {
+          "ballName": "J13",
+          "row": "J",
+          "column": 13,
+          "pinName": "VDD",
+          "pinType": "power"
+        },
+        {
+          "ballName": "J14",
+          "row": "J",
+          "column": 14,
+          "pinName": "PG7",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "J15",
+          "row": "J",
+          "column": 15,
+          "pinName": "PG6",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "K1",
+          "row": "K",
+          "column": 1,
+          "pinName": "PF7",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "K2",
+          "row": "K",
+          "column": 2,
+          "pinName": "PF6",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "K3",
+          "row": "K",
+          "column": 3,
+          "pinName": "PF5",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "K4",
+          "row": "K",
+          "column": 4,
+          "pinName": "VDD",
+          "pinType": "power"
+        },
+        {
+          "ballName": "K12",
+          "row": "K",
+          "column": 12,
+          "pinName": "PH12",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "K13",
+          "row": "K",
+          "column": 13,
+          "pinName": "PG5",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "K14",
+          "row": "K",
+          "column": 14,
+          "pinName": "PG4",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "K15",
+          "row": "K",
+          "column": 15,
+          "pinName": "PG3",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "L1",
+          "row": "L",
+          "column": 1,
+          "pinName": "PF10",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "L2",
+          "row": "L",
+          "column": 2,
+          "pinName": "PF9",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "L3",
+          "row": "L",
+          "column": 3,
+          "pinName": "PF8",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "L4",
+          "row": "L",
+          "column": 4,
+          "pinName": "NC",
+          "pinType": "nc"
+        },
+        {
+          "ballName": "L12",
+          "row": "L",
+          "column": 12,
+          "pinName": "PH11",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "L13",
+          "row": "L",
+          "column": 13,
+          "pinName": "PH10",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "L14",
+          "row": "L",
+          "column": 14,
+          "pinName": "PD15",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "L15",
+          "row": "L",
+          "column": 15,
+          "pinName": "PG2",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "M1",
+          "row": "M",
+          "column": 1,
+          "pinName": "VSSA",
+          "pinType": "ground"
+        },
+        {
+          "ballName": "M2",
+          "row": "M",
+          "column": 2,
+          "pinName": "PC0",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "M3",
+          "row": "M",
+          "column": 3,
+          "pinName": "PC1",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "M4",
+          "row": "M",
+          "column": 4,
+          "pinName": "PC2",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "M5",
+          "row": "M",
+          "column": 5,
+          "pinName": "PC3",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "M6",
+          "row": "M",
+          "column": 6,
+          "pinName": "PB2",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "M7",
+          "row": "M",
+          "column": 7,
+          "pinName": "PG1",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "M8",
+          "row": "M",
+          "column": 8,
+          "pinName": "VSS",
+          "pinType": "ground"
+        },
+        {
+          "ballName": "M9",
+          "row": "M",
+          "column": 9,
+          "pinName": "VSS",
+          "pinType": "ground"
+        },
+        {
+          "ballName": "M10",
+          "row": "M",
+          "column": 10,
+          "pinName": "NC",
+          "pinType": "nc"
+        },
+        {
+          "ballName": "M11",
+          "row": "M",
+          "column": 11,
+          "pinName": "PH6",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "M12",
+          "row": "M",
+          "column": 12,
+          "pinName": "PH8",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "M13",
+          "row": "M",
+          "column": 13,
+          "pinName": "PH9",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "M14",
+          "row": "M",
+          "column": 14,
+          "pinName": "PD14",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "M15",
+          "row": "M",
+          "column": 15,
+          "pinName": "PD13",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "N1",
+          "row": "N",
+          "column": 1,
+          "pinName": "VREFN",
+          "pinType": "power"
+        },
+        {
+          "ballName": "N2",
+          "row": "N",
+          "column": 2,
+          "pinName": "PA1",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "N3",
+          "row": "N",
+          "column": 3,
+          "pinName": "PA0-WKUP",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "N4",
+          "row": "N",
+          "column": 4,
+          "pinName": "PA4",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "N5",
+          "row": "N",
+          "column": 5,
+          "pinName": "PC4",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "N6",
+          "row": "N",
+          "column": 6,
+          "pinName": "PF13",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "N7",
+          "row": "N",
+          "column": 7,
+          "pinName": "PG0",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "N8",
+          "row": "N",
+          "column": 8,
+          "pinName": "VDD",
+          "pinType": "power"
+        },
+        {
+          "ballName": "N9",
+          "row": "N",
+          "column": 9,
+          "pinName": "VDD",
+          "pinType": "power"
+        },
+        {
+          "ballName": "N10",
+          "row": "N",
+          "column": 10,
+          "pinName": "VDD",
+          "pinType": "power"
+        },
+        {
+          "ballName": "N11",
+          "row": "N",
+          "column": 11,
+          "pinName": "PE13",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "N12",
+          "row": "N",
+          "column": 12,
+          "pinName": "PH7",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "N13",
+          "row": "N",
+          "column": 13,
+          "pinName": "PD12",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "N14",
+          "row": "N",
+          "column": 14,
+          "pinName": "PD11",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "N15",
+          "row": "N",
+          "column": 15,
+          "pinName": "PD10",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "P1",
+          "row": "P",
+          "column": 1,
+          "pinName": "VREFP",
+          "pinType": "power"
+        },
+        {
+          "ballName": "P2",
+          "row": "P",
+          "column": 2,
+          "pinName": "PA2",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "P3",
+          "row": "P",
+          "column": 3,
+          "pinName": "PA6",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "P4",
+          "row": "P",
+          "column": 4,
+          "pinName": "PA5",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "P5",
+          "row": "P",
+          "column": 5,
+          "pinName": "PC5",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "P6",
+          "row": "P",
+          "column": 6,
+          "pinName": "PF12",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "P7",
+          "row": "P",
+          "column": 7,
+          "pinName": "PF15",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "P8",
+          "row": "P",
+          "column": 8,
+          "pinName": "PE8",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "P9",
+          "row": "P",
+          "column": 9,
+          "pinName": "PE9",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "P10",
+          "row": "P",
+          "column": 10,
+          "pinName": "PE11",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "P11",
+          "row": "P",
+          "column": 11,
+          "pinName": "PE14",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "P12",
+          "row": "P",
+          "column": 12,
+          "pinName": "PB12",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "P13",
+          "row": "P",
+          "column": 13,
+          "pinName": "PB13",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "P14",
+          "row": "P",
+          "column": 14,
+          "pinName": "PD9",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "P15",
+          "row": "P",
+          "column": 15,
+          "pinName": "PD8",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "R1",
+          "row": "R",
+          "column": 1,
+          "pinName": "VDDA",
+          "pinType": "power"
+        },
+        {
+          "ballName": "R2",
+          "row": "R",
+          "column": 2,
+          "pinName": "PA3",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "R3",
+          "row": "R",
+          "column": 3,
+          "pinName": "PA7",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "R4",
+          "row": "R",
+          "column": 4,
+          "pinName": "PB1",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "R5",
+          "row": "R",
+          "column": 5,
+          "pinName": "PB0",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "R6",
+          "row": "R",
+          "column": 6,
+          "pinName": "PF11",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "R7",
+          "row": "R",
+          "column": 7,
+          "pinName": "PF14",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "R8",
+          "row": "R",
+          "column": 8,
+          "pinName": "PE7",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "R9",
+          "row": "R",
+          "column": 9,
+          "pinName": "PE10",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "R10",
+          "row": "R",
+          "column": 10,
+          "pinName": "PE12",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "R11",
+          "row": "R",
+          "column": 11,
+          "pinName": "PE15",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "R12",
+          "row": "R",
+          "column": 12,
+          "pinName": "PB10",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "R13",
+          "row": "R",
+          "column": 13,
+          "pinName": "PB11",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "R14",
+          "row": "R",
+          "column": 14,
+          "pinName": "PB14",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "R15",
+          "row": "R",
+          "column": 15,
+          "pinName": "PB15",
+          "pinType": "gpio"
+        }
+      ]
+    },
+    {
+      "packageName": "BGA176",
+      "packageType": "BGA",
+      "totalPads": 176,
+      "orientation": "a1-top-left",
+      "pins": [
+        {
+          "ballName": "A1",
+          "row": "A",
+          "column": 1,
+          "pinName": "PE3",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "A2",
+          "row": "A",
+          "column": 2,
+          "pinName": "PE2",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "A3",
+          "row": "A",
+          "column": 3,
+          "pinName": "PE1",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "A4",
+          "row": "A",
+          "column": 4,
+          "pinName": "PE0",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "A5",
+          "row": "A",
+          "column": 5,
+          "pinName": "PB8",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "A6",
+          "row": "A",
+          "column": 6,
+          "pinName": "PB5",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "A7",
+          "row": "A",
+          "column": 7,
+          "pinName": "PG14",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "A8",
+          "row": "A",
+          "column": 8,
+          "pinName": "PG13",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "A9",
+          "row": "A",
+          "column": 9,
+          "pinName": "PB4",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "A10",
+          "row": "A",
+          "column": 10,
+          "pinName": "PB3",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "A11",
+          "row": "A",
+          "column": 11,
+          "pinName": "PD7",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "A12",
+          "row": "A",
+          "column": 12,
+          "pinName": "PC12",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "A13",
+          "row": "A",
+          "column": 13,
+          "pinName": "PA15",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "A14",
+          "row": "A",
+          "column": 14,
+          "pinName": "PA14",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "A15",
+          "row": "A",
+          "column": 15,
+          "pinName": "PA13",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "B1",
+          "row": "B",
+          "column": 1,
+          "pinName": "PE4",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "B2",
+          "row": "B",
+          "column": 2,
+          "pinName": "PE5",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "B3",
+          "row": "B",
+          "column": 3,
+          "pinName": "PE6",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "B4",
+          "row": "B",
+          "column": 4,
+          "pinName": "PB9",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "B5",
+          "row": "B",
+          "column": 5,
+          "pinName": "PB7",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "B6",
+          "row": "B",
+          "column": 6,
+          "pinName": "PB6",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "B7",
+          "row": "B",
+          "column": 7,
+          "pinName": "PG15",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "B8",
+          "row": "B",
+          "column": 8,
+          "pinName": "PG12",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "B9",
+          "row": "B",
+          "column": 9,
+          "pinName": "PG11",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "B10",
+          "row": "B",
+          "column": 10,
+          "pinName": "PG10",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "B11",
+          "row": "B",
+          "column": 11,
+          "pinName": "PD6",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "B12",
+          "row": "B",
+          "column": 12,
+          "pinName": "PD0",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "B13",
+          "row": "B",
+          "column": 13,
+          "pinName": "PC11",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "B14",
+          "row": "B",
+          "column": 14,
+          "pinName": "PC10",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "B15",
+          "row": "B",
+          "column": 15,
+          "pinName": "PA12",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "C1",
+          "row": "C",
+          "column": 1,
+          "pinName": "VBAT",
+          "pinType": "power"
+        },
+        {
+          "ballName": "C2",
+          "row": "C",
+          "column": 2,
+          "pinName": "PI7",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "C3",
+          "row": "C",
+          "column": 3,
+          "pinName": "PI6",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "C4",
+          "row": "C",
+          "column": 4,
+          "pinName": "PI5",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "C5",
+          "row": "C",
+          "column": 5,
+          "pinName": "VDD",
+          "pinType": "power"
+        },
+        {
+          "ballName": "C6",
+          "row": "C",
+          "column": 6,
+          "pinName": "PDR_ON",
+          "pinType": "power"
+        },
+        {
+          "ballName": "C7",
+          "row": "C",
+          "column": 7,
+          "pinName": "VDD",
+          "pinType": "power"
+        },
+        {
+          "ballName": "C8",
+          "row": "C",
+          "column": 8,
+          "pinName": "VDD",
+          "pinType": "power"
+        },
+        {
+          "ballName": "C9",
+          "row": "C",
+          "column": 9,
+          "pinName": "VDD",
+          "pinType": "power"
+        },
+        {
+          "ballName": "C10",
+          "row": "C",
+          "column": 10,
+          "pinName": "PG9",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "C11",
+          "row": "C",
+          "column": 11,
+          "pinName": "PD5",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "C12",
+          "row": "C",
+          "column": 12,
+          "pinName": "PD1",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "C13",
+          "row": "C",
+          "column": 13,
+          "pinName": "PI3",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "C14",
+          "row": "C",
+          "column": 14,
+          "pinName": "PI2",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "C15",
+          "row": "C",
+          "column": 15,
+          "pinName": "PA11",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "D1",
+          "row": "D",
+          "column": 1,
+          "pinName": "PC13-TAMPER-RTC",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "D2",
+          "row": "D",
+          "column": 2,
+          "pinName": "PI8",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "D3",
+          "row": "D",
+          "column": 3,
+          "pinName": "PI9",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "D4",
+          "row": "D",
+          "column": 4,
+          "pinName": "PI4",
+          "pinType": "gpio"
+        },
+        {
+          "ballName": "D5",
+          "row": "D",
+          "column": 5,
+          "pinName": "VSS",
+          "pinType": "ground"
+        },
+        {
+          "ballName": "D6",
+          "row": "D",
+          "column": 6,
+          "pinName": "BOOT0",
+          "pinType": "boot"
         },
         {
           "ballName": "D7",
@@ -12994,7 +14943,515 @@
         {
           "padNumber": 94,
           "pinName": "BOOT0",
+          "pinType": "boot"
+        },
+        {
+          "padNumber": 95,
+          "pinName": "PB8",
           "pinType": "gpio"
+        },
+        {
+          "padNumber": 96,
+          "pinName": "PB9",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 97,
+          "pinName": "PE0",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 98,
+          "pinName": "PE1",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 99,
+          "pinName": "VSS",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 100,
+          "pinName": "VDD",
+          "pinType": "power"
+        }
+      ]
+    },
+    {
+      "packageName": "LQFP100",
+      "packageType": "LQFP",
+      "totalPads": 100,
+      "orientation": "pin1-top-left",
+      "pins": [
+        {
+          "padNumber": 1,
+          "pinName": "PE2",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 2,
+          "pinName": "PE3",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 3,
+          "pinName": "PE4",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 4,
+          "pinName": "PE5",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 5,
+          "pinName": "PE6",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 6,
+          "pinName": "VBAT",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 7,
+          "pinName": "PC13-TAMPER-RTC",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 8,
+          "pinName": "PC14-OSC32IN",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 9,
+          "pinName": "PC15-OSC32OUT",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 10,
+          "pinName": "VSS",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 11,
+          "pinName": "VDD",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 12,
+          "pinName": "PH0/OSCIN",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 13,
+          "pinName": "PH1/OSCOUT",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 14,
+          "pinName": "NRST",
+          "pinType": "reset"
+        },
+        {
+          "padNumber": 15,
+          "pinName": "PC0",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 16,
+          "pinName": "PC1",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 17,
+          "pinName": "PC2",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 18,
+          "pinName": "PC3",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 19,
+          "pinName": "VDD",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 20,
+          "pinName": "VSSA",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 21,
+          "pinName": "VREFP",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 22,
+          "pinName": "VDDA",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 23,
+          "pinName": "PA0-WKUP",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 24,
+          "pinName": "PA1",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 25,
+          "pinName": "PA2",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 26,
+          "pinName": "PA3",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 27,
+          "pinName": "VSS",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 28,
+          "pinName": "VDD",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 29,
+          "pinName": "PA4",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 30,
+          "pinName": "PA5",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 31,
+          "pinName": "PA6",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 32,
+          "pinName": "PA7",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 33,
+          "pinName": "PC4",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 34,
+          "pinName": "PC5",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 35,
+          "pinName": "PB0",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 36,
+          "pinName": "PB1",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 37,
+          "pinName": "PB2",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 38,
+          "pinName": "PE7",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 39,
+          "pinName": "PE8",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 40,
+          "pinName": "PE9",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 41,
+          "pinName": "PE10",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 42,
+          "pinName": "PE11",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 43,
+          "pinName": "PE12",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 44,
+          "pinName": "PE13",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 45,
+          "pinName": "PE14",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 46,
+          "pinName": "PE15",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 47,
+          "pinName": "PB10",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 48,
+          "pinName": "PB11",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 49,
+          "pinName": "NC",
+          "pinType": "nc"
+        },
+        {
+          "padNumber": 50,
+          "pinName": "VDD",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 51,
+          "pinName": "PB12",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 52,
+          "pinName": "PB13",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 53,
+          "pinName": "PB14",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 54,
+          "pinName": "PB15",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 55,
+          "pinName": "PD8",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 56,
+          "pinName": "PD9",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 57,
+          "pinName": "PD10",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 58,
+          "pinName": "PD11",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 59,
+          "pinName": "PD12",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 60,
+          "pinName": "PD13",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 61,
+          "pinName": "PD14",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 62,
+          "pinName": "PD15",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 63,
+          "pinName": "PC6",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 64,
+          "pinName": "PC7",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 65,
+          "pinName": "PC8",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 66,
+          "pinName": "PC9",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 67,
+          "pinName": "PA8",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 68,
+          "pinName": "PA9",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 69,
+          "pinName": "PA10",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 70,
+          "pinName": "PA11",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 71,
+          "pinName": "PA12",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 72,
+          "pinName": "PA13",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 73,
+          "pinName": "NC",
+          "pinType": "nc"
+        },
+        {
+          "padNumber": 74,
+          "pinName": "VSS",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 75,
+          "pinName": "VDD",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 76,
+          "pinName": "PA14",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 77,
+          "pinName": "PA15",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 78,
+          "pinName": "PC10",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 79,
+          "pinName": "PC11",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 80,
+          "pinName": "PC12",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 81,
+          "pinName": "PD0",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 82,
+          "pinName": "PD1",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 83,
+          "pinName": "PD2",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 84,
+          "pinName": "PD3",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 85,
+          "pinName": "PD4",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 86,
+          "pinName": "PD5",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 87,
+          "pinName": "PD6",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 88,
+          "pinName": "PD7",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 89,
+          "pinName": "PB3",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 90,
+          "pinName": "PB4",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 91,
+          "pinName": "PB5",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 92,
+          "pinName": "PB6",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 93,
+          "pinName": "PB7",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 94,
+          "pinName": "BOOT0",
+          "pinType": "boot"
         },
         {
           "padNumber": 95,
@@ -13722,7 +16179,735 @@
         {
           "padNumber": 138,
           "pinName": "BOOT0",
+          "pinType": "boot"
+        },
+        {
+          "padNumber": 139,
+          "pinName": "PB8",
           "pinType": "gpio"
+        },
+        {
+          "padNumber": 140,
+          "pinName": "PB9",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 141,
+          "pinName": "PE0",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 142,
+          "pinName": "PE1",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 143,
+          "pinName": "PDR_ON",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 144,
+          "pinName": "VDD",
+          "pinType": "power"
+        }
+      ]
+    },
+    {
+      "packageName": "LQFP144",
+      "packageType": "LQFP",
+      "totalPads": 144,
+      "orientation": "pin1-top-left",
+      "pins": [
+        {
+          "padNumber": 1,
+          "pinName": "PE2",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 2,
+          "pinName": "PE3",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 3,
+          "pinName": "PE4",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 4,
+          "pinName": "PE5",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 5,
+          "pinName": "PE6",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 6,
+          "pinName": "VBAT",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 7,
+          "pinName": "PC13-TAMPER-RTC",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 8,
+          "pinName": "PC14-OSC32IN",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 9,
+          "pinName": "PC15-OSC32OUT",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 10,
+          "pinName": "PF0",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 11,
+          "pinName": "PF1",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 12,
+          "pinName": "PF2",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 13,
+          "pinName": "PF3",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 14,
+          "pinName": "PF4",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 15,
+          "pinName": "PF5",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 16,
+          "pinName": "VSS",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 17,
+          "pinName": "VDD",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 18,
+          "pinName": "PF6",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 19,
+          "pinName": "PF7",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 20,
+          "pinName": "PF8",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 21,
+          "pinName": "PF9",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 22,
+          "pinName": "PF10",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 23,
+          "pinName": "PH0/OSCIN",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 24,
+          "pinName": "PH1/OSCOUT",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 25,
+          "pinName": "NRST",
+          "pinType": "reset"
+        },
+        {
+          "padNumber": 26,
+          "pinName": "PC0",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 27,
+          "pinName": "PC1",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 28,
+          "pinName": "PC2",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 29,
+          "pinName": "PC3",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 30,
+          "pinName": "VDD",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 31,
+          "pinName": "VSSA",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 32,
+          "pinName": "VREFP",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 33,
+          "pinName": "VDDA",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 34,
+          "pinName": "PA0-WKUP",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 35,
+          "pinName": "PA1",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 36,
+          "pinName": "PA2",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 37,
+          "pinName": "PA3",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 38,
+          "pinName": "VSS",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 39,
+          "pinName": "VDD",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 40,
+          "pinName": "PA4",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 41,
+          "pinName": "PA5",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 42,
+          "pinName": "PA6",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 43,
+          "pinName": "PA7",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 44,
+          "pinName": "PC4",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 45,
+          "pinName": "PC5",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 46,
+          "pinName": "PB0",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 47,
+          "pinName": "PB1",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 48,
+          "pinName": "PB2",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 49,
+          "pinName": "PF11",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 50,
+          "pinName": "PF12",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 51,
+          "pinName": "VSS",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 52,
+          "pinName": "VDD",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 53,
+          "pinName": "PF13",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 54,
+          "pinName": "PF14",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 55,
+          "pinName": "PF15",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 56,
+          "pinName": "PG0",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 57,
+          "pinName": "PG1",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 58,
+          "pinName": "PE7",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 59,
+          "pinName": "PE8",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 60,
+          "pinName": "PE9",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 61,
+          "pinName": "VSS",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 62,
+          "pinName": "VDD",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 63,
+          "pinName": "PE10",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 64,
+          "pinName": "PE11",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 65,
+          "pinName": "PE12",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 66,
+          "pinName": "PE13",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 67,
+          "pinName": "PE14",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 68,
+          "pinName": "PE15",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 69,
+          "pinName": "PB10",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 70,
+          "pinName": "PB11",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 71,
+          "pinName": "NC",
+          "pinType": "nc"
+        },
+        {
+          "padNumber": 72,
+          "pinName": "VDD",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 73,
+          "pinName": "PB12",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 74,
+          "pinName": "PB13",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 75,
+          "pinName": "PB14",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 76,
+          "pinName": "PB15",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 77,
+          "pinName": "PD8",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 78,
+          "pinName": "PD9",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 79,
+          "pinName": "PD10",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 80,
+          "pinName": "PD11",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 81,
+          "pinName": "PD12",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 82,
+          "pinName": "PD13",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 83,
+          "pinName": "VSS",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 84,
+          "pinName": "VDD",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 85,
+          "pinName": "PD14",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 86,
+          "pinName": "PD15",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 87,
+          "pinName": "PG2",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 88,
+          "pinName": "PG3",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 89,
+          "pinName": "PG4",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 90,
+          "pinName": "PG5",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 91,
+          "pinName": "PG6",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 92,
+          "pinName": "PG7",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 93,
+          "pinName": "PG8",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 94,
+          "pinName": "VSS",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 95,
+          "pinName": "VDD",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 96,
+          "pinName": "PC6",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 97,
+          "pinName": "PC7",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 98,
+          "pinName": "PC8",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 99,
+          "pinName": "PC9",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 100,
+          "pinName": "PA8",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 101,
+          "pinName": "PA9",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 102,
+          "pinName": "PA10",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 103,
+          "pinName": "PA11",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 104,
+          "pinName": "PA12",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 105,
+          "pinName": "PA13",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 106,
+          "pinName": "NC",
+          "pinType": "nc"
+        },
+        {
+          "padNumber": 107,
+          "pinName": "VSS",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 108,
+          "pinName": "VDD",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 109,
+          "pinName": "PA14",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 110,
+          "pinName": "PA15",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 111,
+          "pinName": "PC10",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 112,
+          "pinName": "PC11",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 113,
+          "pinName": "PC12",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 114,
+          "pinName": "PD0",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 115,
+          "pinName": "PD1",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 116,
+          "pinName": "PD2",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 117,
+          "pinName": "PD3",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 118,
+          "pinName": "PD4",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 119,
+          "pinName": "PD5",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 120,
+          "pinName": "VSS",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 121,
+          "pinName": "VDD",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 122,
+          "pinName": "PD6",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 123,
+          "pinName": "PD7",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 124,
+          "pinName": "PG9",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 125,
+          "pinName": "PG10",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 126,
+          "pinName": "PG11",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 127,
+          "pinName": "PG12",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 128,
+          "pinName": "PG13",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 129,
+          "pinName": "PG14",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 130,
+          "pinName": "VSS",
+          "pinType": "ground"
+        },
+        {
+          "padNumber": 131,
+          "pinName": "VDD",
+          "pinType": "power"
+        },
+        {
+          "padNumber": 132,
+          "pinName": "PG15",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 133,
+          "pinName": "PB3",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 134,
+          "pinName": "PB4",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 135,
+          "pinName": "PB5",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 136,
+          "pinName": "PB6",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 137,
+          "pinName": "PB7",
+          "pinType": "gpio"
+        },
+        {
+          "padNumber": 138,
+          "pinName": "BOOT0",
+          "pinType": "boot"
         },
         {
           "padNumber": 139,

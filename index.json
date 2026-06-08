@@ -3,13 +3,1582 @@
   "dataVersion": "2026.05.31",
   "chips": [
     {
+      "id": "GD32A503",
+      "displayName": "GD32A503",
+      "vendor": "GigaDevice",
+      "family": "GD32A5",
+      "packages": [
+        "LQFP48",
+        "LQFP48",
+        "LQFP64",
+        "LQFP64",
+        "LQFP100",
+        "LQFP100"
+      ],
+      "status": "draft",
+      "chipUrl": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32a5/gd32a503/chip.json",
+      "sourceFiles": [
+        {
+          "type": "pinout",
+          "package": "LQFP48",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32a5/gd32a503/source/GD32A503_LQFP48_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP48",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32a5/gd32a503/source/GD32A503_LQFP48_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32a5/gd32a503/source/GD32A503_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32a5/gd32a503/source/GD32A503_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32a5/gd32a503/source/GD32A503_LQFP100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32a5/gd32a503/source/GD32A503_LQFP100_PINOUT.csv"
+        }
+      ]
+    },
+    {
+      "id": "GD32A513",
+      "displayName": "GD32A513",
+      "vendor": "GigaDevice",
+      "family": "GD32A5",
+      "packages": [
+        "LQFP48",
+        "LQFP48",
+        "LQFP64",
+        "LQFP64",
+        "LQFP100",
+        "LQFP100"
+      ],
+      "status": "draft",
+      "chipUrl": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32a5/gd32a513/chip.json",
+      "sourceFiles": [
+        {
+          "type": "pinout",
+          "package": "LQFP48",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32a5/gd32a513/source/GD32A513_LQFP48_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP48",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32a5/gd32a513/source/GD32A513_LQFP48_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32a5/gd32a513/source/GD32A513_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32a5/gd32a513/source/GD32A513_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32a5/gd32a513/source/GD32A513_LQFP100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32a5/gd32a513/source/GD32A513_LQFP100_PINOUT.csv"
+        }
+      ]
+    },
+    {
+      "id": "GD32C103",
+      "displayName": "GD32C103",
+      "vendor": "GigaDevice",
+      "family": "GD32C1",
+      "packages": [
+        "BGA100",
+        "BGA100",
+        "LQFP48",
+        "LQFP48",
+        "LQFP64",
+        "LQFP64",
+        "LQFP100",
+        "LQFP100"
+      ],
+      "status": "draft",
+      "chipUrl": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32c1/gd32c103/chip.json",
+      "sourceFiles": [
+        {
+          "type": "pinout",
+          "package": "BGA100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32c1/gd32c103/source/GD32C103_BGA100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "BGA100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32c1/gd32c103/source/GD32C103_BGA100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP48",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32c1/gd32c103/source/GD32C103_LQFP48_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP48",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32c1/gd32c103/source/GD32C103_LQFP48_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32c1/gd32c103/source/GD32C103_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32c1/gd32c103/source/GD32C103_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32c1/gd32c103/source/GD32C103_LQFP100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32c1/gd32c103/source/GD32C103_LQFP100_PINOUT.csv"
+        }
+      ]
+    },
+    {
+      "id": "GD32C113",
+      "displayName": "GD32C113",
+      "vendor": "GigaDevice",
+      "family": "GD32C1",
+      "packages": [
+        "LQFP48",
+        "LQFP48",
+        "LQFP64",
+        "LQFP64",
+        "LQFP100",
+        "LQFP100"
+      ],
+      "status": "draft",
+      "chipUrl": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32c1/gd32c113/chip.json",
+      "sourceFiles": [
+        {
+          "type": "pinout",
+          "package": "LQFP48",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32c1/gd32c113/source/GD32C113_LQFP48_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP48",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32c1/gd32c113/source/GD32C113_LQFP48_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32c1/gd32c113/source/GD32C113_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32c1/gd32c113/source/GD32C113_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32c1/gd32c113/source/GD32C113_LQFP100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32c1/gd32c113/source/GD32C113_LQFP100_PINOUT.csv"
+        }
+      ]
+    },
+    {
+      "id": "GD32C231",
+      "displayName": "GD32C231",
+      "vendor": "GigaDevice",
+      "family": "GD32C2",
+      "packages": [
+        "LQFP32",
+        "LQFP32",
+        "LQFP48",
+        "LQFP48"
+      ],
+      "status": "draft",
+      "chipUrl": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32c2/gd32c231/chip.json",
+      "sourceFiles": [
+        {
+          "type": "gpio-af",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32c2/gd32c231/source/GD32C231_GPIO_AF.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP32",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32c2/gd32c231/source/GD32C231_LQFP32_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP32",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32c2/gd32c231/source/GD32C231_LQFP32_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP48",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32c2/gd32c231/source/GD32C231_LQFP48_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP48",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32c2/gd32c231/source/GD32C231_LQFP48_PINOUT.csv"
+        }
+      ]
+    },
+    {
+      "id": "GD32E103",
+      "displayName": "GD32E103",
+      "vendor": "GigaDevice",
+      "family": "GD32E1",
+      "packages": [
+        "LQFP48",
+        "LQFP48",
+        "LQFP64",
+        "LQFP64",
+        "LQFP100",
+        "LQFP100"
+      ],
+      "status": "draft",
+      "chipUrl": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32e1/gd32e103/chip.json",
+      "sourceFiles": [
+        {
+          "type": "pinout",
+          "package": "LQFP48",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32e1/gd32e103/source/GD32E103_LQFP48_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP48",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32e1/gd32e103/source/GD32E103_LQFP48_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32e1/gd32e103/source/GD32E103_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32e1/gd32e103/source/GD32E103_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32e1/gd32e103/source/GD32E103_LQFP100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32e1/gd32e103/source/GD32E103_LQFP100_PINOUT.csv"
+        }
+      ]
+    },
+    {
+      "id": "GD32E113",
+      "displayName": "GD32E113",
+      "vendor": "GigaDevice",
+      "family": "GD32E1",
+      "packages": [
+        "LQFP48",
+        "LQFP48",
+        "LQFP64",
+        "LQFP64",
+        "LQFP100",
+        "LQFP100"
+      ],
+      "status": "draft",
+      "chipUrl": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32e1/gd32e113/chip.json",
+      "sourceFiles": [
+        {
+          "type": "pinout",
+          "package": "LQFP48",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32e1/gd32e113/source/GD32E113_LQFP48_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP48",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32e1/gd32e113/source/GD32E113_LQFP48_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32e1/gd32e113/source/GD32E113_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32e1/gd32e113/source/GD32E113_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32e1/gd32e113/source/GD32E113_LQFP100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32e1/gd32e113/source/GD32E113_LQFP100_PINOUT.csv"
+        }
+      ]
+    },
+    {
+      "id": "GD32E230",
+      "displayName": "GD32E230",
+      "vendor": "GigaDevice",
+      "family": "GD32E2",
+      "packages": [
+        "LQFP32",
+        "LQFP32",
+        "LQFP48",
+        "LQFP48"
+      ],
+      "status": "draft",
+      "chipUrl": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32e2/gd32e230/chip.json",
+      "sourceFiles": [
+        {
+          "type": "pinout",
+          "package": "LQFP32",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32e2/gd32e230/source/GD32E230_LQFP32_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP32",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32e2/gd32e230/source/GD32E230_LQFP32_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP48",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32e2/gd32e230/source/GD32E230_LQFP48_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP48",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32e2/gd32e230/source/GD32E230_LQFP48_PINOUT.csv"
+        }
+      ]
+    },
+    {
+      "id": "GD32E235",
+      "displayName": "GD32E235",
+      "vendor": "GigaDevice",
+      "family": "GD32E2",
+      "packages": [
+        "LQFP32",
+        "LQFP32",
+        "LQFP48",
+        "LQFP48"
+      ],
+      "status": "draft",
+      "chipUrl": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32e2/gd32e235/chip.json",
+      "sourceFiles": [
+        {
+          "type": "pinout",
+          "package": "LQFP32",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32e2/gd32e235/source/GD32E235_LQFP32_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP32",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32e2/gd32e235/source/GD32E235_LQFP32_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP48",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32e2/gd32e235/source/GD32E235_LQFP48_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP48",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32e2/gd32e235/source/GD32E235_LQFP48_PINOUT.csv"
+        }
+      ]
+    },
+    {
+      "id": "GD32E502",
+      "displayName": "GD32E502",
+      "vendor": "GigaDevice",
+      "family": "GD32E5",
+      "packages": [
+        "LQFP48",
+        "LQFP48",
+        "LQFP64",
+        "LQFP64",
+        "LQFP100",
+        "LQFP100"
+      ],
+      "status": "draft",
+      "chipUrl": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32e5/gd32e502/chip.json",
+      "sourceFiles": [
+        {
+          "type": "pinout",
+          "package": "LQFP48",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32e5/gd32e502/source/GD32E502_LQFP48_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP48",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32e5/gd32e502/source/GD32E502_LQFP48_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32e5/gd32e502/source/GD32E502_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32e5/gd32e502/source/GD32E502_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32e5/gd32e502/source/GD32E502_LQFP100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32e5/gd32e502/source/GD32E502_LQFP100_PINOUT.csv"
+        }
+      ]
+    },
+    {
+      "id": "GD32E503",
+      "displayName": "GD32E503",
+      "vendor": "GigaDevice",
+      "family": "GD32E5",
+      "packages": [
+        "LQFP48",
+        "LQFP48",
+        "LQFP64",
+        "LQFP64",
+        "LQFP100",
+        "LQFP100",
+        "LQFP144",
+        "LQFP144"
+      ],
+      "status": "draft",
+      "chipUrl": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32e5/gd32e503/chip.json",
+      "sourceFiles": [
+        {
+          "type": "pinout",
+          "package": "LQFP48",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32e5/gd32e503/source/GD32E503_LQFP48_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP48",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32e5/gd32e503/source/GD32E503_LQFP48_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32e5/gd32e503/source/GD32E503_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32e5/gd32e503/source/GD32E503_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32e5/gd32e503/source/GD32E503_LQFP100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32e5/gd32e503/source/GD32E503_LQFP100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP144",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32e5/gd32e503/source/GD32E503_LQFP144_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP144",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32e5/gd32e503/source/GD32E503_LQFP144_PINOUT.csv"
+        }
+      ]
+    },
+    {
+      "id": "GD32E505",
+      "displayName": "GD32E505",
+      "vendor": "GigaDevice",
+      "family": "GD32E5",
+      "packages": [
+        "LQFP64",
+        "LQFP64",
+        "LQFP100",
+        "LQFP100",
+        "LQFP144",
+        "LQFP144"
+      ],
+      "status": "draft",
+      "chipUrl": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32e5/gd32e505/chip.json",
+      "sourceFiles": [
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32e5/gd32e505/source/GD32E505_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32e5/gd32e505/source/GD32E505_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32e5/gd32e505/source/GD32E505_LQFP100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32e5/gd32e505/source/GD32E505_LQFP100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP144",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32e5/gd32e505/source/GD32E505_LQFP144_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP144",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32e5/gd32e505/source/GD32E505_LQFP144_PINOUT.csv"
+        }
+      ]
+    },
+    {
+      "id": "GD32E507",
+      "displayName": "GD32E507",
+      "vendor": "GigaDevice",
+      "family": "GD32E5",
+      "packages": [
+        "LQFP64",
+        "LQFP64",
+        "LQFP100",
+        "LQFP100",
+        "LQFP144",
+        "LQFP144"
+      ],
+      "status": "draft",
+      "chipUrl": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32e5/gd32e507/chip.json",
+      "sourceFiles": [
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32e5/gd32e507/source/GD32E507_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32e5/gd32e507/source/GD32E507_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32e5/gd32e507/source/GD32E507_LQFP100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32e5/gd32e507/source/GD32E507_LQFP100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP144",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32e5/gd32e507/source/GD32E507_LQFP144_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP144",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32e5/gd32e507/source/GD32E507_LQFP144_PINOUT.csv"
+        }
+      ]
+    },
+    {
+      "id": "GD32E508",
+      "displayName": "GD32E508",
+      "vendor": "GigaDevice",
+      "family": "GD32E5",
+      "packages": [
+        "LQFP64",
+        "LQFP64",
+        "LQFP100",
+        "LQFP100",
+        "LQFP144",
+        "LQFP144"
+      ],
+      "status": "draft",
+      "chipUrl": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32e5/gd32e508/chip.json",
+      "sourceFiles": [
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32e5/gd32e508/source/GD32E508_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32e5/gd32e508/source/GD32E508_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32e5/gd32e508/source/GD32E508_LQFP100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32e5/gd32e508/source/GD32E508_LQFP100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP144",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32e5/gd32e508/source/GD32E508_LQFP144_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP144",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32e5/gd32e508/source/GD32E508_LQFP144_PINOUT.csv"
+        }
+      ]
+    },
+    {
+      "id": "GD32E513",
+      "displayName": "GD32E513",
+      "vendor": "GigaDevice",
+      "family": "GD32E5",
+      "packages": [
+        "LQFP48",
+        "LQFP48",
+        "LQFP64",
+        "LQFP64",
+        "LQFP100",
+        "LQFP100",
+        "LQFP144",
+        "LQFP144"
+      ],
+      "status": "draft",
+      "chipUrl": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32e5/gd32e513/chip.json",
+      "sourceFiles": [
+        {
+          "type": "pinout",
+          "package": "LQFP48",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32e5/gd32e513/source/GD32E513_LQFP48_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP48",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32e5/gd32e513/source/GD32E513_LQFP48_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32e5/gd32e513/source/GD32E513_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32e5/gd32e513/source/GD32E513_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32e5/gd32e513/source/GD32E513_LQFP100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32e5/gd32e513/source/GD32E513_LQFP100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP144",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32e5/gd32e513/source/GD32E513_LQFP144_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP144",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32e5/gd32e513/source/GD32E513_LQFP144_PINOUT.csv"
+        }
+      ]
+    },
+    {
+      "id": "GD32E517",
+      "displayName": "GD32E517",
+      "vendor": "GigaDevice",
+      "family": "GD32E5",
+      "packages": [
+        "LQFP64",
+        "LQFP64",
+        "LQFP100",
+        "LQFP100",
+        "LQFP144",
+        "LQFP144"
+      ],
+      "status": "draft",
+      "chipUrl": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32e5/gd32e517/chip.json",
+      "sourceFiles": [
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32e5/gd32e517/source/GD32E517_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32e5/gd32e517/source/GD32E517_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32e5/gd32e517/source/GD32E517_LQFP100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32e5/gd32e517/source/GD32E517_LQFP100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP144",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32e5/gd32e517/source/GD32E517_LQFP144_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP144",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32e5/gd32e517/source/GD32E517_LQFP144_PINOUT.csv"
+        }
+      ]
+    },
+    {
+      "id": "GD32E518",
+      "displayName": "GD32E518",
+      "vendor": "GigaDevice",
+      "family": "GD32E5",
+      "packages": [
+        "LQFP48",
+        "LQFP48",
+        "LQFP64",
+        "LQFP64",
+        "LQFP100",
+        "LQFP100",
+        "LQFP144",
+        "LQFP144"
+      ],
+      "status": "draft",
+      "chipUrl": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32e5/gd32e518/chip.json",
+      "sourceFiles": [
+        {
+          "type": "pinout",
+          "package": "LQFP48",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32e5/gd32e518/source/GD32E518_LQFP48_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP48",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32e5/gd32e518/source/GD32E518_LQFP48_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32e5/gd32e518/source/GD32E518_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32e5/gd32e518/source/GD32E518_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32e5/gd32e518/source/GD32E518_LQFP100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32e5/gd32e518/source/GD32E518_LQFP100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP144",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32e5/gd32e518/source/GD32E518_LQFP144_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP144",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32e5/gd32e518/source/GD32E518_LQFP144_PINOUT.csv"
+        }
+      ]
+    },
+    {
+      "id": "GD32F101",
+      "displayName": "GD32F101",
+      "vendor": "GigaDevice",
+      "family": "GD32F1",
+      "packages": [
+        "LQFP48",
+        "LQFP48",
+        "LQFP64",
+        "LQFP64",
+        "LQFP100",
+        "LQFP100",
+        "LQFP144",
+        "LQFP144"
+      ],
+      "status": "draft",
+      "chipUrl": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f1/gd32f101/chip.json",
+      "sourceFiles": [
+        {
+          "type": "pinout",
+          "package": "LQFP48",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f1/gd32f101/source/GD32F101_LQFP48_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP48",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f1/gd32f101/source/GD32F101_LQFP48_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f1/gd32f101/source/GD32F101_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f1/gd32f101/source/GD32F101_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f1/gd32f101/source/GD32F101_LQFP100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f1/gd32f101/source/GD32F101_LQFP100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP144",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f1/gd32f101/source/GD32F101_LQFP144_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP144",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f1/gd32f101/source/GD32F101_LQFP144_PINOUT.csv"
+        }
+      ]
+    },
+    {
+      "id": "GD32F103",
+      "displayName": "GD32F103",
+      "vendor": "GigaDevice",
+      "family": "GD32F1",
+      "packages": [
+        "LQFP48",
+        "LQFP48",
+        "LQFP64",
+        "LQFP64",
+        "LQFP100",
+        "LQFP100",
+        "LQFP144",
+        "LQFP144"
+      ],
+      "status": "draft",
+      "chipUrl": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f1/gd32f103/chip.json",
+      "sourceFiles": [
+        {
+          "type": "pinout",
+          "package": "LQFP48",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f1/gd32f103/source/GD32F103_LQFP48_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP48",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f1/gd32f103/source/GD32F103_LQFP48_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f1/gd32f103/source/GD32F103_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f1/gd32f103/source/GD32F103_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f1/gd32f103/source/GD32F103_LQFP100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f1/gd32f103/source/GD32F103_LQFP100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP144",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f1/gd32f103/source/GD32F103_LQFP144_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP144",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f1/gd32f103/source/GD32F103_LQFP144_PINOUT.csv"
+        }
+      ]
+    },
+    {
+      "id": "GD32F105",
+      "displayName": "GD32F105",
+      "vendor": "GigaDevice",
+      "family": "GD32F1",
+      "packages": [
+        "LQFP64",
+        "LQFP64",
+        "LQFP100",
+        "LQFP100",
+        "LQFP144",
+        "LQFP144"
+      ],
+      "status": "draft",
+      "chipUrl": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f1/gd32f105/chip.json",
+      "sourceFiles": [
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f1/gd32f105/source/GD32F105_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f1/gd32f105/source/GD32F105_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f1/gd32f105/source/GD32F105_LQFP100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f1/gd32f105/source/GD32F105_LQFP100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP144",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f1/gd32f105/source/GD32F105_LQFP144_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP144",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f1/gd32f105/source/GD32F105_LQFP144_PINOUT.csv"
+        }
+      ]
+    },
+    {
+      "id": "GD32F107",
+      "displayName": "GD32F107",
+      "vendor": "GigaDevice",
+      "family": "GD32F1",
+      "packages": [
+        "LQFP64",
+        "LQFP64",
+        "LQFP100",
+        "LQFP100",
+        "LQFP144",
+        "LQFP144"
+      ],
+      "status": "draft",
+      "chipUrl": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f1/gd32f107/chip.json",
+      "sourceFiles": [
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f1/gd32f107/source/GD32F107_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f1/gd32f107/source/GD32F107_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f1/gd32f107/source/GD32F107_LQFP100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f1/gd32f107/source/GD32F107_LQFP100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP144",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f1/gd32f107/source/GD32F107_LQFP144_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP144",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f1/gd32f107/source/GD32F107_LQFP144_PINOUT.csv"
+        }
+      ]
+    },
+    {
+      "id": "GD32F130",
+      "displayName": "GD32F130",
+      "vendor": "GigaDevice",
+      "family": "GD32F1",
+      "packages": [
+        "LQFP32",
+        "LQFP32",
+        "LQFP48",
+        "LQFP48",
+        "LQFP64",
+        "LQFP64"
+      ],
+      "status": "draft",
+      "chipUrl": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f1/gd32f130/chip.json",
+      "sourceFiles": [
+        {
+          "type": "pinout",
+          "package": "LQFP32",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f1/gd32f130/source/GD32F130_LQFP32_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP32",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f1/gd32f130/source/GD32F130_LQFP32_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP48",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f1/gd32f130/source/GD32F130_LQFP48_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP48",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f1/gd32f130/source/GD32F130_LQFP48_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f1/gd32f130/source/GD32F130_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f1/gd32f130/source/GD32F130_LQFP64_PINOUT.csv"
+        }
+      ]
+    },
+    {
+      "id": "GD32F150",
+      "displayName": "GD32F150",
+      "vendor": "GigaDevice",
+      "family": "GD32F1",
+      "packages": [
+        "LQFP48",
+        "LQFP48",
+        "LQFP64",
+        "LQFP64"
+      ],
+      "status": "draft",
+      "chipUrl": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f1/gd32f150/chip.json",
+      "sourceFiles": [
+        {
+          "type": "pinout",
+          "package": "LQFP48",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f1/gd32f150/source/GD32F150_LQFP48_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP48",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f1/gd32f150/source/GD32F150_LQFP48_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f1/gd32f150/source/GD32F150_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f1/gd32f150/source/GD32F150_LQFP64_PINOUT.csv"
+        }
+      ]
+    },
+    {
+      "id": "GD32F205",
+      "displayName": "GD32F205",
+      "vendor": "GigaDevice",
+      "family": "GD32F2",
+      "packages": [
+        "LQFP64",
+        "LQFP64",
+        "LQFP100",
+        "LQFP100",
+        "LQFP144",
+        "LQFP144"
+      ],
+      "status": "draft",
+      "chipUrl": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f2/gd32f205/chip.json",
+      "sourceFiles": [
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f2/gd32f205/source/GD32F205_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f2/gd32f205/source/GD32F205_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f2/gd32f205/source/GD32F205_LQFP100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f2/gd32f205/source/GD32F205_LQFP100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP144",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f2/gd32f205/source/GD32F205_LQFP144_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP144",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f2/gd32f205/source/GD32F205_LQFP144_PINOUT.csv"
+        }
+      ]
+    },
+    {
+      "id": "GD32F207",
+      "displayName": "GD32F207",
+      "vendor": "GigaDevice",
+      "family": "GD32F2",
+      "packages": [
+        "LQFP64",
+        "LQFP100",
+        "LQFP144",
+        "LQFP176"
+      ],
+      "status": "draft",
+      "chipUrl": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f2/gd32f207/chip.json",
+      "sourceFiles": [
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f2/gd32f207/source/GD32F207_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f2/gd32f207/source/GD32F207_LQFP100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP144",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f2/gd32f207/source/GD32F207_LQFP144_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP176",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f2/gd32f207/source/GD32F207_LQFP176_PINOUT.csv"
+        }
+      ]
+    },
+    {
+      "id": "GD32F303",
+      "displayName": "GD32F303",
+      "vendor": "GigaDevice",
+      "family": "GD32F3",
+      "packages": [
+        "LQFP64",
+        "LQFP100"
+      ],
+      "status": "draft",
+      "chipUrl": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f3/gd32f303/chip.json",
+      "sourceFiles": [
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f3/gd32f303/source/GD32F303_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f3/gd32f303/source/GD32F303_LQFP100_PINOUT.csv"
+        }
+      ]
+    },
+    {
+      "id": "GD32F303XB",
+      "displayName": "GD32F303XB",
+      "vendor": "GigaDevice",
+      "family": "GD32F3",
+      "packages": [
+        "LQFP64",
+        "LQFP64",
+        "LQFP100",
+        "LQFP100"
+      ],
+      "status": "draft",
+      "chipUrl": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f3/gd32f303xb/chip.json",
+      "sourceFiles": [
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f3/gd32f303xb/source/GD32F303XB_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f3/gd32f303xb/source/GD32F303XB_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f3/gd32f303xb/source/GD32F303XB_LQFP100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f3/gd32f303xb/source/GD32F303XB_LQFP100_PINOUT.csv"
+        }
+      ]
+    },
+    {
+      "id": "GD32F305",
+      "displayName": "GD32F305",
+      "vendor": "GigaDevice",
+      "family": "GD32F3",
+      "packages": [
+        "LQFP64",
+        "LQFP64",
+        "LQFP100",
+        "LQFP100",
+        "LQFP144",
+        "LQFP144"
+      ],
+      "status": "draft",
+      "chipUrl": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f3/gd32f305/chip.json",
+      "sourceFiles": [
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f3/gd32f305/source/GD32F305_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f3/gd32f305/source/GD32F305_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f3/gd32f305/source/GD32F305_LQFP100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f3/gd32f305/source/GD32F305_LQFP100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP144",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f3/gd32f305/source/GD32F305_LQFP144_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP144",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f3/gd32f305/source/GD32F305_LQFP144_PINOUT.csv"
+        }
+      ]
+    },
+    {
+      "id": "GD32F307",
+      "displayName": "GD32F307",
+      "vendor": "GigaDevice",
+      "family": "GD32F3",
+      "packages": [
+        "LQFP64",
+        "LQFP64",
+        "LQFP100",
+        "LQFP100",
+        "LQFP144",
+        "LQFP144"
+      ],
+      "status": "draft",
+      "chipUrl": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f3/gd32f307/chip.json",
+      "sourceFiles": [
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f3/gd32f307/source/GD32F307_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f3/gd32f307/source/GD32F307_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f3/gd32f307/source/GD32F307_LQFP100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f3/gd32f307/source/GD32F307_LQFP100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP144",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f3/gd32f307/source/GD32F307_LQFP144_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP144",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f3/gd32f307/source/GD32F307_LQFP144_PINOUT.csv"
+        }
+      ]
+    },
+    {
+      "id": "GD32F310",
+      "displayName": "GD32F310",
+      "vendor": "GigaDevice",
+      "family": "GD32F3",
+      "packages": [
+        "LQFP32",
+        "LQFP32",
+        "LQFP48",
+        "LQFP48"
+      ],
+      "status": "draft",
+      "chipUrl": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f3/gd32f310/chip.json",
+      "sourceFiles": [
+        {
+          "type": "pinout",
+          "package": "LQFP32",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f3/gd32f310/source/GD32F310_LQFP32_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP32",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f3/gd32f310/source/GD32F310_LQFP32_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP48",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f3/gd32f310/source/GD32F310_LQFP48_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP48",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f3/gd32f310/source/GD32F310_LQFP48_PINOUT.csv"
+        }
+      ]
+    },
+    {
+      "id": "GD32F330",
+      "displayName": "GD32F330",
+      "vendor": "GigaDevice",
+      "family": "GD32F3",
+      "packages": [
+        "LQFP32",
+        "LQFP32",
+        "LQFP48",
+        "LQFP48",
+        "LQFP64",
+        "LQFP64"
+      ],
+      "status": "draft",
+      "chipUrl": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f3/gd32f330/chip.json",
+      "sourceFiles": [
+        {
+          "type": "pinout",
+          "package": "LQFP32",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f3/gd32f330/source/GD32F330_LQFP32_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP32",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f3/gd32f330/source/GD32F330_LQFP32_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP48",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f3/gd32f330/source/GD32F330_LQFP48_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP48",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f3/gd32f330/source/GD32F330_LQFP48_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f3/gd32f330/source/GD32F330_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f3/gd32f330/source/GD32F330_LQFP64_PINOUT.csv"
+        }
+      ]
+    },
+    {
+      "id": "GD32F350",
+      "displayName": "GD32F350",
+      "vendor": "GigaDevice",
+      "family": "GD32F3",
+      "packages": [
+        "LQFP48",
+        "LQFP48",
+        "LQFP64",
+        "LQFP64"
+      ],
+      "status": "draft",
+      "chipUrl": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f3/gd32f350/chip.json",
+      "sourceFiles": [
+        {
+          "type": "pinout",
+          "package": "LQFP48",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f3/gd32f350/source/GD32F350_LQFP48_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP48",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f3/gd32f350/source/GD32F350_LQFP48_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f3/gd32f350/source/GD32F350_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f3/gd32f350/source/GD32F350_LQFP64_PINOUT.csv"
+        }
+      ]
+    },
+    {
+      "id": "GD32F403",
+      "displayName": "GD32F403",
+      "vendor": "GigaDevice",
+      "family": "GD32F4",
+      "packages": [
+        "BGA100",
+        "BGA100",
+        "LQFP48",
+        "LQFP48",
+        "LQFP64",
+        "LQFP64",
+        "LQFP100",
+        "LQFP100",
+        "LQFP144",
+        "LQFP144"
+      ],
+      "status": "draft",
+      "chipUrl": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f4/gd32f403/chip.json",
+      "sourceFiles": [
+        {
+          "type": "pinout",
+          "package": "BGA100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f4/gd32f403/source/GD32F403_BGA100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "BGA100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f403/source/GD32F403_BGA100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP48",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f4/gd32f403/source/GD32F403_LQFP48_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP48",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f403/source/GD32F403_LQFP48_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f4/gd32f403/source/GD32F403_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f403/source/GD32F403_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f4/gd32f403/source/GD32F403_LQFP100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f403/source/GD32F403_LQFP100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP144",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f4/gd32f403/source/GD32F403_LQFP144_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP144",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f403/source/GD32F403_LQFP144_PINOUT.csv"
+        }
+      ]
+    },
+    {
       "id": "GD32F405",
       "displayName": "GD32F405",
       "vendor": "Staging",
       "family": "GD32-CRAWL",
       "packages": [
+        "BGA100",
+        "BGA100",
+        "LQFP64",
         "LQFP64",
         "LQFP100",
+        "LQFP100",
+        "LQFP144",
         "LQFP144"
       ],
       "status": "draft",
@@ -21,8 +1590,23 @@
         },
         {
           "type": "pinout",
+          "package": "BGA100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f4/gd32f405/source/GD32F405_BGA100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "BGA100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f405/source/GD32F405_BGA100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
           "package": "LQFP64",
           "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f4/gd32f405/source/GD32F405_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f405/source/GD32F405_LQFP64_PINOUT.csv"
         },
         {
           "type": "pinout",
@@ -31,8 +1615,18 @@
         },
         {
           "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f405/source/GD32F405_LQFP100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
           "package": "LQFP144",
           "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f4/gd32f405/source/GD32F405_LQFP144_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP144",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f405/source/GD32F405_LQFP144_PINOUT.csv"
         }
       ]
     },
@@ -43,9 +1637,14 @@
       "family": "GD32F4",
       "packages": [
         "BGA100",
+        "BGA100",
+        "BGA176",
         "BGA176",
         "LQFP64",
+        "LQFP64",
         "LQFP100",
+        "LQFP100",
+        "LQFP144",
         "LQFP144"
       ],
       "status": "stable",
@@ -62,8 +1661,18 @@
         },
         {
           "type": "pinout",
+          "package": "BGA100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f407/source/GD32F407_BGA100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
           "package": "BGA176",
           "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f4/gd32f407/source/GD32F407_BGA176_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "BGA176",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f407/source/GD32F407_BGA176_PINOUT.csv"
         },
         {
           "type": "pinout",
@@ -72,13 +1681,28 @@
         },
         {
           "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f407/source/GD32F407_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
           "package": "LQFP100",
           "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f4/gd32f407/source/GD32F407_LQFP100_PINOUT.csv"
         },
         {
           "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f407/source/GD32F407_LQFP100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
           "package": "LQFP144",
           "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f4/gd32f407/source/GD32F407_LQFP144_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP144",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f407/source/GD32F407_LQFP144_PINOUT.csv"
         }
       ]
     },
@@ -88,8 +1712,13 @@
       "vendor": "Staging",
       "family": "GD32-CRAWL",
       "packages": [
+        "BGA100",
+        "BGA100",
+        "LQFP64",
         "LQFP64",
         "LQFP100",
+        "LQFP100",
+        "LQFP144",
         "LQFP144"
       ],
       "status": "draft",
@@ -101,8 +1730,23 @@
         },
         {
           "type": "pinout",
+          "package": "BGA100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f4/gd32f425/source/GD32F425_BGA100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "BGA100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f425/source/GD32F425_BGA100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
           "package": "LQFP64",
           "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f4/gd32f425/source/GD32F425_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f425/source/GD32F425_LQFP64_PINOUT.csv"
         },
         {
           "type": "pinout",
@@ -111,8 +1755,18 @@
         },
         {
           "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f425/source/GD32F425_LQFP100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
           "package": "LQFP144",
           "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f4/gd32f425/source/GD32F425_LQFP144_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP144",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f425/source/GD32F425_LQFP144_PINOUT.csv"
         }
       ]
     },
@@ -123,8 +1777,14 @@
       "family": "GD32-CRAWL",
       "packages": [
         "BGA100",
+        "BGA100",
         "BGA176",
+        "BGA176",
+        "LQFP64",
+        "LQFP64",
         "LQFP100",
+        "LQFP100",
+        "LQFP144",
         "LQFP144"
       ],
       "status": "draft",
@@ -141,8 +1801,28 @@
         },
         {
           "type": "pinout",
+          "package": "BGA100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f427/source/GD32F427_BGA100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
           "package": "BGA176",
           "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f4/gd32f427/source/GD32F427_BGA176_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "BGA176",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f427/source/GD32F427_BGA176_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f4/gd32f427/source/GD32F427_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f427/source/GD32F427_LQFP64_PINOUT.csv"
         },
         {
           "type": "pinout",
@@ -151,8 +1831,18 @@
         },
         {
           "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f427/source/GD32F427_LQFP100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
           "package": "LQFP144",
           "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f4/gd32f427/source/GD32F427_LQFP144_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP144",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f427/source/GD32F427_LQFP144_PINOUT.csv"
         }
       ]
     },
@@ -163,7 +1853,10 @@
       "family": "GD32-CRAWL",
       "packages": [
         "BGA176",
+        "BGA176",
         "LQFP100",
+        "LQFP100",
+        "LQFP144",
         "LQFP144"
       ],
       "status": "draft",
@@ -180,13 +1873,28 @@
         },
         {
           "type": "pinout",
+          "package": "BGA176",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f450/source/GD32F450_BGA176_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
           "package": "LQFP100",
           "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f4/gd32f450/source/GD32F450_LQFP100_PINOUT.csv"
         },
         {
           "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f450/source/GD32F450_LQFP100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
           "package": "LQFP144",
           "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f4/gd32f450/source/GD32F450_LQFP144_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP144",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f450/source/GD32F450_LQFP144_PINOUT.csv"
         }
       ]
     },
@@ -197,8 +1905,12 @@
       "family": "GD32F4",
       "packages": [
         "BGA100",
+        "BGA100",
+        "BGA176",
         "BGA176",
         "LQFP100",
+        "LQFP100",
+        "LQFP144",
         "LQFP144"
       ],
       "status": "draft",
@@ -215,8 +1927,18 @@
         },
         {
           "type": "pinout",
+          "package": "BGA100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f470/source/GD32F470_BGA100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
           "package": "BGA176",
           "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f4/gd32f470/source/GD32F470_BGA176_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "BGA176",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f470/source/GD32F470_BGA176_PINOUT.csv"
         },
         {
           "type": "pinout",
@@ -225,8 +1947,138 @@
         },
         {
           "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f470/source/GD32F470_LQFP100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
           "package": "LQFP144",
           "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f4/gd32f470/source/GD32F470_LQFP144_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP144",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f470/source/GD32F470_LQFP144_PINOUT.csv"
+        }
+      ]
+    },
+    {
+      "id": "GD32F503",
+      "displayName": "GD32F503",
+      "vendor": "GigaDevice",
+      "family": "GD32F5",
+      "packages": [
+        "BGA64",
+        "BGA64",
+        "LQFP48",
+        "LQFP48",
+        "LQFP64",
+        "LQFP64",
+        "LQFP100",
+        "LQFP100"
+      ],
+      "status": "draft",
+      "chipUrl": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f5/gd32f503/chip.json",
+      "sourceFiles": [
+        {
+          "type": "pinout",
+          "package": "BGA64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f5/gd32f503/source/GD32F503_BGA64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "BGA64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f5/gd32f503/source/GD32F503_BGA64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP48",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f5/gd32f503/source/GD32F503_LQFP48_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP48",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f5/gd32f503/source/GD32F503_LQFP48_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f5/gd32f503/source/GD32F503_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f5/gd32f503/source/GD32F503_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f5/gd32f503/source/GD32F503_LQFP100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f5/gd32f503/source/GD32F503_LQFP100_PINOUT.csv"
+        }
+      ]
+    },
+    {
+      "id": "GD32F505",
+      "displayName": "GD32F505",
+      "vendor": "GigaDevice",
+      "family": "GD32F5",
+      "packages": [
+        "BGA64",
+        "BGA64",
+        "LQFP48",
+        "LQFP48",
+        "LQFP64",
+        "LQFP64",
+        "LQFP100",
+        "LQFP100"
+      ],
+      "status": "draft",
+      "chipUrl": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f5/gd32f505/chip.json",
+      "sourceFiles": [
+        {
+          "type": "pinout",
+          "package": "BGA64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f5/gd32f505/source/GD32F505_BGA64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "BGA64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f5/gd32f505/source/GD32F505_BGA64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP48",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f5/gd32f505/source/GD32F505_LQFP48_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP48",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f5/gd32f505/source/GD32F505_LQFP48_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f5/gd32f505/source/GD32F505_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f5/gd32f505/source/GD32F505_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f5/gd32f505/source/GD32F505_LQFP100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f5/gd32f505/source/GD32F505_LQFP100_PINOUT.csv"
         }
       ]
     },
@@ -236,9 +2088,15 @@
       "vendor": "Staging",
       "family": "GD32-CRAWL",
       "packages": [
+        "BGA176",
+        "BGA176",
+        "LQFP64",
         "LQFP64",
         "LQFP100",
+        "LQFP100",
         "LQFP144",
+        "LQFP144",
+        "LQFP176",
         "LQFP176"
       ],
       "status": "draft",
@@ -250,8 +2108,23 @@
         },
         {
           "type": "pinout",
+          "package": "BGA176",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f5/gd32f527/source/GD32F527_BGA176_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "BGA176",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f5/gd32f527/source/GD32F527_BGA176_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
           "package": "LQFP64",
           "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f5/gd32f527/source/GD32F527_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f5/gd32f527/source/GD32F527_LQFP64_PINOUT.csv"
         },
         {
           "type": "pinout",
@@ -260,13 +2133,216 @@
         },
         {
           "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f5/gd32f527/source/GD32F527_LQFP100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
           "package": "LQFP144",
           "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f5/gd32f527/source/GD32F527_LQFP144_PINOUT.csv"
         },
         {
           "type": "pinout",
+          "package": "LQFP144",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f5/gd32f527/source/GD32F527_LQFP144_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
           "package": "LQFP176",
           "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32f5/gd32f527/source/GD32F527_LQFP176_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP176",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32f5/gd32f527/source/GD32F527_LQFP176_PINOUT.csv"
+        }
+      ]
+    },
+    {
+      "id": "GD32G553",
+      "displayName": "GD32G553",
+      "vendor": "GigaDevice",
+      "family": "GD32G5",
+      "packages": [
+        "LQFP48",
+        "LQFP48",
+        "LQFP64",
+        "LQFP64",
+        "LQFP80",
+        "LQFP80",
+        "LQFP100",
+        "LQFP100",
+        "LQFP128",
+        "LQFP128"
+      ],
+      "status": "draft",
+      "chipUrl": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32g5/gd32g553/chip.json",
+      "sourceFiles": [
+        {
+          "type": "gpio-af",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32g5/gd32g553/source/GD32G553_GPIO_AF.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP48",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32g5/gd32g553/source/GD32G553_LQFP48_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP48",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32g5/gd32g553/source/GD32G553_LQFP48_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32g5/gd32g553/source/GD32G553_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32g5/gd32g553/source/GD32G553_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP80",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32g5/gd32g553/source/GD32G553_LQFP80_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP80",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32g5/gd32g553/source/GD32G553_LQFP80_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32g5/gd32g553/source/GD32G553_LQFP100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32g5/gd32g553/source/GD32G553_LQFP100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP128",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32g5/gd32g553/source/GD32G553_LQFP128_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP128",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32g5/gd32g553/source/GD32G553_LQFP128_PINOUT.csv"
+        }
+      ]
+    },
+    {
+      "id": "GD32H737",
+      "displayName": "GD32H737",
+      "vendor": "GigaDevice",
+      "family": "GD32H7",
+      "packages": [
+        "BGA176",
+        "BGA176",
+        "LQFP100",
+        "LQFP100",
+        "LQFP144",
+        "LQFP144",
+        "LQFP176",
+        "LQFP176"
+      ],
+      "status": "draft",
+      "chipUrl": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32h7/gd32h737/chip.json",
+      "sourceFiles": [
+        {
+          "type": "pinout",
+          "package": "BGA176",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32h7/gd32h737/source/GD32H737_BGA176_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "BGA176",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32h7/gd32h737/source/GD32H737_BGA176_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32h7/gd32h737/source/GD32H737_LQFP100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32h7/gd32h737/source/GD32H737_LQFP100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP144",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32h7/gd32h737/source/GD32H737_LQFP144_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP144",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32h7/gd32h737/source/GD32H737_LQFP144_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP176",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32h7/gd32h737/source/GD32H737_LQFP176_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP176",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32h7/gd32h737/source/GD32H737_LQFP176_PINOUT.csv"
+        }
+      ]
+    },
+    {
+      "id": "GD32H757",
+      "displayName": "GD32H757",
+      "vendor": "GigaDevice",
+      "family": "GD32H7",
+      "packages": [
+        "BGA100",
+        "BGA100",
+        "LQFP100",
+        "LQFP100",
+        "LQFP144",
+        "LQFP144"
+      ],
+      "status": "draft",
+      "chipUrl": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32h7/gd32h757/chip.json",
+      "sourceFiles": [
+        {
+          "type": "gpio-af",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32h7/gd32h757/source/GD32H757_GPIO_AF.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "BGA100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32h7/gd32h757/source/GD32H757_BGA100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "BGA100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32h7/gd32h757/source/GD32H757_BGA100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32h7/gd32h757/source/GD32H757_LQFP100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP100",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32h7/gd32h757/source/GD32H757_LQFP100_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP144",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32h7/gd32h757/source/GD32H757_LQFP144_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP144",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32h7/gd32h757/source/GD32H757_LQFP144_PINOUT.csv"
         }
       ]
     },
@@ -276,6 +2352,9 @@
       "vendor": "GigaDevice",
       "family": "GD32H7",
       "packages": [
+        "BGA176",
+        "BGA176",
+        "LQFP176",
         "LQFP176"
       ],
       "status": "draft",
@@ -287,8 +2366,147 @@
         },
         {
           "type": "pinout",
+          "package": "BGA176",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32h7/gd32h759/source/GD32H759_BGA176_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "BGA176",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32h7/gd32h759/source/GD32H759_BGA176_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
           "package": "LQFP176",
           "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32h7/gd32h759/source/GD32H759_LQFP176_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP176",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32h7/gd32h759/source/GD32H759_LQFP176_PINOUT.csv"
+        }
+      ]
+    },
+    {
+      "id": "GD32L233",
+      "displayName": "GD32L233",
+      "vendor": "GigaDevice",
+      "family": "GD32L2",
+      "packages": [
+        "LQFP32",
+        "LQFP32",
+        "LQFP48",
+        "LQFP48",
+        "LQFP64",
+        "LQFP64"
+      ],
+      "status": "draft",
+      "chipUrl": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32l2/gd32l233/chip.json",
+      "sourceFiles": [
+        {
+          "type": "pinout",
+          "package": "LQFP32",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32l2/gd32l233/source/GD32L233_LQFP32_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP32",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32l2/gd32l233/source/GD32L233_LQFP32_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP48",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32l2/gd32l233/source/GD32L233_LQFP48_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP48",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32l2/gd32l233/source/GD32L233_LQFP48_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32l2/gd32l233/source/GD32L233_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32l2/gd32l233/source/GD32L233_LQFP64_PINOUT.csv"
+        }
+      ]
+    },
+    {
+      "id": "GD32L235",
+      "displayName": "GD32L235",
+      "vendor": "GigaDevice",
+      "family": "GD32L2",
+      "packages": [
+        "LQFP32",
+        "LQFP32",
+        "LQFP48",
+        "LQFP48",
+        "LQFP64",
+        "LQFP64"
+      ],
+      "status": "draft",
+      "chipUrl": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32l2/gd32l235/chip.json",
+      "sourceFiles": [
+        {
+          "type": "pinout",
+          "package": "LQFP32",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32l2/gd32l235/source/GD32L235_LQFP32_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP32",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32l2/gd32l235/source/GD32L235_LQFP32_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP48",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32l2/gd32l235/source/GD32L235_LQFP48_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP48",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32l2/gd32l235/source/GD32L235_LQFP48_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32l2/gd32l235/source/GD32L235_LQFP64_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/staging/gd32-csv-export/chips/gigadevice/gd32l2/gd32l235/source/GD32L235_LQFP64_PINOUT.csv"
+        }
+      ]
+    },
+    {
+      "id": "GD32M531",
+      "displayName": "GD32M531",
+      "vendor": "GigaDevice",
+      "family": "GD32M5",
+      "packages": [
+        "LQFP48",
+        "LQFP64"
+      ],
+      "status": "draft",
+      "chipUrl": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32m5/gd32m531/chip.json",
+      "sourceFiles": [
+        {
+          "type": "gpio-af",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32m5/gd32m531/source/GD32M531_GPIO_AF.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP48",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32m5/gd32m531/source/GD32M531_LQFP48_PINOUT.csv"
+        },
+        {
+          "type": "pinout",
+          "package": "LQFP64",
+          "url": "https://raw.githubusercontent.com/GYM-png/mcupinfunc-data/main/chips/gigadevice/gd32m5/gd32m531/source/GD32M531_LQFP64_PINOUT.csv"
         }
       ]
     }
