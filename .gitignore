@@ -1,0 +1,4 @@
+pdf-cache/
+staging/
+*report.json
+tools/__pycache__/

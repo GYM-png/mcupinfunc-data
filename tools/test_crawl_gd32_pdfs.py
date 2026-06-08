@@ -8,6 +8,8 @@ from unittest.mock import patch
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import crawl_gd32_pdfs as crawler
+import export_gd32_csvs as local_exporter
+import fetch_gd32_pdfs as pdf_fetcher
 
 
 class CrawlGd32PdfsTest(unittest.TestCase):
@@ -109,6 +111,81 @@ class CrawlGd32PdfsTest(unittest.TestCase):
 
             payload = json.loads(report_path.read_text(encoding="utf-8"))
             self.assertEqual(payload["successes"][0]["function_source"], "pinout-csv")
+
+    def test_fetch_candidates_writes_relative_pdf_index(self) -> None:
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            cache_dir = root / "pdf-cache"
+            cached_pdf = cache_dir / "GD32F103xx Datasheet_Rev3.3.pdf"
+            cached_pdf.parent.mkdir(parents=True)
+            cached_pdf.write_bytes(b"%PDF cached")
+            candidate = crawler.DatasheetCandidate(
+                part="GD32F103",
+                url="https://download.gigadevice.com/Datasheet/GD32F103xx%20Datasheet_Rev3.3.pdf",
+                source_url="https://www.gigadevice.com/product/mcu/gd32f103",
+            )
+
+            with patch.object(pdf_fetcher, "download_pdf", return_value=cached_pdf):
+                report = pdf_fetcher.fetch_candidates([candidate], cache_dir=cache_dir)
+            index_path = root / "pdf-index.json"
+            pdf_fetcher.write_pdf_index(index_path, report, root)
+
+            payload = json.loads(index_path.read_text(encoding="utf-8"))
+            self.assertEqual(payload["summary"], {"successes": 1, "failures": 0})
+            self.assertEqual(payload["pdfs"][0]["part"], "GD32F103")
+            self.assertEqual(payload["pdfs"][0]["pdf_path"], "pdf-cache/GD32F103xx Datasheet_Rev3.3.pdf")
+
+    def test_export_local_datasheets_uses_local_pdf_index_without_download(self) -> None:
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            pdf_path = root / "pdf-cache" / "GD32F103xx Datasheet_Rev3.3.pdf"
+            pdf_path.parent.mkdir(parents=True)
+            pdf_path.write_bytes(b"%PDF cached")
+            index_path = root / "pdf-index.json"
+            index_path.write_text(
+                json.dumps(
+                    {
+                        "summary": {"successes": 1, "failures": 0},
+                        "pdfs": [
+                            {
+                                "part": "GD32F103",
+                                "pdf_url": "https://download.gigadevice.com/Datasheet/GD32F103xx%20Datasheet_Rev3.3.pdf",
+                                "source_url": "https://www.gigadevice.com/product/mcu/gd32f103",
+                                "pdf_path": "pdf-cache/GD32F103xx Datasheet_Rev3.3.pdf",
+                            }
+                        ],
+                        "failures": [],
+                    }
+                )
+                + "\n",
+                encoding="utf-8",
+            )
+            written_path = root / "chips/gigadevice/gd32f1/gd32f103/source/GD32F103_LQFP100_PINOUT.csv"
+
+            datasheets = local_exporter.load_pdf_index(index_path, root)
+            with (
+                patch.object(local_exporter, "read_pdf_text", return_value="Table 2-6. LQFP100 pin definitions"),
+                patch.object(local_exporter, "available_packages", return_value=["LQFP100"]),
+                patch.object(local_exporter, "extract_gpio_af_rows", return_value=[]),
+                patch.object(local_exporter, "write_package_csvs", return_value=[written_path]) as write_package_csvs,
+            ):
+                report = local_exporter.export_local_datasheets(
+                    datasheets,
+                    output_root=root,
+                    function_source="auto",
+                )
+
+            self.assertEqual(len(report.successes), 1)
+            self.assertEqual(report.successes[0].part, "GD32F103")
+            self.assertEqual(report.successes[0].function_source, "pinout-csv")
+            write_package_csvs.assert_called_once_with(
+                pdf_path,
+                ["LQFP100"],
+                root / "chips/gigadevice/gd32f1/gd32f103/source",
+                "GD32F103",
+                write_gpio_af=False,
+                include_functions=True,
+            )
 
     def test_parse_args_accepts_function_source_override(self) -> None:
         args = crawler.parse_args(["--function-source", "pinout-csv"])

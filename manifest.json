@@ -3,6 +3,1188 @@
   "dataVersion": "2026.05.31",
   "chips": [
     {
+      "id": "GD32A503",
+      "vendor": "GigaDevice",
+      "family": "GD32A5",
+      "displayName": "GD32A503",
+      "functionSource": "pinout-csv",
+      "packages": [
+        {
+          "name": "LQFP48",
+          "pinoutCsv": "chips/gigadevice/gd32a5/gd32a503/source/GD32A503_LQFP48_PINOUT.csv"
+        },
+        {
+          "name": "LQFP48",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32a5/gd32a503/source/GD32A503_LQFP48_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "chips/gigadevice/gd32a5/gd32a503/source/GD32A503_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32a5/gd32a503/source/GD32A503_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "chips/gigadevice/gd32a5/gd32a503/source/GD32A503_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32a5/gd32a503/source/GD32A503_LQFP100_PINOUT.csv"
+        }
+      ],
+      "source": "GD32A503 pinout-csv CSV scanned from chips/gigadevice/gd32a5/gd32a503/source/GD32A503_LQFP100_PINOUT.csv",
+      "status": "draft"
+    },
+    {
+      "id": "GD32A513",
+      "vendor": "GigaDevice",
+      "family": "GD32A5",
+      "displayName": "GD32A513",
+      "functionSource": "pinout-csv",
+      "packages": [
+        {
+          "name": "LQFP48",
+          "pinoutCsv": "chips/gigadevice/gd32a5/gd32a513/source/GD32A513_LQFP48_PINOUT.csv"
+        },
+        {
+          "name": "LQFP48",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32a5/gd32a513/source/GD32A513_LQFP48_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "chips/gigadevice/gd32a5/gd32a513/source/GD32A513_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32a5/gd32a513/source/GD32A513_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "chips/gigadevice/gd32a5/gd32a513/source/GD32A513_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32a5/gd32a513/source/GD32A513_LQFP100_PINOUT.csv"
+        }
+      ],
+      "source": "GD32A513 pinout-csv CSV scanned from chips/gigadevice/gd32a5/gd32a513/source/GD32A513_LQFP100_PINOUT.csv",
+      "status": "draft"
+    },
+    {
+      "id": "GD32C103",
+      "vendor": "GigaDevice",
+      "family": "GD32C1",
+      "displayName": "GD32C103",
+      "functionSource": "pinout-csv",
+      "packages": [
+        {
+          "name": "BGA100",
+          "pinoutCsv": "chips/gigadevice/gd32c1/gd32c103/source/GD32C103_BGA100_PINOUT.csv"
+        },
+        {
+          "name": "BGA100",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32c1/gd32c103/source/GD32C103_BGA100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP48",
+          "pinoutCsv": "chips/gigadevice/gd32c1/gd32c103/source/GD32C103_LQFP48_PINOUT.csv"
+        },
+        {
+          "name": "LQFP48",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32c1/gd32c103/source/GD32C103_LQFP48_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "chips/gigadevice/gd32c1/gd32c103/source/GD32C103_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32c1/gd32c103/source/GD32C103_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "chips/gigadevice/gd32c1/gd32c103/source/GD32C103_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32c1/gd32c103/source/GD32C103_LQFP100_PINOUT.csv"
+        }
+      ],
+      "source": "GD32C103 pinout-csv CSV scanned from chips/gigadevice/gd32c1/gd32c103/source/GD32C103_BGA100_PINOUT.csv",
+      "status": "draft"
+    },
+    {
+      "id": "GD32C113",
+      "vendor": "GigaDevice",
+      "family": "GD32C1",
+      "displayName": "GD32C113",
+      "functionSource": "pinout-csv",
+      "packages": [
+        {
+          "name": "LQFP48",
+          "pinoutCsv": "chips/gigadevice/gd32c1/gd32c113/source/GD32C113_LQFP48_PINOUT.csv"
+        },
+        {
+          "name": "LQFP48",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32c1/gd32c113/source/GD32C113_LQFP48_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "chips/gigadevice/gd32c1/gd32c113/source/GD32C113_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32c1/gd32c113/source/GD32C113_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "chips/gigadevice/gd32c1/gd32c113/source/GD32C113_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32c1/gd32c113/source/GD32C113_LQFP100_PINOUT.csv"
+        }
+      ],
+      "source": "GD32C113 pinout-csv CSV scanned from chips/gigadevice/gd32c1/gd32c113/source/GD32C113_LQFP100_PINOUT.csv",
+      "status": "draft"
+    },
+    {
+      "id": "GD32C231",
+      "vendor": "GigaDevice",
+      "family": "GD32C2",
+      "displayName": "GD32C231",
+      "gpioAfCsv": "chips/gigadevice/gd32c2/gd32c231/source/GD32C231_GPIO_AF.csv",
+      "packages": [
+        {
+          "name": "LQFP32",
+          "pinoutCsv": "chips/gigadevice/gd32c2/gd32c231/source/GD32C231_LQFP32_PINOUT.csv"
+        },
+        {
+          "name": "LQFP32",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32c2/gd32c231/source/GD32C231_LQFP32_PINOUT.csv"
+        },
+        {
+          "name": "LQFP48",
+          "pinoutCsv": "chips/gigadevice/gd32c2/gd32c231/source/GD32C231_LQFP48_PINOUT.csv"
+        },
+        {
+          "name": "LQFP48",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32c2/gd32c231/source/GD32C231_LQFP48_PINOUT.csv"
+        }
+      ],
+      "source": "GD32C231 gpio-af-csv CSV scanned from chips/gigadevice/gd32c2/gd32c231/source/GD32C231_GPIO_AF.csv",
+      "status": "draft"
+    },
+    {
+      "id": "GD32E103",
+      "vendor": "GigaDevice",
+      "family": "GD32E1",
+      "displayName": "GD32E103",
+      "functionSource": "pinout-csv",
+      "packages": [
+        {
+          "name": "LQFP48",
+          "pinoutCsv": "chips/gigadevice/gd32e1/gd32e103/source/GD32E103_LQFP48_PINOUT.csv"
+        },
+        {
+          "name": "LQFP48",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32e1/gd32e103/source/GD32E103_LQFP48_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "chips/gigadevice/gd32e1/gd32e103/source/GD32E103_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32e1/gd32e103/source/GD32E103_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "chips/gigadevice/gd32e1/gd32e103/source/GD32E103_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32e1/gd32e103/source/GD32E103_LQFP100_PINOUT.csv"
+        }
+      ],
+      "source": "GD32E103 pinout-csv CSV scanned from chips/gigadevice/gd32e1/gd32e103/source/GD32E103_LQFP100_PINOUT.csv",
+      "status": "draft"
+    },
+    {
+      "id": "GD32E113",
+      "vendor": "GigaDevice",
+      "family": "GD32E1",
+      "displayName": "GD32E113",
+      "functionSource": "pinout-csv",
+      "packages": [
+        {
+          "name": "LQFP48",
+          "pinoutCsv": "chips/gigadevice/gd32e1/gd32e113/source/GD32E113_LQFP48_PINOUT.csv"
+        },
+        {
+          "name": "LQFP48",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32e1/gd32e113/source/GD32E113_LQFP48_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "chips/gigadevice/gd32e1/gd32e113/source/GD32E113_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32e1/gd32e113/source/GD32E113_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "chips/gigadevice/gd32e1/gd32e113/source/GD32E113_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32e1/gd32e113/source/GD32E113_LQFP100_PINOUT.csv"
+        }
+      ],
+      "source": "GD32E113 pinout-csv CSV scanned from chips/gigadevice/gd32e1/gd32e113/source/GD32E113_LQFP100_PINOUT.csv",
+      "status": "draft"
+    },
+    {
+      "id": "GD32E230",
+      "vendor": "GigaDevice",
+      "family": "GD32E2",
+      "displayName": "GD32E230",
+      "functionSource": "pinout-csv",
+      "packages": [
+        {
+          "name": "LQFP32",
+          "pinoutCsv": "chips/gigadevice/gd32e2/gd32e230/source/GD32E230_LQFP32_PINOUT.csv"
+        },
+        {
+          "name": "LQFP32",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32e2/gd32e230/source/GD32E230_LQFP32_PINOUT.csv"
+        },
+        {
+          "name": "LQFP48",
+          "pinoutCsv": "chips/gigadevice/gd32e2/gd32e230/source/GD32E230_LQFP48_PINOUT.csv"
+        },
+        {
+          "name": "LQFP48",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32e2/gd32e230/source/GD32E230_LQFP48_PINOUT.csv"
+        }
+      ],
+      "source": "GD32E230 pinout-csv CSV scanned from chips/gigadevice/gd32e2/gd32e230/source/GD32E230_LQFP32_PINOUT.csv",
+      "status": "draft"
+    },
+    {
+      "id": "GD32E235",
+      "vendor": "GigaDevice",
+      "family": "GD32E2",
+      "displayName": "GD32E235",
+      "functionSource": "pinout-csv",
+      "packages": [
+        {
+          "name": "LQFP32",
+          "pinoutCsv": "chips/gigadevice/gd32e2/gd32e235/source/GD32E235_LQFP32_PINOUT.csv"
+        },
+        {
+          "name": "LQFP32",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32e2/gd32e235/source/GD32E235_LQFP32_PINOUT.csv"
+        },
+        {
+          "name": "LQFP48",
+          "pinoutCsv": "chips/gigadevice/gd32e2/gd32e235/source/GD32E235_LQFP48_PINOUT.csv"
+        },
+        {
+          "name": "LQFP48",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32e2/gd32e235/source/GD32E235_LQFP48_PINOUT.csv"
+        }
+      ],
+      "source": "GD32E235 pinout-csv CSV scanned from chips/gigadevice/gd32e2/gd32e235/source/GD32E235_LQFP32_PINOUT.csv",
+      "status": "draft"
+    },
+    {
+      "id": "GD32E502",
+      "vendor": "GigaDevice",
+      "family": "GD32E5",
+      "displayName": "GD32E502",
+      "functionSource": "pinout-csv",
+      "packages": [
+        {
+          "name": "LQFP48",
+          "pinoutCsv": "chips/gigadevice/gd32e5/gd32e502/source/GD32E502_LQFP48_PINOUT.csv"
+        },
+        {
+          "name": "LQFP48",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32e5/gd32e502/source/GD32E502_LQFP48_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "chips/gigadevice/gd32e5/gd32e502/source/GD32E502_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32e5/gd32e502/source/GD32E502_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "chips/gigadevice/gd32e5/gd32e502/source/GD32E502_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32e5/gd32e502/source/GD32E502_LQFP100_PINOUT.csv"
+        }
+      ],
+      "source": "GD32E502 pinout-csv CSV scanned from chips/gigadevice/gd32e5/gd32e502/source/GD32E502_LQFP100_PINOUT.csv",
+      "status": "draft"
+    },
+    {
+      "id": "GD32E503",
+      "vendor": "GigaDevice",
+      "family": "GD32E5",
+      "displayName": "GD32E503",
+      "functionSource": "pinout-csv",
+      "packages": [
+        {
+          "name": "LQFP48",
+          "pinoutCsv": "chips/gigadevice/gd32e5/gd32e503/source/GD32E503_LQFP48_PINOUT.csv"
+        },
+        {
+          "name": "LQFP48",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32e5/gd32e503/source/GD32E503_LQFP48_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "chips/gigadevice/gd32e5/gd32e503/source/GD32E503_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32e5/gd32e503/source/GD32E503_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "chips/gigadevice/gd32e5/gd32e503/source/GD32E503_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32e5/gd32e503/source/GD32E503_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP144",
+          "pinoutCsv": "chips/gigadevice/gd32e5/gd32e503/source/GD32E503_LQFP144_PINOUT.csv"
+        },
+        {
+          "name": "LQFP144",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32e5/gd32e503/source/GD32E503_LQFP144_PINOUT.csv"
+        }
+      ],
+      "source": "GD32E503 pinout-csv CSV scanned from chips/gigadevice/gd32e5/gd32e503/source/GD32E503_LQFP100_PINOUT.csv",
+      "status": "draft"
+    },
+    {
+      "id": "GD32E505",
+      "vendor": "GigaDevice",
+      "family": "GD32E5",
+      "displayName": "GD32E505",
+      "functionSource": "pinout-csv",
+      "packages": [
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "chips/gigadevice/gd32e5/gd32e505/source/GD32E505_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32e5/gd32e505/source/GD32E505_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "chips/gigadevice/gd32e5/gd32e505/source/GD32E505_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32e5/gd32e505/source/GD32E505_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP144",
+          "pinoutCsv": "chips/gigadevice/gd32e5/gd32e505/source/GD32E505_LQFP144_PINOUT.csv"
+        },
+        {
+          "name": "LQFP144",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32e5/gd32e505/source/GD32E505_LQFP144_PINOUT.csv"
+        }
+      ],
+      "source": "GD32E505 pinout-csv CSV scanned from chips/gigadevice/gd32e5/gd32e505/source/GD32E505_LQFP100_PINOUT.csv",
+      "status": "draft"
+    },
+    {
+      "id": "GD32E507",
+      "vendor": "GigaDevice",
+      "family": "GD32E5",
+      "displayName": "GD32E507",
+      "functionSource": "pinout-csv",
+      "packages": [
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "chips/gigadevice/gd32e5/gd32e507/source/GD32E507_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32e5/gd32e507/source/GD32E507_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "chips/gigadevice/gd32e5/gd32e507/source/GD32E507_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32e5/gd32e507/source/GD32E507_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP144",
+          "pinoutCsv": "chips/gigadevice/gd32e5/gd32e507/source/GD32E507_LQFP144_PINOUT.csv"
+        },
+        {
+          "name": "LQFP144",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32e5/gd32e507/source/GD32E507_LQFP144_PINOUT.csv"
+        }
+      ],
+      "source": "GD32E507 pinout-csv CSV scanned from chips/gigadevice/gd32e5/gd32e507/source/GD32E507_LQFP100_PINOUT.csv",
+      "status": "draft"
+    },
+    {
+      "id": "GD32E508",
+      "vendor": "GigaDevice",
+      "family": "GD32E5",
+      "displayName": "GD32E508",
+      "functionSource": "pinout-csv",
+      "packages": [
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "chips/gigadevice/gd32e5/gd32e508/source/GD32E508_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32e5/gd32e508/source/GD32E508_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "chips/gigadevice/gd32e5/gd32e508/source/GD32E508_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32e5/gd32e508/source/GD32E508_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP144",
+          "pinoutCsv": "chips/gigadevice/gd32e5/gd32e508/source/GD32E508_LQFP144_PINOUT.csv"
+        },
+        {
+          "name": "LQFP144",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32e5/gd32e508/source/GD32E508_LQFP144_PINOUT.csv"
+        }
+      ],
+      "source": "GD32E508 pinout-csv CSV scanned from chips/gigadevice/gd32e5/gd32e508/source/GD32E508_LQFP100_PINOUT.csv",
+      "status": "draft"
+    },
+    {
+      "id": "GD32E513",
+      "vendor": "GigaDevice",
+      "family": "GD32E5",
+      "displayName": "GD32E513",
+      "functionSource": "pinout-csv",
+      "packages": [
+        {
+          "name": "LQFP48",
+          "pinoutCsv": "chips/gigadevice/gd32e5/gd32e513/source/GD32E513_LQFP48_PINOUT.csv"
+        },
+        {
+          "name": "LQFP48",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32e5/gd32e513/source/GD32E513_LQFP48_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "chips/gigadevice/gd32e5/gd32e513/source/GD32E513_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32e5/gd32e513/source/GD32E513_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "chips/gigadevice/gd32e5/gd32e513/source/GD32E513_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32e5/gd32e513/source/GD32E513_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP144",
+          "pinoutCsv": "chips/gigadevice/gd32e5/gd32e513/source/GD32E513_LQFP144_PINOUT.csv"
+        },
+        {
+          "name": "LQFP144",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32e5/gd32e513/source/GD32E513_LQFP144_PINOUT.csv"
+        }
+      ],
+      "source": "GD32E513 pinout-csv CSV scanned from chips/gigadevice/gd32e5/gd32e513/source/GD32E513_LQFP100_PINOUT.csv",
+      "status": "draft"
+    },
+    {
+      "id": "GD32E517",
+      "vendor": "GigaDevice",
+      "family": "GD32E5",
+      "displayName": "GD32E517",
+      "functionSource": "pinout-csv",
+      "packages": [
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "chips/gigadevice/gd32e5/gd32e517/source/GD32E517_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32e5/gd32e517/source/GD32E517_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "chips/gigadevice/gd32e5/gd32e517/source/GD32E517_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32e5/gd32e517/source/GD32E517_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP144",
+          "pinoutCsv": "chips/gigadevice/gd32e5/gd32e517/source/GD32E517_LQFP144_PINOUT.csv"
+        },
+        {
+          "name": "LQFP144",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32e5/gd32e517/source/GD32E517_LQFP144_PINOUT.csv"
+        }
+      ],
+      "source": "GD32E517 pinout-csv CSV scanned from chips/gigadevice/gd32e5/gd32e517/source/GD32E517_LQFP100_PINOUT.csv",
+      "status": "draft"
+    },
+    {
+      "id": "GD32E518",
+      "vendor": "GigaDevice",
+      "family": "GD32E5",
+      "displayName": "GD32E518",
+      "functionSource": "pinout-csv",
+      "packages": [
+        {
+          "name": "LQFP48",
+          "pinoutCsv": "chips/gigadevice/gd32e5/gd32e518/source/GD32E518_LQFP48_PINOUT.csv"
+        },
+        {
+          "name": "LQFP48",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32e5/gd32e518/source/GD32E518_LQFP48_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "chips/gigadevice/gd32e5/gd32e518/source/GD32E518_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32e5/gd32e518/source/GD32E518_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "chips/gigadevice/gd32e5/gd32e518/source/GD32E518_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32e5/gd32e518/source/GD32E518_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP144",
+          "pinoutCsv": "chips/gigadevice/gd32e5/gd32e518/source/GD32E518_LQFP144_PINOUT.csv"
+        },
+        {
+          "name": "LQFP144",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32e5/gd32e518/source/GD32E518_LQFP144_PINOUT.csv"
+        }
+      ],
+      "source": "GD32E518 pinout-csv CSV scanned from chips/gigadevice/gd32e5/gd32e518/source/GD32E518_LQFP100_PINOUT.csv",
+      "status": "draft"
+    },
+    {
+      "id": "GD32F101",
+      "vendor": "GigaDevice",
+      "family": "GD32F1",
+      "displayName": "GD32F101",
+      "functionSource": "pinout-csv",
+      "packages": [
+        {
+          "name": "LQFP48",
+          "pinoutCsv": "chips/gigadevice/gd32f1/gd32f101/source/GD32F101_LQFP48_PINOUT.csv"
+        },
+        {
+          "name": "LQFP48",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f1/gd32f101/source/GD32F101_LQFP48_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "chips/gigadevice/gd32f1/gd32f101/source/GD32F101_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f1/gd32f101/source/GD32F101_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "chips/gigadevice/gd32f1/gd32f101/source/GD32F101_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f1/gd32f101/source/GD32F101_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP144",
+          "pinoutCsv": "chips/gigadevice/gd32f1/gd32f101/source/GD32F101_LQFP144_PINOUT.csv"
+        },
+        {
+          "name": "LQFP144",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f1/gd32f101/source/GD32F101_LQFP144_PINOUT.csv"
+        }
+      ],
+      "source": "GD32F101 pinout-csv CSV scanned from chips/gigadevice/gd32f1/gd32f101/source/GD32F101_LQFP100_PINOUT.csv",
+      "status": "draft"
+    },
+    {
+      "id": "GD32F103",
+      "vendor": "GigaDevice",
+      "family": "GD32F1",
+      "displayName": "GD32F103",
+      "functionSource": "pinout-csv",
+      "packages": [
+        {
+          "name": "LQFP48",
+          "pinoutCsv": "chips/gigadevice/gd32f1/gd32f103/source/GD32F103_LQFP48_PINOUT.csv"
+        },
+        {
+          "name": "LQFP48",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f1/gd32f103/source/GD32F103_LQFP48_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "chips/gigadevice/gd32f1/gd32f103/source/GD32F103_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f1/gd32f103/source/GD32F103_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "chips/gigadevice/gd32f1/gd32f103/source/GD32F103_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f1/gd32f103/source/GD32F103_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP144",
+          "pinoutCsv": "chips/gigadevice/gd32f1/gd32f103/source/GD32F103_LQFP144_PINOUT.csv"
+        },
+        {
+          "name": "LQFP144",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f1/gd32f103/source/GD32F103_LQFP144_PINOUT.csv"
+        }
+      ],
+      "source": "GD32F103 pinout-csv CSV scanned from chips/gigadevice/gd32f1/gd32f103/source/GD32F103_LQFP100_PINOUT.csv",
+      "status": "draft"
+    },
+    {
+      "id": "GD32F105",
+      "vendor": "GigaDevice",
+      "family": "GD32F1",
+      "displayName": "GD32F105",
+      "functionSource": "pinout-csv",
+      "packages": [
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "chips/gigadevice/gd32f1/gd32f105/source/GD32F105_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f1/gd32f105/source/GD32F105_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "chips/gigadevice/gd32f1/gd32f105/source/GD32F105_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f1/gd32f105/source/GD32F105_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP144",
+          "pinoutCsv": "chips/gigadevice/gd32f1/gd32f105/source/GD32F105_LQFP144_PINOUT.csv"
+        },
+        {
+          "name": "LQFP144",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f1/gd32f105/source/GD32F105_LQFP144_PINOUT.csv"
+        }
+      ],
+      "source": "GD32F105 pinout-csv CSV scanned from chips/gigadevice/gd32f1/gd32f105/source/GD32F105_LQFP100_PINOUT.csv",
+      "status": "draft"
+    },
+    {
+      "id": "GD32F107",
+      "vendor": "GigaDevice",
+      "family": "GD32F1",
+      "displayName": "GD32F107",
+      "functionSource": "pinout-csv",
+      "packages": [
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "chips/gigadevice/gd32f1/gd32f107/source/GD32F107_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f1/gd32f107/source/GD32F107_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "chips/gigadevice/gd32f1/gd32f107/source/GD32F107_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f1/gd32f107/source/GD32F107_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP144",
+          "pinoutCsv": "chips/gigadevice/gd32f1/gd32f107/source/GD32F107_LQFP144_PINOUT.csv"
+        },
+        {
+          "name": "LQFP144",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f1/gd32f107/source/GD32F107_LQFP144_PINOUT.csv"
+        }
+      ],
+      "source": "GD32F107 pinout-csv CSV scanned from chips/gigadevice/gd32f1/gd32f107/source/GD32F107_LQFP100_PINOUT.csv",
+      "status": "draft"
+    },
+    {
+      "id": "GD32F130",
+      "vendor": "GigaDevice",
+      "family": "GD32F1",
+      "displayName": "GD32F130",
+      "functionSource": "pinout-csv",
+      "packages": [
+        {
+          "name": "LQFP32",
+          "pinoutCsv": "chips/gigadevice/gd32f1/gd32f130/source/GD32F130_LQFP32_PINOUT.csv"
+        },
+        {
+          "name": "LQFP32",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f1/gd32f130/source/GD32F130_LQFP32_PINOUT.csv"
+        },
+        {
+          "name": "LQFP48",
+          "pinoutCsv": "chips/gigadevice/gd32f1/gd32f130/source/GD32F130_LQFP48_PINOUT.csv"
+        },
+        {
+          "name": "LQFP48",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f1/gd32f130/source/GD32F130_LQFP48_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "chips/gigadevice/gd32f1/gd32f130/source/GD32F130_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f1/gd32f130/source/GD32F130_LQFP64_PINOUT.csv"
+        }
+      ],
+      "source": "GD32F130 pinout-csv CSV scanned from chips/gigadevice/gd32f1/gd32f130/source/GD32F130_LQFP32_PINOUT.csv",
+      "status": "draft"
+    },
+    {
+      "id": "GD32F150",
+      "vendor": "GigaDevice",
+      "family": "GD32F1",
+      "displayName": "GD32F150",
+      "functionSource": "pinout-csv",
+      "packages": [
+        {
+          "name": "LQFP48",
+          "pinoutCsv": "chips/gigadevice/gd32f1/gd32f150/source/GD32F150_LQFP48_PINOUT.csv"
+        },
+        {
+          "name": "LQFP48",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f1/gd32f150/source/GD32F150_LQFP48_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "chips/gigadevice/gd32f1/gd32f150/source/GD32F150_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f1/gd32f150/source/GD32F150_LQFP64_PINOUT.csv"
+        }
+      ],
+      "source": "GD32F150 pinout-csv CSV scanned from chips/gigadevice/gd32f1/gd32f150/source/GD32F150_LQFP48_PINOUT.csv",
+      "status": "draft"
+    },
+    {
+      "id": "GD32F205",
+      "vendor": "GigaDevice",
+      "family": "GD32F2",
+      "displayName": "GD32F205",
+      "functionSource": "pinout-csv",
+      "packages": [
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "chips/gigadevice/gd32f2/gd32f205/source/GD32F205_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f2/gd32f205/source/GD32F205_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "chips/gigadevice/gd32f2/gd32f205/source/GD32F205_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f2/gd32f205/source/GD32F205_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP144",
+          "pinoutCsv": "chips/gigadevice/gd32f2/gd32f205/source/GD32F205_LQFP144_PINOUT.csv"
+        },
+        {
+          "name": "LQFP144",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f2/gd32f205/source/GD32F205_LQFP144_PINOUT.csv"
+        }
+      ],
+      "source": "GD32F205 pinout-csv CSV scanned from chips/gigadevice/gd32f2/gd32f205/source/GD32F205_LQFP100_PINOUT.csv",
+      "status": "draft"
+    },
+    {
+      "id": "GD32F207",
+      "vendor": "GigaDevice",
+      "family": "GD32F2",
+      "displayName": "GD32F207",
+      "functionSource": "pinout-csv",
+      "packages": [
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "chips/gigadevice/gd32f2/gd32f207/source/GD32F207_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "chips/gigadevice/gd32f2/gd32f207/source/GD32F207_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP144",
+          "pinoutCsv": "chips/gigadevice/gd32f2/gd32f207/source/GD32F207_LQFP144_PINOUT.csv"
+        },
+        {
+          "name": "LQFP176",
+          "pinoutCsv": "chips/gigadevice/gd32f2/gd32f207/source/GD32F207_LQFP176_PINOUT.csv"
+        }
+      ],
+      "source": "GD32F207 pinout-csv CSV scanned from chips/gigadevice/gd32f2/gd32f207/source/GD32F207_LQFP100_PINOUT.csv",
+      "status": "draft"
+    },
+    {
+      "id": "GD32F303",
+      "vendor": "GigaDevice",
+      "family": "GD32F3",
+      "displayName": "GD32F303",
+      "functionSource": "pinout-csv",
+      "packages": [
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "chips/gigadevice/gd32f3/gd32f303/source/GD32F303_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "chips/gigadevice/gd32f3/gd32f303/source/GD32F303_LQFP100_PINOUT.csv"
+        }
+      ],
+      "source": "GD32F303 pinout-csv CSV scanned from chips/gigadevice/gd32f3/gd32f303/source/GD32F303_LQFP100_PINOUT.csv",
+      "status": "draft"
+    },
+    {
+      "id": "GD32F303XB",
+      "vendor": "GigaDevice",
+      "family": "GD32F3",
+      "displayName": "GD32F303XB",
+      "functionSource": "pinout-csv",
+      "packages": [
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "chips/gigadevice/gd32f3/gd32f303xb/source/GD32F303XB_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f3/gd32f303xb/source/GD32F303XB_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "chips/gigadevice/gd32f3/gd32f303xb/source/GD32F303XB_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f3/gd32f303xb/source/GD32F303XB_LQFP100_PINOUT.csv"
+        }
+      ],
+      "source": "GD32F303XB pinout-csv CSV scanned from chips/gigadevice/gd32f3/gd32f303xb/source/GD32F303XB_LQFP100_PINOUT.csv",
+      "status": "draft"
+    },
+    {
+      "id": "GD32F305",
+      "vendor": "GigaDevice",
+      "family": "GD32F3",
+      "displayName": "GD32F305",
+      "functionSource": "pinout-csv",
+      "packages": [
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "chips/gigadevice/gd32f3/gd32f305/source/GD32F305_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f3/gd32f305/source/GD32F305_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "chips/gigadevice/gd32f3/gd32f305/source/GD32F305_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f3/gd32f305/source/GD32F305_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP144",
+          "pinoutCsv": "chips/gigadevice/gd32f3/gd32f305/source/GD32F305_LQFP144_PINOUT.csv"
+        },
+        {
+          "name": "LQFP144",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f3/gd32f305/source/GD32F305_LQFP144_PINOUT.csv"
+        }
+      ],
+      "source": "GD32F305 pinout-csv CSV scanned from chips/gigadevice/gd32f3/gd32f305/source/GD32F305_LQFP100_PINOUT.csv",
+      "status": "draft"
+    },
+    {
+      "id": "GD32F307",
+      "vendor": "GigaDevice",
+      "family": "GD32F3",
+      "displayName": "GD32F307",
+      "functionSource": "pinout-csv",
+      "packages": [
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "chips/gigadevice/gd32f3/gd32f307/source/GD32F307_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f3/gd32f307/source/GD32F307_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "chips/gigadevice/gd32f3/gd32f307/source/GD32F307_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f3/gd32f307/source/GD32F307_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP144",
+          "pinoutCsv": "chips/gigadevice/gd32f3/gd32f307/source/GD32F307_LQFP144_PINOUT.csv"
+        },
+        {
+          "name": "LQFP144",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f3/gd32f307/source/GD32F307_LQFP144_PINOUT.csv"
+        }
+      ],
+      "source": "GD32F307 pinout-csv CSV scanned from chips/gigadevice/gd32f3/gd32f307/source/GD32F307_LQFP100_PINOUT.csv",
+      "status": "draft"
+    },
+    {
+      "id": "GD32F310",
+      "vendor": "GigaDevice",
+      "family": "GD32F3",
+      "displayName": "GD32F310",
+      "functionSource": "pinout-csv",
+      "packages": [
+        {
+          "name": "LQFP32",
+          "pinoutCsv": "chips/gigadevice/gd32f3/gd32f310/source/GD32F310_LQFP32_PINOUT.csv"
+        },
+        {
+          "name": "LQFP32",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f3/gd32f310/source/GD32F310_LQFP32_PINOUT.csv"
+        },
+        {
+          "name": "LQFP48",
+          "pinoutCsv": "chips/gigadevice/gd32f3/gd32f310/source/GD32F310_LQFP48_PINOUT.csv"
+        },
+        {
+          "name": "LQFP48",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f3/gd32f310/source/GD32F310_LQFP48_PINOUT.csv"
+        }
+      ],
+      "source": "GD32F310 pinout-csv CSV scanned from chips/gigadevice/gd32f3/gd32f310/source/GD32F310_LQFP32_PINOUT.csv",
+      "status": "draft"
+    },
+    {
+      "id": "GD32F330",
+      "vendor": "GigaDevice",
+      "family": "GD32F3",
+      "displayName": "GD32F330",
+      "functionSource": "pinout-csv",
+      "packages": [
+        {
+          "name": "LQFP32",
+          "pinoutCsv": "chips/gigadevice/gd32f3/gd32f330/source/GD32F330_LQFP32_PINOUT.csv"
+        },
+        {
+          "name": "LQFP32",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f3/gd32f330/source/GD32F330_LQFP32_PINOUT.csv"
+        },
+        {
+          "name": "LQFP48",
+          "pinoutCsv": "chips/gigadevice/gd32f3/gd32f330/source/GD32F330_LQFP48_PINOUT.csv"
+        },
+        {
+          "name": "LQFP48",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f3/gd32f330/source/GD32F330_LQFP48_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "chips/gigadevice/gd32f3/gd32f330/source/GD32F330_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f3/gd32f330/source/GD32F330_LQFP64_PINOUT.csv"
+        }
+      ],
+      "source": "GD32F330 pinout-csv CSV scanned from chips/gigadevice/gd32f3/gd32f330/source/GD32F330_LQFP32_PINOUT.csv",
+      "status": "draft"
+    },
+    {
+      "id": "GD32F350",
+      "vendor": "GigaDevice",
+      "family": "GD32F3",
+      "displayName": "GD32F350",
+      "functionSource": "pinout-csv",
+      "packages": [
+        {
+          "name": "LQFP48",
+          "pinoutCsv": "chips/gigadevice/gd32f3/gd32f350/source/GD32F350_LQFP48_PINOUT.csv"
+        },
+        {
+          "name": "LQFP48",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f3/gd32f350/source/GD32F350_LQFP48_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "chips/gigadevice/gd32f3/gd32f350/source/GD32F350_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f3/gd32f350/source/GD32F350_LQFP64_PINOUT.csv"
+        }
+      ],
+      "source": "GD32F350 pinout-csv CSV scanned from chips/gigadevice/gd32f3/gd32f350/source/GD32F350_LQFP48_PINOUT.csv",
+      "status": "draft"
+    },
+    {
+      "id": "GD32F403",
+      "vendor": "GigaDevice",
+      "family": "GD32F4",
+      "displayName": "GD32F403",
+      "functionSource": "pinout-csv",
+      "packages": [
+        {
+          "name": "BGA100",
+          "pinoutCsv": "chips/gigadevice/gd32f4/gd32f403/source/GD32F403_BGA100_PINOUT.csv"
+        },
+        {
+          "name": "BGA100",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f403/source/GD32F403_BGA100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP48",
+          "pinoutCsv": "chips/gigadevice/gd32f4/gd32f403/source/GD32F403_LQFP48_PINOUT.csv"
+        },
+        {
+          "name": "LQFP48",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f403/source/GD32F403_LQFP48_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "chips/gigadevice/gd32f4/gd32f403/source/GD32F403_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f403/source/GD32F403_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "chips/gigadevice/gd32f4/gd32f403/source/GD32F403_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f403/source/GD32F403_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP144",
+          "pinoutCsv": "chips/gigadevice/gd32f4/gd32f403/source/GD32F403_LQFP144_PINOUT.csv"
+        },
+        {
+          "name": "LQFP144",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f403/source/GD32F403_LQFP144_PINOUT.csv"
+        }
+      ],
+      "source": "GD32F403 pinout-csv CSV scanned from chips/gigadevice/gd32f4/gd32f403/source/GD32F403_BGA100_PINOUT.csv",
+      "status": "draft"
+    },
+    {
+      "id": "GD32F405",
+      "vendor": "Staging",
+      "family": "GD32-CRAWL",
+      "displayName": "GD32F405",
+      "gpioAfCsv": "chips/gigadevice/gd32f4/gd32f405/source/GD32F405_GPIO_AF.csv",
+      "packages": [
+        {
+          "name": "BGA100",
+          "pinoutCsv": "chips/gigadevice/gd32f4/gd32f405/source/GD32F405_BGA100_PINOUT.csv"
+        },
+        {
+          "name": "BGA100",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f405/source/GD32F405_BGA100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "chips/gigadevice/gd32f4/gd32f405/source/GD32F405_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f405/source/GD32F405_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "chips/gigadevice/gd32f4/gd32f405/source/GD32F405_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f405/source/GD32F405_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP144",
+          "pinoutCsv": "chips/gigadevice/gd32f4/gd32f405/source/GD32F405_LQFP144_PINOUT.csv"
+        },
+        {
+          "name": "LQFP144",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f405/source/GD32F405_LQFP144_PINOUT.csv"
+        }
+      ],
+      "source": "GD32F405 GPIO AF CSV scanned from staging/gd32-crawl/chips/gigadevice/gd32f4/gd32f405/source/GD32F405_GPIO_AF.csv",
+      "status": "draft"
+    },
+    {
       "id": "GD32F407",
       "vendor": "GigaDevice",
       "family": "GD32F4",
@@ -10,16 +1192,177 @@
       "gpioAfCsv": "chips/gigadevice/gd32f4/gd32f407/source/GD32F407_GPIO_AF.csv",
       "packages": [
         {
+          "name": "BGA100",
+          "pinoutCsv": "chips/gigadevice/gd32f4/gd32f407/source/GD32F407_BGA100_PINOUT.csv"
+        },
+        {
+          "name": "BGA100",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f407/source/GD32F407_BGA100_PINOUT.csv"
+        },
+        {
+          "name": "BGA176",
+          "pinoutCsv": "chips/gigadevice/gd32f4/gd32f407/source/GD32F407_BGA176_PINOUT.csv"
+        },
+        {
+          "name": "BGA176",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f407/source/GD32F407_BGA176_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "chips/gigadevice/gd32f4/gd32f407/source/GD32F407_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f407/source/GD32F407_LQFP64_PINOUT.csv"
+        },
+        {
           "name": "LQFP100",
           "pinoutCsv": "chips/gigadevice/gd32f4/gd32f407/source/GD32F407_LQFP100_PINOUT.csv"
         },
         {
+          "name": "LQFP100",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f407/source/GD32F407_LQFP100_PINOUT.csv"
+        },
+        {
           "name": "LQFP144",
           "pinoutCsv": "chips/gigadevice/gd32f4/gd32f407/source/GD32F407_LQFP144_PINOUT.csv"
+        },
+        {
+          "name": "LQFP144",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f407/source/GD32F407_LQFP144_PINOUT.csv"
         }
       ],
       "source": "GD32F407 GPIO AF CSV curated in this repository",
       "status": "stable"
+    },
+    {
+      "id": "GD32F425",
+      "vendor": "Staging",
+      "family": "GD32-CRAWL",
+      "displayName": "GD32F425",
+      "gpioAfCsv": "chips/gigadevice/gd32f4/gd32f425/source/GD32F425_GPIO_AF.csv",
+      "packages": [
+        {
+          "name": "BGA100",
+          "pinoutCsv": "chips/gigadevice/gd32f4/gd32f425/source/GD32F425_BGA100_PINOUT.csv"
+        },
+        {
+          "name": "BGA100",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f425/source/GD32F425_BGA100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "chips/gigadevice/gd32f4/gd32f425/source/GD32F425_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f425/source/GD32F425_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "chips/gigadevice/gd32f4/gd32f425/source/GD32F425_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f425/source/GD32F425_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP144",
+          "pinoutCsv": "chips/gigadevice/gd32f4/gd32f425/source/GD32F425_LQFP144_PINOUT.csv"
+        },
+        {
+          "name": "LQFP144",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f425/source/GD32F425_LQFP144_PINOUT.csv"
+        }
+      ],
+      "source": "GD32F425 GPIO AF CSV scanned from staging/gd32-crawl/chips/gigadevice/gd32f4/gd32f425/source/GD32F425_GPIO_AF.csv",
+      "status": "draft"
+    },
+    {
+      "id": "GD32F427",
+      "vendor": "Staging",
+      "family": "GD32-CRAWL",
+      "displayName": "GD32F427",
+      "gpioAfCsv": "chips/gigadevice/gd32f4/gd32f427/source/GD32F427_GPIO_AF.csv",
+      "packages": [
+        {
+          "name": "BGA100",
+          "pinoutCsv": "chips/gigadevice/gd32f4/gd32f427/source/GD32F427_BGA100_PINOUT.csv"
+        },
+        {
+          "name": "BGA100",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f427/source/GD32F427_BGA100_PINOUT.csv"
+        },
+        {
+          "name": "BGA176",
+          "pinoutCsv": "chips/gigadevice/gd32f4/gd32f427/source/GD32F427_BGA176_PINOUT.csv"
+        },
+        {
+          "name": "BGA176",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f427/source/GD32F427_BGA176_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "chips/gigadevice/gd32f4/gd32f427/source/GD32F427_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f427/source/GD32F427_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "chips/gigadevice/gd32f4/gd32f427/source/GD32F427_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f427/source/GD32F427_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP144",
+          "pinoutCsv": "chips/gigadevice/gd32f4/gd32f427/source/GD32F427_LQFP144_PINOUT.csv"
+        },
+        {
+          "name": "LQFP144",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f427/source/GD32F427_LQFP144_PINOUT.csv"
+        }
+      ],
+      "source": "GD32F427 GPIO AF CSV scanned from staging/gd32-crawl/chips/gigadevice/gd32f4/gd32f427/source/GD32F427_GPIO_AF.csv",
+      "status": "draft"
+    },
+    {
+      "id": "GD32F450",
+      "vendor": "Staging",
+      "family": "GD32-CRAWL",
+      "displayName": "GD32F450",
+      "gpioAfCsv": "chips/gigadevice/gd32f4/gd32f450/source/GD32F450_GPIO_AF.csv",
+      "packages": [
+        {
+          "name": "BGA176",
+          "pinoutCsv": "chips/gigadevice/gd32f4/gd32f450/source/GD32F450_BGA176_PINOUT.csv"
+        },
+        {
+          "name": "BGA176",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f450/source/GD32F450_BGA176_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "chips/gigadevice/gd32f4/gd32f450/source/GD32F450_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f450/source/GD32F450_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP144",
+          "pinoutCsv": "chips/gigadevice/gd32f4/gd32f450/source/GD32F450_LQFP144_PINOUT.csv"
+        },
+        {
+          "name": "LQFP144",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f450/source/GD32F450_LQFP144_PINOUT.csv"
+        }
+      ],
+      "source": "GD32F450 GPIO AF CSV scanned from staging/gd32-crawl/chips/gigadevice/gd32f4/gd32f450/source/GD32F450_GPIO_AF.csv",
+      "status": "draft"
     },
     {
       "id": "GD32F470",
@@ -33,19 +1376,301 @@
           "pinoutCsv": "chips/gigadevice/gd32f4/gd32f470/source/GD32F470_BGA100_PINOUT.csv"
         },
         {
+          "name": "BGA100",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f470/source/GD32F470_BGA100_PINOUT.csv"
+        },
+        {
           "name": "BGA176",
           "pinoutCsv": "chips/gigadevice/gd32f4/gd32f470/source/GD32F470_BGA176_PINOUT.csv"
+        },
+        {
+          "name": "BGA176",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f470/source/GD32F470_BGA176_PINOUT.csv"
         },
         {
           "name": "LQFP100",
           "pinoutCsv": "chips/gigadevice/gd32f4/gd32f470/source/GD32F470_LQFP100_PINOUT.csv"
         },
         {
+          "name": "LQFP100",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f470/source/GD32F470_LQFP100_PINOUT.csv"
+        },
+        {
           "name": "LQFP144",
           "pinoutCsv": "chips/gigadevice/gd32f4/gd32f470/source/GD32F470_LQFP144_PINOUT.csv"
+        },
+        {
+          "name": "LQFP144",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f4/gd32f470/source/GD32F470_LQFP144_PINOUT.csv"
         }
       ],
       "source": "GD32F470 GPIO AF CSV scanned from data/chips/gigadevice/gd32f4/gd32f470",
+      "status": "draft"
+    },
+    {
+      "id": "GD32F503",
+      "vendor": "GigaDevice",
+      "family": "GD32F5",
+      "displayName": "GD32F503",
+      "functionSource": "pinout-csv",
+      "packages": [
+        {
+          "name": "BGA64",
+          "pinoutCsv": "chips/gigadevice/gd32f5/gd32f503/source/GD32F503_BGA64_PINOUT.csv"
+        },
+        {
+          "name": "BGA64",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f5/gd32f503/source/GD32F503_BGA64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP48",
+          "pinoutCsv": "chips/gigadevice/gd32f5/gd32f503/source/GD32F503_LQFP48_PINOUT.csv"
+        },
+        {
+          "name": "LQFP48",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f5/gd32f503/source/GD32F503_LQFP48_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "chips/gigadevice/gd32f5/gd32f503/source/GD32F503_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f5/gd32f503/source/GD32F503_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "chips/gigadevice/gd32f5/gd32f503/source/GD32F503_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f5/gd32f503/source/GD32F503_LQFP100_PINOUT.csv"
+        }
+      ],
+      "source": "GD32F503 pinout-csv CSV scanned from chips/gigadevice/gd32f5/gd32f503/source/GD32F503_BGA64_PINOUT.csv",
+      "status": "draft"
+    },
+    {
+      "id": "GD32F505",
+      "vendor": "GigaDevice",
+      "family": "GD32F5",
+      "displayName": "GD32F505",
+      "functionSource": "pinout-csv",
+      "packages": [
+        {
+          "name": "BGA64",
+          "pinoutCsv": "chips/gigadevice/gd32f5/gd32f505/source/GD32F505_BGA64_PINOUT.csv"
+        },
+        {
+          "name": "BGA64",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f5/gd32f505/source/GD32F505_BGA64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP48",
+          "pinoutCsv": "chips/gigadevice/gd32f5/gd32f505/source/GD32F505_LQFP48_PINOUT.csv"
+        },
+        {
+          "name": "LQFP48",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f5/gd32f505/source/GD32F505_LQFP48_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "chips/gigadevice/gd32f5/gd32f505/source/GD32F505_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f5/gd32f505/source/GD32F505_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "chips/gigadevice/gd32f5/gd32f505/source/GD32F505_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f5/gd32f505/source/GD32F505_LQFP100_PINOUT.csv"
+        }
+      ],
+      "source": "GD32F505 pinout-csv CSV scanned from chips/gigadevice/gd32f5/gd32f505/source/GD32F505_BGA64_PINOUT.csv",
+      "status": "draft"
+    },
+    {
+      "id": "GD32F527",
+      "vendor": "Staging",
+      "family": "GD32-CRAWL",
+      "displayName": "GD32F527",
+      "gpioAfCsv": "chips/gigadevice/gd32f5/gd32f527/source/GD32F527_GPIO_AF.csv",
+      "packages": [
+        {
+          "name": "BGA176",
+          "pinoutCsv": "chips/gigadevice/gd32f5/gd32f527/source/GD32F527_BGA176_PINOUT.csv"
+        },
+        {
+          "name": "BGA176",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f5/gd32f527/source/GD32F527_BGA176_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "chips/gigadevice/gd32f5/gd32f527/source/GD32F527_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f5/gd32f527/source/GD32F527_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "chips/gigadevice/gd32f5/gd32f527/source/GD32F527_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f5/gd32f527/source/GD32F527_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP144",
+          "pinoutCsv": "chips/gigadevice/gd32f5/gd32f527/source/GD32F527_LQFP144_PINOUT.csv"
+        },
+        {
+          "name": "LQFP144",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f5/gd32f527/source/GD32F527_LQFP144_PINOUT.csv"
+        },
+        {
+          "name": "LQFP176",
+          "pinoutCsv": "chips/gigadevice/gd32f5/gd32f527/source/GD32F527_LQFP176_PINOUT.csv"
+        },
+        {
+          "name": "LQFP176",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32f5/gd32f527/source/GD32F527_LQFP176_PINOUT.csv"
+        }
+      ],
+      "source": "GD32F527 GPIO AF CSV scanned from staging/gd32-crawl/chips/gigadevice/gd32f5/gd32f527/source/GD32F527_GPIO_AF.csv",
+      "status": "draft"
+    },
+    {
+      "id": "GD32G553",
+      "vendor": "GigaDevice",
+      "family": "GD32G5",
+      "displayName": "GD32G553",
+      "gpioAfCsv": "chips/gigadevice/gd32g5/gd32g553/source/GD32G553_GPIO_AF.csv",
+      "packages": [
+        {
+          "name": "LQFP48",
+          "pinoutCsv": "chips/gigadevice/gd32g5/gd32g553/source/GD32G553_LQFP48_PINOUT.csv"
+        },
+        {
+          "name": "LQFP48",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32g5/gd32g553/source/GD32G553_LQFP48_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "chips/gigadevice/gd32g5/gd32g553/source/GD32G553_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32g5/gd32g553/source/GD32G553_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP80",
+          "pinoutCsv": "chips/gigadevice/gd32g5/gd32g553/source/GD32G553_LQFP80_PINOUT.csv"
+        },
+        {
+          "name": "LQFP80",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32g5/gd32g553/source/GD32G553_LQFP80_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "chips/gigadevice/gd32g5/gd32g553/source/GD32G553_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32g5/gd32g553/source/GD32G553_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP128",
+          "pinoutCsv": "chips/gigadevice/gd32g5/gd32g553/source/GD32G553_LQFP128_PINOUT.csv"
+        },
+        {
+          "name": "LQFP128",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32g5/gd32g553/source/GD32G553_LQFP128_PINOUT.csv"
+        }
+      ],
+      "source": "GD32G553 gpio-af-csv CSV scanned from chips/gigadevice/gd32g5/gd32g553/source/GD32G553_GPIO_AF.csv",
+      "status": "draft"
+    },
+    {
+      "id": "GD32H737",
+      "vendor": "GigaDevice",
+      "family": "GD32H7",
+      "displayName": "GD32H737",
+      "functionSource": "pinout-csv",
+      "packages": [
+        {
+          "name": "BGA176",
+          "pinoutCsv": "chips/gigadevice/gd32h7/gd32h737/source/GD32H737_BGA176_PINOUT.csv"
+        },
+        {
+          "name": "BGA176",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32h7/gd32h737/source/GD32H737_BGA176_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "chips/gigadevice/gd32h7/gd32h737/source/GD32H737_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32h7/gd32h737/source/GD32H737_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP144",
+          "pinoutCsv": "chips/gigadevice/gd32h7/gd32h737/source/GD32H737_LQFP144_PINOUT.csv"
+        },
+        {
+          "name": "LQFP144",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32h7/gd32h737/source/GD32H737_LQFP144_PINOUT.csv"
+        },
+        {
+          "name": "LQFP176",
+          "pinoutCsv": "chips/gigadevice/gd32h7/gd32h737/source/GD32H737_LQFP176_PINOUT.csv"
+        },
+        {
+          "name": "LQFP176",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32h7/gd32h737/source/GD32H737_LQFP176_PINOUT.csv"
+        }
+      ],
+      "source": "GD32H737 pinout-csv CSV scanned from chips/gigadevice/gd32h7/gd32h737/source/GD32H737_BGA176_PINOUT.csv",
+      "status": "draft"
+    },
+    {
+      "id": "GD32H757",
+      "vendor": "GigaDevice",
+      "family": "GD32H7",
+      "displayName": "GD32H757",
+      "gpioAfCsv": "chips/gigadevice/gd32h7/gd32h757/source/GD32H757_GPIO_AF.csv",
+      "packages": [
+        {
+          "name": "BGA100",
+          "pinoutCsv": "chips/gigadevice/gd32h7/gd32h757/source/GD32H757_BGA100_PINOUT.csv"
+        },
+        {
+          "name": "BGA100",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32h7/gd32h757/source/GD32H757_BGA100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "chips/gigadevice/gd32h7/gd32h757/source/GD32H757_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP100",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32h7/gd32h757/source/GD32H757_LQFP100_PINOUT.csv"
+        },
+        {
+          "name": "LQFP144",
+          "pinoutCsv": "chips/gigadevice/gd32h7/gd32h757/source/GD32H757_LQFP144_PINOUT.csv"
+        },
+        {
+          "name": "LQFP144",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32h7/gd32h757/source/GD32H757_LQFP144_PINOUT.csv"
+        }
+      ],
+      "source": "GD32H757 gpio-af-csv CSV scanned from chips/gigadevice/gd32h7/gd32h757/source/GD32H757_GPIO_AF.csv",
       "status": "draft"
     },
     {
@@ -56,11 +1681,112 @@
       "gpioAfCsv": "chips/gigadevice/gd32h7/gd32h759/source/GD32H759_GPIO_AF.csv",
       "packages": [
         {
+          "name": "BGA176",
+          "pinoutCsv": "chips/gigadevice/gd32h7/gd32h759/source/GD32H759_BGA176_PINOUT.csv"
+        },
+        {
+          "name": "BGA176",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32h7/gd32h759/source/GD32H759_BGA176_PINOUT.csv"
+        },
+        {
           "name": "LQFP176",
           "pinoutCsv": "chips/gigadevice/gd32h7/gd32h759/source/GD32H759_LQFP176_PINOUT.csv"
+        },
+        {
+          "name": "LQFP176",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32h7/gd32h759/source/GD32H759_LQFP176_PINOUT.csv"
         }
       ],
       "source": "GD32H759 GPIO AF CSV scanned from data/chips/gigadevice/gd32h7/gd32h759",
+      "status": "draft"
+    },
+    {
+      "id": "GD32L233",
+      "vendor": "GigaDevice",
+      "family": "GD32L2",
+      "displayName": "GD32L233",
+      "functionSource": "pinout-csv",
+      "packages": [
+        {
+          "name": "LQFP32",
+          "pinoutCsv": "chips/gigadevice/gd32l2/gd32l233/source/GD32L233_LQFP32_PINOUT.csv"
+        },
+        {
+          "name": "LQFP32",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32l2/gd32l233/source/GD32L233_LQFP32_PINOUT.csv"
+        },
+        {
+          "name": "LQFP48",
+          "pinoutCsv": "chips/gigadevice/gd32l2/gd32l233/source/GD32L233_LQFP48_PINOUT.csv"
+        },
+        {
+          "name": "LQFP48",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32l2/gd32l233/source/GD32L233_LQFP48_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "chips/gigadevice/gd32l2/gd32l233/source/GD32L233_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32l2/gd32l233/source/GD32L233_LQFP64_PINOUT.csv"
+        }
+      ],
+      "source": "GD32L233 pinout-csv CSV scanned from chips/gigadevice/gd32l2/gd32l233/source/GD32L233_LQFP32_PINOUT.csv",
+      "status": "draft"
+    },
+    {
+      "id": "GD32L235",
+      "vendor": "GigaDevice",
+      "family": "GD32L2",
+      "displayName": "GD32L235",
+      "functionSource": "pinout-csv",
+      "packages": [
+        {
+          "name": "LQFP32",
+          "pinoutCsv": "chips/gigadevice/gd32l2/gd32l235/source/GD32L235_LQFP32_PINOUT.csv"
+        },
+        {
+          "name": "LQFP32",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32l2/gd32l235/source/GD32L235_LQFP32_PINOUT.csv"
+        },
+        {
+          "name": "LQFP48",
+          "pinoutCsv": "chips/gigadevice/gd32l2/gd32l235/source/GD32L235_LQFP48_PINOUT.csv"
+        },
+        {
+          "name": "LQFP48",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32l2/gd32l235/source/GD32L235_LQFP48_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "chips/gigadevice/gd32l2/gd32l235/source/GD32L235_LQFP64_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "staging/gd32-csv-export/chips/gigadevice/gd32l2/gd32l235/source/GD32L235_LQFP64_PINOUT.csv"
+        }
+      ],
+      "source": "GD32L235 pinout-csv CSV scanned from chips/gigadevice/gd32l2/gd32l235/source/GD32L235_LQFP32_PINOUT.csv",
+      "status": "draft"
+    },
+    {
+      "id": "GD32M531",
+      "vendor": "GigaDevice",
+      "family": "GD32M5",
+      "displayName": "GD32M531",
+      "gpioAfCsv": "chips/gigadevice/gd32m5/gd32m531/source/GD32M531_GPIO_AF.csv",
+      "packages": [
+        {
+          "name": "LQFP48",
+          "pinoutCsv": "chips/gigadevice/gd32m5/gd32m531/source/GD32M531_LQFP48_PINOUT.csv"
+        },
+        {
+          "name": "LQFP64",
+          "pinoutCsv": "chips/gigadevice/gd32m5/gd32m531/source/GD32M531_LQFP64_PINOUT.csv"
+        }
+      ],
+      "source": "GD32M531 gpio-af-csv CSV scanned from chips/gigadevice/gd32m5/gd32m531/source/GD32M531_GPIO_AF.csv",
       "status": "draft"
     }
   ]

@@ -35,13 +35,25 @@ class PinRow:
 
 
 ROW_RE = re.compile(
-    r"^(?:(?P<name>.*?)\s+)?(?P<pin>\d{1,3}|[A-Z]{1,2}[1-9]\d?)\s+"
-    r"(?P<table_type>I/O|I|O|P|-)(?:\s+(?P<level>5VT|-))?(?:\s|$)"
+    r"^(?:(?P<name>.*?)\s+)?(?P<pin>\d{1,3}|[A-Z]{1,2}[1-9]\d?)"
+    r"(?:\s+(?P<table_type>I/O|I|O|P|-)(?:\s+(?P<level>5VT|-))?)?(?:\s+|$)"
+)
+POSITION_FIRST_ROW_RE = re.compile(
+    r"^(?P<name>)(?P<pin>\d{1,3}|[A-Z]{1,2}[1-9]\d?)"
+    r"(?:\s+(?P<table_type>I/O|I|O|P|-)(?:\s+(?P<level>5VT|-))?)?(?:\s+|$)"
+)
+BGA_INLINE_ROW_RE = re.compile(
+    r"^(?P<name>[A-Za-z0-9_+/\-]+)\s+(?P<pin>(?!P[A-Z][1-9]\d?\b)[A-Z]{1,2}[1-9]\d?)"
+    r"(?:\s+(?P<table_type>I/O|I|O|P|-)(?:\s+(?P<level>5VT|-))?)?(?:\s+|$)"
 )
 SECTION_HEADER_RE = re.compile(r"\b(?P<package>(?:[A-Z]+FP|BGA)\d+)\s+pin definitions\b", re.I)
 PART_RE = re.compile(r"(GD32[A-Z0-9]+?)(?:xx|x)?(?:[\s_\-]*Datasheet|$)", re.I)
 PIN_NAME_RE = re.compile(r"^P[A-Z]\d{1,2}$")
-PACKAGE_PIN_NAME_RE = re.compile(r"^(?:P[A-Z]\d{1,2}(?:[-/].*)?|V[A-Z0-9_+]+|NC|NRST|BOOT0|PDR_ON)$", re.I)
+GPIO_PACKAGE_PIN_PATTERN = r"P[A-Z]\d{1,2}(?:_[A-Z0-9]+)?"
+PACKAGE_PIN_NAME_RE = re.compile(
+    rf"^(?:{GPIO_PACKAGE_PIN_PATTERN}(?:[-/].*)?|USB[A-Z0-9_]*(?:[-/].*)?|V(?:BAT|DD|DDA|SS|SSA|REF|CAP|CORE|DDLDO|LXSMPS|DDSMPS|FBSMPS)[A-Z0-9_+/\-]*|NC|NRST(?:[-/].*)?|BOOT\d*(?:[-/].*)?|PDR_ON|OSC(?:32)?(?:IN|OUT)(?:[-/].*)?)$",
+    re.I,
+)
 GPIO_AF_HEADER = ["PinName", *[f"AF{i}" for i in range(16)]]
 
 IGNORED_PREFIXES = (
@@ -59,6 +71,7 @@ IGNORED_PREFIXES = (
     "(",
 )
 FUNCTION_LABEL_RE = re.compile(r"^(Default|Alternate|Additional|Remap):\s*(.*)$", re.I)
+PREFIXED_FUNCTION_LABEL_RE = re.compile(r"^(?P<prefix>[A-Z0-9_+\-/]+)\s+(?P<label>Default|Alternate|Additional|Remap):\s*(?P<value>.*)$", re.I)
 FOOTNOTE_RE = re.compile(r"\(\d+\)")
 PRODUCT_PACKAGE_TITLE_RE = re.compile(r"\bGD32[A-Z0-9]+(?:xx|x)?\s+(?:[A-Z]+FP|BGA)\d+\b", re.I)
 FUNCTION_FRAGMENT_RE = re.compile(
@@ -148,25 +161,30 @@ def classify_pin(pin_name: str, table_type: str) -> str:
         "VDD",
         "VDDA",
         "VREF+",
+        "VREF-",
         "VREFP",
+        "VREFN",
         "VCAP_1",
         "VCAP_2",
         "PDR_ON",
         "VCORE",
         "VDDLDO",
+        "VLXSMPS",
+        "VDDSMPS",
+        "VFBSMPS",
     }
     if name == "NC":
         return "nc"
     if name in {"VSS", "VSSA"} or name.startswith("VSS"):
         return "ground"
-    if name == "NRST":
+    if name == "NRST" or name.startswith(("NRST-", "NRST/")):
         return "reset"
-    if name == "BOOT0":
+    if name.startswith("BOOT"):
         return "boot"
-    if table_type == "P" or name in power_names:
-        return "power"
-    if re.match(r"^P[A-Z]\d{1,2}(?:[-/]|$)", name):
+    if re.match(rf"^{GPIO_PACKAGE_PIN_PATTERN}(?:[-/]|$)", name):
         return "gpio"
+    if table_type == "P" or name in power_names or name.startswith(("VBAT", "VDD", "VDDA", "VREF", "VCAP", "VCORE", "VDDLDO", "VLXSMPS", "VDDSMPS", "VFBSMPS")):
+        return "power"
     if table_type == "I/O":
         return "gpio"
     if "OSC" in name or "XTAL" in name:
@@ -246,9 +264,22 @@ def _looks_like_package_pin_name(pin_name: str) -> bool:
 
 def _can_start_package_pin_name_fragment(line: str) -> bool:
     value = line.strip()
+    if re.fullmatch(r"USB[A-Z0-9_]*", value, re.I):
+        return value.endswith("_")
     if _looks_like_package_pin_name(value):
         return True
-    return bool(re.fullmatch(r"P[A-Z]\d{1,2}[-/]?", value, re.I))
+    return bool(re.fullmatch(rf"(?:{GPIO_PACKAGE_PIN_PATTERN}|USB[A-Z0-9]*_|NRST|BOOT\d*|OSC(?:32)?(?:IN|OUT))[-/]?", value, re.I))
+
+
+def _can_continue_package_pin_name_fragment(line: str) -> bool:
+    return bool(re.fullmatch(r"[A-Z0-9_+/\-]+", line.strip()))
+
+
+def _is_likely_split_pin_name_fragment(line: str) -> bool:
+    value = line.strip()
+    return bool(re.fullmatch(r"[A-Z0-9]+", value)) and any(
+        part.startswith(value) or part.endswith(value) for part in ("OSCOUT", "OSCIN")
+    )
 
 
 def _default_matches_pin_name(default_pin_name: str, pin_name: str) -> bool:
@@ -263,9 +294,25 @@ def _valid_package_row_match(match: re.Match[str]) -> bool:
 
 
 def _candidate_has_package_rows(candidate: str) -> bool:
+    saw_pin_name_header = False
+    split_header_parts: list[str] = []
     for line in candidate.splitlines():
-        row_match = ROW_RE.match(_clean_line(line))
-        if row_match and _valid_package_row_match(row_match):
+        clean_line = _clean_line(line)
+        if clean_line.startswith("Pin Name"):
+            saw_pin_name_header = True
+            continue
+        if not saw_pin_name_header:
+            if clean_line in {"Pin", "Name", "Pins"}:
+                split_header_parts.append(clean_line)
+                if split_header_parts[-3:] == ["Pin", "Name", "Pins"]:
+                    saw_pin_name_header = True
+                continue
+            if clean_line and clean_line not in {"Type(1)", "I/O", "Level(2)", "Functions description"}:
+                split_header_parts.clear()
+        if not saw_pin_name_header:
+            continue
+        row_match = ROW_RE.match(clean_line)
+        if row_match and (row_match.group("name") or row_match.group("table_type")) and _valid_package_row_match(row_match):
             return True
     return False
 
@@ -336,6 +383,11 @@ def is_bga_package(package: str) -> bool:
     return normalize_package(package).startswith("BGA")
 
 
+def _numeric_package_pin_count(package: str) -> int | None:
+    match = re.fullmatch(r"(?:[A-Z]+FP|BGA)(\d+)", normalize_package(package))
+    return int(match.group(1)) if match else None
+
+
 def _position_sort_key(position: int | str) -> tuple[int, str, int]:
     value = str(position)
     if value.isdigit():
@@ -346,8 +398,55 @@ def _position_sort_key(position: int | str) -> tuple[int, str, int]:
     return (2, value.upper(), 0)
 
 
+def _is_bga176_center_additional_vss(row: PinRow) -> bool:
+    match = re.fullmatch(r"([A-Z]+)(\d+)", str(row.pad_number).upper())
+    if not match:
+        return False
+    return row.pin_name.upper().startswith("VSS") and match.group(1) in {"F", "G", "H", "J", "K"} and 6 <= int(match.group(2)) <= 10
+
+
+def _is_valid_bga_ball_name(position: int | str) -> bool:
+    match = re.fullmatch(r"([A-Z]{1,2})([1-9]\d*)", str(position).upper())
+    if not match:
+        return False
+    return not re.fullmatch(r"P[A-Z]", match.group(1))
+
+
+def _can_attach_row_functions(pin_type: str) -> bool:
+    return pin_type not in {"power", "ground", "nc"}
+
+
+def filter_package_rows(rows: Iterable[PinRow], package: str) -> list[PinRow]:
+    rows_list = list(rows)
+    if is_bga_package(package):
+        rows_list = [row for row in rows_list if _is_valid_bga_ball_name(row.pad_number)]
+    if normalize_package(package) == "BGA176":
+        return [row for row in rows_list if not _is_bga176_center_additional_vss(row)]
+    package_pin_count = _numeric_package_pin_count(package)
+    if package_pin_count is not None and normalize_package(package).startswith("LQFP"):
+        by_pad = {int(row.pad_number): row for row in rows_list if isinstance(row.pad_number, int)}
+        if len(by_pad) >= package_pin_count // 2:
+            expected_range = range(1, package_pin_count + 1)
+        elif by_pad:
+            expected_range = range(min(by_pad), max(by_pad) + 1)
+        else:
+            expected_range = range(0)
+        missing = [pad for pad in expected_range if pad not in by_pad]
+        inserted: list[PinRow] = []
+        if len(missing) <= 3:
+            for pad in missing:
+                next_row = by_pad.get(pad + 1)
+                if next_row and next_row.pin_name.upper().startswith("VDD"):
+                    inserted.append(PinRow(pad, "VSS", "ground"))
+        if inserted:
+            rows_list = sorted([*rows_list, *inserted], key=lambda row: _position_sort_key(row.pad_number))
+    return rows_list
+
+
 def extract_package_rows(text: str, package: str, include_functions: bool = False) -> list[PinRow]:
     section = find_section(text, package)
+    package_is_bga = is_bga_package(package)
+    package_pin_count = _numeric_package_pin_count(package)
     pending_name_parts: list[str] = []
     raw_rows: list[tuple[int | str, str, str, list[str], list[str]]] = []
     pending_alternate_parts: list[str] = []
@@ -364,6 +463,21 @@ def extract_package_rows(text: str, package: str, include_functions: bool = Fals
 
         if include_functions:
             function_label = FUNCTION_LABEL_RE.match(line)
+            prefixed_function_label = PREFIXED_FUNCTION_LABEL_RE.match(line)
+            if prefixed_function_label and raw_rows and raw_rows[-1][1].endswith("-"):
+                pad, old_name, old_type, alternate_parts, remap_parts = raw_rows[-1]
+                raw_rows[-1] = (
+                    pad,
+                    _join_pin_name([old_name, prefixed_function_label.group("prefix")]),
+                    old_type,
+                    alternate_parts,
+                    remap_parts,
+                )
+                if classify_pin(raw_rows[-1][1], old_type) == "gpio":
+                    active_gpio_row_index = len(raw_rows) - 1
+                    allow_bare_pre_row_functions = True
+                line = f"{prefixed_function_label.group('label')}: {prefixed_function_label.group('value')}"
+                function_label = FUNCTION_LABEL_RE.match(line)
             if function_label:
                 label = function_label.group(1).lower()
                 value = function_label.group(2)
@@ -395,15 +509,37 @@ def extract_package_rows(text: str, package: str, include_functions: bool = Fals
                 pending_name_parts.clear()
                 continue
 
-        match = ROW_RE.match(line)
-        if match:
+        if pending_name_parts and re.fullmatch(r"\d+", line):
+            pending_name_parts.append(line)
+            continue
+
+        match = POSITION_FIRST_ROW_RE.match(line) if pending_name_parts else None
+        if match and package_is_bga and not _is_valid_bga_ball_name(match.group("pin")):
+            match = None
+        if match and not package_is_bga and not match.group("pin").isdigit():
+            match = None
+        if not match and package_is_bga:
+            match = BGA_INLINE_ROW_RE.match(line)
+        if not match:
+            match = ROW_RE.match(line)
+        if match and (package_is_bga == (not match.group("pin").isdigit()) or not _is_candidate_name_fragment(line)):
             raw_position = match.group("pin")
-            pad_number: int | str = int(raw_position) if raw_position.isdigit() else raw_position.upper()
-            table_type = match.group("table_type")
-            inline_name = (match.group("name") or "").strip()
-            if inline_name and not _looks_like_package_pin_name(inline_name):
+            if package_is_bga and not _is_valid_bga_ball_name(raw_position):
                 continue
-            if pending_name_parts and not inline_name:
+            if package_is_bga != (not raw_position.isdigit()):
+                pending_name_parts.clear()
+                continue
+            pad_number: int | str = int(raw_position) if raw_position.isdigit() else raw_position.upper()
+            if not package_is_bga and package_pin_count is not None and int(pad_number) > package_pin_count:
+                pending_name_parts.clear()
+                continue
+            table_type = match.group("table_type") or ""
+            inline_name = (match.group("name") or "").strip()
+            if pending_name_parts and inline_name and _can_continue_package_pin_name_fragment(inline_name):
+                pin_name = _join_pin_name([*pending_name_parts, inline_name])
+            elif inline_name and not _looks_like_package_pin_name(inline_name):
+                continue
+            elif pending_name_parts and not inline_name:
                 pin_name = _join_pin_name(pending_name_parts)
             else:
                 pin_name = inline_name
@@ -413,7 +549,7 @@ def extract_package_rows(text: str, package: str, include_functions: bool = Fals
             pin_type = classify_pin(pin_name, table_type)
             row_alternate_parts: list[str] = []
             row_remap_parts: list[str] = []
-            if include_functions and pin_type == "gpio":
+            if include_functions and _can_attach_row_functions(pin_type):
                 pending_matches_row = pending_default_pin_name is None or _default_matches_pin_name(
                     pending_default_pin_name, pin_name
                 )
@@ -421,7 +557,7 @@ def extract_package_rows(text: str, package: str, include_functions: bool = Fals
                     row_alternate_parts = pending_alternate_parts.copy()
                     row_remap_parts = pending_remap_parts.copy()
             copied_pending_target = (
-                pin_type == "gpio"
+                _can_attach_row_functions(pin_type)
                 and (
                     (current_function_target == "alternate" and bool(row_alternate_parts))
                     or (current_function_target == "remap" and bool(row_remap_parts))
@@ -429,8 +565,8 @@ def extract_package_rows(text: str, package: str, include_functions: bool = Fals
             )
             raw_rows.append((pad_number, pin_name, table_type, row_alternate_parts, row_remap_parts))
             if include_functions:
-                active_gpio_row_index = len(raw_rows) - 1 if pin_type == "gpio" else None
-                allow_bare_pre_row_functions = pin_type == "gpio"
+                active_gpio_row_index = len(raw_rows) - 1 if _can_attach_row_functions(pin_type) else None
+                allow_bare_pre_row_functions = _can_attach_row_functions(pin_type)
                 if not copied_pending_target:
                     current_function_target = None
                 pending_default_pin_name = None
@@ -439,6 +575,31 @@ def extract_package_rows(text: str, package: str, include_functions: bool = Fals
             continue
 
         starts_pin_name = _is_candidate_name_fragment(line) and _can_start_package_pin_name_fragment(line)
+        if include_functions and current_function_target in {"alternate", "remap"} and not starts_pin_name:
+            if _is_likely_split_pin_name_fragment(line) and (line == "OSCO" or not _looks_like_function_fragment(line)):
+                current_function_target = None
+                active_gpio_row_index = None
+                pending_name_parts.append(line)
+                continue
+            else:
+                if _is_ignored_continuation_line(line):
+                    current_function_target = None
+                    pending_name_parts.clear()
+                    if active_gpio_row_index is not None:
+                        active_gpio_row_index = None
+                    continue
+                if not _looks_like_function_fragment(line):
+                    current_function_target = None
+                    pending_name_parts.clear()
+                    continue
+                if active_gpio_row_index is not None:
+                    target_parts = raw_rows[active_gpio_row_index][3 if current_function_target == "alternate" else 4]
+                else:
+                    target_parts = pending_alternate_parts if current_function_target == "alternate" else pending_remap_parts
+                _append_function_part(target_parts, line)
+                pending_name_parts.clear()
+                continue
+
         if include_functions and current_function_target in {"alternate", "remap"} and not starts_pin_name:
             if _is_ignored_continuation_line(line):
                 current_function_target = None
@@ -480,12 +641,13 @@ def extract_package_rows(text: str, package: str, include_functions: bool = Fals
         if pin_name and pad_number not in deduped:
             deduped[pad_number] = (pin_name, table_type, alternate_parts, remap_parts)
 
-    return [
+    rows = [
         PinRow(pad_number, pin_name, classify_pin(pin_name, table_type), _function_cell(alternate_parts), _function_cell(remap_parts))
         for pad_number, (pin_name, table_type, alternate_parts, remap_parts) in sorted(
             deduped.items(), key=lambda item: _position_sort_key(item[0])
         )
     ]
+    return filter_package_rows(rows, package)
 
 
 def rows_to_csv_text(rows: Iterable[PinRow], package: str = "", include_functions: bool = False) -> str:
