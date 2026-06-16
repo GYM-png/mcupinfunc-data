@@ -48,12 +48,14 @@ Then run:
 ```powershell
 npm run validate:remote-data
 npm run build:remote-data
+npm run verify:remote-data
 ```
 
 Expected outputs:
 
 - per-chip `chip.json` files are updated,
 - root `index.json` is updated,
+- generated release data contains no duplicate packages or staging URLs,
 - source CSV files remain in this data repository.
 
 Commit and push from this repository:
